@@ -1,0 +1,32 @@
+\begin{table}[!htbp]
+\centering
+\caption{The execution time and resource cost of applications
+running with different numbers of CPUs and memory per CPU.
+The text in bold refer to the configurations on the convex hull
+in \myfigure{\ref{fig:application_performance}}.}
+\label{table:raw_data}
+\begin{tabular}{rrrrrrrrr}
+\multicolumn{3}{c}{\textbf{Configuration}}  & \multicolumn{2}{c}{\textbf{PageRank}} & \multicolumn{2}{c}{\textbf{Web Log Analysis}} & \multicolumn{2}{c}{\textbf{Regression}}\\
+ID  & CPU & Memory/CPU & Time & Cost & Time & Cost & Time & Cost \\ \hline \hline
+0   & 1          & 1       & 652.2 & 3261.1  & \textbf{179.3} & \textbf{896.3}  & \textbf{765.0}  & \textbf{3825.2} \\
+1   & 1          & 2       & 389.2 & 2335.3  & 220.2 & 1321.1 & 706.7  & 4240.1 \\
+2   & 1          & 4       & 267.7 & 2141.8  & 187.8 & 1502.4 & 723.7  & 5789.7 \\
+3   & 1          & 8       & 240.3 & 2883.6  & 210.1 & 2521.1 & 701.0  & 8412.0 \\ \hline
+4   & 2          & 1       & 234.6 & 2346.3  & \textbf{99.5}  & \textbf{994.6}  & \textbf{423.4}  & \textbf{4233.6} \\
+5   & 2          & 2       & \textbf{139.1} & \textbf{1669.1}  & 104.3 & 1252.0 & 433.3  & 5200.1 \\
+6   & 2          & 4       & 151.3 & 2420.0  & 123.8 & 1980.1 & 407.8  & 6524.6 \\
+7   & 2          & 8       & 152.4 & 3657.0  & 121.6 & 2919.5 & 434.0  & 10414.2 \\ \hline
+8   & 4          & 1       & \textbf{93.2}  & \textbf{1864.5}  & \textbf{63.0}  & \textbf{1259.5} & \textbf{269.1}  & \textbf{5382.2} \\
+9   & 4          & 2       & 96.2  & 2310.0  & 74.2  & 1781.1 & \textbf{261.7}  & \textbf{6280.3} \\
+10  & 4          & 4       & 95.7  & 3063.2  & 71.0  & 2270.8 & 268.7  & 8598.7 \\
+11  & 4          & 8       & 101.0 & 4846.5  & 68.0  & 3262.1 & 275.9  & 13242.1 \\ \hline
+12  & 8          & 1       & \textbf{70.3}  & \textbf{2811.5}  & \textbf{47.3}  & \textbf{1892.5} & 817.8  & 32711.8 \\
+13  & 8          & 2       & 72.4  & 3475.4  & 47.5  & 2277.8 & 842.3  & 40431.1 \\
+14  & 8          & 4       & 75.4  & 4828.5  & 55.0  & 3515.8 & 711.2  & 45518.7 \\
+15  & 8          & 8       & 70.7  & 6783.4  & 46.8  & 4488.7 & 692.7  & 66502.3 \\ \hline
+16  & 12         & 1       & 71.2  & 4272.9  & 48.1  & 2887.0 & 983.5  & 59007.1 \\
+17  & 12         & 2       & \textbf{69.6}  & \textbf{5007.7}  & \textbf{46.0}  & \textbf{3309.2} & 1043.4 & 75122.3 \\
+18  & 12         & 4       & 72.0  & 6912.8  & \textbf{45.4}  & \textbf{4357.1} & 1026.6 & 98549.5 \\
+19  & 12         & 8       & 73.7  & 10617.9 & 49.9  & 7180.6 & 940.0  & 135362.0
+\end{tabular}
+\end{table}

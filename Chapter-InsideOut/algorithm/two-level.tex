@@ -1,0 +1,25 @@
+ \begin{algorithm}
+ \caption{Inside-Out Model Building}
+ \begin{algorithmic}[1]
+ \renewcommand{\algorithmicrequire}{\textbf{Input:}}
+ \renewcommand{\algorithmicensure}{\textbf{Output:}}
+ \REQUIRE low-level performance metrics from distributed nodes
+ \ENSURE  an end-to-end performance model
+ \\ \textit{Initialisation}
+  \STATE $thresholds = \left \{ \alpha_{1}, ... , \alpha_{N} \right \} $\
+  \STATE $m1 =$ filtering algorithm $\rightarrow Ridge$
+  \STATE $m2 =$ model algorithm $\rightarrow Lasso$
+  \STATE $k =$ k-fold cross validation
+  \STATE $score = 0$
+ \\ \textit{Data preprocessing} (refer to Section~\ref{sec:data_preprocessing})
+  \STATE alignment of input data
+  \STATE calculate moving average across metrics
+  \STATE feature transformation for the distributed scenario
+ \\ \textit{Grid Search}
+  \FORALL{$t \in thresholds$}
+  \STATE $features =$ execute $m1$ with threshold $t$
+  \STATE $score, m = $max(crossvalidation($k$, $m2$, $features$))
+  \ENDFOR
+ \RETURN $m$ with maximum $score$
+ \end{algorithmic} 
+ \end{algorithm}

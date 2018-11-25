@@ -1,0 +1,17 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[!htbp]
+\centering
+\caption{\textbf{The knee point when \micky should not be used.} 
+The knee point (the number of recurrence of workloads) represents a trade-off between search performance and measurement cost.
+}
+\label{table:break_even_cost}
+\begin{tabular}{@{}llllll@{}}
+\toprule
+            & 18   & 36    & 54   & 72   & 107  \\ \midrule
+Brute Force & 84.8 & 120.6 & 55.0 & 52.1 & 57.3 \\
+Random-8    & 37.9 & 51.5  & 33.7 & 36.0 & 44.7 \\
+Random-4    & 18.4 & 24.2  & 27.0 & 28.5 & 27.9 \\
+CherryPick  & 23.3 & 30.8  & 20.8 & 24.0 & 27.0 \\ \bottomrule
+\end{tabular}
+\end{table}

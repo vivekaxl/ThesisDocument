@@ -1,0 +1,19 @@
+\begin{table}[!htbp]
+  \centering
+  \caption{Load-imbalance of workloads.}
+  \resizebox{\columnwidth}{!}{%
+  \begin{tabular}[h]{lrrrrcc}
+    \toprule
+Distribution & 	\multicolumn{4}{l}{Requests for individual partitions}
+    & max:mean & skew\\
+\midrule
+Uniform & \textbf{7,565} & 7,548 & 7,449 & 7,438 & 1.01 & 0.15\\
+Beta & \textbf{10,313} & 10,288 & 4,715 & 4,684 & 1.38 & 0.39\\
+Power law & \textbf{17,344} & 8,795 & 3,361 & 500 & 2.31 & 0.60 \\
+Normal & \textbf{14,882} & 14,827 & 149 & 142 & 1.98 & 0.74\\
+Gamma & \textbf{23,542} & 6,329 & 129 & 0 & 3.14 & 0.77\\
+\bottomrule
+  \end{tabular}
+  }
+  \label{tab:load-imbalance}
+\end{table}

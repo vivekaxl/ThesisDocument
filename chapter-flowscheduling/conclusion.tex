@@ -1,0 +1,18 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+The decoupled Hadoop model is flexible and much more preferable in many scenarios.
+However, existing Hadoop schedulers do not consider this model and hence the scheduling method fails to optimize the system throughput.
+Our flow scheduling method uses the penalty cost for task assignments in order to increase the processing flow rate on computing facilities.
+We encode this problem as the min-cost flow problem and then we can obtain the optimal assignment.
+We have implemented a pluggable Flow Scheduler for Hadoop YARN and it supports the latest version of Hadoop.
+Our experiment results have shown that our flow scheduling can greatly improve the system throughput by about 30\% so as to eliminate stragglers.
+These results support that the proposed flow scheduling can maintain the flow rate of processing.
+
+Flow scheduling seems efficient for the decoupled model, but there still remains large space to improve.
+For our current implementation, Flow Scheduler requires job profile and machine profile, which is not practical.
+We believe we can estimate the flow demand of tasks and the flow capability of facilities at runtime.
+A naive approach is to sample the flow demand of a task and then use this information to decide the cost of the remaining tasks of the same job.
+Another approach is to monitor the flow rate of tasks so that we can adjust the penalty cost dynamically.
+We can also decide the flow capability of facilities in a similar way.
+Overall, we are positive about flow scheduling but more extensive evaluations have to be conducted before we can conclude.

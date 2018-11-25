@@ -1,0 +1,22 @@
+\begin{algorithm}[htbp]
+{
+ \SetAlgoLined
+ \DontPrintSemicolon
+ \DontPrintSemicolon
+ \KwIn{$f$, $\mathit{VM}$, $S$, $M$}
+ \KwOut{Near-optimal configurations}
+ $D$ := Initial sampling ($f$, $\mathit{VM}$) \;
+
+ \For{$k$ in $|\mathit{VM} \notin D|$}{
+   $p(y|vm, D)$ := fit a surrogate model (M, D) \;
+   $vm_k$ := $arg max_{vm \in \mathit{VM}} S(vm, p(y|vm, D))$ \;
+   $y_k$ := $f(vm_k)$ \;
+   $D$ := $D \cup (vm_k, y_k)$ \;
+   \If{meeting stopping criteria}{
+        break\;
+   }
+ }
+ \caption{Sequential Model-Based Optimization for CAT}
+ \label{alg:smbo}
+ }
+\end{algorithm}

@@ -1,0 +1,76 @@
+\section{Introduction}
+\label{ch4:sec:introduction}
+
+Many storage systems are moving away from dedicated appliance-based storage model to software-defined 
+storage (SDS), which separates software that provisions and manages storage from the hardware that provides raw physical storage~\cite{sds_att, Thereska2013, Jalaparti2012}.
+This trend is partly driven by the tremendous growth of data and the emergence of cloud applications that operate in a multi-tenant environment with diverse workload characteristics.
+As a result, the rigid appliance-based model, with tightly-coupled hardware and software features, is no longer cost-effective, lacks flexibility, and does not scale well.
+SDS systems are increasingly abandoning centralized storage services in favor of distributed systems like Ceph~\cite{ceph}, HDFS~\cite{hadoop}, Swift~\cite{openstack}. 
+Distributed storage systems are attractive because they scale well, allowing storage services to grow or shrink, based on storage demands. 
+They are also better suited to handle diverse multi-tenant workloads. 
+
+Providing reliable quality of service (QoS) to storage applications is critical in an SDS environment shared by multiple applications 
+with diverse usage patterns. However, in a distributed storage environment, it is challenging to provide storage QoS in a consistent 
+and reliable manner. Practical deployments of modern distributed storage systems like Ceph are composed of a large number of 
+individual storage components that can interact in a complex manner. 
+Diverse and time-varying storage workloads and performance interference in a multi-tenant environment further 
+complicate the reliable assurance of storage QoS. Reliable and accurate monitoring of 
+high-level storage performance metrics (e.g. throughput and IOPS) is critical 
+for providing storage QoS guarantees.    
+However, monitoring end-to-end storage performance is difficult in a distributed storage service. 
+Instrumenting user applications to measure storage performance is not always practical. 
+Performing benchmark tests in production systems also has practical limitations since they 
+interfere with storage application workload.
+Furthermore, running exhaustive benchmark experiments to cover diverse application workloads, 
+deployment topologies, and large configuration parameter space is time-consuming and impractical in many cases. 
+Building accurate analytical performance models, on the other hand, is also difficult for the reasons mentioned above.
+ 
+This chapter proposes the idea of using low-level system metrics (e.g., CPU usage, RAM usage and network I/O)
+as a proxy for measuring high-level performance (e.g., end-to-end IOPS and throughput) of 
+distributed storage applications.
+We design, implement and evaluate a practical tool, called \emph{Inside-Out}, that applies 
+machine learning techniques to the low-level metrics collected from individual components 
+of a distributed storage system to accurately estimate high-level storage performance metrics---like throughput and IOPS---of the entire 
+distributed storage system.
+We believe that a tool like Inside-Out can serve as an important component of the overall SDS architecture.
+
+Inside-Out takes a black-box modeling approach, which does not require knowledge about distributed storage system protocol, workload characteristics, and deployment topology. 
+Inside-Out relies upon machine learning techniques to automatically derive an accurate end-to-end performance model.
+We explore several well-known machine learning algorithms including linear regression, 
+decision tree learning, and ensemble methods \cite{Wang2004, Noorshams2013}, and conclude that  
+there does not exist an one-size-fits-all algorithm that can work in all prediction cases.
+Hyperparameter tuning \cite{Chapelle2002, Noorshams2013}, model selection \cite{Kohavi1995} and 
+feature selection \cite{guyon2003introduction, Saeys12007} all turn out to be too complicated for optimizing prediction accuracy.
+In contrast, Inside-Out uses a two-level learning method that automatically selects important features, boosts prediction accuracy, and achieves consistent prediction. 
+This two-level learning method pipelines two supervised learning algorithms to eliminate irrelevant features while avoiding overfitting problems.\footnote{\label{ft:overfitting}
+Overfitting describes the situation when a model captures the relationship of noisy data but not the underlying relationship \cite{domingos2012few}.
+Overfitting becomes more prominent in the presence of high dimensional data}
+
+Inside-Out offers several key benefits. 
+%[MRA] Unlike traditional analytic performance modeling approach, Inside-Out is generic in nature, and therefore, it can be applied to different storage services.  
+Unlike traditional analytic performance modeling approach, Inside-Out is more generic, 
+and therefore can be more easily applied to different storage services.  
+Different from previous work, Inside-Out 
+does not require information about system configuration and application workload~\cite{Ruemmler1994, Shriver1998, Wang2004, Kelly2004, Yin2006, Noorshams2013, Ardagna2014}. 
+Due to the self-learning property, \emph{Inside-Out} improves performance prediction accuracy with more data.
+It can also adapt to changes in the system
+by continuously learning the system behavior. 
+
+We evaluate Inside-Out using Ceph~\cite{ceph} %as an example distributed storage system 
+running on an OpenStack-based SDS platform.
+The low-level performance metrics are collected from participant virtual machines 
+running various components of a Ceph storage service.\footnote{\label{ft:vm}
+Our approach is not limited to VM-based environments.
+It can be applied to container-based and bare-metal storage servers as well.
+}
+Our in-depth evaluation shows that Inside-Out generates end-to-end performance models with 91.1\% prediction accuracy on average.
+More importantly, as discussed above, Inside-Out is generic in nature as it captures the behavior of the storage system 
+by analyzing low-level system metrics (that are protocol and application agnostic). Furthermore, we demonstrate that Inside-Out 
+%[MRA] can provide reliable performance monitoring even in the presence of evolving workload characteristics, changing storage 
+can provide reliable hints for performance monitoring tasks even in the presence of evolving workload characteristics, changing storage 
+configuration and interfering tenants. We also show that Inside-Out is reliable in estimating end-to-end performance 
+even when the storage system expands or shrinks.
+We show that Inside-Out provides reliable performance 
+prediction when the storage system is up to four times larger than the one used for building machine learning models during 
+the training phase. 
+Lastly, Inside-Out is able to learn new storage behavior over time.

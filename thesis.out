@@ -1,0 +1,109 @@
+\BOOKMARK [0][-]{section*.5}{LIST OF TABLES}{}% 1
+\BOOKMARK [0][-]{section*.6}{LIST OF FIGURES}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 3
+\BOOKMARK [1][-]{subsection.1.0.1}{Motivating Example}{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.2}{Background and Related Work}{}% 5
+\BOOKMARK [1][-]{section.2.1}{Data-Intensive Computing}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.2}{Storage Architecture for Data-Intensive Computing}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.3}{Performance Prediction and Optimization}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.3.1}{Workload Characterization}{section.2.3}% 9
+\BOOKMARK [2][-]{subsection.2.3.2}{Machine Learning}{section.2.3}% 10
+\BOOKMARK [2][-]{subsection.2.3.3}{Low-Level Insights}{section.2.3}% 11
+\BOOKMARK [2][-]{subsection.2.3.4}{Sequential Model-based Bayesian Optimization}{section.2.3}% 12
+\BOOKMARK [2][-]{subsection.2.3.5}{Bayesian Optimization}{section.2.3}% 13
+\BOOKMARK [2][-]{subsection.2.3.6}{Hyper-Parameter Tuning}{section.2.3}% 14
+\BOOKMARK [0][-]{chapter.3}{End-to-End Performance Prediction for Cloud Storage}{}% 15
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.2}{Mapping from Low to High}{chapter.3}% 17
+\BOOKMARK [2][-]{subsection.3.2.1}{Important Considerations}{section.3.2}% 18
+\BOOKMARK [2][-]{subsection.3.2.2}{Feature Selection}{section.3.2}% 19
+\BOOKMARK [2][-]{subsection.3.2.3}{A Two-Level Approach}{section.3.2}% 20
+\BOOKMARK [1][-]{section.3.3}{The Inside-Out Design}{chapter.3}% 21
+\BOOKMARK [2][-]{subsection.3.3.1}{Collecting and Pre-Processing Low-Level Metrics}{section.3.3}% 22
+\BOOKMARK [2][-]{subsection.3.3.2}{Exploring Learning Methods}{section.3.3}% 23
+\BOOKMARK [2][-]{subsection.3.3.3}{Two-level Training}{section.3.3}% 24
+\BOOKMARK [1][-]{section.3.4}{Evaluation}{chapter.3}% 25
+\BOOKMARK [2][-]{subsection.3.4.1}{Setup}{section.3.4}% 26
+\BOOKMARK [2][-]{subsection.3.4.2}{The Comparison Method}{section.3.4}% 27
+\BOOKMARK [2][-]{subsection.3.4.3}{Baseline: Prediction Performance on Static Deployment}{section.3.4}% 28
+\BOOKMARK [2][-]{subsection.3.4.4}{Prediction Performance in a Multi-tenant Cloud}{section.3.4}% 29
+\BOOKMARK [2][-]{subsection.3.4.5}{Online Self-Learning}{section.3.4}% 30
+\BOOKMARK [2][-]{subsection.3.4.6}{Discussion}{section.3.4}% 31
+\BOOKMARK [1][-]{section.3.5}{Conclusion}{chapter.3}% 32
+\BOOKMARK [0][-]{chapter.4}{Cloud Architecture Tuning}{}% 33
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.2}{Open Performance Data}{chapter.4}% 35
+\BOOKMARK [1][-]{section.4.3}{Challenges}{chapter.4}% 36
+\BOOKMARK [1][-]{section.4.4}{State-of-the-Art Approaches}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.5}{Problem Formalization}{chapter.4}% 38
+\BOOKMARK [1][-]{section.4.6}{Time-Cost Trade-Offs}{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.7}{Conclusion}{chapter.4}% 40
+\BOOKMARK [0][-]{chapter.5}{Low-Level Augmented Bayesian Optimization}{}% 41
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.2}{The Fragility Issue}{chapter.5}% 43
+\BOOKMARK [1][-]{section.5.3}{Approach}{chapter.5}% 44
+\BOOKMARK [1][-]{section.5.4}{Evaluation}{chapter.5}% 45
+\BOOKMARK [2][-]{subsection.5.4.1}{Experimental Method}{section.5.4}% 46
+\BOOKMARK [2][-]{subsection.5.4.2}{Comparison}{section.5.4}% 47
+\BOOKMARK [1][-]{section.5.5}{Discussion}{chapter.5}% 48
+\BOOKMARK [2][-]{subsection.5.5.1}{Bayesian Optimization in Practice}{section.5.5}% 49
+\BOOKMARK [2][-]{subsection.5.5.2}{Time-Cost Trade-off}{section.5.5}% 50
+\BOOKMARK [1][-]{section.5.6}{Hybrid Bayesian Optimization}{chapter.5}% 51
+\BOOKMARK [1][-]{section.5.7}{Conclusion}{chapter.5}% 52
+\BOOKMARK [0][-]{chapter.6}{Scout: System Design and Implementation}{}% 53
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 54
+\BOOKMARK [1][-]{section.6.2}{Design Choices}{chapter.6}% 55
+\BOOKMARK [1][-]{section.6.3}{From Observation to Action}{chapter.6}% 56
+\BOOKMARK [2][-]{subsection.6.3.1}{Exploration vs. Exploitation}{section.6.3}% 57
+\BOOKMARK [2][-]{subsection.6.3.2}{Core Techniques}{section.6.3}% 58
+\BOOKMARK [2][-]{subsection.6.3.3}{Search Hints}{section.6.3}% 59
+\BOOKMARK [2][-]{subsection.6.3.4}{Search Strategy}{section.6.3}% 60
+\BOOKMARK [2][-]{subsection.6.3.5}{Putting It All Together}{section.6.3}% 61
+\BOOKMARK [1][-]{section.6.4}{Implementation}{chapter.6}% 62
+\BOOKMARK [1][-]{section.6.5}{Evaluation}{chapter.6}% 63
+\BOOKMARK [2][-]{subsection.6.5.1}{Experiment Setup}{section.6.5}% 64
+\BOOKMARK [2][-]{subsection.6.5.2}{Comparison Method}{section.6.5}% 65
+\BOOKMARK [2][-]{subsection.6.5.3}{Is Scout effective and efficient?}{section.6.5}% 66
+\BOOKMARK [2][-]{subsection.6.5.4}{Is Scout reliable?}{section.6.5}% 67
+\BOOKMARK [2][-]{subsection.6.5.5}{Why Scout works better?}{section.6.5}% 68
+\BOOKMARK [2][-]{subsection.6.5.6}{Example Search Process}{section.6.5}% 69
+\BOOKMARK [1][-]{section.6.6}{Discussion}{chapter.6}% 70
+\BOOKMARK [1][-]{section.6.7}{Conclusion}{chapter.6}% 71
+\BOOKMARK [0][-]{chapter.7}{A Collective CAT Optimizer for Multiple Workloads}{}% 72
+\BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}% 73
+\BOOKMARK [1][-]{section.7.2}{Why Collective Optimization}{chapter.7}% 74
+\BOOKMARK [1][-]{section.7.3}{Finding the Exemplar Cloud Configuration}{chapter.7}% 75
+\BOOKMARK [2][-]{subsection.7.3.1}{Empirical Study}{section.7.3}% 76
+\BOOKMARK [2][-]{subsection.7.3.2}{The Exemplar Configurations}{section.7.3}% 77
+\BOOKMARK [2][-]{subsection.7.3.3}{Problem Formulation}{section.7.3}% 78
+\BOOKMARK [2][-]{subsection.7.3.4}{The Multi-Armed Bandit Problem}{section.7.3}% 79
+\BOOKMARK [2][-]{subsection.7.3.5}{Heuristics}{section.7.3}% 80
+\BOOKMARK [1][-]{section.7.4}{Evaluation}{chapter.7}% 81
+\BOOKMARK [2][-]{subsection.7.4.1}{Comparison Method}{section.7.4}% 82
+\BOOKMARK [2][-]{subsection.7.4.2}{Experiment Setup}{section.7.4}% 83
+\BOOKMARK [2][-]{subsection.7.4.3}{Can Micky identify the exemplar cloud configurations?}{section.7.4}% 84
+\BOOKMARK [2][-]{subsection.7.4.4}{When not to use Micky?}{section.7.4}% 85
+\BOOKMARK [2][-]{subsection.7.4.5}{Why UCB is the preferred choice?}{section.7.4}% 86
+\BOOKMARK [1][-]{section.7.5}{To Eliminate Sub-Optimal Choices}{chapter.7}% 87
+\BOOKMARK [1][-]{section.7.6}{Conclusion}{chapter.7}% 88
+\BOOKMARK [0][-]{chapter.8}{Workload-Aware Data Placement}{}% 89
+\BOOKMARK [1][-]{section.8.1}{Introduction}{chapter.8}% 90
+\BOOKMARK [1][-]{section.8.2}{Modeling Data Replication and Placement}{chapter.8}% 91
+\BOOKMARK [1][-]{section.8.3}{Workloads}{chapter.8}% 92
+\BOOKMARK [2][-]{subsection.8.3.1}{Workload Characteristics}{section.8.3}% 93
+\BOOKMARK [2][-]{subsection.8.3.2}{Data Placement Steps}{section.8.3}% 94
+\BOOKMARK [2][-]{subsection.8.3.3}{Tradeoffs in Placement Strategy}{section.8.3}% 95
+\BOOKMARK [1][-]{section.8.4}{Evaluation}{chapter.8}% 96
+\BOOKMARK [2][-]{subsection.8.4.1}{Experiment Setup}{section.8.4}% 97
+\BOOKMARK [2][-]{subsection.8.4.2}{Workload Generator and Benchmark Suite}{section.8.4}% 98
+\BOOKMARK [2][-]{subsection.8.4.3}{Benchmark Steps}{section.8.4}% 99
+\BOOKMARK [2][-]{subsection.8.4.4}{Steady-State Throughput}{section.8.4}% 100
+\BOOKMARK [2][-]{subsection.8.4.5}{Robustness Comparison}{section.8.4}% 101
+\BOOKMARK [2][-]{subsection.8.4.6}{Micro Benchmark}{section.8.4}% 102
+\BOOKMARK [2][-]{subsection.8.4.7}{Summary}{section.8.4}% 103
+\BOOKMARK [1][-]{section.8.5}{Conclusion}{chapter.8}% 104
+\BOOKMARK [0][-]{chapter.9}{Conclusions and Future Work}{}% 105
+\BOOKMARK [1][-]{section.9.1}{A Practical Guide to Cloud Optimizer}{chapter.9}% 106
+\BOOKMARK [1][-]{section.9.2}{Conclusion}{chapter.9}% 107
+\BOOKMARK [1][-]{section.9.3}{Future Work}{chapter.9}% 108
+\BOOKMARK [0][-]{section*.81}{Bibliography}{}% 109

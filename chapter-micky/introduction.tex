@@ -1,0 +1,71 @@
+\section{Introduction}
+\label{sec:micky:introduction}
+
+Cloud computing optimizer is a device to select the best cloud configurations
+(such as virtual machine (VM) types and the number of VMs)
+for a given workload.
+Choosing the right cloud configuration is essential to maximize application performance and minimize operational costs. However, such optimization task is not straightforward due to opaque resource requirement~\cite{Yadwadkar2017,Hsu2016}.
+To address this challenge, prior work either
+builds prediction models (as in \emph{Ernest}~\cite{Venkataraman2016} and \emph{PARIS}~\cite{Yadwadkar2017}) or
+uses sequential model-based optimization (as in \emph{CherryPick}~\cite{Alipourfard2017}).
+We also choose sequential model-based optimization
+as in \emph{Arrow}~\cite{Hsu2018Arrow} (see Chapter~\ref{chapter:arrow}) and
+as in \emph{Scout}~\cite{Hsu2018Scout} (see Chapter~\ref{chapter:scout}).
+
+
+While they are effective, they are only designed for a single workload.
+In practice, it is rare to migrate only one workload~\cite{khajeh2010cloud,sripanidkulchai2010clouds}.
+Since these optimizers are expensive to run,
+applying them independently to workloads requires
+significant measurement cost and
+long optimization process.
+In this chapter, we optimize a batch of workloads altogether.
+
+This kind of collective optimization is impossible if
+workloads execute very differently on different cloud configurations.
+Prior work reports there does not exist an one-size-fits-all VM type that is best for all workloads~\cite{Alipourfard2017, Yadwadkar2017, Hsu2018Arrow}.
+However, while analyzing the data from our large empirical study involving three different software systems and over 100 workloads, we noticed that there does exist at least a cloud configuration (\eg{m4.large}), which performs satisfactorily
+for the majority of workloads.
+If the above is prevalent in cloud computing,
+it should be possible to simplify collective optimization.
+In this chapter, we exploit this phenomenon in order to further reduce optimization cost.
+
+
+We call such a cloud configuration \textit{Exemplar Configuration}, which is near-optimal or satisfactory for the majority of workloads.
+In our empirical study, the exemplar configuration is only 5-20\% slower or more expensive than the optimal choice.
+In any cloud optimizer, there exists a trade-off between search performance (how far a choice is from the optimal) and measurement cost (how many tests an optimizer requires to find a suitable configuration).
+With the exemplar configuration,
+we can trade a slight decrease in search performance for a large reduction in measurement cost because
+redundant efforts can be reduced in collective optimization.
+When optimizing a group of workloads,
+such trade-off not only brings significant cost reduction but also shortens the optimization process as well as the migration procedure.
+However, finding such an exemplar configuration is not straightforward because it depends on workloads and performance objectives.
+Moreover, as cloud providers expand their cloud portfolio, the exemplar configuration is also likely to change.
+In this chapter, we focus on finding out this exemplar configuration efficiently.
+
+To this end, we propose and evaluate a collective optimization method, \micky\footnote{Micky (Rosa) is a  character, from the Hollywood movie 21, who founded the MIT Black Jack team of card counters.}, which enables users to deploy a group (not one) of workloads to the cloud more efficiently (lower measurement cost).
+We reformulate ``finding the exemplar configuration'' as the multi-armed bandit problem~\cite{weber1992gittins,bergemann2006bandit,audibert2011introduction,dambreville2017load,jiang2017pytheas}.
+The two problems are similar because
+the bandit problem aims to maximize rewards (\micky, for example, minimizes execution time or operational cost) in a series of decisions (to run a workload on a cloud configuration), each is associated with an unknown payoff and a known opportunity loss (whether the decision meets the performance objective).
+Our evaluation shows that \micky can find the exemplar configuration using only 12\% of the total effort compared to a sophisticated single-optimizer.
+This cooperative style of search methods ensures that users do not need to optimize each workload separately; instead, finds the exemplar cloud configuration collectively, thereby reducing measurement cost. 
+
+\micky finds a configuration that is near-optimal for the majority of workloads.
+But the chosen configuration could perform unacceptably for some workloads.
+To remedy this issue,
+we integrate our previously built system \scout
+to identify sub-optimal cases~\cite{Hsu2018Scout}.
+This enables elaborate optimization for unsatisfactory workloads if strict performance is required.
+
+We demonstrate the effectiveness of \micky by evaluating it on 107 real-world workloads (using three popular software systems) and show that \micky can find near-optimal cloud configurations by using only a fraction (12\%) of the measurement cost used by the state of the art methods, at the expense of less optimal choices.
+There is always a trade-off between search performance and measurement cost.
+Based on our evaluation,
+we advise users not to use \micky
+only when the same workloads will repeat  more than tens of runs (\ie{30 times} using our analysis) .
+To deploy a batch of workloads to cloud,
+we believe \micky is more desirable than state-of-the-art methods
+because the higher number of recurrence would certainly
+limit the applicability of cloud optimization.
+Furthermore, those sub-optimal choices can be eliminated
+through the integration between \micky and \scout,
+thereby creating a more robust solution.

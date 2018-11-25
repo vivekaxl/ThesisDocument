@@ -1,0 +1,222 @@
+\section{Towards Efficient Resource Recommendation}
+\label{sec:future_work}
+
+This section presents our proposed research in search for
+cost-effective cloud configurations.
+
+\subsection{Configuration Space}
+IaaS allows on to choose compute, storage and networking types
+at different costs.
+We primarily focus Amazon Web Service (AWS)~\cite{AmazonEC2}, but
+our approach should be able to apply to other cloud platforms such as
+Microsoft Azure and Google Cloud Platform.
+Since there are many combinations and
+the initial focus is
+the \emph{scale-up} and \emph{scale-out} scenarios.
+
+In the \emph{scale-up} scenario, users can choose a configuration from
+the instance family such as \emph{m4} and \emph{c4},
+and
+the instance size such as \emph{large} and \emph{2xlarge}.
+\mytable{\ref{tab:ec2_types}} lists parts of supported virtual machines on AWS.
+There is a wide range of resource choices as well as costs.
+
+\input{Chapter-8/tables/ec2.tex}
+
+The \emph{scale-out} capability is critical for supporting large-scale problems.
+Applications are able to complete in a shorter time by using
+more machines.
+For example, the \emph{MapReduce} programming model~\cite{DeanJ2004_MapReduce}
+is highly scalable
+because the I/O operations per node remains constant
+as the number of machines increases.
+A larger cluster size usually means shorter execution time but
+comes with a higher resource cost.
+
+
+\subsection{Low-Level Performance Metrics}
+
+Low-level performance metrics are good indicators for
+analyzing application performance.
+There are many possible metrics can be used for application characterization.
+We choose \emph{β} and \emph{MPO} to understand whether an application
+is CPU bound or memory bound~~\cite{Freeh2007}.
+These two metrics are particularly useful in the scale-up scenario
+because adding more memory is more beneficial to a memory bound application
+but not CPU bound one.
+
+Low-level performance metrics such as
+CPU utilization, disk I/O, network throughput
+are general metrics and easy to collect from operating systems.
+In our previous work, we have shown that such low-level metrics
+can be used to estimate end-to-end performance of
+distributed storage systems~\cite{Hsu2016}.
+By leveraging our proposed modeling approach, we are able to predict
+application performance with different resource configurations.
+
+
+
+\subsection{Search Algorithms}
+
+Since the configuration space is very large and
+exhaustive search is not feasible,
+an efficient search algorithms that eliminate the number of evaluations
+is central to configuration recommendation.
+We introduce popular search methods for finding the best configurations.
+
+\paragraph*{Random Search}
+This method randomly pick configuration to evaluate.
+However, this simplest method is not ideal because
+it does not guarantee the outcome.
+Furthermore, evaluation cost is very expensive.
+Therefore, we will need a more sophisticated and efficient search method.
+
+\paragraph*{Coordinate Descent}
+The coordinate descent is a simple search algorithm that
+finds the best point along one dimension.
+A significant drawback is it can get stuck at a non-stationary point
+that yields a local maximum or minimum.
+When there are multiple dimensions, as in our case, this search algorithm
+might become insufficient~\cite{Alipourfard2017}.
+
+
+\paragraph*{Evolutionary Algorithm}
+This algorithm is inspired by biological processes such as
+reproduction, mutation, recombination, and selection.
+Evolutionary algorithm is generally performs well because
+it does not use any assumption for the underlying fitting landscape
+~\cite{Bergstra2011}.
+However, evolutionary algorithm requires large evaluations for effective search.
+Therefore, this method might not be appropriate for our scenario.
+
+
+\paragraph*{Bayesian Optimization}
+Bayesian optimization has been proved to be an efficient framework
+of searching the best parameters and configurations
+that are expensive to evaluate
+~\cite{Klein2016, Alipourfard2017}.
+Bayesian optimization is an instance of sequential model-based optimization,
+and  often comes with the Gaussian Process
+as a surrogate for modeling the objective function
+(\emph{cost} and \emph{time} in our problems).
+Acquisition function defines the balance between
+exploring new configurations for avoiding local optimal
+and
+exploiting points for faster converge.
+
+
+
+\subsection{Guided Search with Expert Knowledge}
+
+Previous search algorithms focus solely on the configuration space.
+We argue that the search algorithms can be augmented
+by leveraging low-level system performance metrics.
+Low-level performance metrics
+such as CPU utilization and page faults are good indicators
+to measuring the bottleneck resources.
+For example, when we see an application is memory bound and
+we also find the application spend large portion of time on memory access,
+a configuration with large memory size may have a higher chance to improve
+application performance.
+Therefore, we can use low-level performance metrics
+to distinguish bottleneck resources (limiting factors)
+and
+unsaturated resources (do not need to scale up).
+
+In a real world application, domain experts collect
+a great number of performance metrics for understanding application behavior.
+We argue that this process can be automated and thereby can be integrated
+to existing search algorithms.
+We plan to leverage Bayesian optimization and expert knowledge
+for finding out the most cost-effective configurations
+in a more efficient way.
+
+
+\iffalse
+  - Our approach leverage Bayesian Optimization and expert's knowledge
+  - Bayesian optimization to reduce evaluation cost {[}CherryPick{]}
+  - Expert's strategy (low-level performance metrcis) {[}FABOLAS,
+  Inside-Out{]}
+  - (Saturated resources) Limiting factors needs to be identified
+  - (Unsaturated resources) are not that important
+  - CDP inforation for knowing the trade-off (exploration or exploitation)
+\fi
+
+
+\iffalse
+\begin{itemize}
+\item
+  Show the wide range of AWS configurations
+\end{itemize}
+
+\paragraph{3.2 Low-Level Performance
+Metrics}\label{low-level-performance-metrics}
+
+\begin{itemize}
+\item
+  β: CPU bound
+\item
+  MPO: memory bound
+\item
+  Inside-Out shows low-level performance metrics are a good proxy for
+  measuring end-to-end performance of a distributed storage systems
+\end{itemize}
+
+\paragraph{3.3 Data-Driven Modeling
+Approach}\label{data-driven-modeling-approach}
+
+\begin{itemize}
+\item
+  Regression-based Approach
+\item
+  Classification Approach
+\item
+  Behavior pattern
+\item
+  Anamoly detection
+\item
+  Deep Learning
+\end{itemize}
+
+\paragraph{3.4 Search Optimization}\label{search-optimization}
+
+\begin{itemize}
+\item
+  Random Search
+\item
+  Coordinate Descent
+\item
+  May face local minimum or maximum
+\item
+  Evolutionary Algorithm (EA)
+\item
+  Bayesian Optimization (BO)
+\end{itemize}
+
+\paragraph{3.5 Guided Search with Expert
+Knowledge}\label{guided-search-with-expert-knowledge}
+
+\begin{itemize}
+\item
+  Previous search algorithms focus on hyperparameters or solely
+  configurations. We argue that the search algorithms can be augmented
+  by leveing low-level system performance metrics.
+\item
+  Our approach leverage Bayesian Optimization and expert's knowledge
+\item
+  Bayesian optimization to reduce evaluation cost {[}CherryPick{]}
+\item
+  Expert's strategy (low-level performance metrcis) {[}FABOLAS,
+  Inside-Out{]}
+
+  \begin{itemize}
+  \item
+    (Saturated resources) Limiting factors needs to be identified
+  \item
+    (Unsaturated resources) are not that important
+  \item
+    CDP inforation for knowing the trade-off (exploration or
+    exploitation)
+  \end{itemize}
+\end{itemize}
+\fi

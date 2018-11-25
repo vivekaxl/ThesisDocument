@@ -1,0 +1,275 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {chapter}{\numberline {6}Scout: System Design and Implementation}{65}{chapter.6}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\defcounter {refsection}{0}\relax }\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chapter:scout}{{6}{65}{Scout: System Design and Implementation}{chapter.6}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {6.1}Introduction}{65}{section.6.1}}
+\newlabel{sec:introduction}{{6.1}{65}{Introduction}{section.6.1}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {6.2}Design Choices}{66}{section.6.2}}
+\newlabel{sec:design}{{6.2}{66}{Design Choices}{section.6.2}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces  \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip { \textbf  {An overall comparison with other CAT methods.} A search-based method better tolerates prediction bias. Relative ordering better captures the workload-architecture-performance relationship. Leveraging low-level metrics improves search performance. Historical data helps eliminate unnecessary exploration overhead in a search. Transfer learning greatly reduces search cost.} \relax }}{67}{figure.caption.43}}
+\newlabel{fig:model_classification}{{6.1}{67}{\small { \textbf {An overall comparison with other CAT methods.} A search-based method better tolerates prediction bias. Relative ordering better captures the workload-architecture-performance relationship. Leveraging low-level metrics improves search performance. Historical data helps eliminate unnecessary exploration overhead in a search. Transfer learning greatly reduces search cost.} \relax }{figure.caption.43}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {6.3}From Observation to Action}{68}{section.6.3}}
+\newlabel{sec:approach}{{6.3}{68}{From Observation to Action}{section.6.3}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.1}Exploration vs. Exploitation}{68}{subsection.6.3.1}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.2}Core Techniques}{69}{subsection.6.3.2}}
+\newlabel{eq:1}{{6.1}{69}{}{equation.6.3.1}{}}
+\newlabel{eq:2}{{6.2}{70}{}{equation.6.3.2}{}}
+\newlabel{eq:3}{{6.3}{70}{}{equation.6.3.3}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces \textbf  {On the model selection of predicting the next step.} We evaluate the ability to distinguish a good and a bad configuration. In regression, we test rank preserving as prediction accuracy\nobreakspace  {}\parencite {nair2017}.\relax }}{71}{figure.caption.44}}
+\newlabel{fig:reg_clas}{{6.2}{71}{\textbf {On the model selection of predicting the next step.} We evaluate the ability to distinguish a good and a bad configuration. In regression, we test rank preserving as prediction accuracy~\cite {nair2017}.\relax }{figure.caption.44}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.3}Search Hints}{71}{subsection.6.3.3}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.4}Search Strategy}{72}{subsection.6.3.4}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.5}Putting It All Together}{72}{subsection.6.3.5}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {6.4}Implementation}{73}{section.6.4}}
+\newlabel{sec:system}{{6.4}{73}{Implementation}{section.6.4}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf  {{\sc  Scout}\xspace  's implementation.} }\relax }}{73}{figure.caption.45}}
+\newlabel{fig:system_design}{{6.3}{73}{\small {\textbf {\scout 's implementation.} }\relax }{figure.caption.45}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {6.5}Evaluation}{74}{section.6.5}}
+\newlabel{sec:evaluation}{{6.5}{74}{Evaluation}{section.6.5}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {6.5.1}Experiment Setup}{74}{subsection.6.5.1}}
+\newlabel{sec:setup}{{6.5.1}{74}{Experiment Setup}{subsection.6.5.1}{}}
+\newlabel{fig:single_time_overall_performance}{{6.4a}{75}{Search Performance\relax }{figure.caption.46}{}}
+\newlabel{sub@fig:single_time_overall_performance}{{a}{75}{Search Performance\relax }{figure.caption.46}{}}
+\newlabel{fig:single_time_overall_steps}{{6.4b}{75}{Search Cost\relax }{figure.caption.46}{}}
+\newlabel{sub@fig:single_time_overall_steps}{{b}{75}{Search Cost\relax }{figure.caption.46}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf  {Minimizing Execution Time.} The \emph  {x-axis} represents the normalized performance (to the optimal configuration), and the optimal performance is $1$. {\sc  Scout}\xspace  finds the near-optimal solutions ($< 1.1$) in 87\% workloads while using much fewer steps.}\relax }}{75}{figure.caption.46}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {a}{\ignorespaces Search Performance\relax }}{75}{figure.caption.46}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {b}{\ignorespaces Search Cost\relax }}{75}{figure.caption.46}}
+\newlabel{fig:single_time_overall}{{6.4}{75}{\small {\textbf {Minimizing Execution Time.} The \emph {x-axis} represents the normalized performance (to the optimal configuration), and the optimal performance is $1$. \scout finds the near-optimal solutions ($< 1.1$) in 87\% workloads while using much fewer steps.}\relax }{figure.caption.46}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {6.5.2}Comparison Method}{75}{subsection.6.5.2}}
+\newlabel{fig:single_cost_overall_performance}{{6.5a}{76}{Search Performance\relax }{figure.caption.47}{}}
+\newlabel{sub@fig:single_cost_overall_performance}{{a}{76}{Search Performance\relax }{figure.caption.47}{}}
+\newlabel{fig:single_cost_overall_steps}{{6.5b}{76}{Search Cost\relax }{figure.caption.47}{}}
+\newlabel{sub@fig:single_cost_overall_steps}{{b}{76}{Search Cost\relax }{figure.caption.47}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {6.5}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf  {Minimizing Running Cost.} Searching for the optimal cost is more difficult because the search cost is higher than the scenario of minimizing execution time. {\sc  Scout}\xspace  still finds near-optimal solutions with a small increase in search cost while \emph  {CherryPick} only finds near-optimal solutions in about 50\% workloads.}\relax }}{76}{figure.caption.47}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {a}{\ignorespaces Search Performance\relax }}{76}{figure.caption.47}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {b}{\ignorespaces Search Cost\relax }}{76}{figure.caption.47}}
+\newlabel{fig:single_cost_overall}{{6.5}{76}{\small {\textbf {Minimizing Running Cost.} Searching for the optimal cost is more difficult because the search cost is higher than the scenario of minimizing execution time. \scout still finds near-optimal solutions with a small increase in search cost while \emph {CherryPick} only finds near-optimal solutions in about 50\% workloads.}\relax }{figure.caption.47}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {6.6}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf  {Quality of found solutions.} Although both \emph  {CherryPick} and {\sc  Scout}\xspace  find the near optimal-solutions in most of the time, {\sc  Scout}\xspace  is less fragile.} \relax }}{77}{figure.caption.48}}
+\newlabel{fig:single_fragility}{{6.6}{77}{\small {\textbf {Quality of found solutions.} Although both \emph {CherryPick} and \scout find the near optimal-solutions in most of the time, \scout is less fragile.} \relax }{figure.caption.48}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {6.5.3}Is Scout effective and efficient?}{77}{subsection.6.5.3}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {6.7}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf  {Stopping awareness.} Search optimization avoids unnecessary search cost if it knows when the optimal solution is found. }\relax }}{78}{figure.caption.49}}
+\newlabel{fig:single_startingpoint}{{6.7}{78}{\small {\textbf {Stopping awareness.} Search optimization avoids unnecessary search cost if it knows when the optimal solution is found. }\relax }{figure.caption.49}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {6.8}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf  {Convergence speed.} {\sc  Scout}\xspace  finds a better solution with 25\% improvement (on average) at each iteration, which suggests {\sc  Scout}\xspace  is more likely to converge.}\relax }}{78}{figure.caption.50}}
+\newlabel{fig:search_convergence}{{6.8}{78}{\small {\textbf {Convergence speed.} \scout finds a better solution with 25\% improvement (on average) at each iteration, which suggests \scout is more likely to converge.}\relax }{figure.caption.50}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {6.5.4}Is {\sc  Scout}\xspace  reliable?}{80}{subsection.6.5.4}}
+\newlabel{fig:comparison_time_cherrypick}{{6.9a}{80}{\cherrypick \relax }{figure.caption.51}{}}
+\newlabel{sub@fig:comparison_time_cherrypick}{{a}{80}{\cherrypick \relax }{figure.caption.51}{}}
+\newlabel{fig:comparison_time_scout}{{6.9b}{80}{\scout \relax }{figure.caption.51}{}}
+\newlabel{sub@fig:comparison_time_scout}{{b}{80}{\scout \relax }{figure.caption.51}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {6.9}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf  {Finding the fastest configuration for PageRank on Hadoop.} Left \& right sub-figure show the search path of CherryPick and {\sc  Scout}\xspace  respectively. {\sc  Scout}\xspace  identifies PageRank as a compute-intensive workload. It chooses the configurations with higher core counts and CPU speed.}\relax }}{80}{figure.caption.51}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {a}{\ignorespaces \textit  {CherryPick}\xspace  \relax }}{80}{figure.caption.51}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {b}{\ignorespaces {\sc  Scout}\xspace  \relax }}{80}{figure.caption.51}}
+\newlabel{fig:compare_1}{{6.9}{80}{\small {\textbf {Finding the fastest configuration for PageRank on Hadoop.} Left \& right sub-figure show the search path of CherryPick and \scout respectively. \scout identifies PageRank as a compute-intensive workload. It chooses the configurations with higher core counts and CPU speed.}\relax }{figure.caption.51}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {6.5.5}Why {\sc  Scout}\xspace  works better?}{81}{subsection.6.5.5}}
+\newlabel{sec:why_better}{{6.5.5}{81}{Why \scout works better?}{subsection.6.5.5}{}}
+\newlabel{fig:comparison_cost_cherrypick}{{6.10a}{82}{\cherrypick \relax }{figure.caption.52}{}}
+\newlabel{sub@fig:comparison_cost_cherrypick}{{a}{82}{\cherrypick \relax }{figure.caption.52}{}}
+\newlabel{fig:comparison_cost_scout}{{6.10b}{82}{\scout \relax }{figure.caption.52}{}}
+\newlabel{sub@fig:comparison_cost_scout}{{b}{82}{\scout \relax }{figure.caption.52}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {6.10}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf  {Minimizing the running cost for Naive-Bayes on Spark.} This is a memory-intensive workload. {\sc  Scout}\xspace  does not even try the \emph  {c4} family due to its small memory per core.}\relax }}{82}{figure.caption.52}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {a}{\ignorespaces \textit  {CherryPick}\xspace  \relax }}{82}{figure.caption.52}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {b}{\ignorespaces {\sc  Scout}\xspace  \relax }}{82}{figure.caption.52}}
+\newlabel{fig:compare_4}{{6.10}{82}{\small {\textbf {Minimizing the running cost for Naive-Bayes on Spark.} This is a memory-intensive workload. \scout does not even try the \emph {c4} family due to its small memory per core.}\relax }{figure.caption.52}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {6.5.6}Example Search Process}{82}{subsection.6.5.6}}
+\newlabel{fig:search_time_cherrypick}{{6.11a}{83}{\cherrypick \relax }{figure.caption.53}{}}
+\newlabel{sub@fig:search_time_cherrypick}{{a}{83}{\cherrypick \relax }{figure.caption.53}{}}
+\newlabel{fig:search_time_scout}{{6.11b}{83}{\scout \relax }{figure.caption.53}{}}
+\newlabel{sub@fig:search_time_scout}{{b}{83}{\scout \relax }{figure.caption.53}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {6.11}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf  {Minimizing execution time of Regression on Spark.} Since the Regression workload requires both computation and large memory, {\sc  Scout}\xspace  directly chooses configurations with the \emph  {r4} family and larger cores.}\relax }}{83}{figure.caption.53}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {a}{\ignorespaces \textit  {CherryPick}\xspace  \relax }}{83}{figure.caption.53}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {b}{\ignorespaces {\sc  Scout}\xspace  \relax }}{83}{figure.caption.53}}
+\newlabel{fig:compare_2}{{6.11}{83}{\small {\textbf {Minimizing execution time of Regression on Spark.} Since the Regression workload requires both computation and large memory, \scout directly chooses configurations with the \emph {r4} family and larger cores.}\relax }{figure.caption.53}{}}
+\newlabel{fig:search_cost_cherrypick}{{6.12a}{84}{\cherrypick \relax }{figure.caption.54}{}}
+\newlabel{sub@fig:search_cost_cherrypick}{{a}{84}{\cherrypick \relax }{figure.caption.54}{}}
+\newlabel{fig:search_cost_scout}{{6.12b}{84}{\scout \relax }{figure.caption.54}{}}
+\newlabel{sub@fig:search_cost_scout}{{b}{84}{\scout \relax }{figure.caption.54}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {6.12}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf  {Finding the cheapest configuration for Terasort on Hadoop.} The Terasort workload requires enough memory to avoid spilling data to disks. Besides, a large cluster can be insufficient due to the shuffle phase in MapReduce. {\sc  Scout}\xspace  chooses a smaller cluster with the general-purpose VM type. }\relax }}{84}{figure.caption.54}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {a}{\ignorespaces \textit  {CherryPick}\xspace  \relax }}{84}{figure.caption.54}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {b}{\ignorespaces {\sc  Scout}\xspace  \relax }}{84}{figure.caption.54}}
+\newlabel{fig:compare_3}{{6.12}{84}{\small {\textbf {Finding the cheapest configuration for Terasort on Hadoop.} The Terasort workload requires enough memory to avoid spilling data to disks. Besides, a large cluster can be insufficient due to the shuffle phase in MapReduce. \scout chooses a smaller cluster with the general-purpose VM type. }\relax }{figure.caption.54}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {6.6}Discussion}{85}{section.6.6}}
+\newlabel{sec:discussion}{{6.6}{85}{Discussion}{section.6.6}{}}
+\newlabel{fig:single_cost_tuning_threshold_performance}{{6.13a}{85}{Search Performance\relax }{figure.caption.55}{}}
+\newlabel{sub@fig:single_cost_tuning_threshold_performance}{{a}{85}{Search Performance\relax }{figure.caption.55}{}}
+\newlabel{fig:single_cost_tuning_threshold_steps}{{6.13b}{85}{Search Cost\relax }{figure.caption.55}{}}
+\newlabel{sub@fig:single_cost_tuning_threshold_steps}{{b}{85}{Search Cost\relax }{figure.caption.55}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {6.13}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf  {Tuning the probability threshold.} A smaller threshold generates a longer search path but ensures better search performance.}\relax }}{85}{figure.caption.55}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {a}{\ignorespaces Search Performance\relax }}{85}{figure.caption.55}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {b}{\ignorespaces Search Cost\relax }}{85}{figure.caption.55}}
+\newlabel{fig:single_probability_threshold}{{6.13}{85}{\small {\textbf {Tuning the probability threshold.} A smaller threshold generates a longer search path but ensures better search performance.}\relax }{figure.caption.55}{}}
+\newlabel{fig:single_cost_tuning_tolerance_performance}{{6.14a}{86}{Search Performance\relax }{figure.caption.56}{}}
+\newlabel{sub@fig:single_cost_tuning_tolerance_performance}{{a}{86}{Search Performance\relax }{figure.caption.56}{}}
+\newlabel{fig:single_cost_tuning_tolerance_performance}{{6.14b}{86}{Search Cost\relax }{figure.caption.56}{}}
+\newlabel{sub@fig:single_cost_tuning_tolerance_performance}{{b}{86}{Search Cost\relax }{figure.caption.56}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {6.14}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf  {Tuning the misprediction tolerance.} A higher tolerance to mispredictions generates higher search cost.}\relax }}{86}{figure.caption.56}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {a}{\ignorespaces Search Performance\relax }}{86}{figure.caption.56}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {b}{\ignorespaces Search Cost\relax }}{86}{figure.caption.56}}
+\newlabel{fig:single_misprediction_tolerance}{{6.14}{86}{\small {\textbf {Tuning the misprediction tolerance.} A higher tolerance to mispredictions generates higher search cost.}\relax }{figure.caption.56}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {6.15}{\ignorespaces \textbf  {Universal performance models.} Training data form multiple systems improves prediction.\relax }}{87}{figure.caption.57}}
+\newlabel{fig:prediction_accuracy_comparison}{{6.15}{87}{\textbf {Universal performance models.} Training data form multiple systems improves prediction.\relax }{figure.caption.57}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {6.7}Conclusion}{87}{section.6.7}}
+\newlabel{sec:conclusion}{{6.7}{87}{Conclusion}{section.6.7}{}}
+\@setckpt{Chapter-Scout/main}{
+\setcounter{page}{88}
+\setcounter{equation}{3}
+\setcounter{enumi}{4}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{6}
+\setcounter{section}{7}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{15}
+\setcounter{table}{0}
+\setcounter{lofdepth}{1}
+\setcounter{lotdepth}{1}
+\setcounter{r@tfl@t}{0}
+\setcounter{cp@cntr}{0}
+\setcounter{ContinuedFloat}{0}
+\setcounter{chapter@totc}{9}
+\setcounter{parentequation}{0}
+\setcounter{lips@count}{0}
+\setcounter{ALC@unique}{13}
+\setcounter{ALC@line}{13}
+\setcounter{ALC@rem}{0}
+\setcounter{ALC@depth}{0}
+\setcounter{AlgoLine}{8}
+\setcounter{algocfline}{4}
+\setcounter{algocfproc}{4}
+\setcounter{algocf}{4}
+\setcounter{subfigure}{0}
+\setcounter{subtable}{0}
+\setcounter{tabx@nest}{0}
+\setcounter{listtotal}{0}
+\setcounter{listcount}{0}
+\setcounter{liststart}{0}
+\setcounter{liststop}{0}
+\setcounter{citecount}{0}
+\setcounter{citetotal}{0}
+\setcounter{multicitecount}{0}
+\setcounter{multicitetotal}{0}
+\setcounter{instcount}{299}
+\setcounter{maxnames}{2}
+\setcounter{minnames}{1}
+\setcounter{maxitems}{3}
+\setcounter{minitems}{1}
+\setcounter{citecounter}{0}
+\setcounter{savedcitecounter}{0}
+\setcounter{uniquelist}{0}
+\setcounter{uniquename}{0}
+\setcounter{refsection}{0}
+\setcounter{refsegment}{0}
+\setcounter{maxextrayear}{0}
+\setcounter{maxextraalpha}{0}
+\setcounter{abbrvpenalty}{50}
+\setcounter{highnamepenalty}{50}
+\setcounter{lownamepenalty}{25}
+\setcounter{maxparens}{3}
+\setcounter{parenlevel}{0}
+\setcounter{mincomprange}{10}
+\setcounter{maxcomprange}{100000}
+\setcounter{mincompwidth}{1}
+\setcounter{labelname}{0}
+\setcounter{savedlabelname}{0}
+\setcounter{author}{0}
+\setcounter{savedauthor}{0}
+\setcounter{shortauthor}{0}
+\setcounter{savedshortauthor}{0}
+\setcounter{editor}{0}
+\setcounter{savededitor}{0}
+\setcounter{editora}{0}
+\setcounter{savededitora}{0}
+\setcounter{editorb}{0}
+\setcounter{savededitorb}{0}
+\setcounter{editorc}{0}
+\setcounter{savededitorc}{0}
+\setcounter{shorteditor}{0}
+\setcounter{savedshorteditor}{0}
+\setcounter{bookauthor}{0}
+\setcounter{savedbookauthor}{0}
+\setcounter{translator}{0}
+\setcounter{savedtranslator}{0}
+\setcounter{annotator}{0}
+\setcounter{savedannotator}{0}
+\setcounter{commentator}{0}
+\setcounter{savedcommentator}{0}
+\setcounter{introduction}{0}
+\setcounter{savedintroduction}{0}
+\setcounter{foreword}{0}
+\setcounter{savedforeword}{0}
+\setcounter{afterword}{0}
+\setcounter{savedafterword}{0}
+\setcounter{holder}{0}
+\setcounter{savedholder}{0}
+\setcounter{namea}{0}
+\setcounter{savednamea}{0}
+\setcounter{nameb}{0}
+\setcounter{savednameb}{0}
+\setcounter{namec}{0}
+\setcounter{savednamec}{0}
+\setcounter{institution}{0}
+\setcounter{savedinstitution}{0}
+\setcounter{language}{0}
+\setcounter{savedlanguage}{0}
+\setcounter{location}{0}
+\setcounter{savedlocation}{0}
+\setcounter{organization}{0}
+\setcounter{savedorganization}{0}
+\setcounter{origlocation}{0}
+\setcounter{savedoriglocation}{0}
+\setcounter{origpublisher}{0}
+\setcounter{savedorigpublisher}{0}
+\setcounter{pageref}{0}
+\setcounter{savedpageref}{0}
+\setcounter{publisher}{0}
+\setcounter{savedpublisher}{0}
+\setcounter{lista}{0}
+\setcounter{savedlista}{0}
+\setcounter{listb}{0}
+\setcounter{savedlistb}{0}
+\setcounter{listc}{0}
+\setcounter{savedlistc}{0}
+\setcounter{listd}{0}
+\setcounter{savedlistd}{0}
+\setcounter{liste}{0}
+\setcounter{savedliste}{0}
+\setcounter{listf}{0}
+\setcounter{savedlistf}{0}
+\setcounter{textcitecount}{0}
+\setcounter{textcitetotal}{0}
+\setcounter{textcitemaxnames}{0}
+\setcounter{biburlnumpenalty}{0}
+\setcounter{biburlucpenalty}{0}
+\setcounter{biburllcpenalty}{0}
+\setcounter{smartand}{1}
+\setcounter{bbx:relatedcount}{0}
+\setcounter{bbx:relatedtotal}{0}
+\setcounter{cbx@tempcnta}{0}
+\setcounter{cbx@tempcntb}{62}
+\setcounter{tm@util}{0}
+\setcounter{List1}{0}
+\setcounter{List2}{0}
+\setcounter{List3}{0}
+\setcounter{List4}{0}
+\setcounter{List5}{0}
+\setcounter{List6}{0}
+\setcounter{List7}{0}
+\setcounter{List8}{0}
+\setcounter{List9}{0}
+\setcounter{List10}{0}
+\setcounter{Item}{9}
+\setcounter{Hfootnote}{3}
+\setcounter{bookmark@seq@number}{71}
+\setcounter{ncsu@appendixtocdepth}{2}
+\setcounter{section@level}{0}
+}

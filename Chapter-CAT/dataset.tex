@@ -1,0 +1,41 @@
+\section{Open Performance Data}
+\label{sec:cat::dataset}
+
+To evaluate a \cat method,
+we need large-scale performance dataset---evaluating diverse workloads on different architectural choices.
+We conducted a large-scale evaluation using different workloads and software systems on Amazon Web Services (AWS)~\cite{aws}.
+We choose Apache Hadoop (version 2.7) and Apache Spark (version 1.5 and 2.1) as our software system~\cite{hadoop, spark}.
+Our evaluation includes data processing, OLAP queries, and machine learning, which are popular applications on Hadoop and Spark.
+We choose 18 VMs and run the 30 applications on them. \mytable{\ref{tab:dataset}} lists all the software systems and
+applications.
+
+
+
+\input{Chapter-CAT/tables/dataset}
+
+
+We also vary the input size or input parameters to the applications for creating diverse workloads~\cite{Dalibard2017}.
+When workloads are different, the optimal VM type (even for the same application) might change as well.
+%Consequently, the optimal VM type for a given workload with different inputs might also change.
+% Throughout this paper, we use workloads to represent applications with different inputs.
+By running workloads with different data sizes, we can observe whether a particular VM can sustain increasing resource requirements (of a workload).
+Our motivation (for the large-scale study) was to diversify the workloads such that we can extensively benchmark VMs.
+In this study, each workload is tested with three different inputs sizes.
+Some tests failed because smaller VM instances run out of memory.
+Those are excluded in our data set.
+In total, we measure the performance and collect the low-level information of 107 workloads on 18 different VM types.
+We also collect 18 workloads on 69 multi-node configurations.
+\mytable{\ref{tab:dataset_overview}} summarizes the dataset collection.
+
+\input{Chapter-CAT/tables/dataset_overview.tex}
+
+
+Performance optimization requires continuous efforts
+to keep up with the rapid pace of cloud computing.
+In our experience, performance data is hard to find.
+A lack of performance data discourages the advances
+in system performance research.
+We believe that we will see advances in performance optimization
+by sharing performance data.
+Our large-scale performance dataset is available at
+\url{https://github.com/oxhead/scout}.

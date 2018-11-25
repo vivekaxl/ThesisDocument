@@ -1,0 +1,46 @@
+\section{Related Work}
+\label{ch4:sec:relatedwork}
+
+Storage performance modeling has been extensively explored in many prior works. 
+Three common modeling techniques are analytical, simulation and data-driven approaches \cite{Shriver1998, Kelly2004, Ardagna2014}.
+The analytical (mathematical) model requires domain knowledge to manually identify the factors that affect performance\cite{Shriver1998, Kelly2004}.
+Kelly et al. use a probability model to predict response time for an enterprise storage array.
+Ruemmler et al. found that a disk is too complex to model with analytical methods and designed a disk simulator to characterize storage behavior \cite{Ruemmler1994}.
+However, the simulation approach becomes inefficient when searching a large design space \cite{Kelly2004}.
+
+
+The data-driven or the measurement-based approach
+uses measurement data to derive a prediction model. 
+Wang et al. \cite{Wang2004} adopt classification-and-regression-tree (CART) to predict the response time of a single disk and a disk array.
+The authors propose request-level and workload-level device models for different prediction granularities.
+Yin et al. also use the regression tree to predict storage throughput and latency \cite{Yin2006}.
+Their work mainly focuses on multiple workloads, and proposes a scalable model, by combining related workload features.
+Noorshams et al. extensively analyze four different types of algorithms 
+(including linear regression and CART models) and apply to IBM storage servers \cite{Noorshams2013}.
+They also propose an optimization technique to search for parameters that can improve prediction accuracy.
+Their proposed parameter optimization complements our work for improving prediction accuracy.
+To sum up, Inside-Out uses only low-level performance metrics and does not require workload profiles and storage configurations.
+Unlike these studies, Inside-Out is primarily designed for diverse storage services that need to be reconfigured frequently to meet users' demand. 
+
+
+Mesnier et al. \cite{Mesnier2007} propose a novel black-box approach that can describe the performance difference between two storage devices.
+It may be possible to borrow this idea and apply it to the unseen configuration scenarios as described in Section \ref{sec:unseen_configuration}.
+With this approach, we can study the performance difference between two configurations and create a combined model with better prediction accuracy.
+Bodik et al. propose an exploration policy for quick collection of essential data required to train a performance model \cite{Bodik2009}.
+This policy can reduce the time required for offline and online model training.
+
+
+Chen et al. propose SLA decomposition that combines profiling and queuing model to derive resource thresholds for meeting application SLA \cite{Chen2007}.
+
+%SLA decomposition is used to determine the resource threshold that can meet a certain SLO \cite{Chen2007}.
+%In \cite{Chen2007}, the authors propose using component profiling to build a queuing network model for predicting end-to-end performance. 
+%Our black-box approach does not require domain knowledge.
+%Their work focuses on three-tier web applications and our focus is to create accurate performance models for software-defined storage.
+%Moreover, we consider more realistic cases such as unseen workload, different configurations, resource interference and varying cluster sizes.
+%% to add
+%% \cite{Madhyastha2012}
+
+Machine learning has also been applied to performance modeling for virtual machines (VMs).
+DeepDive uses the classification technique to detect performance anomaly among VMs \cite{Novakovic2013}.
+In \cite{Kundu2010}, the authors apply regression and artificial neural network to model performance of a single VM.
+Our work focuses on performance prediction of a distributed storage system that includes multiple software and hardware entities.

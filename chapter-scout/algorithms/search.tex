@@ -1,0 +1,22 @@
+\begin{algorithm}[htbp]
+{
+ \SetAlgoLined
+ \DontPrintSemicolon
+ \DontPrintSemicolon
+ %\KwIn{$f$, $\mathit{VM}$, $S$, $M$}
+ %\KwOut{The selected deployment configuration}
+ $W$ := the workload provided by a user\;
+ $S_{i}$ := An initial deployment\;
+
+ \While{does not meet stopping criteria}{
+   $S_j, P_j^{pred}$ := select the best from the better choices\;
+   $P_j, L_j$ := measure $W$ on $S_j$ and collect low-level metrics\;
+   $d$ := performance delta between the actual and predicted values, $\frac{(P_j - P_j^{pred})}{P_j^{pred}}$\;
+   adjust\_predictions($S_i$, $d$)\;
+   update\_routing\_table($S_j$, $P_j$)\;
+   $S_i$ := $S_j$\;
+ }
+ \caption{Guided Search}
+ \label{alg:search}
+ }
+\end{algorithm}

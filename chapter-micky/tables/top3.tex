@@ -1,0 +1,14 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[!htbp]
+\centering
+\caption{\textbf{The most cost-effective VM types  for 107 workloads recommended by \micky} The number above each column label represents normalized performance (to the optimal). CherryPick finds good ($< 1.2$) VM types in 86\% of workloads.}
+\label{table:top3}
+\begin{tabular}{@{}lp{2cm}p{2cm}p{2cm}p{2cm}p{2cm}@{}}
+\toprule
+& $= 1.0$ \newline \textbf{Optimal}   & $< 1.1$ \newline \textbf{Excellent} & $< 1.2$ \newline \textbf{Good} & $\le 1.4$ \newline \textbf{Tradeoff} & $> 1.4$ \newline \textbf{Unsettled}     \\ \midrule
+c4.large  & 48\%      & 61\% & 66\%      & 70\%        & 30\% \\
+m4.large  & 27\%      & 46\% & 71\%      & 84\%        & 16\% \\
+m4.xlarge & 9\%       & 15\% & 32\%      & 63\%        & 37\% \\ \bottomrule
+\end{tabular}
+\end{table}

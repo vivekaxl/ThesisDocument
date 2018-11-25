@@ -1,0 +1,215 @@
+\section{Introduction}
+\label{sec:introduction}
+
+\iffalse
++ Cloud computing shift costs from capital expenditure to operational
+  expense --- Pay-as-you-go model
+
++ Cloud computing (IaaS) is preferable than traditional computing for
+  running large-scale data processing applications
+  
+  - time and cost objective/constraints can vary over time
+
+  - Cluster configuration is made on each run of each application, e.g.,
+  batch processing routine
+  
+  - On the other hand, traditional computing lacks flexibility (total
+  capacity is fixed and determined at purchase) to choose cluster
+  configuration, i.e. \textbf{node type and number}
+
+  - Therefore, this additional flexibiility can and should be leveraged
+
+  - In particular, when minimum time is not an absolute, then cost becomes
+  a primary factor in optimization
+
+
++ IaaS allows one to trade time for cost, and vice versa
+  - Objectives (time and cost) define which configuration to select from
+  all
+
+  - Fastest: minimize time regardless of cost (this doesn't exist in
+    real world)
+  - Cheapest: minimize cost regardless of time (this doesn't exist in
+    real world)
+  - Deadline: minimize cost within deadline
+  - Time-cost tradeoff: willing to trade some amount of time (slowdown)
+  for a cost savings
+
+
+
++ The cost-time trade-off is not yet fully explored; mis-configurations
+  can lead to higher resource costs or longer execution time
+  
+  - Poor configuration increases cost by 2-3 times on average and 12 times
+  in the worst case {[}CherryPick{]}
+
+  - Least-squares solver (a key component in machine learning) shows 1.9
+  times slow down for different configurations at the same costs, and
+  matrix multiplication shows similar results {[}Ernest{]}
+
+  - PageRank shows at least 10 times cost for different configurations
+  with similar elapsed time (our evaluation)
+
+  - Web Log Analysis shows 4 times slow down with different configurations
+  with similiar costs (our evaluation)
+
+
++ However, choosing the \emph{best} configurations is not
+  straight-forward
+
+  - Non-linear relationship between performance and resource capability
+  (related to cost) {[}CherryPick{]}
+    * Diminishing return when memory size goes beyond a certain amount
+    (for certain applications)
+  
+  - Cost model is not monotonically inceasing or decreasing wrt. cluster
+  size (related to cost) {[}CherryPick{]}
+
+    * Expanding cluster size accelerates computation but also increases
+    price per unit of time
+  
+  - Application characteristics are very different
+
+    * Terasort on MapReduce is CPU bound and regression on Spark is memory
+    bound
+    
+  - Analytical modeling is difficult
+    
+    * Requires knowledge about the application characteristics, software
+    configurations and system architecture
+  
+    * Need to support diverse applications
+
+  - Exhaustive search is not feasible because configuration space is verly
+  large and evaluation of configurations is very expensive
+    
+    * The total number of supported instance types and sizes is large
+    * The cluster size can be arbitrarily large (1 to 100+)
+
+
+  
++ In this work, we aim to find out the most cost-effective
+  configurations, given time and cost constraints. This approach needs
+  to be effective (locating the \emph{best} configurations) and cheap
+  (requiring less evaluation costs).
+  
+  - First, we argue that \textbf{cost-delay product (CDP)} is a
+  straightforward way to define the tradeoff
+  
+  - CDP - time equal to cost: 5\% slowdown/5\% savings (1.05:0.95) same as
+  (1:1)
+
+  - CD\^{}2P - time more critical than cost (1.05:0.91) same as (1:1)
+
+  - C\^{}2DP - cost more critical than time (1.05:0.91) same as (1:1)
+
+  - There is no absolute minimum time (or cost): if 1\% faster cost 50\%
+  probably will choose slightly slower configuration.
+
++ In the future work, we plan to design an configuration recommendation
+  engine
+  - Use low-level performance metrics as expert knowledge
+  - Efficient search algorithms that leverage export knowledge
+
+\fi
+
+
+One significant component of \emph{cloud computing} is
+Infrastructure as a Service (IaaS), which allows one to lease and
+manage computing infrastructure.
+This infrastructure consists of virtual machines, operating systems,
+middleware, networking, storage, applications, and more.
+A primary benefit of IaaS is the infrastructure shifts costs from
+capital expenditure to operational expense---the
+\emph{pay-as-you-go} model.
+
+IaaS is preferable over traditional computing for running
+large-scale data processing applications.
+IaaS allows one to adjust cluster configuration on each run of each application
+for very different time and cost objectives
+while traditional computing lacks such flexibility
+to choose, for example, node types, and counts.
+Therefore, this additional flexibility can and should be leveraged.
+In particular, when minimum time is not an absolute, then cost becomes
+a primary factor in optimization.
+
+IaaS allows one to trade time for cost, and vice verse.
+\rone{
+Neither the \emph{fastest} nor the \emph{cheapest}
+\rtwo{
+is truly desired. (Not great but better than before.)
+}
+}That is, 
+\rtwo{
+rarely users are willing to double the cost for a marginal time decrease.
+}
+There is always a trade-off between \emph{cost} and \emph{time}.
+
+Choosing the \emph{best} configuration requires a thorough understanding
+of the time-cost trade-off in each application.
+Mis-configurations can lead to higher resource costs or longer execution time.
+\rtwo{Studies show that}
+a poor configuration can increase cost of running data processing jobs
+by 2-3 times on average and 12 times in the worst case~\cite{Alipourfard2017}.
+Similarly, an inappropriate configuration \rone{doubles the execution time}
+~\cite{Venkataraman2016}.
+Our preliminary evaluation also reveals that
+expensive configurations (powerful machines) do not necessarily
+improve performance
+and
+configurations with similar costs can yield very different execution time
+(see Section~\ref{sec:cdp}).
+
+However, choosing the \emph{best} configurations is not straightforward
+because there is no clear relationship between \emph{time} and \emph{cost}.
+Moreover, users have different goals and, therefore, different ideas about
+what is \emph{best}.
+Application performance, \emph{time}, is not linearly proportional to
+resource capability, \emph{cost}.
+A diminishing return of running time can happen when a increase in resource,
+e.g., memory, does not improve application performance~\cite{Alipourfard2017}.
+Moreover, the cost model is not monotonically increasing or decreasing
+with respect to the cluster size~\cite{Alipourfard2017}.
+Adding more resources might reduce execution time but it may also incur
+a higher or lower cost.
+Exhaustive search solves the above problem but it is not feasible because
+configuration space is very large and
+evaluation of a configuration is very expensive.
+
+In this work, we aim to find out the most cost-effective
+configurations, given time and cost constraints.
+This approach needs to be
+effective (locating the \emph{best} configurations) and
+cheap (requiring less evaluation costs).
+First, we argue that \textbf{cost-delay product (CDP)} is a
+straightforward way to define the time-cost trade-off in applications.
+We use the metric of cost $\times$ time for analyzing the trade-off.
+A smaller cost-delay value implies a cost-effective solution.
+$CDP$ places the same importance on time and cost.
+A 5\% slowdown with 5\% savings is an acceptable slower configuration.
+On the other hand, $CD^2P$ or $C^2DP$ are useful
+when \emph{time} or \emph{cost}
+are more critical respectively.
+When the time improvement is $1\%$ but it incurs $50\%$ increase in cost,
+users will probably choose the slower configuration.
+
+We plan to design an configuration recommendation engine
+that is able to find out the most cost-effective solution,
+given certain time and cost objectives.
+The state-of-the-art approaches try to so minimize
+the evaluation cost or search path in large configuration space.
+Ernest proposes using smaller dataset for building an accurate model
+that is able to estimate application performance
+with resource configurations~\cite{Venkataraman2016}.
+CherryPick, on the other hand, eliminates the total number of evaluation cost
+by using Bayesian Optimization to build reliable prediction model.
+None leverages low-level performance metrics
+for finding the cost-effective configurations.
+FABOLAS argues that Bayesian Optimization can be further improved by
+leveraging the expert's strategy~\cite{Klein2016}.
+Inside-Out shows that low-level performance metrics are a desirable proxy
+for measuring end-to-end performance of
+distributed storage systems~\cite{Hsu2016}.
+We believe low-level performance metrics can and should be leveraged
+as expert's knowledge for searching for
+the most cost-effective configurations on the cloud.

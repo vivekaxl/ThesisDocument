@@ -1,0 +1,243 @@
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{LIST OF TABLES}{ix}{section*.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{LIST OF FIGURES}{x}{section*.6}
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.0.1}Motivating Example}{2}{subsection.1.0.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Background and Related Work}{4}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Data-Intensive Computing}{4}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Storage Architecture for Data-Intensive Computing}{7}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Performance Prediction and Optimization}{9}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}Workload Characterization}{9}{subsection.2.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.2}Machine Learning}{9}{subsection.2.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.3}Low-Level Insights}{10}{subsection.2.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.4}Sequential Model-based Bayesian Optimization}{10}{subsection.2.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.5}Bayesian Optimization}{11}{subsection.2.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.6}Hyper-Parameter Tuning}{12}{subsection.2.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}End-to-End Performance Prediction for Cloud Storage}{14}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Introduction}{14}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Mapping from Low to High}{16}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}Important Considerations}{16}{subsection.3.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}Feature Selection}{17}{subsection.3.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.3}A Two-Level Approach}{19}{subsection.3.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}The Inside-Out Design}{19}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}Collecting and Pre-Processing Low-Level Metrics}{19}{subsection.3.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.1.1}Monitoring storage components}{20}{subsubsection.3.3.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.1.2}Data smoothing}{20}{subsubsection.3.3.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.1.3}Timestamp alignment}{20}{subsubsection.3.3.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.1.4}Feature transformation for a distributed storage system}{20}{subsubsection.3.3.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.2}Exploring Learning Methods}{21}{subsection.3.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.3}Two-level Training}{22}{subsection.3.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Evaluation}{22}{section.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.1}Setup}{22}{subsection.3.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.2}The Comparison Method}{23}{subsection.3.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.3}Baseline: Prediction Performance on Static Deployment}{25}{subsection.3.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.3.1}Can Inside-Out handle diverse workloads?}{25}{subsubsection.3.4.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.3.2}Can Inside-Out handle different system configurations?}{27}{subsubsection.3.4.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.4}Prediction Performance in a Multi-tenant Cloud}{29}{subsection.3.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.4.1}Elastic Storage (On-demand Scaling)}{29}{subsubsection.3.4.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.4.2}Multi-Tenancy}{29}{subsubsection.3.4.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.5}Online Self-Learning}{32}{subsection.3.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.6}Discussion}{32}{subsection.3.4.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Conclusion}{33}{section.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Cloud Architecture Tuning}{34}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Introduction}{34}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Open Performance Data}{35}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Challenges}{35}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}State-of-the-Art Approaches}{40}{section.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Problem Formalization}{41}{section.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.6}Time-Cost Trade-Offs}{43}{section.4.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.7}Conclusion}{45}{section.4.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Low-Level Augmented Bayesian Optimization}{47}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Introduction}{47}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}The Fragility Issue}{50}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Approach}{52}{section.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}Evaluation}{55}{section.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.1}Experimental Method}{55}{subsection.5.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.2}Comparison}{56}{subsection.5.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.5}Discussion}{58}{section.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.5.1}Bayesian Optimization in Practice}{58}{subsection.5.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.5.2}Time-Cost Trade-off}{60}{subsection.5.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.6}Hybrid Bayesian Optimization}{62}{section.5.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.7}Conclusion}{64}{section.5.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Scout: System Design and Implementation}{65}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Introduction}{65}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Design Choices}{66}{section.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}From Observation to Action}{68}{section.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.1}Exploration vs. Exploitation}{68}{subsection.6.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.2}Core Techniques}{69}{subsection.6.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.3}Search Hints}{71}{subsection.6.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.4}Search Strategy}{72}{subsection.6.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.5}Putting It All Together}{72}{subsection.6.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.4}Implementation}{73}{section.6.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.5}Evaluation}{74}{section.6.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.5.1}Experiment Setup}{74}{subsection.6.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.5.2}Comparison Method}{75}{subsection.6.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.5.3}Is Scout effective and efficient?}{77}{subsection.6.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.5.4}Is {\sc Scout}\xspace reliable?}{80}{subsection.6.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.5.5}Why {\sc Scout}\xspace works better?}{81}{subsection.6.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.5.6}Example Search Process}{82}{subsection.6.5.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.6}Discussion}{85}{section.6.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.7}Conclusion}{87}{section.6.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}A Collective CAT Optimizer for Multiple Workloads}{88}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Introduction}{88}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Why Collective Optimization}{90}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Finding the Exemplar Cloud Configuration}{91}{section.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.1}Empirical Study}{91}{subsection.7.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.2}The Exemplar Configurations}{93}{subsection.7.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.3}Problem Formulation}{95}{subsection.7.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.4}The Multi-Armed Bandit Problem}{95}{subsection.7.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.5}Heuristics}{96}{subsection.7.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.4}Evaluation}{98}{section.7.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.4.1}Comparison Method}{98}{subsection.7.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.4.2}Experiment Setup}{98}{subsection.7.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.4.3}Can \emph {Micky} identify the exemplar cloud configurations?}{99}{subsection.7.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.4.4}When not to use \textit {Micky}\xspace ?}{100}{subsection.7.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.4.5}Why UCB is the preferred choice?}{101}{subsection.7.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.5}To Eliminate Sub-Optimal Choices}{102}{section.7.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.6}Conclusion}{103}{section.7.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Workload-Aware Data Placement}{105}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.1}Introduction}{105}{section.8.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.2}Modeling Data Replication and Placement}{107}{section.8.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.3}Workloads}{109}{section.8.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.3.1}Workload Characteristics}{112}{subsection.8.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.3.2}Data Placement Steps}{115}{subsection.8.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.3.3}Tradeoffs in Placement Strategy}{117}{subsection.8.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {8.3.3.1}Load Balancing}{117}{subsubsection.8.3.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {8.3.3.2}Storage Footprint}{118}{subsubsection.8.3.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.4}Evaluation}{119}{section.8.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.4.1}Experiment Setup}{119}{subsection.8.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.4.2}Workload Generator and Benchmark Suite}{120}{subsection.8.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.4.3}Benchmark Steps}{120}{subsection.8.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.4.4}Steady-State Throughput}{121}{subsection.8.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {8.4.4.1}Local Storage}{123}{subsubsection.8.4.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {8.4.4.2}Remote Storage}{124}{subsubsection.8.4.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.4.5}Robustness Comparison}{124}{subsection.8.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.4.6}Micro Benchmark}{124}{subsection.8.4.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.4.7}Summary}{126}{subsection.8.4.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.5}Conclusion}{126}{section.8.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}Conclusions and Future Work}{127}{chapter.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.1}A Practical Guide to Cloud Optimizer}{127}{section.9.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.2}Conclusion}{128}{section.9.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.3}Future Work}{129}{section.9.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{{\uppercase {Bibliography}}}{131}{section*.81}

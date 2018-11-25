@@ -1,0 +1,263 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1.1}{\ignorespaces A sample of 16 randomly-selected configurations of x264 and corresponding performance measurements (seconds)\relax }}{2}{figure.caption.7}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.1}{\ignorespaces A MapReduce job consists of the map, shuffling and reduce phase. The map task processes a portion of input data and the reduce task aggregate the output from map tasks. The phase between the map and the reduce phase to dispatch intermediate result is the shuffling phase.\relax }}{5}{figure.caption.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces System configuration of Hadoop. Each slot handles one input split and uses the RecordReader object to read data from a POSIX compliant file system or a non-POSIX compliant file system, e.g. distributed data store.\relax }}{7}{figure.caption.9}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Four statistical features used in Inside-Out to capture load and internal status of a distributed storage system. The numbers and metrics represent low-level performance data collected from storage nodes.\relax }}{17}{figure.caption.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Prediction accuracy is inconsistent due to the large feature space. Learning methods fail to select the right features in some cases. Dimension reduction (PCA with 10 components) does not help in this case. In the trial-and-error case, we select a subset of metrics, e.g. \emph {mean(disk.read)}, \emph {sum(network.recv)} and \emph {std(cpu.usr)}.\relax }}{19}{figure.caption.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Analysis of performance models with diverse workloads. Each bar is the average prediction accuracy. The top row is the probability density function of prediction accuracy for each performance model.\relax }}{26}{figure.caption.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Comparison of performance models when the storage service is reconfigured: Ceph, VMs and network SLOs\relax }}{28}{figure.caption.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Comparison of model performance in the on-demand scaling scenario. In the scale-out scenario, a performance model trained with 10 Ceph nodes is used to predict the performance of Ceph cluster with 20, 30 and 40 nodes.\relax }}{30}{figure.caption.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Prediction accuracy in a multi-tenancy scenario. Tenant A-1 is co-located with Tenant B-2. Tenant A-1 is throttled at 250Mbps. Tenant B-1 and B-2 are co-located without any traffic throttling.\relax }}{31}{figure.caption.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Application of Inside-Out to real time prediction of read throughput on a 10-node Ceph cluster. Inside-Out starts from a simple prediction model trained by our collected benchmarking data. Inside-Out keeps learning the storage behavior while improving prediction accuracy over time.\relax }}{31}{figure.caption.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Kernel density function of prediction accuracy from Figure\nobreakspace {}\ref {fig:changing_workload} to Figure\nobreakspace {}\ref {fig:multi_tenancy}. Each colored line represents the density function of a modeling approach. Inside-Out is more consistent and accurate across almost every prediction case.\relax }}{33}{figure.caption.22}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The execution time and deployment cost of workloads running on 18 virtual machines (different types). The execution time of classification-Spark 1.5 in the worst case is 20 times slower that the best VM type. Similarly the deployment cost of running Linear Regression on the worst VM type is 10 times more expensive than the best VM type.\relax }}{37}{figure.caption.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces Execution time\relax }}{37}{figure.caption.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces Deployment cost\relax }}{37}{figure.caption.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Performance distribution over different workloads. The performance is normalized to the optimal performance measured in the 18 virtual machines. The \emph {x-axis} represents workloads, sorted by their normalized performance. Both choosing the most expensive and the cheapest VM types are not desirable.\relax }}{38}{figure.caption.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces Execution time on the most expensive VM types.\relax }}{38}{figure.caption.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces Deployment cost on the least expensive VM types.\relax }}{38}{figure.caption.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Running application with different input sizes result in very different performance. The best performing VM types for an application can change when the input size or parameters are changed.\relax }}{39}{figure.caption.27}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces Execution time.\relax }}{39}{figure.caption.27}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces Deployment cost.\relax }}{39}{figure.caption.27}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces The performance of running the \emph {regression} workload on instances with different VM types. Introducing cost creates a \emph {level playing filed}, in which several inferior VM types in execution time are now competitive in deployment cost. This observation implies that searching for the most cost-effective configuration is harder than searching for the fastest configuration.\relax }}{40}{figure.caption.28}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Applications' execution time and resource costs with different configurations.\relax }}{45}{figure.caption.30}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces PageRank\relax }}{45}{figure.caption.30}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces Web Log Analysis\relax }}{45}{figure.caption.30}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {c}{\ignorespaces Regression\relax }}{45}{figure.caption.30}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces The speedup and cost saving by CPU scaling (1GB memory per CPU).\relax }}{46}{figure.caption.31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces PageRank\relax }}{46}{figure.caption.31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces Web Log Analysis\relax }}{46}{figure.caption.31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {c}{\ignorespaces Regression\relax }}{46}{figure.caption.31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {d}{\ignorespaces PageRank\relax }}{46}{figure.caption.31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {e}{\ignorespaces Web Log Analysis\relax }}{46}{figure.caption.31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {f}{\ignorespaces Regression\relax }}{46}{figure.caption.31}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces The number of measurements required by Bayesian Optimization (as used in \nobreakspace {}\parencite {Alipourfard2017}) to find the optimal VM type. We observe that 50\% and 85\% of the workloads (shown in dashed lines) require 6 (33\% of the search space) and 12 (66\% of the search space) measurements respectively. Bayesian Optimization is not always effective for any workload. The fragility problem---either incurs high search cost or yields sub-optimal solution (as in \emph {Region II} and \emph {Region III}).\relax }}{48}{figure.caption.32}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Using Bayesian Optimization to find the best VM type for running the ALS algorithm on Spark. The horizontal axis represents the search cost, and the vertical axis represents the execution time of the workload (for both lower is better). The edges of the colored area represents the 25 and the 75 percentile of the execution time. A naive Bayesian Optimization method progresses slowly towards the optimal VM type. The low-level augmented BO method alleviates the fragility problem as shown in Figure\nobreakspace {}\ref {fig:convergence_time_1}. \relax }}{49}{figure.caption.33}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces The number of actual measurements required to find the optimal VM type by Bayesian Optimization with different kernel functions. Each kernel function is tested with 100 different sets of initial points uniformly selected. The points represent the median performance from 100 runs.\relax }}{50}{figure.caption.34}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces Minimizing execution time for \emph {als}\relax }}{50}{figure.caption.34}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces Minimizing deployment cost for \emph {bayes}\relax }}{50}{figure.caption.34}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces A memory bottleneck is identified by low-level performance information. The horizontal axis represents the resource utilization (\%), and the vertical axis represents the VM types. The numbers in the parenthesis are the normalized execution time where 1.0 represent the best VM type. The memory of a small VM type (c3.large) is not sufficient to run Logistic Regression, which leads to 14.8 times slower than the best VM type (c4.2xlarge). This behavior is captured by memory pressure and CPU utilization. \relax }}{53}{figure.caption.35}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Search cost of finding the optimal VM type across the 107 workloads. The \emph {y-axis} represents the cumulative percentages of workloads. In \emph {Region I}, although Augmented BO does not find the optimal VM type at the fourth step, it does find a very near optimal solution with only 4\% difference. Section\nobreakspace {}\ref {sec:practice} provides further details.\relax }}{56}{figure.caption.37}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces Optimizing running time\relax }}{56}{figure.caption.37}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces Optimizing running cost\relax }}{56}{figure.caption.37}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Examples of searching for the best VM. The objective is to find the fastest VM in subfigures (a, b) and the most cost-effective VM in subfigure (c). Both the BO methods stops after they find the optimal VM type (normalized to 1.0). The line represents the median value of the execution time over 100 repeats. Each repeat used different initial points to seed BO. The shaded region represents the IQR or Interquartile range is the difference between $3^{rd}$ and $1^{st}$ quartile. A high value (larger area) of IQR indicates high variance.\relax }}{59}{figure.caption.38}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces PageRank on Hadoop 2.7\relax }}{59}{figure.caption.38}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces Alternating Least Squares on Spark 2.1\relax }}{59}{figure.caption.38}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {c}{\ignorespaces Logistic Regression on Spark 1.5\relax }}{59}{figure.caption.38}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Comparison between effectiveness of search with different stopping criteria. There is a trade-off between search cost and deployment cost. In \emph {Region I}, Augmented BO is comparable with Naive BO in terms of deployment cost but can greatly reduce search cost at the expense of slight increase in deploymwnr cost. For \emph {Region II} and \emph {Region III}, Augmented BO outperform Naive BO for both search cost and deployment cost.\relax }}{61}{figure.caption.39}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces Region I\relax }}{61}{figure.caption.39}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces Region II\relax }}{61}{figure.caption.39}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {c}{\ignorespaces Region III\relax }}{61}{figure.caption.39}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Overall comparison for the two BO methods in finding the most cost-effective VM type across the evaluated 107 workloads. The numbers are calculated as the reduction percentage in search cost and improvement in deployment cost, both higher the better. Workloads in (0,0) represent workload which achieve similar performance in both methods.\relax }}{62}{figure.caption.40}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Similar to Figure\nobreakspace {}\ref {fig:comparison_cost}, the optimization objective is to find the best configuration both in execution time and search cost. Augmented BO supports finding the best VM type, given a time-cost tradeoff.\relax }}{63}{figure.caption.41}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip { \textbf {An overall comparison with other CAT methods.} A search-based method better tolerates prediction bias. Relative ordering better captures the workload-architecture-performance relationship. Leveraging low-level metrics improves search performance. Historical data helps eliminate unnecessary exploration overhead in a search. Transfer learning greatly reduces search cost.} \relax }}{67}{figure.caption.43}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces \textbf {On the model selection of predicting the next step.} We evaluate the ability to distinguish a good and a bad configuration. In regression, we test rank preserving as prediction accuracy\nobreakspace {}\parencite {nair2017}.\relax }}{71}{figure.caption.44}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.3}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf {{\sc Scout}\xspace 's implementation.} }\relax }}{73}{figure.caption.45}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.4}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf {Minimizing Execution Time.} The \emph {x-axis} represents the normalized performance (to the optimal configuration), and the optimal performance is $1$. {\sc Scout}\xspace finds the near-optimal solutions ($< 1.1$) in 87\% workloads while using much fewer steps.}\relax }}{75}{figure.caption.46}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces Search Performance\relax }}{75}{figure.caption.46}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces Search Cost\relax }}{75}{figure.caption.46}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.5}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf {Minimizing Running Cost.} Searching for the optimal cost is more difficult because the search cost is higher than the scenario of minimizing execution time. {\sc Scout}\xspace still finds near-optimal solutions with a small increase in search cost while \emph {CherryPick} only finds near-optimal solutions in about 50\% workloads.}\relax }}{76}{figure.caption.47}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces Search Performance\relax }}{76}{figure.caption.47}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces Search Cost\relax }}{76}{figure.caption.47}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.6}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf {Quality of found solutions.} Although both \emph {CherryPick} and {\sc Scout}\xspace find the near optimal-solutions in most of the time, {\sc Scout}\xspace is less fragile.} \relax }}{77}{figure.caption.48}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.7}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf {Stopping awareness.} Search optimization avoids unnecessary search cost if it knows when the optimal solution is found. }\relax }}{78}{figure.caption.49}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.8}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf {Convergence speed.} {\sc Scout}\xspace finds a better solution with 25\% improvement (on average) at each iteration, which suggests {\sc Scout}\xspace is more likely to converge.}\relax }}{78}{figure.caption.50}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.9}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf {Finding the fastest configuration for PageRank on Hadoop.} Left \& right sub-figure show the search path of CherryPick and {\sc Scout}\xspace respectively. {\sc Scout}\xspace identifies PageRank as a compute-intensive workload. It chooses the configurations with higher core counts and CPU speed.}\relax }}{80}{figure.caption.51}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces \textit {CherryPick}\xspace \relax }}{80}{figure.caption.51}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {\sc Scout}\xspace \relax }}{80}{figure.caption.51}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.10}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf {Minimizing the running cost for Naive-Bayes on Spark.} This is a memory-intensive workload. {\sc Scout}\xspace does not even try the \emph {c4} family due to its small memory per core.}\relax }}{82}{figure.caption.52}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces \textit {CherryPick}\xspace \relax }}{82}{figure.caption.52}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {\sc Scout}\xspace \relax }}{82}{figure.caption.52}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.11}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf {Minimizing execution time of Regression on Spark.} Since the Regression workload requires both computation and large memory, {\sc Scout}\xspace directly chooses configurations with the \emph {r4} family and larger cores.}\relax }}{83}{figure.caption.53}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces \textit {CherryPick}\xspace \relax }}{83}{figure.caption.53}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {\sc Scout}\xspace \relax }}{83}{figure.caption.53}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.12}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf {Finding the cheapest configuration for Terasort on Hadoop.} The Terasort workload requires enough memory to avoid spilling data to disks. Besides, a large cluster can be insufficient due to the shuffle phase in MapReduce. {\sc Scout}\xspace chooses a smaller cluster with the general-purpose VM type. }\relax }}{84}{figure.caption.54}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces \textit {CherryPick}\xspace \relax }}{84}{figure.caption.54}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces {\sc Scout}\xspace \relax }}{84}{figure.caption.54}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.13}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf {Tuning the probability threshold.} A smaller threshold generates a longer search path but ensures better search performance.}\relax }}{85}{figure.caption.55}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces Search Performance\relax }}{85}{figure.caption.55}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces Search Cost\relax }}{85}{figure.caption.55}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.14}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf {Tuning the misprediction tolerance.} A higher tolerance to mispredictions generates higher search cost.}\relax }}{86}{figure.caption.56}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces Search Performance\relax }}{86}{figure.caption.56}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces Search Cost\relax }}{86}{figure.caption.56}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.15}{\ignorespaces \textbf {Universal performance models.} Training data form multiple systems improves prediction.\relax }}{87}{figure.caption.57}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.1}{\ignorespaces \textbf {Opportunity to find the exemplar VM instances across workloads for reducing operational cost.} The \emph {y-axis} represents the percentage of workloads (out of 107 in three systems) that are within 30\% difference with the optimal performance. The colored bars are VM types that considered the exemplar configurations for the majority of workloads ($>= 50\%$). The \leavevmode {\color {red}red} bar represents that the VM type is more likely to be the optimal choice.\relax }}{92}{figure.caption.58}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces Hadoop 2.7\relax }}{92}{figure.caption.58}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces Spark 2.1\relax }}{92}{figure.caption.58}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {c}{\ignorespaces Spark 1.5\relax }}{92}{figure.caption.58}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.2}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf {Search performance of optimization methods in search for cost-effective cloud configurations.} Three software systems are evaluated. \emph {CherryPick} finds good solutions in the three systems while \textit {Micky}\xspace is comparable in Hadoop 2.7 but shows higher variance (sub-optimal choices). We propose a integrated system (in Figure\nobreakspace {}\ref {fig:system_design}) to detect those sub-optimal cases for improving \textit {Micky}\xspace .}\relax }}{97}{figure.caption.60}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces Hadoop 2.7\relax }}{97}{figure.caption.60}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces Spark 2.1\relax }}{97}{figure.caption.60}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {c}{\ignorespaces Spark 1.5\relax }}{97}{figure.caption.60}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.3}{\ignorespaces \textbf {Low measurement cost in collective optimization.} \emph {CherryPick} optimizes each workload separately while \textit {Micky}\xspace finds the exemplar cloud configuration suitable for a group of workloads.\relax }}{100}{figure.caption.62}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.4}{\ignorespaces \textbf {Selection of multi-armed bandit algorithms.} The parameter (in the parenthesis) controls the measurement budget ($S0 < S1 < S2$).\relax }}{102}{figure.caption.64}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.5}{\ignorespaces \textbf {A system integration to alleviate sub-optimal choices in some workloads.} {\sc Scout}\xspace answers ``is there a better configuration than the current choice?''\nobreakspace {}\parencite {Hsu2018Scout}. An integration of \textit {Micky}\xspace and {\sc Scout}\xspace delivers a more efficient and reliable recommendation system of cloud configurations.\relax }}{102}{figure.caption.65}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {7.6}{\ignorespaces \textbf {Detection of mis-predictions using {\sc Scout}\xspace .} The percentage represents the truth positive ratio, the probability the unsettled configurations can be identified. The two optimization objectives are to find the fast configuration and the most cost-effective VM type respectively.\relax }}{103}{figure.caption.66}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Uniform data placement is suboptimal. The lower bar is the measured throughput of uniform placement while the upper bar is the performance loss to the idealistic placement. (Data is a subset of data shown in Table\nobreakspace {}\ref {tab:throughput_comparison_local} on Section\nobreakspace {}\ref {sec:evaluation}.)\relax }}{106}{figure.caption.67}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.2}{\ignorespaces The workload demand exceeds the system capacity.\relax }}{110}{figure.caption.68}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces Coarse-Grain ($M=4,R=1,k=1$)\relax }}{110}{figure.caption.68}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces Fine-Grain ($M=4,R=1,k=4$)\relax }}{110}{figure.caption.68}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {c}{\ignorespaces Fine-Grain alternative placement\relax }}{110}{figure.caption.68}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Different data placement schemes.\relax }}{111}{figure.caption.69}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces Uniform data placement ($M=4,R=2,k=1$)\relax }}{111}{figure.caption.69}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces Coarse-grain data placement ($M=4,R=2,k=1$)\relax }}{111}{figure.caption.69}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {c}{\ignorespaces Fine-grain \emph {compact} data placement ($M=4,R=2,k=4$)\relax }}{111}{figure.caption.69}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {d}{\ignorespaces Fine-grain \emph {balanced} data placement ($M=4,R=2,k=4$)\relax }}{111}{figure.caption.69}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.4}{\ignorespaces The load distribution among nodes under the coarse-grain data placement ($M=64, k=1$).\relax }}{113}{figure.caption.70}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces uniform\relax }}{113}{figure.caption.70}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces beta\relax }}{113}{figure.caption.70}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {c}{\ignorespaces power law\relax }}{113}{figure.caption.70}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {d}{\ignorespaces normal\relax }}{113}{figure.caption.70}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {e}{\ignorespaces gamma\relax }}{113}{figure.caption.70}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.5}{\ignorespaces The load distribution among nodes under the fine-grain data placement with various $k$ ($M=64, R=2$).\relax }}{114}{figure.caption.71}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces uniform\relax }}{114}{figure.caption.71}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces beta\relax }}{114}{figure.caption.71}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {c}{\ignorespaces power law\relax }}{114}{figure.caption.71}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {d}{\ignorespaces normal\relax }}{114}{figure.caption.71}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {e}{\ignorespaces gamma\relax }}{114}{figure.caption.71}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.6}{\ignorespaces The number of unique partitions per node (storage footprint) under different placement schemes.\relax }}{118}{figure.caption.74}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.7}{\ignorespaces The number of unique partitions per node under the \emph {compact} method with various $k$. The number converges at $k=32$, which is equal to $1/R$.\relax }}{119}{figure.caption.75}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.8}{\ignorespaces Compare robustness under slight workload mispredictions. The $y$-axis represents queries per second, and starts from 200 for better presentation to tell performance difference.\relax }}{122}{figure.caption.77}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces Beta\relax }}{122}{figure.caption.77}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces Power Law\relax }}{122}{figure.caption.77}
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {c}{\ignorespaces Gamma\relax }}{122}{figure.caption.77}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }

@@ -1,0 +1,151 @@
+\section{Data-Intensive Computing}
+
+Data-intensive computing is a class of parallel computing that
+processes large volumes of data and
+incurs significant processing time on I/O.
+Data-intensive computing is extremely important because of
+the desire to extract information from data
+~\cite{KouzesR2009_ChangingParadigm, TolleKris2011FourthParadigm}.
+It is critical to design robust and efficient distributed systems
+for running applications that require
+significant computation and massive storage.
+Many systems such as
+Hadoop, Spark, and HPCC
+store and process large-scale data~\cite{hadoop,spark,hpcc}.
+There is also a large body of work in optimizing
+data-intensive systems
+~\cite{Ananthanarayanan2011,Eltabakh2011,Cruz2013,Lim2010,Rodrigues2013}.
+As more and more data-intensive computing is moving to the cloud,
+supporting data-intensive computing in cloud has emerged as a critical task.
+
+This section describes two popular execution models,
+\emph{MapReduce} and \emph{Dataflow}, in data-intensive computing.
+We also describe \emph{Apache Hadoop}, \emph{Apache Spark}, and \emph{HPCC},
+which are the widely deployed systems for data-intensive computing.
+
+
+\subsubsection*{MapReduce Programming Model}
+
+The MapReduce programming model is a simplified model for data processing.
+This model consists of two functions: \emph{map} and \emph{reduce}.
+The \emph{map} function filters and sorts the input, and
+the \emph{reduce} function summarize the output from the \emph{map}.
+Although the MapReduce model is embarrassingly parallel,
+many data-intensive applications can be implemented using such a model
+~\cite{MolerC1986_Embarassing, FosterI1995_Parallel}.
+Examples are large-scale indexing, machine learning problems, and
+graph computation~\cite{DeanJ2004_MapReduce, hadoop}.
+Applications that exploit the MapReduce model are highly scalable because
+it requires only loose synchronization~\cite{ShaferJ2010_PhD}
+
+Figure \ref{fig:mapreduce} illustrates the three phases in a MapReduce job.
+First, the map phase processes a portion of input data,
+\eg one line of a file or a XML document, and
+generates a list of key-value pairs.
+Second, the shuffle phase aggregates multiple lists of key-value pairs, and
+groups them by the key.
+The results are then redistributed to corresponding reduce tasks.
+Finally, the reduce phase processes the aggregated output.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/mapreduce.png}
+    \caption{A MapReduce job consists of the map, shuffling and reduce phase.  The map task processes a portion of input data and the reduce task aggregate the output from map tasks.  The phase between the map and the reduce phase to dispatch intermediate result is the shuffling phase.}
+    \label{fig:mapreduce}
+\end{figure}
+
+
+\subsubsection*{Dataflow Execution Model}
+
+Although the MapReduce model is well suited to many applications,
+it is limited as well to some such as
+iterative machine learning and graph processing~\cite{Babu2012}.
+The DataFlow execution model is a more generalized form for expressing
+varied data access and communication patterns.
+Therefore, the dataflow execution model is able to support
+a larger category of data-intensive applications
+than the MapReduce model.
+
+There are several variants of the dataflow model.
+\emph{Dryad} is a general-purpose distributed execution engine
+that supports of coarse-grain data parallelism~\cite{IsardM2007_Dyrad}.
+Vertexes are the programs and edges represent communication channels.
+\emph{Dryad} distributes computation vertexes to a set of distributed computers.
+Their communication are handled by either
+files, TCP pipes, and shared-memory FIFOs.
+Other attempts include
+bulk synchronous parallel processing in \emph{Pregel}~\cite{Malewicz2010} and
+serving trees in \emph{Dremel}~\cite{Melnik2010}.
+
+
+\subsubsection*{Apache Hadoop}
+
+Apache Hadoop is an open-source implementation of the MapReduce programming model,
+and it is a reliable and scalable system for data processing~\cite{hadoop}.
+Apache Hadoop includes four modules:
+1) Hadoop YARN is a cluster resource management framework,
+2) Hadoop MapReduce is the implementation to support the MapReduce programming model based on YARN,
+3) Hadoop HDFS is a distributed storage system for Hadoop application data, and 
+4) Hadoop Common is the common utilities that are required by the above modules.
+
+The Resource Manager (RM) is responsible for resource allocation.  
+Once received a MapReduce job, RM allocates resource,
+\eg CPU and memory, to initialize a AppMaster.
+This AppMaster is created to negotiate computing resources with
+the resource scheduler,
+\eg FIFO Scheduler, Capacity Scheduler \cite{CapacityScheduler}, and
+Fair Scheduler \cite{FairScheduler}.
+These schedulers allocate resources (or slots) to the AppMaster
+based on objectives such as data locality or fairness.
+Those allocated resources can be used to run map or reduce tasks.
+
+After obtaining computation resources, the AppMaster starts
+multiple node containers to process input splits.
+Each map task handles an input split, and the size is usually
+64MB or 128MB (the block size of HDFS).
+The map task uses \emph{RecordReader} and \emph{FSDataInputStream}
+to access input data as shown in \myfigure{\ref{fig:hadoop_model}}.
+It is possible to store data on various storage systems such as
+parallel file systems and object storage.
+
+
+\subsubsection*{Apache Spark}
+
+Apache Spark is an in-memory data processing engine~\cite{spark}.
+Apache Hadoop uses a linear data pipeline,
+which reads and writes data into disks in the map and reduce phase.
+This implementation does not fit well to iterative computation,
+which is a common requirement for applications such as in machine learning.
+
+Resilient distributed dataset (RDD) is proposed to improve performance of
+application that requires iterative computation~\cite{Zaharia2012}.
+RDD is read-only and designed to be fault-tolerant.
+RDD serves as the working set to Spark applications in a similar form of
+distributed share memory~\cite{Zaharia2012}.
+Apache Spark has shown an order of magnitude performance improvement,
+\eg 20 times, over Apache Hadoop in many applications~\cite{Zaharia2012, spark}.
+
+
+
+\subsubsection*{High-Performance Computing Cluster (HPCC)}
+\label{sec:hpcc}
+
+High performance computing cluster (HPCC),
+also known as data analytics supercomputer,
+was developed by LexisNexis Risk Solutions~\cite{hpcc}.
+It is a parallel system that is designed for processing large-scale data.
+Thor is a \emph{data refinery} that processes large 
+datasets in parallel.
+It is a batch processing engine that was designed for tasks
+similar to those that MapReduce handles best.
+Roxie is a \emph{data delivery engine} that responds to queries.
+It finds the answers to requests in an index that is partitioned and,
+if desired, replicated across the nodes.
+Thor generates indexes for Roxie.
+
+The division of labor, into data refinery and delivery engine, allows
+each cluster to be optimized for its task.
+Thor is optimized for processing large datasets in parallel where
+the goal is end-to-end throughput.
+Roxie is optimized to handle massive amounts of concurrent requests
+with low latency.

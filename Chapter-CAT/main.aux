@@ -1,0 +1,242 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {chapter}{\numberline {4}Cloud Architecture Tuning}{34}{chapter.4}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\defcounter {refsection}{0}\relax }\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chapter:cat}{{4}{34}{Cloud Architecture Tuning}{chapter.4}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {4.1}Introduction}{34}{section.4.1}}
+\newlabel{sec:cat::introduction}{{4.1}{34}{Introduction}{section.4.1}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {4.2}Open Performance Data}{35}{section.4.2}}
+\newlabel{sec:cat::dataset}{{4.2}{35}{Open Performance Data}{section.4.2}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {4.3}Challenges}{35}{section.4.3}}
+\newlabel{sec:cat::challenges}{{4.3}{35}{Challenges}{section.4.3}{}}
+\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces The evaluated applications. In total, there are 30 applications and 107 workloads measured on Hadoop 2.7, Spark 1.5 and Spark 2.1.\relax }}{36}{table.caption.23}}
+\newlabel{tab:dataset}{{4.1}{36}{The evaluated applications. In total, there are 30 applications and 107 workloads measured on Hadoop 2.7, Spark 1.5 and Spark 2.1.\relax }{table.caption.23}{}}
+\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf  {Dataset description.} The benchmark programs are taken from \emph  {HiBench}\nobreakspace  {}\parencite {hibench} and \emph  {spark-perf}\nobreakspace  {}\parencite {sparkperf}. }\relax }}{37}{table.caption.24}}
+\newlabel{tab:dataset_overview}{{4.2}{37}{\small {\textbf {Dataset description.} The benchmark programs are taken from \emph {HiBench}~\cite {hibench} and \emph {spark-perf}~\cite {sparkperf}. }\relax }{table.caption.24}{}}
+\newlabel{fig:motivation_bad_choice_time}{{4.1a}{37}{Execution time\relax }{figure.caption.25}{}}
+\newlabel{sub@fig:motivation_bad_choice_time}{{a}{37}{Execution time\relax }{figure.caption.25}{}}
+\newlabel{fig:motivation_bad_choice_cost}{{4.1b}{37}{Deployment cost\relax }{figure.caption.25}{}}
+\newlabel{sub@fig:motivation_bad_choice_cost}{{b}{37}{Deployment cost\relax }{figure.caption.25}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces The execution time and deployment cost of workloads running on 18 virtual machines (different types). The execution time of classification-Spark 1.5 in the worst case is 20 times slower that the best VM type. Similarly the deployment cost of running Linear Regression on the worst VM type is 10 times more expensive than the best VM type.\relax }}{37}{figure.caption.25}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {a}{\ignorespaces Execution time\relax }}{37}{figure.caption.25}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {b}{\ignorespaces Deployment cost\relax }}{37}{figure.caption.25}}
+\newlabel{fig:motivation_bad_choice}{{4.1}{37}{The execution time and deployment cost of workloads running on 18 virtual machines (different types). The execution time of classification-Spark 1.5 in the worst case is 20 times slower that the best VM type. Similarly the deployment cost of running Linear Regression on the worst VM type is 10 times more expensive than the best VM type.\relax }{figure.caption.25}{}}
+\newlabel{fig:motivation_variance_time}{{4.2a}{38}{Execution time on the most expensive VM types.\relax }{figure.caption.26}{}}
+\newlabel{sub@fig:motivation_variance_time}{{a}{38}{Execution time on the most expensive VM types.\relax }{figure.caption.26}{}}
+\newlabel{fig:motivation_variance_cost}{{4.2b}{38}{Deployment cost on the least expensive VM types.\relax }{figure.caption.26}{}}
+\newlabel{sub@fig:motivation_variance_cost}{{b}{38}{Deployment cost on the least expensive VM types.\relax }{figure.caption.26}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Performance distribution over different workloads. The performance is normalized to the optimal performance measured in the 18 virtual machines. The \emph  {x-axis} represents workloads, sorted by their normalized performance. Both choosing the most expensive and the cheapest VM types are not desirable.\relax }}{38}{figure.caption.26}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {a}{\ignorespaces Execution time on the most expensive VM types.\relax }}{38}{figure.caption.26}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {b}{\ignorespaces Deployment cost on the least expensive VM types.\relax }}{38}{figure.caption.26}}
+\newlabel{fig:motivation_variance}{{4.2}{38}{Performance distribution over different workloads. The performance is normalized to the optimal performance measured in the 18 virtual machines. The \emph {x-axis} represents workloads, sorted by their normalized performance. Both choosing the most expensive and the cheapest VM types are not desirable.\relax }{figure.caption.26}{}}
+\newlabel{fig:motivation_datasize_a}{{4.3a}{39}{Execution time.\relax }{figure.caption.27}{}}
+\newlabel{sub@fig:motivation_datasize_a}{{a}{39}{Execution time.\relax }{figure.caption.27}{}}
+\newlabel{fig:motivation_datasize_b}{{4.3b}{39}{Deployment cost.\relax }{figure.caption.27}{}}
+\newlabel{sub@fig:motivation_datasize_b}{{b}{39}{Deployment cost.\relax }{figure.caption.27}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Running application with different input sizes result in very different performance. The best performing VM types for an application can change when the input size or parameters are changed.\relax }}{39}{figure.caption.27}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {a}{\ignorespaces Execution time.\relax }}{39}{figure.caption.27}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {b}{\ignorespaces Deployment cost.\relax }}{39}{figure.caption.27}}
+\newlabel{fig:motivation_datasize}{{4.3}{39}{Running application with different input sizes result in very different performance. The best performing VM types for an application can change when the input size or parameters are changed.\relax }{figure.caption.27}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces The performance of running the \emph  {regression} workload on instances with different VM types. Introducing cost creates a \emph  {level playing filed}, in which several inferior VM types in execution time are now competitive in deployment cost. This observation implies that searching for the most cost-effective configuration is harder than searching for the fastest configuration.\relax }}{40}{figure.caption.28}}
+\newlabel{fig:level_playing_field}{{4.4}{40}{The performance of running the \emph {regression} workload on instances with different VM types. Introducing cost creates a \emph {level playing filed}, in which several inferior VM types in execution time are now competitive in deployment cost. This observation implies that searching for the most cost-effective configuration is harder than searching for the fastest configuration.\relax }{figure.caption.28}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {4.4}State-of-the-Art Approaches}{40}{section.4.4}}
+\newlabel{sec:cat::relatedwork}{{4.4}{40}{State-of-the-Art Approaches}{section.4.4}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {4.5}Problem Formalization}{41}{section.4.5}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {4.6}Time-Cost Trade-Offs}{43}{section.4.6}}
+\newlabel{sec:cdp}{{4.6}{43}{Time-Cost Trade-Offs}{section.4.6}{}}
+\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {4.3}{\ignorespaces The execution time and resource cost of applications running with different numbers of CPUs and memory per CPU. The text in bold refer to the configurations on the convex hull in Figure\nobreakspace  {}\ref  {fig:application_performance}.\relax }}{44}{table.caption.29}}
+\newlabel{table:raw_data}{{4.3}{44}{The execution time and resource cost of applications running with different numbers of CPUs and memory per CPU. The text in bold refer to the configurations on the convex hull in \myfigure {\ref {fig:application_performance}}.\relax }{table.caption.29}{}}
+\newlabel{fig:pagerank_configurations}{{4.5a}{45}{PageRank\relax }{figure.caption.30}{}}
+\newlabel{sub@fig:pagerank_configurations}{{a}{45}{PageRank\relax }{figure.caption.30}{}}
+\newlabel{fig:webloganalysis_configurations}{{4.5b}{45}{Web Log Analysis\relax }{figure.caption.30}{}}
+\newlabel{sub@fig:webloganalysis_configurations}{{b}{45}{Web Log Analysis\relax }{figure.caption.30}{}}
+\newlabel{fig:regression_configurations}{{4.5c}{45}{Regression\relax }{figure.caption.30}{}}
+\newlabel{sub@fig:regression_configurations}{{c}{45}{Regression\relax }{figure.caption.30}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Applications' execution time and resource costs with different configurations.\relax }}{45}{figure.caption.30}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {a}{\ignorespaces PageRank\relax }}{45}{figure.caption.30}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {b}{\ignorespaces Web Log Analysis\relax }}{45}{figure.caption.30}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {c}{\ignorespaces Regression\relax }}{45}{figure.caption.30}}
+\newlabel{fig:application_performance}{{4.5}{45}{Applications' execution time and resource costs with different configurations.\relax }{figure.caption.30}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {4.7}Conclusion}{45}{section.4.7}}
+\newlabel{fig:pagerank_time}{{4.6a}{46}{PageRank\relax }{figure.caption.31}{}}
+\newlabel{sub@fig:pagerank_time}{{a}{46}{PageRank\relax }{figure.caption.31}{}}
+\newlabel{fig:webloganalysis_time}{{4.6b}{46}{Web Log Analysis\relax }{figure.caption.31}{}}
+\newlabel{sub@fig:webloganalysis_time}{{b}{46}{Web Log Analysis\relax }{figure.caption.31}{}}
+\newlabel{fig:regression_time}{{4.6c}{46}{Regression\relax }{figure.caption.31}{}}
+\newlabel{sub@fig:regression_time}{{c}{46}{Regression\relax }{figure.caption.31}{}}
+\newlabel{fig:pagerank_cost}{{4.6d}{46}{PageRank\relax }{figure.caption.31}{}}
+\newlabel{sub@fig:pagerank_cost}{{d}{46}{PageRank\relax }{figure.caption.31}{}}
+\newlabel{fig:webloganalysis_cost}{{4.6e}{46}{Web Log Analysis\relax }{figure.caption.31}{}}
+\newlabel{sub@fig:webloganalysis_cost}{{e}{46}{Web Log Analysis\relax }{figure.caption.31}{}}
+\newlabel{fig:regression_cost}{{4.6f}{46}{Regression\relax }{figure.caption.31}{}}
+\newlabel{sub@fig:regression_cost}{{f}{46}{Regression\relax }{figure.caption.31}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces The speedup and cost saving by CPU scaling (1GB memory per CPU).\relax }}{46}{figure.caption.31}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {a}{\ignorespaces PageRank\relax }}{46}{figure.caption.31}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {b}{\ignorespaces Web Log Analysis\relax }}{46}{figure.caption.31}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {c}{\ignorespaces Regression\relax }}{46}{figure.caption.31}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {d}{\ignorespaces PageRank\relax }}{46}{figure.caption.31}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {e}{\ignorespaces Web Log Analysis\relax }}{46}{figure.caption.31}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {f}{\ignorespaces Regression\relax }}{46}{figure.caption.31}}
+\newlabel{fig:speed_1gb}{{4.6}{46}{The speedup and cost saving by CPU scaling (1GB memory per CPU).\relax }{figure.caption.31}{}}
+\@setckpt{Chapter-CAT/main}{
+\setcounter{page}{47}
+\setcounter{equation}{0}
+\setcounter{enumi}{2}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{4}
+\setcounter{section}{7}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{6}
+\setcounter{table}{3}
+\setcounter{lofdepth}{1}
+\setcounter{lotdepth}{1}
+\setcounter{r@tfl@t}{0}
+\setcounter{cp@cntr}{0}
+\setcounter{ContinuedFloat}{0}
+\setcounter{chapter@totc}{9}
+\setcounter{parentequation}{0}
+\setcounter{lips@count}{0}
+\setcounter{ALC@unique}{13}
+\setcounter{ALC@line}{13}
+\setcounter{ALC@rem}{0}
+\setcounter{ALC@depth}{0}
+\setcounter{AlgoLine}{0}
+\setcounter{algocfline}{2}
+\setcounter{algocfproc}{2}
+\setcounter{algocf}{2}
+\setcounter{subfigure}{6}
+\setcounter{subtable}{0}
+\setcounter{tabx@nest}{0}
+\setcounter{listtotal}{0}
+\setcounter{listcount}{0}
+\setcounter{liststart}{0}
+\setcounter{liststop}{0}
+\setcounter{citecount}{0}
+\setcounter{citetotal}{0}
+\setcounter{multicitecount}{0}
+\setcounter{multicitetotal}{0}
+\setcounter{instcount}{197}
+\setcounter{maxnames}{2}
+\setcounter{minnames}{1}
+\setcounter{maxitems}{3}
+\setcounter{minitems}{1}
+\setcounter{citecounter}{0}
+\setcounter{savedcitecounter}{0}
+\setcounter{uniquelist}{0}
+\setcounter{uniquename}{0}
+\setcounter{refsection}{0}
+\setcounter{refsegment}{0}
+\setcounter{maxextrayear}{0}
+\setcounter{maxextraalpha}{0}
+\setcounter{abbrvpenalty}{50}
+\setcounter{highnamepenalty}{50}
+\setcounter{lownamepenalty}{25}
+\setcounter{maxparens}{3}
+\setcounter{parenlevel}{0}
+\setcounter{mincomprange}{10}
+\setcounter{maxcomprange}{100000}
+\setcounter{mincompwidth}{1}
+\setcounter{labelname}{0}
+\setcounter{savedlabelname}{0}
+\setcounter{author}{0}
+\setcounter{savedauthor}{0}
+\setcounter{shortauthor}{0}
+\setcounter{savedshortauthor}{0}
+\setcounter{editor}{0}
+\setcounter{savededitor}{0}
+\setcounter{editora}{0}
+\setcounter{savededitora}{0}
+\setcounter{editorb}{0}
+\setcounter{savededitorb}{0}
+\setcounter{editorc}{0}
+\setcounter{savededitorc}{0}
+\setcounter{shorteditor}{0}
+\setcounter{savedshorteditor}{0}
+\setcounter{bookauthor}{0}
+\setcounter{savedbookauthor}{0}
+\setcounter{translator}{0}
+\setcounter{savedtranslator}{0}
+\setcounter{annotator}{0}
+\setcounter{savedannotator}{0}
+\setcounter{commentator}{0}
+\setcounter{savedcommentator}{0}
+\setcounter{introduction}{0}
+\setcounter{savedintroduction}{0}
+\setcounter{foreword}{0}
+\setcounter{savedforeword}{0}
+\setcounter{afterword}{0}
+\setcounter{savedafterword}{0}
+\setcounter{holder}{0}
+\setcounter{savedholder}{0}
+\setcounter{namea}{0}
+\setcounter{savednamea}{0}
+\setcounter{nameb}{0}
+\setcounter{savednameb}{0}
+\setcounter{namec}{0}
+\setcounter{savednamec}{0}
+\setcounter{institution}{0}
+\setcounter{savedinstitution}{0}
+\setcounter{language}{0}
+\setcounter{savedlanguage}{0}
+\setcounter{location}{0}
+\setcounter{savedlocation}{0}
+\setcounter{organization}{0}
+\setcounter{savedorganization}{0}
+\setcounter{origlocation}{0}
+\setcounter{savedoriglocation}{0}
+\setcounter{origpublisher}{0}
+\setcounter{savedorigpublisher}{0}
+\setcounter{pageref}{0}
+\setcounter{savedpageref}{0}
+\setcounter{publisher}{0}
+\setcounter{savedpublisher}{0}
+\setcounter{lista}{0}
+\setcounter{savedlista}{0}
+\setcounter{listb}{0}
+\setcounter{savedlistb}{0}
+\setcounter{listc}{0}
+\setcounter{savedlistc}{0}
+\setcounter{listd}{0}
+\setcounter{savedlistd}{0}
+\setcounter{liste}{0}
+\setcounter{savedliste}{0}
+\setcounter{listf}{0}
+\setcounter{savedlistf}{0}
+\setcounter{textcitecount}{0}
+\setcounter{textcitetotal}{0}
+\setcounter{textcitemaxnames}{0}
+\setcounter{biburlnumpenalty}{0}
+\setcounter{biburlucpenalty}{0}
+\setcounter{biburllcpenalty}{0}
+\setcounter{smartand}{1}
+\setcounter{bbx:relatedcount}{0}
+\setcounter{bbx:relatedtotal}{0}
+\setcounter{cbx@tempcnta}{0}
+\setcounter{cbx@tempcntb}{9}
+\setcounter{tm@util}{0}
+\setcounter{List1}{0}
+\setcounter{List2}{0}
+\setcounter{List3}{0}
+\setcounter{List4}{0}
+\setcounter{List5}{0}
+\setcounter{List6}{0}
+\setcounter{List7}{0}
+\setcounter{List8}{0}
+\setcounter{List9}{0}
+\setcounter{List10}{0}
+\setcounter{Item}{2}
+\setcounter{Hfootnote}{2}
+\setcounter{bookmark@seq@number}{40}
+\setcounter{ncsu@appendixtocdepth}{2}
+\setcounter{section@level}{0}
+}

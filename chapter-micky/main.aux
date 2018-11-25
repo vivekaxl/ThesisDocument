@@ -1,0 +1,232 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {chapter}{\numberline {7}A Collective CAT Optimizer for Multiple Workloads}{88}{chapter.7}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\defcounter {refsection}{0}\relax }\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chapter:micky}{{7}{88}{A Collective CAT Optimizer for Multiple Workloads}{chapter.7}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {7.1}Introduction}{88}{section.7.1}}
+\newlabel{sec:micky:introduction}{{7.1}{88}{Introduction}{section.7.1}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {7.2}Why Collective Optimization}{90}{section.7.2}}
+\newlabel{sec:motivation}{{7.2}{90}{Why Collective Optimization}{section.7.2}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {7.3}Finding the Exemplar Cloud Configuration}{91}{section.7.3}}
+\newlabel{sec:mab}{{7.3}{91}{Finding the Exemplar Cloud Configuration}{section.7.3}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.1}Empirical Study}{91}{subsection.7.3.1}}
+\newlabel{sec:empirical}{{7.3.1}{91}{Empirical Study}{subsection.7.3.1}{}}
+\newlabel{fig:motivation_percentage_1}{{7.1a}{92}{Hadoop 2.7\relax }{figure.caption.58}{}}
+\newlabel{sub@fig:motivation_percentage_1}{{a}{92}{Hadoop 2.7\relax }{figure.caption.58}{}}
+\newlabel{fig:motivation_percentage_2}{{7.1b}{92}{Spark 2.1\relax }{figure.caption.58}{}}
+\newlabel{sub@fig:motivation_percentage_2}{{b}{92}{Spark 2.1\relax }{figure.caption.58}{}}
+\newlabel{fig:motivation_percentage_3}{{7.1c}{92}{Spark 1.5\relax }{figure.caption.58}{}}
+\newlabel{sub@fig:motivation_percentage_3}{{c}{92}{Spark 1.5\relax }{figure.caption.58}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces \textbf  {Opportunity to find the exemplar VM instances across workloads for reducing operational cost.} The \emph  {y-axis} represents the percentage of workloads (out of 107 in three systems) that are within 30\% difference with the optimal performance. The colored bars are VM types that considered the exemplar configurations for the majority of workloads ($>= 50\%$). The \leavevmode {\color  {red}red} bar represents that the VM type is more likely to be the optimal choice.\relax }}{92}{figure.caption.58}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {a}{\ignorespaces Hadoop 2.7\relax }}{92}{figure.caption.58}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {b}{\ignorespaces Spark 2.1\relax }}{92}{figure.caption.58}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {c}{\ignorespaces Spark 1.5\relax }}{92}{figure.caption.58}}
+\newlabel{fig:motivation_percentage}{{7.1}{92}{\textbf {Opportunity to find the exemplar VM instances across workloads for reducing operational cost.} The \emph {y-axis} represents the percentage of workloads (out of 107 in three systems) that are within 30\% difference with the optimal performance. The colored bars are VM types that considered the exemplar configurations for the majority of workloads ($>= 50\%$). The \textcolor {red}{red} bar represents that the VM type is more likely to be the optimal choice.\relax }{figure.caption.58}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.2}The Exemplar Configurations}{93}{subsection.7.3.2}}
+\newlabel{sec:exemplar}{{7.3.2}{93}{The Exemplar Configurations}{subsection.7.3.2}{}}
+\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {7.1}{\ignorespaces \textbf  {Normalized performance on a selected group of VM types and workloads.} The number $1.0$ represents the optimal choice across the 18 VM types for the particular workload.\relax }}{94}{table.caption.59}}
+\newlabel{table:dataset}{{7.1}{94}{\textbf {Normalized performance on a selected group of VM types and workloads.} The number $1.0$ represents the optimal choice across the 18 VM types for the particular workload.\relax }{table.caption.59}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.3}Problem Formulation}{95}{subsection.7.3.3}}
+\newlabel{sec:formulation}{{7.3.3}{95}{Problem Formulation}{subsection.7.3.3}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.4}The Multi-Armed Bandit Problem}{95}{subsection.7.3.4}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.5}Heuristics}{96}{subsection.7.3.5}}
+\newlabel{sec:methods}{{7.3.5}{96}{Heuristics}{subsection.7.3.5}{}}
+\newlabel{fig:single_time_steps}{{7.2a}{97}{Hadoop 2.7\relax }{figure.caption.60}{}}
+\newlabel{sub@fig:single_time_steps}{{a}{97}{Hadoop 2.7\relax }{figure.caption.60}{}}
+\newlabel{fig:single_time_performance}{{7.2b}{97}{Spark 2.1\relax }{figure.caption.60}{}}
+\newlabel{sub@fig:single_time_performance}{{b}{97}{Spark 2.1\relax }{figure.caption.60}{}}
+\newlabel{fig:single_time_performance}{{7.2c}{97}{Spark 1.5\relax }{figure.caption.60}{}}
+\newlabel{sub@fig:single_time_performance}{{c}{97}{Spark 1.5\relax }{figure.caption.60}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf  {Search performance of optimization methods in search for cost-effective cloud configurations.} Three software systems are evaluated. \emph  {CherryPick} finds good solutions in the three systems while \textit  {Micky}\xspace  is comparable in Hadoop 2.7 but shows higher variance (sub-optimal choices). We propose a integrated system (in Figure\nobreakspace  {}\ref  {fig:system_design}) to detect those sub-optimal cases for improving \textit  {Micky}\xspace  .}\relax }}{97}{figure.caption.60}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {a}{\ignorespaces Hadoop 2.7\relax }}{97}{figure.caption.60}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {b}{\ignorespaces Spark 2.1\relax }}{97}{figure.caption.60}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {c}{\ignorespaces Spark 1.5\relax }}{97}{figure.caption.60}}
+\newlabel{fig:s2_cost_performance}{{7.2}{97}{\small {\textbf {Search performance of optimization methods in search for cost-effective cloud configurations.} Three software systems are evaluated. \emph {CherryPick} finds good solutions in the three systems while \micky is comparable in Hadoop 2.7 but shows higher variance (sub-optimal choices). We propose a integrated system (in \myfigure {\ref {fig:system_design}}) to detect those sub-optimal cases for improving \micky .}\relax }{figure.caption.60}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {7.4}Evaluation}{98}{section.7.4}}
+\newlabel{sec:evaluation}{{7.4}{98}{Evaluation}{section.7.4}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.1}Comparison Method}{98}{subsection.7.4.1}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.2}Experiment Setup}{98}{subsection.7.4.2}}
+\newlabel{sec:setup}{{7.4.2}{98}{Experiment Setup}{subsection.7.4.2}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.3}Can \emph  {Micky} identify the exemplar cloud configurations?}{99}{subsection.7.4.3}}
+\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {7.2}{\ignorespaces \textbf  {The most cost-effective VM types for 107 workloads recommended by \textit  {Micky}\xspace  } The number above each column label represents normalized performance (to the optimal). CherryPick finds good ($< 1.2$) VM types in 86\% of workloads.\relax }}{100}{table.caption.61}}
+\newlabel{table:top3}{{7.2}{100}{\textbf {The most cost-effective VM types for 107 workloads recommended by \micky } The number above each column label represents normalized performance (to the optimal). CherryPick finds good ($< 1.2$) VM types in 86\% of workloads.\relax }{table.caption.61}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.4}When not to use \textit  {Micky}\xspace  ?}{100}{subsection.7.4.4}}
+\newlabel{sec:kneepoint}{{7.4.4}{100}{When not to use \micky ?}{subsection.7.4.4}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {7.3}{\ignorespaces \textbf  {Low measurement cost in collective optimization.} \emph  {CherryPick} optimizes each workload separately while \textit  {Micky}\xspace  finds the exemplar cloud configuration suitable for a group of workloads.\relax }}{100}{figure.caption.62}}
+\newlabel{fig:cost_saving}{{7.3}{100}{\textbf {Low measurement cost in collective optimization.} \emph {CherryPick} optimizes each workload separately while \micky finds the exemplar cloud configuration suitable for a group of workloads.\relax }{figure.caption.62}{}}
+\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {7.3}{\ignorespaces \textbf  {The knee point when \textit  {Micky}\xspace  should not be used.} The knee point (the number of recurrence of workloads) represents a trade-off between search performance and measurement cost. \relax }}{101}{table.caption.63}}
+\newlabel{table:break_even_cost}{{7.3}{101}{\textbf {The knee point when \micky should not be used.} The knee point (the number of recurrence of workloads) represents a trade-off between search performance and measurement cost. \relax }{table.caption.63}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.5}Why UCB is the preferred choice?}{101}{subsection.7.4.5}}
+\newlabel{sec:tuning_mab}{{7.4.5}{101}{Why UCB is the preferred choice?}{subsection.7.4.5}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {7.4}{\ignorespaces \textbf  {Selection of multi-armed bandit algorithms.} The parameter (in the parenthesis) controls the measurement budget ($S0 < S1 < S2$).\relax }}{102}{figure.caption.64}}
+\newlabel{fig:algorithm_selection}{{7.4}{102}{\textbf {Selection of multi-armed bandit algorithms.} The parameter (in the parenthesis) controls the measurement budget ($S0 < S1 < S2$).\relax }{figure.caption.64}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {7.5}{\ignorespaces \textbf  {A system integration to alleviate sub-optimal choices in some workloads.} {\sc  Scout}\xspace  answers ``is there a better configuration than the current choice?''\nobreakspace  {}\parencite {Hsu2018Scout}. An integration of \textit  {Micky}\xspace  and {\sc  Scout}\xspace  delivers a more efficient and reliable recommendation system of cloud configurations.\relax }}{102}{figure.caption.65}}
+\newlabel{fig:system_design}{{7.5}{102}{\textbf {A system integration to alleviate sub-optimal choices in some workloads.} \scout answers ``is there a better configuration than the current choice?''~\cite {Hsu2018Scout}. An integration of \micky and \scout delivers a more efficient and reliable recommendation system of cloud configurations.\relax }{figure.caption.65}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {7.5}To Eliminate Sub-Optimal Choices}{102}{section.7.5}}
+\newlabel{sec:system}{{7.5}{102}{To Eliminate Sub-Optimal Choices}{section.7.5}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {7.6}{\ignorespaces \textbf  {Detection of mis-predictions using {\sc  Scout}\xspace  .} The percentage represents the truth positive ratio, the probability the unsettled configurations can be identified. The two optimization objectives are to find the fast configuration and the most cost-effective VM type respectively.\relax }}{103}{figure.caption.66}}
+\newlabel{fig:detection_misprediction}{{7.6}{103}{\textbf {Detection of mis-predictions using \scout .} The percentage represents the truth positive ratio, the probability the unsettled configurations can be identified. The two optimization objectives are to find the fast configuration and the most cost-effective VM type respectively.\relax }{figure.caption.66}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {7.6}Conclusion}{103}{section.7.6}}
+\newlabel{sec:conclusion}{{7.6}{103}{Conclusion}{section.7.6}{}}
+\@setckpt{Chapter-Micky/main}{
+\setcounter{page}{105}
+\setcounter{equation}{0}
+\setcounter{enumi}{4}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{1}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{7}
+\setcounter{section}{6}
+\setcounter{subsection}{0}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{6}
+\setcounter{table}{3}
+\setcounter{lofdepth}{1}
+\setcounter{lotdepth}{1}
+\setcounter{r@tfl@t}{0}
+\setcounter{cp@cntr}{0}
+\setcounter{ContinuedFloat}{0}
+\setcounter{chapter@totc}{9}
+\setcounter{parentequation}{0}
+\setcounter{lips@count}{0}
+\setcounter{ALC@unique}{13}
+\setcounter{ALC@line}{13}
+\setcounter{ALC@rem}{0}
+\setcounter{ALC@depth}{0}
+\setcounter{AlgoLine}{8}
+\setcounter{algocfline}{4}
+\setcounter{algocfproc}{4}
+\setcounter{algocf}{4}
+\setcounter{subfigure}{0}
+\setcounter{subtable}{0}
+\setcounter{tabx@nest}{0}
+\setcounter{listtotal}{0}
+\setcounter{listcount}{0}
+\setcounter{liststart}{0}
+\setcounter{liststop}{0}
+\setcounter{citecount}{0}
+\setcounter{citetotal}{0}
+\setcounter{multicitecount}{0}
+\setcounter{multicitetotal}{0}
+\setcounter{instcount}{345}
+\setcounter{maxnames}{2}
+\setcounter{minnames}{1}
+\setcounter{maxitems}{3}
+\setcounter{minitems}{1}
+\setcounter{citecounter}{0}
+\setcounter{savedcitecounter}{0}
+\setcounter{uniquelist}{0}
+\setcounter{uniquename}{0}
+\setcounter{refsection}{0}
+\setcounter{refsegment}{0}
+\setcounter{maxextrayear}{0}
+\setcounter{maxextraalpha}{0}
+\setcounter{abbrvpenalty}{50}
+\setcounter{highnamepenalty}{50}
+\setcounter{lownamepenalty}{25}
+\setcounter{maxparens}{3}
+\setcounter{parenlevel}{0}
+\setcounter{mincomprange}{10}
+\setcounter{maxcomprange}{100000}
+\setcounter{mincompwidth}{1}
+\setcounter{labelname}{0}
+\setcounter{savedlabelname}{0}
+\setcounter{author}{0}
+\setcounter{savedauthor}{0}
+\setcounter{shortauthor}{0}
+\setcounter{savedshortauthor}{0}
+\setcounter{editor}{0}
+\setcounter{savededitor}{0}
+\setcounter{editora}{0}
+\setcounter{savededitora}{0}
+\setcounter{editorb}{0}
+\setcounter{savededitorb}{0}
+\setcounter{editorc}{0}
+\setcounter{savededitorc}{0}
+\setcounter{shorteditor}{0}
+\setcounter{savedshorteditor}{0}
+\setcounter{bookauthor}{0}
+\setcounter{savedbookauthor}{0}
+\setcounter{translator}{0}
+\setcounter{savedtranslator}{0}
+\setcounter{annotator}{0}
+\setcounter{savedannotator}{0}
+\setcounter{commentator}{0}
+\setcounter{savedcommentator}{0}
+\setcounter{introduction}{0}
+\setcounter{savedintroduction}{0}
+\setcounter{foreword}{0}
+\setcounter{savedforeword}{0}
+\setcounter{afterword}{0}
+\setcounter{savedafterword}{0}
+\setcounter{holder}{0}
+\setcounter{savedholder}{0}
+\setcounter{namea}{0}
+\setcounter{savednamea}{0}
+\setcounter{nameb}{0}
+\setcounter{savednameb}{0}
+\setcounter{namec}{0}
+\setcounter{savednamec}{0}
+\setcounter{institution}{0}
+\setcounter{savedinstitution}{0}
+\setcounter{language}{0}
+\setcounter{savedlanguage}{0}
+\setcounter{location}{0}
+\setcounter{savedlocation}{0}
+\setcounter{organization}{0}
+\setcounter{savedorganization}{0}
+\setcounter{origlocation}{0}
+\setcounter{savedoriglocation}{0}
+\setcounter{origpublisher}{0}
+\setcounter{savedorigpublisher}{0}
+\setcounter{pageref}{0}
+\setcounter{savedpageref}{0}
+\setcounter{publisher}{0}
+\setcounter{savedpublisher}{0}
+\setcounter{lista}{0}
+\setcounter{savedlista}{0}
+\setcounter{listb}{0}
+\setcounter{savedlistb}{0}
+\setcounter{listc}{0}
+\setcounter{savedlistc}{0}
+\setcounter{listd}{0}
+\setcounter{savedlistd}{0}
+\setcounter{liste}{0}
+\setcounter{savedliste}{0}
+\setcounter{listf}{0}
+\setcounter{savedlistf}{0}
+\setcounter{textcitecount}{0}
+\setcounter{textcitetotal}{0}
+\setcounter{textcitemaxnames}{0}
+\setcounter{biburlnumpenalty}{0}
+\setcounter{biburlucpenalty}{0}
+\setcounter{biburllcpenalty}{0}
+\setcounter{smartand}{1}
+\setcounter{bbx:relatedcount}{0}
+\setcounter{bbx:relatedtotal}{0}
+\setcounter{cbx@tempcnta}{0}
+\setcounter{cbx@tempcntb}{61}
+\setcounter{tm@util}{0}
+\setcounter{List1}{0}
+\setcounter{List2}{0}
+\setcounter{List3}{0}
+\setcounter{List4}{0}
+\setcounter{List5}{0}
+\setcounter{List6}{0}
+\setcounter{List7}{0}
+\setcounter{List8}{0}
+\setcounter{List9}{0}
+\setcounter{List10}{0}
+\setcounter{Item}{9}
+\setcounter{Hfootnote}{4}
+\setcounter{bookmark@seq@number}{88}
+\setcounter{ncsu@appendixtocdepth}{2}
+\setcounter{section@level}{0}
+}

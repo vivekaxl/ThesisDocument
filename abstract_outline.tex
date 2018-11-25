@@ -1,0 +1,178 @@
+Most software systems available today are configurable, which gives the users an option to customize the system to achieve differ-
+ent functional or non-functional (better performance) properties. As systems evolve, more configuration options are added to the
+software system. Studies report that developers find it difficult to
+understand the configuration spaces, which leaves considerable
+optimization potential untapped and induces major economic cost.
+To solve this problem of finding the (near) optimal configurations,
+engineers have proposed various techniques. Most popular among
+them are model-based techniques, where accurate models of the configuration space are created using as few configuration measurements as possible. We notice two major problems with the model-based techniques: 1) previous techniques are expensive to be practically viable, and 2) there are software systems whose configuration spaces cannot be accurately modeled. Consequently, there is
+a gap between proposed techniques and practical viability of these
+techniques.
+This dissertation will focus on proposing techniques which are
+easier to understand and is practically viable. 
+
+First, we present \textbf{WHAT} that exploits
+some lower dimensional knowledge to build performance models. Prior work on
+predicting the performance of software configurations suffered from either (a) requiring
+far too many sample configurations or (b) large variances in their predictions.
+Both these problems can be avoided using the \textbf{WHAT} spectral learner. WHAT?s innovation
+is the use of the spectrum (eigenvalues) of the distance matrix between the
+configurations of a configurable software system, to perform dimensionality reduction.
+Within that reduced configuration space, many closely associated configurations
+can be studied by executing only a few sample configurations. For the subject systems
+studied here, a few dozen samples yield accurate and stable predictors?less than
+10 \% prediction error, with a standard deviation of less than 2\%. When compared
+to the state of the art, WHAT (a) requires 2 to 10 times fewer samples to achieve
+similar prediction accuracies, and (b) its predictions are more stable (i.e., have lower
+standard deviation). Furthermore, we demonstrate that predictive models generated
+by WHAT can be used by optimizers to discover system configurations that closely
+approach the optimal performance.
+
+
+The second contribution is a rank-based method
+which shows how an accurate model is not required for performance optimization, but a rank-preserving model is sufficient. We evaluate rank-based method with 21 scenarios based on nine software systems and demonstrate that our approach is beneficial in 16 scenarios; for the remaining five scenarios, an accurate model
+can be built by using very few samples anyway, without the need
+for a rank-based approach. Additionally, in 8/21 of the scenarios,
+the number of measurements required by the rank-based method
+is an order of magnitude smaller than methods used in prior work.
+To further improve our second contribution, we also propose a
+Bayesian-based method called Flash: an alternative to model-based
+technique. Based on preliminary evidence, which can further reduce
+the cost of performance optimization. 
+
+
+Finally, we present \textbf{Flash},  a sequential model-based method, which sequentially explores the configuration space by reflecting on the configurations evaluated so far to determine the next best configuration to explore. FLASH scales up to software systems that defeat the prior state of the art model-based methods in this area. FLASH runs much faster than existing methods and can solve both single-objective and multi-objective optimization problems. The central insight of this paper is to use the prior knowledge (gained from prior runs) to choose the next promising configuration. This strategy reduces the effort (ie, number of measurements) required to find the (near) optimal configuration. We evaluate FLASH using 30 scenarios based on 7 software systems to demonstrate that FLASH saves effort in 100\% and 80\% of cases in single-objective and multi-objective problems respectively by up to several orders of magnitude compared to the state of the art techniques.
+
+
+
+\iffalse
+\begin{itemize}
+
+\item Data-intensive + Cloud --> promising but suffers from
+  \begin{itemize}
+  \item \textbf{Poor Performance Guarantee}
+  	\begin{itemize}
+  	\item (Multi-tenancy) Shared cloud resources generates performance interference
+  	\item (Scaling) Non-linear scaling behavior
+  	\item (Reconfiguring) Adat to software reconfigurations
+  	\item (Self-tuning) Adapt to infrastructure changes for better accuracy 
+  	\end{itemize}
+
+  \item \textbf{Poor Performance Optimization}
+  	\begin{itemize}
+  	\item (Task Placement) Suboptimal task placement creates I/O bottlenecks
+  	\item (Data Placement) Data replication and placement do not match workload
+    \end{itemize}
+  
+  \item \textbf{Complex Cloud Configurations} 
+    \begin{itemize}
+    \item Choosing the \textit{right} resources is difficult because of
+    the non-trivial relation between resource cost and system performance.
+    \end{itemize}
+  \end{itemize}
+
+\item This dissertation aims to addresses
+  \begin{itemize}
+  \item \textbf{Inside-Out} is a tool that generates
+  accurate and robust performance models for distributed storage systems.
+  \item \textbf{Flow Scheduling} is a MapReduce job scheduling algorithm
+  that improves job throughput by maximizing I/O utilization while 
+  \item \textbf{Rainbow} is the data replication and placement scheme that
+  maximizes load balancing and is robust to
+  workload changes to a certain degree.
+  \item \textbf{AWS Optimizer} is a tool to generate resource configuration that
+  either minimizes resource costs or maximizes system performance to
+  match cost and performance requirements from users.
+  \end{itemize}
+
+\end{itemize} 
+
+
+%Data-intensive computing is XXX.\\
+%Cloud computing is XXX.\\
+%Data-intensive + Cloud computing is challenging because:\\
+%1. Unreliable performance $\rightarrow$ \emph{Inside-Out}\\
+%2. Scheduling tasks to optmize CPU and I/O access $\rightarrow$ \emph{Flow Scheduling}\\
+%3. Placing data to fit workload $\rightarrow$ \emph{Workload-Aware Data Placement}\\
+%4. Modeling cost/performance on AWS $\rightarrow$ \emph{the Future Work}\\
+
+% Data-intensive computing has become an central part to provide decisions th
+%Cloud computing offers elasticity for efficient resource usage based on pay-as-you-go model.
+% Deploying a data-intensive computing platform on the Cloud is a preferable choice but also a challenging task.
+% First, performance variance and interference is a major concern for cloud computing.
+% Second, optimizing job scheduling is critical to optimize performance.
+% Third, proper data placement is essential to stystem performance.
+%Last, chooising the optimal cloud configuration.
+
+Data-intensive computing has become increasingly important
+because of the demand to extract pattern and knowledge
+from the extreme large volume of data.
+In parallel with this trend, cloud computing has become
+a vital infrastructure for hosting services
+because users are able
+to pay for what they actually need and
+to choose resource configurations to fit their service requirements.
+However, hosting data-intensive applications on the cloud
+has several challenges such as
+I/O performance efficiency and guarantee of storage services.
+Furthermore, it is not trivial to choose the most cost-effective
+cloud configurations for applications demanding
+large data sizes or high I/O operations.
+
+In this dissertation, we aim to make data-intensive computing more
+efficient and reliable running on the cloud.
+%To this end, we create robust and consistent performance models for
+%providing reliable storage services, and
+%to optimize task scheduling and data placement for improving
+%system throughput.
+
+% We also focus on finding the most cost-effective way to deploy and run
+% data-intensive applications in such a cloud scenario.
+% However, the efficient support of data-intensive computing on the cloud
+% requires, for example,
+% to provide reliable storage service for minimizing performance uncertainty
+% on the cloud,
+% to optimize task placement for eliminating staggering I/O performance,
+% and to optimize data replication and placement in order to
+% meet diverse workload characteristics.
+% Furthermore, deployment of applications on the cloud requires to consider
+% the most cost-effective way that fulfills the performance goals
+% specified by users.
+
+First, we present \textit{Inside-Out}, an automatic model building tool that creates
+accurate performance models for distributed storage services.
+%Inside-Out is a black-box approach.
+%It builds high-level performance models by applying machine learning techniques
+%to low-level system performance metrics collected from individual components of
+%the distributed SDS system.
+%Inside-Out uses a two-level learning method that combines
+%two machine learning models to automatically
+%filter irrelevant features,
+%boost prediction accuracy, and
+%yield consistent prediction.
+
+Second, we propose a novel flow scheduling method for the MapReduce framework
+to eliminate I/O bottleneck while improving execution time.
+%The proposed scheduling approach models the placement problem of
+%map and reduce tasks as a minimum cost network flow problem.
+%Flow scheduling analyzes flow rate requirements for the map and reduce tasks,
+%and then computes the optimal task execution order by minimizing the
+%cost of over-utilized resource allocation.
+
+Third, we present \textit{Rainbow}, a fine-grained, workload-aware
+data replication and placement scheme, for efficient cloud elasticity.
+%This work examines the trade-off between replication factors,
+%partition granularity, and placement strategy.
+%It shows that coarse-grain, workload-aware replication is able to
+%improve performance over a n\"aive uniform data placement.
+%Dividing the dataset into small sets, fine-grain replication,
+%improves performance because it can better match the anticipated workload and
+%can to tolerant small mis-predictions.
+%We propose two  fine-grained placement schemes, to maximize
+%load balancing and to exploit cache locality.
+
+Last, we plan to develop a cost and performance model that chooses
+resource and software configurations automatically
+for running large-scale data processing applications on the cloud.
+
+\fi

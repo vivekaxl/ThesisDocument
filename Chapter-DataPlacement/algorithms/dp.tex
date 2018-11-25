@@ -1,0 +1,22 @@
+\begin{algorithm}[!htbp]
+ \SetAlgoLined
+ \DontPrintSemicolon
+ \DontPrintSemicolon
+ \KwIn{an historical workload}
+ \KwOut{partition placement on each node}
+ $M$ := the minimum number of nodes that hold all data\;
+ $k$ := the selected partition granularity\;
+ $R$ := the replication factor\;
+ $loads$ := the predicted loads $\lambda_i$ of partitions\;
+ $replicas$ := the replication vector (see Section~\ref{sec:model})
+
+ \For{$p_i$ in $replicas$}{
+   \For{$j$=1; $j<=p_i$; $j=j+1$}{
+   	 /* strategy is \emph{compact}, \emph{balanced} or \emph{full} */\;
+     n := pick\_node(strategy)\;
+     assign $p_i$ to $n$
+   }
+ }
+ \caption{Data Placement Procedure}
+ \label{alg:dp}
+\end{algorithm}

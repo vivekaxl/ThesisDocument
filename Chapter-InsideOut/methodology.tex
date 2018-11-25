@@ -1,0 +1,212 @@
+\section{The Inside-Out Design}
+\label{sec:methodology}
+%\rp{Chin: In the previous section, you say ``As we will explain in Section V-A, we use 32 low-level performance 
+%metrics collected with dstat''. This section does not say anything about 32 metrics. Please mention them here. 
+%I think we need to write this section in a much better way. You should clearly explain the steps: something like: We collect 32 
+%low level system metrics from each VM (either give the list or mention just the few) every x seconds. Then say we take mean, std, sum and 5\% of each 
+%of these 32 metrics for every moving window of xxx seconds. Then explain why we use moving window. then say that for training and validation purposes, 
+%we measure the end-to-end performance metrics (IOPS, throughput, and latency) using cosbench every x seconds. Then we take average, xxx, xxx etc. 
+%of these metrics ...I think you get the point now, right? We have to clearly explain what we exactly did. }
+In this section, we present the design of Inside-Out.
+We also discuss the trade-offs among a set of representative machine learning algorithms
+and propose a two-step learning technique for mitigating overfitting problems.
+
+
+
+\subsection{Collecting and Pre-Processing Low-Level Metrics}
+\label{sec:data_preprocessing}
+
+Inside-Out collects general, low-level system metrics from individual machines running the distributed storage service.
+However, the raw collected data suffers from various problems due to inefficiency of data collectors, system clock skews,
+incomparable data formats, workload outliers, bursty system anomalies, \etc
+The noisy data can lead to unstable and 
+inaccurate performance models. 
+Inside-Out performs a series of data pre-processing functions to address these issues.
+
+%\rp{The goal of this step is to remove unwanted characteristics of the collected data, such as
+%workload outliers, system clock deviation, incomparable data format, etc.
+%}
+
+
+%Data preprocessing is a preparation step before training a model.
+
+
+\subsubsection{Monitoring storage components}
+We collect low-level system metrics of the underlying operating system to capture resource utilization 
+(\eg cpu, memory, disk and network usage).  
+The low-level performance metrics are sampled with one-second granularity.
+Such data can be collected from \textit{libvirt}, Ganglia, instrumented hypervisors \cite{Koh2007} and \textit{Ceilometer} in OpenStack.
+We use  \emph{dstat} monitoring tool (with option: -tcly -mg --vm -dr -n --tcp --float) to collect these data.
+
+
+%This step helps us eliminate unwanted characteristics of the collected data, such as
+%high variation due to workloads, uncertainty originated by physical hardware, 
+%system clock deviation, incomparable data format, etc.
+%For the collected performance data, fluctuating metrics, time synchronization and feature transformation for a distributed system are the major challenges.
+
+%\subsubsection{Smoothing monitored data}
+\subsubsection{Data smoothing}
+%
+Building a performance model with data collected at one-second granularity is challenging because 
+system data can exhibit high variance at small time scales, \eg due to dynamic/bursty workloads and interference among co-located tenants.
+Furthermore, the storage IO operation needs to pass through a series of software layers 
+between the storage client and the back-end raw physical storage device. 
+The long storage IO path can introduce high variability in resource utilization at smaller time scales. 
+For example, HDFS and Ceph both replicate data blocks across storage nodes distributed in physically disjoint 
+servers, racks or even datacenters.
+To address the uncertainties due to complex IO path spanning several software layers, 
+we compute the moving average of the collected performance data.
+We have empirically found that one-minute window for processing the moving average is sufficient to 
+eliminate outliers from the raw data.
+%we use moving averages to construct a stable prediction model.
+%We choose one-minute windows for moving average since we have empirically found 60-second moving averages to smooth out raw data sufficiently, without 
+%compromising data quality, in order to yield stable and accurate performance models.
+%A fine granularity, at lease 15 seconds, is also desirable from our experience.
+
+%RP: Chin, I commented the following line becuause it looks too vague. If you want to clarify this, 
+%we can restate in a better way. 
+%and the uncertainty come from the interaction between software and hardware components.
+%We use moving average to smooth the collected performance data for stable prediction model.
+%\rp{Chin: Please explain ``moving average of xxx'', ``why 15 seconds is a desirable window''. These aspects need to be mentioned 
+%in a clear manner, not in a handwavy way.}
+%We use moving average to construct a stable prediction model.
+%Based on our data collected from our internal testbed, 
+%it is desirable to use a window greater than 15 seconds. 
+%From our experience, a window greater than 15 seconds shows stable results.
+%One reason is that a storage request can last longer than 10 seconds for accessing large objects (or files).
+
+\subsubsection{Timestamp alignment}
+Proper time synchronization among participating servers is essential to correlate data collected from those servers. 
+We use NTP for time synchronization.
+The average timestamp of all nodes is taken as the basis for time alignment.
+
+\subsubsection{Feature transformation for a distributed storage system}
+%
+As mentioned earlier, elasticity is an important feature of SDS, since it needs to adjust its size based on storage demand. 
+%The built prediction model needs to be able to predict end-to-end performance at different system scales.
+Thus our model must accurately predict end-to-end performance at arbitrary deployment scales.
+However, the data collected from different scales may have different dimensions. 
+For instance, Ceph with 10 Object Storage Servers (OSDs) generates 10 copies of low-level performance metrics, 
+while Ceph with 5 OSDs generates fewer data points. This makes it hard to train and build a unified model.
+As mentioned in Section~\ref{sec:feaatures_for_distributed_system}, we use \emph{mean, sum, std, and 5\%} statistical 
+variables to capture 
+different types of workload distribution such as
+\emph{hotspot}, \emph{load imbalance}, and \emph{aggregate performance}.
+
+%To achieve the goal, we need to make sure the dimension of data, collecting from different system configurations are comparable.
+%As suggested in Section~\ref{sec:feaatures_for_distributed_system}, our feature transformation describes a distributed system as in one of the four conditions: load-balancing, non-load-balancing, hotspot and the aggregate workload.
+%As suggested in Section~\ref{sec:feaatures_for_distributed_system}, our feature transformation process 
+%takes four conditions into account: load-balancing, non-load-balancing, hotspot and the aggregate workload.
+
+In summary, Inside-Out collects 32 raw low-level system metrics with one-second granularity.
+Inside-Out applies proper time alignment and moving average with one-minute windows for stabilizing performance data.
+Then it calculates \emph{mean}, \emph{std}, \emph{sum} and \emph{5\%} of individual metrics collected from multiple machines.
+This ensures that our performance model can accept input data for systems with varying scales of deployment, 
+while preserving important characteristics of a distributed storage system.
+For training and validation purposes, 
+we measure end-to-end performance metrics (IOPS, throughput, and latency) every 5 seconds using COSbench \cite{cosbench}, and take average over the one-minute window.
+Next, we describe how we build end-to-end performance models in order to capture the relationship between low-level system metrics and end-to-end throughput and IOPS.
+
+%Lastly, we transform low-level performance metrics to create comparable dataset while preserving characteristics 
+%of a distributed storage system, using the feature transformation specified in Figure~\ref{fig:feature_types}.
+
+%In summary, we use a 60-seconds window to smooth performance data, and proper time alignment has applied to the monitored performance data.
+%\mra{Chin, what did you use to transform the data? average? It would be good if we can briefly state how we transform the data.
+%if you already described this somewhere later in the paper, we could forward reference the section.}
+
+
+\subsection{Exploring Learning Methods}
+\label{sec:algorithm_selection}
+
+%We collect time series data composed of low-level system metrics collected from all machines running the distributed storage system. 
+%At each sampling time (every $t$ seconds), a low-level performance snapshot of a running distributed storage system is \rp{obtained from} the dataset.
+%Given a performance snapshot at time $t$ of a running distributed storage, we aim to build a model that predicts the storage's end-to-end performance, e.g. throughput and IOPS.
+%The performance snapshot is the low-level performance metrics collected from distributed storage nodes.
+
+Our goal is to build a model that accurately predicts end-to-end throughput and IOPS by analyzing only the low-level metrics of a distributed storage system.
+We explore several algorithms, including statistical regression \cite{Fron2004, hastie2005}, 
+decision tree learning and random forests learning \cite{hastie2005,Wang2004}.
+For statistical regression, we mainly focus on linear regression techniques, 
+which can be extended to support non-linear regression by expanding features that simulate, 
+for example, quadratic terms \cite{Kundu2010}.
+We did not find this necessary in our application and exclude the discussion.
+
+%\subsubsection{Lasso}
+%\textit{Lasso\footnote{Least Absolute Shrinkage and Selection Operator}} 
+% remove the full name above
+\textit{Lasso} 
+is a least square linear regression technique with L1-norm regularization.
+The L1 penalty function leads to a sparse solution, which has an effect of restricting 
+the number of selected variables.
+This property is useful for figuring out important features, especially 
+when the number of variables or features is large.
+%
+%\subsubsection{Ridge}
+\textit{Ridge} is similar to Lasso but instead uses L2-norm regularization, 
+which has the effect of group selection of variables.
+This property does not restrict the number of variables selected by the prediction model 
+and therefore, the prediction accuracy might degrade and become inconsistent 
+%when the feature space is large.
+when the number of input features to the training model is large. 
+%when we use a small number of features out of much larger feature space.
+%\mra{Chin, I modified the previous sentence. Check if it is ok with you.}
+%
+%\subsubsection{Elastic Net}
+\textit{Elastic Net} combines both advantages---it does group selection while enforcing sparsity.
+Based on our data set, Lasso and Elastic Net have similar prediction performance, and Ridge shows larger variance.
+%
+The \textit{Decision Tree} (DT) learning uses a top-down approach and recursively partitions data to fit target values.
+The tree-based model is easy to interpret and scales well to large datasets.
+\textit{Random Forests} (RF) is an ensemble method that uses multiple decision trees~\cite{hastie2005}.
+%In practice, it is accurate, efficient, and more robust compared to a single decision tree.
+RF improves a single decision tree in many ways, e.g., accuracy, efficiency, and robustness.
+%Due to space limit, please refer to \cite{hastie2005} for detailed description.
+
+To summarize, linear regression models assume a linear relationship and might oversimplify the storage behavior. 
+Nonetheless, it has the potential to exhibit better generalization for extrapolating performance prediction 
+for the unknown behavior case (the pattern not included in the training dataset).
+On the other hand, the tree-based learning can achieve good model accuracy (perfectly fits the training data), 
+but it can easily lead to overfitting problems.
+Its prediction accuracy decreases, for example,
+under different storage workloads,
+as shown in \myfigure{\ref{fig:challenge_generalization}}.
+
+
+\subsection{Two-level Training}
+\label{sec:auto_feature_selection}
+
+%As discussed in Section~\ref{sec:non-deterministic}, 
+The fundamental challenge 
+in building an effective prediction model from a large set of features is the overfitting problem.
+One way to address this problem is to perform manual feature selection.
+However, this approach is problematic because the right set of features depend on application types, 
+deployment topology, resource constraint, etc.
+
+Instead, we propose a two-level training process that filters out irrelevant features in the first step 
+and then builds models by using the reduced set of features in the second step.
+To this end, Inside-Out pipelines Ridge and Lasso together, where Ridge filters features in 
+coarse-granularity and then Lasso builds the prediction model.
+We choose Ridge as the filtering algorithm because it is not a sparse solution and considers all features. 
+We then apply exhaustive grid search to find the optimized score for important features.
+We use $\alpha \times$ \textit{median(coefficients)} derived from Ridge as the threshold.
+
+For comparison, we consider Decision Tree with Lasso (Auto-DTL) and RandomForest with Lasso (Auto-RFL).
+Our evaluation shows Inside-Out outperforms consistently across all prediction cases, 
+and boosts prediction accuracy in several scenarios, where the linear regression models 
+fail to generalize the behavior of a distributed storage system.
+We also experimented by using Lasso and Elastic Net as the filter algorithm but did not find comparable performance with Inside-Out.
+%Beside, we also evaluated Lasso and used Elastic Net as a filter algorithm and 
+%found they are not comparable with Auto-RL.
+%\mra{this sentence is a little confusing..}
+%We will leave them as future work to further study the major difference.
+
+Inside-Out uses the following pseudo code to generate an end-to-end performance model.
+In practice, we set $k$ to $10$ for stable prediction results.
+The data processing part is explained in previous sections.
+Features are automatically selected using the Ridge algorithm
+with multiple thresholds.
+We vary $\alpha$ from $0.1, 0.2, ..., 1.0$.
+The grid search approach is used to select the best model.
+
+
+\input{Chapter-InsideOut/algorithm/two-level.tex}

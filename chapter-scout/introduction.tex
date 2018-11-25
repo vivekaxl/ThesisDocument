@@ -1,0 +1,80 @@
+\section{Introduction}
+\label{sec:introduction}
+
+
+This chapter presents \scout, which 
+identifies search regions that contain suitable architecture configurations.
+\scout follows sequential model-based optimization (SMBO)
+that converges to the best architectural configurations.
+This method better tolerates high variance of the prediction error
+in a machine learning based prediction model.
+Second, \scout adopts pairwise comparison for determining
+the next architectural configurations
+that are likely to improve upon the current choice.
+Instead of predicting workload performance directly
+(\eg in \emph{CherryPick} and \emph{PARIS}),
+\scout uses relaxed modeling to find
+the next \emph{better} choices (relative ordering).
+This naturally fits into SMBO.
+Third, \scout uses low-level performance metrics
+to identify performance bottlenecks and
+to capture cost-performance relationship.
+Last, \scout uses transfer learning to acquire knowledge of CAT
+from other workloads.
+These four elements enable \scout to navigate through the search space
+more quickly and intelligently.
+
+Any search-based method has two aspects.
+\vspace{-0.5em}
+\begin{itemize}
+    \setlength\itemsep{-0.4em}
+    \item \textit{Exploration:} Gather more information about the search space by executing a new cloud configuration.
+    \item \textit{Exploitation:} Choose the most promising configuration based on information collected.
+\end{itemize}
+\vspace{-0.5em}
+Additional exploration incurs higher search cost and insufficient exploration may lead to sub-optimal solutions.
+This is the exploration-exploitation dilemma the appears in many machine learning problems~\cite{kaelbling1996reinforcement}.
+For example, \emph{CherryPick} requires a good exploration strategy
+to characterize the search space~\cite{Alipourfard2017}.
+
+In this chapter, we demonstrate that it is possible to
+trade exploration for exploitation
+without settling for a sub-optimal configuration.
+The central insight of this work is that the cost of the search
+for the right cloud configuration can be significantly reduced
+by using information gathered during tuning.
+However, prior work such as \emph{CherryPick} and \emph{Arrow}
+learns from an optimization process of a single workload
+~\cite{Alipourfard2017, Hsu2018Arrow}.
+This produces unnecessary search cost on exploration
+(related to the \emph{cold-start} problem) and
+may eventually lead to sub-optimal choices (due to irregular search space).
+\scout is able to alleviate these problems
+with \emph{transfer learning}~\cite{pan2010survey}---
+the knowledge is transferred from previous (but distinct) workloads
+using relative ordering and low-level performance metrics,
+which does not require workload information.
+
+In this chapter, we identify the key components for an effective method
+to the CAT problem.
+\scout enables practitioners to find a near-optimal
+cloud architecture configuration
+with a better search performance and a lower search cost than
+the state of the art.
+Our key contributions are:
+
+\begin{enumerate}[leftmargin=*]
+\setlength\itemsep{-0.4em}
+\item we propose a novel system, \scout, that
+finds (near) optimal solutions and solves the shortcomings of prior work.
+(Section~\ref{sec:approach});
+\item we present a novel way to represent the search space,
+which can then be used to transfer knowledge
+from historical measurements(Section~\ref{sec:approach});
+\item we compare the performance of \scout with
+other state-of-the-art methods
+using 125 workloads and 87 architecture configurations
+on three different data processing systems.
+(Section~\ref{sec:evaluation}); 
+and
+\end{enumerate}

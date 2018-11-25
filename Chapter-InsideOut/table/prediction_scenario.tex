@@ -1,0 +1,61 @@
+\newcommand{\scenarioMU}{Increasing users}
+\newcommand{\scenarioCUB}{Complex usage}
+\newcommand{\scenarioCRB}{Complex request}
+\newcommand{\scenarioWIB}{Write intensive}
+\newcommand{\scenarioRIB}{Read intensive}
+\newcommand{\scenarioMWIB}{Medium write intensive}
+\newcommand{\scenarioMRIB}{Medium read intensive}
+\newcommand{\scenarioMM}{Reconfigure Ceph}
+\newcommand{\scenarioSUI}{Scale-up instances}
+\newcommand{\scenarioMBS}{Medium network SLO}
+\newcommand{\scenarioLBS}{Low network SLO}
+\newcommand{\scenarioSON}{Scale out to}
+\newcommand{\scenarioSIN}{Shrink in to}
+\newcommand{\scenarioMTA}{Case 1 - tenant 1 (250 Mbit)}
+\newcommand{\scenarioMTB}{Case 1 - tenant 2}
+\newcommand{\scenarioMTAA}{Case 2 - tenant 1}
+\newcommand{\scenarioMTBB}{Case 2 - tenant 2}
+
+
+\newcommand{\spheading}[2][10em]{% \spheading[<width>]{<stuff>}
+  \rotatebox{90}{\parbox{#1}{\raggedright #2}}}
+
+\begin{table*}[t!]
+  \fontsize{8}{8}\selectfont
+  \centering
+  \caption{Common scenarios that storage behavior can change in a software-define storage environment}
+  \begin{tabularx}{.95\linewidth}{|l|c|c|c|X|}
+  \hline
+  & \textbf{Scenario} & \textbf{Training Dataset} &  \textbf{Prediction Dataset} & \textbf{Explanation} \\
+  \hline
+  \multirow{7}{*}[-0.3ex]{\rotatebox[origin=c]{90}{\textbf{Changing Workload}}} & \scenarioMU & \{1, 2\} & \{4\} & The number of client virtual machines running COSBench. \\
+  \cline{2-5}
+  & \scenarioCUB & \{1, 2, 4, 8\} & \{16, 32\} & The number of threads for all benchmark clients. \\
+  \cline{2-5}
+  & \scenarioCRB & 512KB & 1-1024KB & The request size (either static or variable) of the workload, configured in COSBench. \\
+  \cline{2-5}
+  & \scenarioWIB & \{50, 75, 100\} & \{25, 0\} & \multirow{4}{1\linewidth}{The percentage of read operations the workload. The read and write percentages are 100 in total.}\\
+  \cline{2-4}
+  & \scenarioRIB & \{0, 25, 50\} & \{75, 100\} & \\
+  \cline{2-4}
+  & \scenarioMWIB & \{0, 50, 100\} & \{25\} & \\
+  \cline{2-4}
+  & \scenarioMRIB & \{0, 50, 100\} & \{75\} & \\
+  \hline
+  \hline
+  \multirow{4}{*}[-1.7ex]{\rotatebox[origin=c]{90}{{\textbf{Reconfiguration}}}} & \scenarioMM & \{1\} & \{2\} & The number of Ceph monitor daemons.\\
+  \cline{2-5}
+  & \scenarioSUI & m1.small & m1.medium & The instance type of the virtual machines running Ceph is upgraded to a powerful one.  A m1.small instance has one core and 2GB memory and m1.medium has two cores and 4GB memory.  Note that in this setting, the configuration of disk I/O remains the same.\\
+  \cline{2-5}
+  & \scenarioMBS & unrestricted & 500 Mbps & The network bandwidth of virtual machines is limited at 500 Mbps.  We use the Linux tool \textit{tc} for network throttling\\
+  \cline{2-5}
+  & \scenarioLBS & unrestricted & 250 Mbps & Network bandwidth is limited at 250 Mbps.\\
+  \hline
+  \hline
+  \multirow{2}{*}[-0.5ex]{\rotatebox[origin=c]{90}{\textbf{Elasticity}}} & \scenarioSON { \textit{n}} & \{4, 6, 8, 10\} & \{20, 30, 40\} & The total number of Ceph OSDs.  Note that each OSD is running in a virtual machine and different OSDs can run on the same physical servers (10 servers in total). \\
+  \cline{2-5}
+  & \scenarioSIN { \textit{n}} & \{20, 30, 40\} & \{4, 6, 8, 10\} & Similar to the above, but the cluster size is decreased. \\
+  \hline
+  \end{tabularx}
+  \label{tab:prediction_scenario}
+\end{table*}

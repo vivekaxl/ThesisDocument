@@ -1,0 +1,5347 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{Adya2016}{inproceedings}{}
+  \name{author}{15}{}{%
+    {{}%
+     {Adya}{A.}%
+     {Atul}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Myers}{M.}%
+     {Daniel}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Howell}{H.}%
+     {Jon}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Elson}{E.}%
+     {Jeremy}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Meek}{M.}%
+     {Colin}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Khemani}{K.}%
+     {Vishesh}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fulger}{F.}%
+     {Stefan}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gu}{G.}%
+     {Pan}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bhuvanagiri}{B.}%
+     {Lakshminath}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hunter}{H.}%
+     {Jason}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Peon}{P.}%
+     {Roberto}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kai}{K.}%
+     {Larry}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shraer}{S.}%
+     {Alexander}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Merchant}{M.}%
+     {Arif}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lev-Ari}{L.-A.}%
+     {Kfir}{K.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {USENIX Association}%
+  }
+  \strng{namehash}{AA+1}
+  \strng{fullhash}{AAMDHJEJMCKVFSGPBLHJPRKLSAMALAK1}
+  \field{sortinit}{A}
+  \field{booktitle}{Proceedings of the 12th USENIX Conference on Operating
+  Systems Design and Implementation}
+  \field{isbn}{978-1-931971-33-1}
+  \field{pages}{739\bibrangedash 753}
+  \field{series}{OSDI'16}
+  \field{title}{Slicer: Auto-sharding for Datacenter Applications}
+  \list{location}{1}{%
+    {Savannah, GA, USA}%
+  }
+  \field{year}{2016}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Akdere2012}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Akdere}{A.}%
+     {Mert}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {\c{C}etintemel}{c.}%
+     {Ugur}{U.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Riondato}{R.}%
+     {Matteo}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Upfal}{U.}%
+     {Eli}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zdonik}{Z.}%
+     {Stanley~B.}{S.~B.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE Computer Society}%
+  }
+  \strng{namehash}{AM+1}
+  \strng{fullhash}{AMcURMUEZSB1}
+  \field{sortinit}{A}
+  \field{booktitle}{Proceedings of the 2012 IEEE 28th International Conference
+  on Data Engineering}
+  \verb{doi}
+  \verb 10.1109/ICDE.2012.64
+  \endverb
+  \field{isbn}{978-0-7695-4747-3}
+  \field{pages}{390\bibrangedash 401}
+  \field{series}{ICDE '12}
+  \field{title}{Learning-based Query Performance Modeling and Prediction}
+  \verb{url}
+  \verb http://dx.doi.org/10.1109/ICDE.2012.64
+  \endverb
+  \list{location}{1}{%
+    {Washington, DC, USA}%
+  }
+  \field{year}{2012}
+\endentry
+
+\entry{Alipourfard2017}{inproceedings}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Alipourfard}{A.}%
+     {Omid}{O.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Liu}{L.}%
+     {Hongqiang~Harry}{H.~H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chen}{C.}%
+     {Jianshu}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Venkataraman}{V.}%
+     {Shivaram}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yu}{Y.}%
+     {Minlan}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zhang}{Z.}%
+     {Ming}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {USENIX Association}%
+  }
+  \strng{namehash}{AO+1}
+  \strng{fullhash}{AOLHHCJVSYMZM1}
+  \field{sortinit}{A}
+  \field{booktitle}{Proceedings of the 14th USENIX Conference on Networked
+  Systems Design and Implementation}
+  \field{isbn}{978-1-931971-37-9}
+  \field{pages}{469\bibrangedash 482}
+  \field{series}{NSDI'17}
+  \field{title}{Cherrypick: Adaptively Unearthing the Best Cloud Configurations
+  for Big Data Analytics}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=3154630.3154669
+  \endverb
+  \list{location}{1}{%
+    {Boston, MA, USA}%
+  }
+  \field{year}{2017}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{aws}{manual}{}
+  \field{sortinit}{A}
+  \field{note}{\url{https://aws.amazon.com}}
+  \field{title}{Amazon Web Services}
+\endentry
+
+\entry{Ananthanarayanan2011}{inproceedings}{}
+  \name{author}{7}{}{%
+    {{}%
+     {Ananthanarayanan}{A.}%
+     {Ganesh}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Agarwal}{A.}%
+     {Sameer}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kandula}{K.}%
+     {Srikanth}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Greenberg}{G.}%
+     {Albert}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stoica}{S.}%
+     {Ion}{I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Harlan}{H.}%
+     {Duke}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Harris}{H.}%
+     {Ed}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{data locality, datacenter storage, fairness, replication}
+  \strng{namehash}{AG+1}
+  \strng{fullhash}{AGASKSGASIHDHE1}
+  \field{sortinit}{A}
+  \field{booktitle}{Proceedings of the Sixth Conference on Computer Systems}
+  \verb{doi}
+  \verb 10.1145/1966445.1966472
+  \endverb
+  \field{isbn}{978-1-4503-0634-8}
+  \field{pages}{287\bibrangedash 300}
+  \field{series}{EuroSys '11}
+  \field{title}{Scarlett: Coping with Skewed Content Popularity in Mapreduce
+  Clusters}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/1966445.1966472
+  \endverb
+  \list{location}{1}{%
+    {Salzburg, Austria}%
+  }
+  \field{year}{2011}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{AnanthanarayananR2009_CloudAnalytics}{inproceedings}{}
+  \name{author}{7}{}{%
+    {{}%
+     {Ananthanarayanan}{A.}%
+     {Rajagopal}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gupta}{G.}%
+     {Karan}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pandey}{P.}%
+     {Prashant}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pucha}{P.}%
+     {Himabindu}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sarkar}{S.}%
+     {Prasenjit}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shah}{S.}%
+     {Mansi}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tewari}{T.}%
+     {Renu}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {USENIX Association}%
+  }
+  \strng{namehash}{AR+1}
+  \strng{fullhash}{ARGKPPPHSPSMTR1}
+  \field{sortinit}{A}
+  \field{booktitle}{Proceedings of the 2009 Conference on Hot Topics in Cloud
+  Computing}
+  \field{series}{HotCloud'09}
+  \field{title}{Cloud Analytics: Do We Really Need to Reinvent the Storage
+  Stack?}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=1855533.1855548
+  \endverb
+  \list{location}{1}{%
+    {San Diego, California}%
+  }
+  \field{year}{2009}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Anderson2001}{report}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Anderson}{A.}%
+     {Eric}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AE1}
+  \strng{fullhash}{AE1}
+  \field{sortinit}{A}
+  \field{title}{Simple table-based modeling of storage devices}
+  \list{institution}{1}{%
+    {Technical Report HPL-SSP-2001-04, HP Laboratories}%
+  }
+  \field{type}{techreport}
+  \field{year}{2001}
+\endentry
+
+\entry{hadoop}{manual}{}
+  \field{sortinit}{A}
+  \field{note}{\url{http://hadoop.apache.org/}}
+  \field{title}{Apache Hadoop}
+\endentry
+
+\entry{spark}{manual}{}
+  \field{sortinit}{A}
+  \field{note}{\url{http://spark.apache.org/}}
+  \field{title}{{Apache Spark}}
+\endentry
+
+\entry{Ardagna2014}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Ardagna}{A.}%
+     {Danilo}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Casale}{C.}%
+     {Giuliano}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ciavotta}{C.}%
+     {Michele}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {P{\'{e}}rez}{P.}%
+     {Juan~F}{J.~F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wang}{W.}%
+     {Weikun}{W.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AD+1}
+  \strng{fullhash}{ADCGCMPJFWW1}
+  \field{sortinit}{A}
+  \verb{doi}
+  \verb 10.1186/s13174-014-0011-3
+  \endverb
+  \field{issn}{1867-4828}
+  \field{number}{1}
+  \field{pages}{11}
+  \field{title}{{Quality-of-service in cloud computing: modeling techniques and
+  their applications}}
+  \field{volume}{5}
+  \field{journaltitle}{Journal of Internet Services and Applications}
+  \field{year}{2014}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{audibert2011introduction}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Audibert}{A.}%
+     {Jean-Yves}{J.-Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Munos}{M.}%
+     {R{\'e}mi}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AJYMR1}
+  \strng{fullhash}{AJYMR1}
+  \field{sortinit}{A}
+  \field{title}{{Introduction to Bandits: Algorithms and Theory}}
+  \field{journaltitle}{ICML Tutorial on bandits}
+  \field{year}{2011}
+\endentry
+
+\entry{ec2history}{manual}{}
+  \field{sortinit}{A}
+  \field{note}{\url{http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/DocumentHistory.html}}
+  \field{title}{AWS EC2 Document History}
+\endentry
+
+\entry{Babu2012}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Babu}{B.}%
+     {Shivnath}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Herodotou}{H.}%
+     {Herodotos}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Now Publishers Inc.}%
+  }
+  \strng{namehash}{BSHH1}
+  \strng{fullhash}{BSHH1}
+  \field{sortinit}{B}
+  \verb{doi}
+  \verb 10.1561/1900000036
+  \endverb
+  \field{issn}{1931-7883}
+  \field{number}{1}
+  \field{pages}{1\bibrangedash 104}
+  \field{title}{Massively Parallel Databases and MapReduce Systems}
+  \verb{url}
+  \verb http://dx.doi.org/10.1561/1900000036
+  \endverb
+  \field{volume}{5}
+  \list{location}{1}{%
+    {Hanover, MA, USA}%
+  }
+  \field{journaltitle}{Foundations and Trends in Databases}
+  \field{month}{11}
+  \field{year}{2013}
+\endentry
+
+\entry{Barford1998}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Barford}{B.}%
+     {Paul}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Crovella}{C.}%
+     {Mark}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \strng{namehash}{BPCM1}
+  \strng{fullhash}{BPCM1}
+  \field{sortinit}{B}
+  \field{booktitle}{Proceedings of the 1998 ACM SIGMETRICS Joint International
+  Conference on Measurement and Modeling of Computer Systems}
+  \verb{doi}
+  \verb 10.1145/277851.277897
+  \endverb
+  \field{isbn}{0-89791-982-3}
+  \field{pages}{151\bibrangedash 160}
+  \field{series}{SIGMETRICS '98/PERFORMANCE '98}
+  \field{title}{Generating Representative Web Workloads for Network and Server
+  Performance Evaluation}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/277851.277897
+  \endverb
+  \list{location}{1}{%
+    {Madison, Wisconsin, USA}%
+  }
+  \field{year}{1998}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{bergemann2006bandit}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Bergemann}{B.}%
+     {Dirk}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Valimaki}{V.}%
+     {Juuso}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BDVJ1}
+  \strng{fullhash}{BDVJ1}
+  \field{sortinit}{B}
+  \field{title}{Bandit problems}
+  \field{journaltitle}{Cowles Foundation Discussion Paper No. 1551}
+  \field{year}{2006}
+\endentry
+
+\entry{bilal2017towards}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Bilal}{B.}%
+     {Muhammad}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Canini}{C.}%
+     {Marco}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \strng{namehash}{BMCM1}
+  \strng{fullhash}{BMCM1}
+  \field{sortinit}{B}
+  \field{booktitle}{Proceedings of the 2017 Symposium on Cloud Computing}
+  \verb{doi}
+  \verb 10.1145/3127479.3127492
+  \endverb
+  \field{isbn}{978-1-4503-5028-0}
+  \field{pages}{189\bibrangedash 200}
+  \field{series}{SoCC '17}
+  \field{title}{Towards Automatic Parameter Tuning of Stream Processing
+  Systems}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/3127479.3127492
+  \endverb
+  \list{location}{1}{%
+    {Santa Clara, California}%
+  }
+  \field{year}{2017}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Bodik2009}{inproceedings}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Bodik}{B.}%
+     {Peter}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Griffith}{G.}%
+     {Rean}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sutton}{S.}%
+     {Charles}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fox}{F.}%
+     {Armando}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jordan}{J.}%
+     {Michael~I.}{M.~I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Patterson}{P.}%
+     {David~A.}{D.~A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{automatic control}
+  \strng{namehash}{BP+1}
+  \strng{fullhash}{BPGRSCFAJMIPDA1}
+  \field{sortinit}{B}
+  \field{booktitle}{Proceedings of the 1st Workshop on Automated Control for
+  Datacenters and Clouds}
+  \verb{doi}
+  \verb 10.1145/1555271.1555273
+  \endverb
+  \field{isbn}{978-1-60558-585-7}
+  \field{pages}{1\bibrangedash 6}
+  \field{series}{ACDC '09}
+  \field{title}{Automatic Exploration of Datacenter Performance Regimes}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/1555271.1555273
+  \endverb
+  \list{location}{1}{%
+    {Barcelona, Spain}%
+  }
+  \field{year}{2009}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Bodik2010}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Bodik}{B.}%
+     {Peter}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fox}{F.}%
+     {Armando}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Franklin}{F.}%
+     {Michael~J.}{M.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jordan}{J.}%
+     {Michael~I.}{M.~I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Patterson}{P.}%
+     {David~A.}{D.~A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{data hotspots, workload spikes, workload synthesis, workoad
+  characterization}
+  \strng{namehash}{BP+1}
+  \strng{fullhash}{BPFAFMJJMIPDA1}
+  \field{sortinit}{B}
+  \field{booktitle}{Proceedings of the 1st ACM Symposium on Cloud Computing}
+  \verb{doi}
+  \verb 10.1145/1807128.1807166
+  \endverb
+  \field{isbn}{978-1-4503-0036-0}
+  \field{pages}{241\bibrangedash 252}
+  \field{series}{SoCC '10}
+  \field{title}{Characterizing, Modeling, and Generating Workload Spikes for
+  Stateful Services}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/1807128.1807166
+  \endverb
+  \list{location}{1}{%
+    {Indianapolis, Indiana, USA}%
+  }
+  \field{year}{2010}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{boto3}{manual}{}
+  \field{sortinit}{B}
+  \field{note}{\url{https://github.com/boto/boto3}}
+  \field{title}{Boto 3}
+\endentry
+
+\entry{Koh2007}{inproceedings}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Bowman}{B.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pu}{P.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zhihua~Wen}{Z.~W.}%
+     {}{}%
+     {n.}{n.}%
+     {}{}}%
+    {{}%
+     {Brett}{B.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Knauerhase}{K.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Younggyun~Koh}{Y.~K.}%
+     {}{}%
+     {n.}{n.}%
+     {}{}}%
+  }
+  \keyw{data analysis; performance interference; virtual environment;
+  virtualization; performance isolation; virtual machines; system throughput;
+  system-level workload characteristics; performance metrics; runtime
+  characteristics; Ken hypervisor}
+  \strng{namehash}{BM+1}
+  \strng{fullhash}{BMPCZWnBPKRYKn1}
+  \field{sortinit}{B}
+  \field{booktitle}{2007 IEEE International Symposium on Performance Analysis
+  of Systems and Software(ISPASS)}
+  \verb{doi}
+  \verb 10.1109/ISPASS.2007.363750
+  \endverb
+  \field{pages}{200\bibrangedash 209}
+  \field{title}{An Analysis of Performance Interference Effects in Virtual
+  Environments}
+  \verb{url}
+  \verb doi.ieeecomputersociety.org/10.1109/ISPASS.2007.363750
+  \endverb
+  \field{volume}{00}
+  \list{location}{1}{%
+    {San Jose, CA, USA}%
+  }
+  \field{month}{04}
+  \field{year}{2007}
+\endentry
+
+\entry{box2015time}{book}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Box}{B.}%
+     {George~EP}{G.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jenkins}{J.}%
+     {Gwilym~M}{G.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Reinsel}{R.}%
+     {Gregory~C}{G.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ljung}{L.}%
+     {Greta~M}{G.~M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {John Wiley \& Sons}%
+  }
+  \strng{namehash}{BGE+1}
+  \strng{fullhash}{BGEJGMRGCLGM1}
+  \field{sortinit}{B}
+  \field{title}{Time Series Analysis: Forecasting and Control}
+  \field{year}{2015}
+\endentry
+
+\entry{breiman2001random}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Breiman}{B.}%
+     {Leo}{L.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{BL1}
+  \strng{fullhash}{BL1}
+  \field{sortinit}{B}
+  \field{number}{1}
+  \field{pages}{5\bibrangedash 32}
+  \field{title}{Random Forests}
+  \field{volume}{45}
+  \field{journaltitle}{Machine Learning}
+  \field{year}{2001}
+\endentry
+
+\entry{Brochu2010}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {{Brochu}}{B.}%
+     {E.}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {{Cora}}{C.}%
+     {V.~M.}{V.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {{de Freitas}}{d.}%
+     {N.}{N.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Computer Science - Learning, G.1.6, G.3, I.2.6}
+  \strng{namehash}{BE+1}
+  \strng{fullhash}{BECVMdN1}
+  \field{sortinit}{B}
+  \verb{eprint}
+  \verb 1012.2599
+  \endverb
+  \field{title}{{A Tutorial on Bayesian Optimization of Expensive Cost
+  Functions, with Application to Active User Modeling and Hierarchical
+  Reinforcement Learning}}
+  \field{journaltitle}{ArXiv e-prints}
+  \field{eprinttype}{arXiv}
+  \field{eprintclass}{cs.LG}
+  \field{month}{12}
+  \field{year}{2010}
+\endentry
+
+\entry{cao2007learning}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Cao}{C.}%
+     {Zhe}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Qin}{Q.}%
+     {Tao}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Liu}{L.}%
+     {Tie-Yan}{T.-Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tsai}{T.}%
+     {Ming-Feng}{M.-F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Li}{L.}%
+     {Hang}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \strng{namehash}{CZ+1}
+  \strng{fullhash}{CZQTLTYTMFLH1}
+  \field{sortinit}{C}
+  \field{booktitle}{Proceedings of the 24th International Conference on Machine
+  Learning}
+  \verb{doi}
+  \verb 10.1145/1273496.1273513
+  \endverb
+  \field{isbn}{978-1-59593-793-3}
+  \field{pages}{129\bibrangedash 136}
+  \field{series}{ICML '07}
+  \field{title}{Learning to Rank: From Pairwise Approach to Listwise Approach}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/1273496.1273513
+  \endverb
+  \list{location}{1}{%
+    {Corvalis, Oregon, USA}%
+  }
+  \field{year}{2007}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{CapacityScheduler}{manual}{}
+  \field{sortinit}{C}
+  \field{note}{\url{http://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/CapacityScheduler.html}}
+  \field{title}{{Capacity Scheduler}}
+  \warn{\item Invalid format of field 'urldate'}
+\endentry
+
+\entry{ceph}{misc}{}
+  \field{sortinit}{C}
+  \field{note}{\url{http://ceph.com}}
+  \field{title}{{Ceph}}
+\endentry
+
+\entry{Chang2008}{article}{}
+  \name{author}{9}{}{%
+    {{}%
+     {Chang}{C.}%
+     {Fay}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dean}{D.}%
+     {Jeffrey}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ghemawat}{G.}%
+     {Sanjay}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hsieh}{H.}%
+     {Wilson~C.}{W.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wallach}{W.}%
+     {Deborah~A.}{D.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Burrows}{B.}%
+     {Mike}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chandra}{C.}%
+     {Tushar}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fikes}{F.}%
+     {Andrew}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gruber}{G.}%
+     {Robert~E.}{R.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{Large-Scale Distributed Storage}
+  \strng{namehash}{CF+1}
+  \strng{fullhash}{CFDJGSHWCWDABMCTFAGRE1}
+  \field{sortinit}{C}
+  \verb{doi}
+  \verb 10.1145/1365815.1365816
+  \endverb
+  \field{issn}{0734-2071}
+  \field{number}{2}
+  \field{pages}{4:1\bibrangedash 4:26}
+  \field{title}{Bigtable: A Distributed Storage System for Structured Data}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/1365815.1365816
+  \endverb
+  \field{volume}{26}
+  \list{location}{1}{%
+    {New York, NY, USA}%
+  }
+  \field{journaltitle}{ACM Transactions on Computer Systems (TOCS)}
+  \field{month}{06}
+  \field{year}{2008}
+\endentry
+
+\entry{Chapelle2002}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Chapelle}{C.}%
+     {Olivier}{O.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vapnik}{V.}%
+     {Vladimir}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bousquet}{B.}%
+     {Olivier}{O.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mukherjee}{M.}%
+     {Sayan}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CO+1}
+  \strng{fullhash}{COVVBOMS1}
+  \field{sortinit}{C}
+  \field{abstract}{%
+  The problem of automatically tuning multiple parameters for pattern
+  recognition Support Vector Machines (SVMs) is considered. This is done by
+  minimizing some estimates of the generalization error of SVMs using a
+  gradient descent algorithm over the set of parameters. Usual methods for
+  choosing parameters, based on exhaustive search become intractable as soon as
+  the number of parameters exceeds two. Some experimental results assess the
+  feasibility of our approach for a large number of parameters (more than 100)
+  and demonstrate an improvement of generalization performance.%
+  }
+  \verb{doi}
+  \verb 10.1023/A:1012450327387
+  \endverb
+  \field{issn}{1573-0565}
+  \field{number}{1}
+  \field{pages}{131\bibrangedash 159}
+  \field{title}{Choosing Multiple Parameters for Support Vector Machines}
+  \verb{url}
+  \verb https://doi.org/10.1023/A:1012450327387
+  \endverb
+  \field{volume}{46}
+  \field{journaltitle}{Machine Learning}
+  \field{year}{2002}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Chen2007}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Chen}{C.}%
+     {Yuan}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Iyer}{I.}%
+     {Subu}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Liu}{L.}%
+     {Xue}{X.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Milojicic}{M.}%
+     {Dejan}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sahai}{S.}%
+     {Akhil}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE Computer Society}%
+  }
+  \strng{namehash}{CY+1}
+  \strng{fullhash}{CYISLXMDSA1}
+  \field{sortinit}{C}
+  \field{booktitle}{Proceedings of the Fourth International Conference on
+  Autonomic Computing}
+  \verb{doi}
+  \verb 10.1109/ICAC.2007.36
+  \endverb
+  \field{isbn}{0-7695-2779-5}
+  \field{pages}{3\bibrangedash }
+  \field{series}{ICAC '07}
+  \field{title}{SLA Decomposition: Translating Service Level Objectives to
+  System Level Thresholds}
+  \verb{url}
+  \verb https://doi.org/10.1109/ICAC.2007.36
+  \endverb
+  \list{location}{1}{%
+    {Washington, DC, USA}%
+  }
+  \field{year}{2007}
+\endentry
+
+\entry{Cortez2017}{inproceedings}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Cortez}{C.}%
+     {Eli}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bonde}{B.}%
+     {Anand}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Muzio}{M.}%
+     {Alexandre}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Russinovich}{R.}%
+     {Mark}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fontoura}{F.}%
+     {Marcus}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bianchini}{B.}%
+     {Ricardo}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{Cloud workloads, machine learning, predictive management}
+  \strng{namehash}{CE+1}
+  \strng{fullhash}{CEBAMARMFMBR1}
+  \field{sortinit}{C}
+  \field{booktitle}{Proceedings of the 26th Symposium on Operating Systems
+  Principles}
+  \verb{doi}
+  \verb 10.1145/3132747.3132772
+  \endverb
+  \field{isbn}{978-1-4503-5085-3}
+  \field{pages}{153\bibrangedash 167}
+  \field{series}{SOSP '17}
+  \field{title}{Resource Central: Understanding and Predicting Workloads for
+  Improved Resource Management in Large Cloud Platforms}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/3132747.3132772
+  \endverb
+  \list{location}{1}{%
+    {Shanghai, China}%
+  }
+  \field{year}{2017}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{cosbench}{misc}{}
+  \field{sortinit}{C}
+  \field{note}{\url{https://github.com/intel-cloud/cosbench}}
+  \field{title}{{COSBench}}
+\endentry
+
+\entry{Cruz2013}{inproceedings}{}
+  \name{author}{7}{}{%
+    {{}%
+     {Cruz}{C.}%
+     {Francisco}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Maia}{M.}%
+     {Francisco}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Matos}{M.}%
+     {Miguel}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Oliveira}{O.}%
+     {Rui}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Paulo}{P.}%
+     {Jo\~{a}o}{J.~a.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pereira}{P.}%
+     {Jos{\'e}}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vila\c{c}a}{V.}%
+     {Ricardo}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \strng{namehash}{CF+2}
+  \strng{fullhash}{CFMFMMORPJaPJVR1}
+  \field{sortinit}{C}
+  \field{booktitle}{Proceedings of the 8th ACM European Conference on Computer
+  Systems}
+  \verb{doi}
+  \verb 10.1145/2465351.2465370
+  \endverb
+  \field{isbn}{978-1-4503-1994-2}
+  \field{pages}{183\bibrangedash 196}
+  \field{series}{EuroSys '13}
+  \field{title}{MeT: Workload Aware Elasticity for NoSQL}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/2465351.2465370
+  \endverb
+  \list{location}{1}{%
+    {Prague, Czech Republic}%
+  }
+  \field{year}{2013}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Curino2010}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Curino}{C.}%
+     {Carlo}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jones}{J.}%
+     {Evan}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zhang}{Z.}%
+     {Yang}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Madden}{M.}%
+     {Sam}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {VLDB Endowment}%
+  }
+  \strng{namehash}{CC+1}
+  \strng{fullhash}{CCJEZYMS1}
+  \field{sortinit}{C}
+  \verb{doi}
+  \verb 10.14778/1920841.1920853
+  \endverb
+  \field{issn}{2150-8097}
+  \field{number}{1-2}
+  \field{pages}{48\bibrangedash 57}
+  \field{title}{Schism: A Workload-driven Approach to Database Replication and
+  Partitioning}
+  \verb{url}
+  \verb http://dx.doi.org/10.14778/1920841.1920853
+  \endverb
+  \field{volume}{3}
+  \field{journaltitle}{Proc. VLDB Endow.}
+  \field{month}{09}
+  \field{year}{2010}
+\endentry
+
+\entry{Dalibard2017}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Dalibard}{D.}%
+     {Valentin}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Schaarschmidt}{S.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yoneki}{Y.}%
+     {Eiko}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {International World Wide Web Conferences Steering Committee}%
+  }
+  \keyw{auto-tuning, bayesian optimization, distributed stochastic gradient
+  descent, distributed systems, neural networks, probabilistic programming}
+  \strng{namehash}{DV+1}
+  \strng{fullhash}{DVSMYE1}
+  \field{sortinit}{D}
+  \field{booktitle}{Proceedings of the 26th International Conference on World
+  Wide Web}
+  \verb{doi}
+  \verb 10.1145/3038912.3052662
+  \endverb
+  \field{isbn}{978-1-4503-4913-0}
+  \field{pages}{479\bibrangedash 488}
+  \field{series}{WWW '17}
+  \field{title}{BOAT: Building Auto-Tuners with Structured Bayesian
+  Optimization}
+  \verb{url}
+  \verb https://doi.org/10.1145/3038912.3052662
+  \endverb
+  \list{location}{1}{%
+    {Perth, Australia}%
+  }
+  \field{year}{2017}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{dambreville2017load}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Dambreville}{D.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tomasik}{T.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cohen}{C.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dufoulon}{D.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Servers;Program processors;Switches;Processor scheduling;Energy
+  consumption;Prediction algorithms;Cloud computing}
+  \strng{namehash}{DA+1}
+  \strng{fullhash}{DATJCJDF1}
+  \field{sortinit}{D}
+  \field{booktitle}{2017 IEEE 37th International Conference on Distributed
+  Computing Systems (ICDCS)}
+  \verb{doi}
+  \verb 10.1109/ICDCS.2017.201
+  \endverb
+  \field{issn}{1063-6927}
+  \field{pages}{2604\bibrangedash 2607}
+  \field{title}{Load Prediction for Energy-Aware Scheduling for Cloud Computing
+  Platforms}
+  \verb{url}
+  \verb doi.ieeecomputersociety.org/10.1109/ICDCS.2017.201
+  \endverb
+  \field{volume}{00}
+  \field{year}{2017}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{DeanJ2004_MapReduce}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Dean}{D.}%
+     {Jeffrey}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ghemawat}{G.}%
+     {Sanjay}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {USENIX Association}%
+  }
+  \strng{namehash}{DJGS1}
+  \strng{fullhash}{DJGS1}
+  \field{sortinit}{D}
+  \field{booktitle}{Proceedings of the 6th Conference on Symposium on Opearting
+  Systems Design and Implementation - Volume 6}
+  \field{pages}{10\bibrangedash 10}
+  \field{series}{OSDI'04}
+  \field{title}{MapReduce: Simplified Data Processing on Large Clusters}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=1251254.1251264
+  \endverb
+  \list{location}{1}{%
+    {San Francisco, CA}%
+  }
+  \field{year}{2004}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Dewancker2015}{manual}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Dewancker}{D.}%
+     {Ian}{I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {McCourt}{M.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Clark}{C.}%
+     {Scott}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{DI+1}
+  \strng{fullhash}{DIMMCS1}
+  \field{sortinit}{D}
+  \field{note}{\url{https://sigopt.com/static/pdf/SigOpt\_Bayesian\_Optimization\_Primer.pdf}}
+  \field{title}{{Bayesian Optimization Primer}}
+  \field{year}{2015}
+\endentry
+
+\entry{dilley1998web}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Dilley}{D.}%
+     {John}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Friedrich}{F.}%
+     {Rich}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jin}{J.}%
+     {Tai}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rolia}{R.}%
+     {Jerome}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{World wide web, Performance model, Capacity planning, Workload
+  characterization}
+  \strng{namehash}{DJ+1}
+  \strng{fullhash}{DJFRJTRJ1}
+  \field{sortinit}{D}
+  \verb{doi}
+  \verb https://doi.org/10.1016/S0166-5316(98)00008-X
+  \endverb
+  \field{issn}{0166-5316}
+  \field{note}{Tools for Performance Evaluation}
+  \field{number}{1}
+  \field{pages}{5 \bibrangedash  26}
+  \field{title}{Web server performance measurement and modeling techniques}
+  \verb{url}
+  \verb http://www.sciencedirect.com/science/article/pii/S016653169800008X
+  \endverb
+  \field{volume}{33}
+  \field{journaltitle}{Performance Evaluation}
+  \field{year}{1998}
+\endentry
+
+\entry{domingos2012few}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Domingos}{D.}%
+     {Pedro}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{DP1}
+  \strng{fullhash}{DP1}
+  \field{sortinit}{D}
+  \field{number}{10}
+  \field{pages}{78\bibrangedash 87}
+  \field{title}{{A Few Useful Things to Know about Machine Learning}}
+  \field{volume}{55}
+  \field{journaltitle}{Communications of the ACM}
+  \field{year}{2012}
+\endentry
+
+\entry{Fron2004}{article}{}
+  \true{moreauthor}
+  \name{author}{4}{}{%
+    {{}%
+     {Efron}{E.}%
+     {Bradley}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hastie}{H.}%
+     {Trevor}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Johnstone}{J.}%
+     {Iain}{I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tibshirani}{T.}%
+     {Robert}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{EB+1}
+  \strng{fullhash}{EBHTJITR+1}
+  \field{sortinit}{E}
+  \field{number}{2}
+  \field{pages}{407\bibrangedash 499}
+  \field{title}{Least Angle Regression}
+  \field{volume}{32}
+  \field{journaltitle}{The Annals of statistics}
+  \field{year}{2004}
+\endentry
+
+\entry{Eltabakh2011}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Eltabakh}{E.}%
+     {Mohamed~Y.}{M.~Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tian}{T.}%
+     {Yuanyuan}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {\"{O}zcan}{O.}%
+     {Fatma}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gemulla}{G.}%
+     {Rainer}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Krettek}{K.}%
+     {Aljoscha}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {McPherson}{M.}%
+     {John}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {VLDB Endowment}%
+  }
+  \strng{namehash}{EMY+1}
+  \strng{fullhash}{EMYTYOFGRKAMJ1}
+  \field{sortinit}{E}
+  \verb{doi}
+  \verb 10.14778/2002938.2002943
+  \endverb
+  \field{issn}{2150-8097}
+  \field{number}{9}
+  \field{pages}{575\bibrangedash 585}
+  \field{title}{CoHadoop: Flexible Data Placement and Its Exploitation in
+  Hadoop}
+  \verb{url}
+  \verb http://dx.doi.org/10.14778/2002938.2002943
+  \endverb
+  \field{volume}{4}
+  \field{journaltitle}{Proceedings of the VLDB Endowment}
+  \field{month}{06}
+  \field{year}{2011}
+\endentry
+
+\entry{FairScheduler}{manual}{}
+  \field{sortinit}{F}
+  \field{note}{\url{http://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/FairScheduler.html}}
+  \field{title}{{Fair Scheduler}}
+  \warn{\item Invalid format of field 'urldate'}
+\endentry
+
+\entry{FosterI1995_Parallel}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Foster}{F.}%
+     {Ian}{I.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Addison-Wesley Longman Publishing Co., Inc.}%
+  }
+  \strng{namehash}{FI1}
+  \strng{fullhash}{FI1}
+  \field{sortinit}{F}
+  \field{isbn}{0201575949}
+  \field{title}{Designing and Building Parallel Programs: Concepts and Tools
+  for Parallel Software Engineering}
+  \list{location}{1}{%
+    {Boston, MA, USA}%
+  }
+  \field{year}{1995}
+\endentry
+
+\entry{Freeh2007}{article}{}
+  \name{author}{7}{}{%
+    {{}%
+     {Freeh}{F.}%
+     {Vincent~W.}{V.~W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lowenthal}{L.}%
+     {David~K.}{D.~K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pan}{P.}%
+     {Feng}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kappiah}{K.}%
+     {Nandini}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Springer}{S.}%
+     {Rob}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rountree}{R.}%
+     {Barry~L.}{B.~L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Femal}{F.}%
+     {Mark~E.}{M.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE Press}%
+  }
+  \keyw{High-performance computing, High-performance computing, power-aware
+  computing., power-aware computing.}
+  \strng{namehash}{FVW+1}
+  \strng{fullhash}{FVWLDKPFKNSRRBLFME1}
+  \field{sortinit}{F}
+  \verb{doi}
+  \verb 10.1109/TPDS.2007.1026
+  \endverb
+  \field{issn}{1045-9219}
+  \field{number}{6}
+  \field{pages}{835\bibrangedash 848}
+  \field{title}{Analyzing the Energy-Time Trade-Off in High-Performance
+  Computing Applications}
+  \verb{url}
+  \verb http://dx.doi.org/10.1109/TPDS.2007.1026
+  \endverb
+  \field{volume}{18}
+  \list{location}{1}{%
+    {Piscataway, NJ, USA}%
+  }
+  \field{journaltitle}{IEEE Transactions on Parallel and Distributed Systems}
+  \field{month}{06}
+  \field{year}{2007}
+\endentry
+
+\entry{Frey2013}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Frey}{F.}%
+     {S\"{o}ren}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fittkau}{F.}%
+     {Florian}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hasselbring}{H.}%
+     {Wilhelm}{W.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE Press}%
+  }
+  \strng{namehash}{FS+1}
+  \strng{fullhash}{FSFFHW1}
+  \field{sortinit}{F}
+  \field{booktitle}{Proceedings of the 2013 International Conference on
+  Software Engineering}
+  \field{isbn}{978-1-4673-3076-3}
+  \field{pages}{512\bibrangedash 521}
+  \field{series}{ICSE '13}
+  \field{title}{Search-based Genetic Optimization for Deployment and
+  Reconfiguration of Software in the Cloud}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=2486788.2486856
+  \endverb
+  \list{location}{1}{%
+    {San Francisco, CA, USA}%
+  }
+  \field{year}{2013}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{friedman2001elements}{book}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Friedman}{F.}%
+     {Jerome}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hastie}{H.}%
+     {Trevor}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tibshirani}{T.}%
+     {Robert}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer series in statistics New York}%
+  }
+  \strng{namehash}{FJ+1}
+  \strng{fullhash}{FJHTTR1}
+  \field{sortinit}{F}
+  \field{title}{The Elements of Statistical Learning}
+  \field{volume}{1}
+  \field{year}{2001}
+\endentry
+
+\entry{george2011hbase}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {George}{G.}%
+     {Lars}{L.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {" O'Reilly Media, Inc."}%
+  }
+  \strng{namehash}{GL1}
+  \strng{fullhash}{GL1}
+  \field{sortinit}{G}
+  \field{title}{HBase: the Definitive Guide: Random Access to Your Planet-Size
+  Data}
+  \field{year}{2011}
+\endentry
+
+\entry{geurts2006extremely}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Geurts}{G.}%
+     {Pierre}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ernst}{E.}%
+     {Damien}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wehenkel}{W.}%
+     {Louis}{L.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{GP+1}
+  \strng{fullhash}{GPEDWL1}
+  \field{sortinit}{G}
+  \field{number}{1}
+  \field{pages}{3\bibrangedash 42}
+  \field{title}{{Extremely randomized trees}}
+  \field{volume}{63}
+  \field{journaltitle}{Machine Learning}
+  \field{year}{2006}
+\endentry
+
+\entry{Gmach2007}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Gmach}{G.}%
+     {Daniel}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rolia}{R.}%
+     {Jerry}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cherkasova}{C.}%
+     {Ludmila}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kemper}{K.}%
+     {Alfons}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE Computer Society}%
+  }
+  \strng{namehash}{GD+1}
+  \strng{fullhash}{GDRJCLKA1}
+  \field{sortinit}{G}
+  \field{booktitle}{Proceedings of the 2007 IEEE 10th International Symposium
+  on Workload Characterization}
+  \verb{doi}
+  \verb 10.1109/IISWC.2007.4362193
+  \endverb
+  \field{isbn}{978-1-4244-1561-8}
+  \field{pages}{171\bibrangedash 180}
+  \field{series}{IISWC '07}
+  \field{title}{Workload Analysis and Demand Prediction of Enterprise Data
+  Center Applications}
+  \verb{url}
+  \verb https://doi.org/10.1109/IISWC.2007.4362193
+  \endverb
+  \list{location}{1}{%
+    {Washington, DC, USA}%
+  }
+  \field{year}{2007}
+\endentry
+
+\entry{golovin2017google}{inproceedings}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Golovin}{G.}%
+     {Daniel}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Solnik}{S.}%
+     {Benjamin}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Moitra}{M.}%
+     {Subhodeep}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kochanski}{K.}%
+     {Greg}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Karro}{K.}%
+     {John}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sculley}{S.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{bayesian inference, black-box optimization, gaussian process, machine
+  learning}
+  \strng{namehash}{GD+2}
+  \strng{fullhash}{GDSBMSKGKJSD1}
+  \field{sortinit}{G}
+  \field{booktitle}{Proceedings of the 23rd ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}
+  \verb{doi}
+  \verb 10.1145/3097983.3098043
+  \endverb
+  \field{isbn}{978-1-4503-4887-4}
+  \field{pages}{1487\bibrangedash 1495}
+  \field{series}{KDD '17}
+  \field{title}{Google Vizier: A Service for Black-Box Optimization}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/3097983.3098043
+  \endverb
+  \list{location}{1}{%
+    {Halifax, NS, Canada}%
+  }
+  \field{year}{2017}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{google_rightsizing}{manual}{}
+  \field{sortinit}{G}
+  \field{note}{\url{https://cloud.google.com/compute/docs/instances/apply-sizing-recommendations-for-instances}}
+  \field{title}{Google VM rightsizing service}
+\endentry
+
+\entry{cachestat}{manual}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Gregg}{G.}%
+     {Brendan}{B.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GB1}
+  \strng{fullhash}{GB1}
+  \field{sortinit}{G}
+  \field{note}{\url{https://github.com/brendangregg/perf-tools}}
+  \field{title}{perf-tools}
+\endentry
+
+\entry{guyon2003introduction}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Guyon}{G.}%
+     {Isabelle}{I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Elisseeff}{E.}%
+     {Andr{\'e}}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GIEA1}
+  \strng{fullhash}{GIEA1}
+  \field{sortinit}{G}
+  \field{booktitle}{An Introduction to Variable and Feature Selection}
+  \field{pages}{1157\bibrangedash 1182}
+  \field{title}{An introduction to variable and feature selection}
+  \field{volume}{3}
+  \field{journaltitle}{Journal of Machine Learning Research}
+  \field{year}{2003}
+\endentry
+
+\entry{harrell2001ordinal}{incollection}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Harrell}{H.}%
+     {Frank~E}{F.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{HFE1}
+  \strng{fullhash}{HFE1}
+  \field{sortinit}{H}
+  \field{booktitle}{Regression Modeling Strategies}
+  \field{pages}{331\bibrangedash 343}
+  \field{title}{Ordinal Logistic Regression}
+  \field{year}{2001}
+\endentry
+
+\entry{hastie2005}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Hastie}{H.}%
+     {Trevor}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tibshirani}{T.}%
+     {Robert}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Friedman}{F.}%
+     {Jerome}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Franklin}{F.}%
+     {James}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{HT+1}
+  \strng{fullhash}{HTTRFJFJ1}
+  \field{sortinit}{H}
+  \field{number}{2}
+  \field{pages}{83\bibrangedash 85}
+  \field{title}{The Elements of Statistical Learning: Data Mining, Inference,
+  and Prediction}
+  \field{volume}{27}
+  \field{journaltitle}{The Mathematical Intelligencer}
+  \field{year}{2005}
+\endentry
+
+\entry{herodotou2011starfish}{inproceedings}{}
+  \name{author}{7}{}{%
+    {{}%
+     {Herodotou}{H.}%
+     {Herodotos}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lim}{L.}%
+     {Harold}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Luo}{L.}%
+     {Gang}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Borisov}{B.}%
+     {Nedyalko}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dong}{D.}%
+     {Liang}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cetin}{C.}%
+     {Fatma~Bilgen}{F.~B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Babu}{B.}%
+     {Shivnath}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HH+1}
+  \strng{fullhash}{HHLHLGBNDLCFBBS1}
+  \field{sortinit}{H}
+  \field{booktitle}{The 5th Biennial Conference on Innovative Data Systems
+  Research (CIDR 2011)}
+  \field{number}{2011}
+  \field{pages}{261\bibrangedash 272}
+  \field{title}{{Starfish: A Self-tuning System for Big Data Analytics}}
+  \field{volume}{11}
+  \field{year}{2011}
+\endentry
+
+\entry{TolleKris2011FourthParadigm}{book}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Hey}{H.}%
+     {Tony}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tansley}{T.}%
+     {Stewart}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tolle}{T.}%
+     {Kristin}{K.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Microsoft Research}%
+  }
+  \strng{namehash}{HT+2}
+  \strng{fullhash}{HTTSTK1}
+  \field{sortinit}{H}
+  \field{booktitle}{The Fourth Paradigm: Data-Intensive Scientific Discovery}
+  \field{isbn}{978-0-9825442-0-4}
+  \field{title}{The Fourth Paradigm: Data-Intensive Scientific Discovery}
+  \verb{url}
+  \verb https://www.microsoft.com/en-us/research/publication/fourth-paradigm-da
+  \verb ta-intensive-scientific-discovery/
+  \endverb
+  \field{year}{2009}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{hibench}{manual}{}
+  \field{sortinit}{H}
+  \field{note}{\url{https://github.com/intel-hadoop/HiBench}}
+  \field{title}{HiBench}
+\endentry
+
+\entry{hpcc}{manual}{}
+  \field{sortinit}{H}
+  \field{note}{\url{https://hpccsystems.com/}}
+  \field{title}{{High performance computing cluster (HPCC)}}
+\endentry
+
+\entry{Hsu2016}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Hsu}{H.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Panta}{P.}%
+     {R.~K.}{R.~K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ra}{R.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Freeh}{F.}%
+     {V.~W.}{V.~W.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Measurement;Reliability;System analysis and design;Quality of
+  service;Predictive models;Monitoring;Throughput}
+  \strng{namehash}{HC+1}
+  \strng{fullhash}{HCPRKRMFVW1}
+  \field{sortinit}{H}
+  \field{booktitle}{2016 IEEE 35th Symposium on Reliable Distributed
+  Systems(SRDS)}
+  \verb{doi}
+  \verb 10.1109/SRDS.2016.025
+  \endverb
+  \field{issn}{1060-9857}
+  \field{pages}{127\bibrangedash 136}
+  \field{title}{Inside-Out: Reliable Performance Prediction for Distributed
+  Storage Systems in the Cloud}
+  \verb{url}
+  \verb doi.ieeecomputersociety.org/10.1109/SRDS.2016.025
+  \endverb
+  \field{volume}{00}
+  \field{year}{2016}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Hsu2018Scout}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {{Hsu}}{H.}%
+     {C.-J.}{C.-J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {{Nair}}{N.}%
+     {V.}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {{Menzies}}{M.}%
+     {T.}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {{Freeh}}{F.}%
+     {V.~W.}{V.~W.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Computer Science - Distributed, Parallel, and Cluster Computing}
+  \strng{namehash}{HCJ+1}
+  \strng{fullhash}{HCJNVMTFVW1}
+  \field{sortinit}{H}
+  \verb{eprint}
+  \verb 1803.01296
+  \endverb
+  \field{title}{{Scout: An Experienced Guide to Find the Best Cloud
+  Configuration}}
+  \field{journaltitle}{ArXiv e-prints}
+  \field{eprinttype}{arXiv}
+  \field{eprintclass}{cs.DC}
+  \field{month}{03}
+  \field{year}{2018}
+\endentry
+
+\entry{Hsu2018Arrow}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Hsu}{H.}%
+     {Chin-Jung}{C.-J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nair}{N.}%
+     {Vivek}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Freeh}{F.}%
+     {Vinvent}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Menzies}{M.}%
+     {Tim}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HCJ+2}
+  \strng{fullhash}{HCJNVFVMT1}
+  \field{sortinit}{H}
+  \field{booktitle}{The 38th IEEE International Conference on Distributed
+  Computing Systems (ICDCS 2018)}
+  \field{title}{{Arrow: Low-Level Augmented Bayesian Optimization for Finding
+  the Best Cloud VM}}
+  \field{year}{2018}
+\endentry
+
+\entry{Hsu2018Micky}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Hsu}{H.}%
+     {Chin-Jung}{C.-J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nair}{N.}%
+     {Vivek}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Menzies}{M.}%
+     {Tim}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Freeh}{F.}%
+     {Vinvent}{V.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HCJ+2}
+  \strng{fullhash}{HCJNVMTFV1}
+  \field{sortinit}{H}
+  \field{booktitle}{The 11th IEEE International Conference on Cloud Computing
+  (IEEE CLOUD 2018)}
+  \field{title}{{Micky: A Cheaper Alternative for Selecting Cloud Instances}}
+  \field{year}{2018}
+\endentry
+
+\entry{IsardM2007_Dyrad}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Isard}{I.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Budiu}{B.}%
+     {Mihai}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yu}{Y.}%
+     {Yuan}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Birrell}{B.}%
+     {Andrew}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fetterly}{F.}%
+     {Dennis}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{cluster computing, concurrency, dataflow, distributed programming}
+  \strng{namehash}{IM+1}
+  \strng{fullhash}{IMBMYYBAFD1}
+  \field{sortinit}{I}
+  \field{booktitle}{Proceedings of the 2Nd ACM SIGOPS/EuroSys European
+  Conference on Computer Systems 2007}
+  \verb{doi}
+  \verb 10.1145/1272996.1273005
+  \endverb
+  \field{isbn}{978-1-59593-636-3}
+  \field{pages}{59\bibrangedash 72}
+  \field{series}{EuroSys '07}
+  \field{title}{Dryad: Distributed Data-parallel Programs from Sequential
+  Building Blocks}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/1272996.1273005
+  \endverb
+  \list{location}{1}{%
+    {Lisbon, Portugal}%
+  }
+  \field{year}{2007}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Jalaparti2012}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Jalaparti}{J.}%
+     {Virajith}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ballani}{B.}%
+     {Hitesh}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Costa}{C.}%
+     {Paolo}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Karagiannis}{K.}%
+     {Thomas}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rowstron}{R.}%
+     {Ant}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{cloud, cloud pricing, job-centric, provider interface, resource
+  malleability, resource selection}
+  \strng{namehash}{JV+1}
+  \strng{fullhash}{JVBHCPKTRA1}
+  \field{sortinit}{J}
+  \field{booktitle}{Proceedings of the Third ACM Symposium on Cloud Computing}
+  \verb{doi}
+  \verb 10.1145/2391229.2391239
+  \endverb
+  \field{isbn}{978-1-4503-1761-0}
+  \field{pages}{10:1\bibrangedash 10:14}
+  \field{series}{SoCC '12}
+  \field{title}{Bridging the Tenant-provider Gap in Cloud Services}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/2391229.2391239
+  \endverb
+  \list{location}{1}{%
+    {San Jose, California}%
+  }
+  \field{year}{2012}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{jamshidi2016uncertainty}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Jamshidi}{J.}%
+     {P.}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Casale}{C.}%
+     {G.}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Bayes methods;iterative methods;optimisation;parallel
+  processing;tuning;Apache Storm;BO4CO;Bayesian Optimization for Configuration
+  Optimization;GP;Gaussian processes;SPS;auto-tuning algorithm;optimal
+  configuration;posterior distribution iterative capturing;stream processing
+  systems;tuning methods;uncertainty-aware approach;Bayes methods;Benchmark
+  testing;Optimization;Radiation detectors;Response surface
+  methodology;Topology;Tuning;Auto-tuning;Bayesian Optimization;Big
+  Data;DevOps;Machine Learning;Performance Tuning;Software Performance
+  Engineering;Software Variability;Stream Processing System}
+  \strng{namehash}{JPCG1}
+  \strng{fullhash}{JPCG1}
+  \field{sortinit}{J}
+  \field{booktitle}{2016 IEEE 24th International Symposium on Modeling,
+  Analysis and Simulation of Computer and Telecommunication Systems (MASCOTS)}
+  \verb{doi}
+  \verb 10.1109/MASCOTS.2016.17
+  \endverb
+  \field{pages}{39\bibrangedash 48}
+  \field{title}{An Uncertainty-Aware Approach to Optimal Configuration of
+  Stream Processing Systems}
+  \field{year}{2016}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{jiang2017pytheas}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Jiang}{J.}%
+     {Junchen}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sun}{S.}%
+     {Shijie}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sekar}{S.}%
+     {Vyas}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zhang}{Z.}%
+     {Hui}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {USENIX Association}%
+  }
+  \strng{namehash}{JJ+1}
+  \strng{fullhash}{JJSSSVZH1}
+  \field{sortinit}{J}
+  \field{booktitle}{Proceedings of the 14th USENIX Conference on Networked
+  Systems Design and Implementation}
+  \field{isbn}{978-1-931971-37-9}
+  \field{pages}{393\bibrangedash 406}
+  \field{series}{NSDI'17}
+  \field{title}{Pytheas: Enabling Data-driven Quality of Experience
+  Optimization Using Group-based Exploration-exploitation}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=3154630.3154662
+  \endverb
+  \list{location}{1}{%
+    {Boston, MA, USA}%
+  }
+  \field{year}{2017}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{kaelbling1996reinforcement}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Kaelbling}{K.}%
+     {Leslie~Pack}{L.~P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Littman}{L.}%
+     {Michael~L}{M.~L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Moore}{M.}%
+     {Andrew~W}{A.~W.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KLP+1}
+  \strng{fullhash}{KLPLMLMAW1}
+  \field{sortinit}{K}
+  \field{pages}{237\bibrangedash 285}
+  \field{title}{{Reinforcement Learning: A Survey}}
+  \field{volume}{4}
+  \field{journaltitle}{Journal of Artificial Intelligence Research}
+  \field{year}{1996}
+\endentry
+
+\entry{Kelly2004}{report}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Kelly}{K.}%
+     {Terence}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cohen}{C.}%
+     {Ira}{I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Goldszmidt}{G.}%
+     {Moises}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Keeton}{K.}%
+     {Kimberly}{K.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KT+1}
+  \strng{fullhash}{KTCIGMKK1}
+  \field{sortinit}{K}
+  \field{title}{{Inducing Models of Black-Box Storage Arrays Inducing Models of
+  Black-Box Storage Arrays}}
+  \list{institution}{1}{%
+    {HP Laboratories}%
+  }
+  \field{type}{techreport}
+  \field{year}{2004}
+\endentry
+
+\entry{khajeh2010cloud}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Khajeh-Hosseini}{K.-H.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Greenwood}{G.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sommerville}{S.}%
+     {I.}{I.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Internet;business data processing;computer centres;decision
+  making;organisational aspects;risk analysis;Amazon EC2;IT system;IaaS;cloud
+  computing;data center;decision making;financial
+  analysis;infrastructure-as-a-service;oil and gas industry;system
+  infrastructure;technical analysis;Cloud
+  computing;Clouds;Companies;Databases;Interviews;Maintenance
+  engineering;Servers;Enterprise cloud computing;IaaS;cloud adoption;cloud
+  migration;organizational change}
+  \strng{namehash}{KHA+1}
+  \strng{fullhash}{KHAGDSI1}
+  \field{sortinit}{K}
+  \field{booktitle}{2010 IEEE 3rd International Conference on Cloud Computing}
+  \verb{doi}
+  \verb 10.1109/CLOUD.2010.37
+  \endverb
+  \field{issn}{2159-6182}
+  \field{pages}{450\bibrangedash 457}
+  \field{title}{Cloud Migration: A Case Study of Migrating an Enterprise IT
+  System to IaaS}
+  \field{year}{2010}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Kim2010}{inproceedings}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Kim}{K.}%
+     {Y.}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gunasekaran}{G.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shipman}{S.}%
+     {G.~M.}{G.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dillow}{D.}%
+     {D.~A.}{D.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zhang}{Z.}%
+     {Zhe}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Settlemyer}{S.}%
+     {B.~W.}{B.~W.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Bandwidth;Aggregates;Servers;Mathematical model;Probability density
+  function;Performance evaluation;Lead}
+  \strng{namehash}{KY+1}
+  \strng{fullhash}{KYGRSGMDDAZZSBW1}
+  \field{sortinit}{K}
+  \field{booktitle}{2010 5th Petascale Data Storage Workshop (PDSW '10)}
+  \verb{doi}
+  \verb 10.1109/PDSW.2010.5668066
+  \endverb
+  \field{issn}{2157-7242}
+  \field{pages}{1\bibrangedash 5}
+  \field{title}{Workload characterization of a leadership class storage
+  cluster}
+  \verb{url}
+  \verb doi.ieeecomputersociety.org/10.1109/PDSW.2010.5668066
+  \endverb
+  \field{volume}{00}
+  \field{year}{2011}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Klein2017}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Klein}{K.}%
+     {Aaron}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Falkner}{F.}%
+     {Stefan}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bartels}{B.}%
+     {Simon}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hennig}{H.}%
+     {Philipp}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hutter}{H.}%
+     {Frank}{F.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {PMLR}%
+  }
+  \strng{namehash}{KA+1}
+  \strng{fullhash}{KAFSBSHPHF1}
+  \field{sortinit}{K}
+  \field{booktitle}{Proceedings of the 20th International Conference on
+  Artificial Intelligence and Statistics (AISTATS 2017)}
+  \field{pages}{528\bibrangedash 536}
+  \field{series}{Proceedings of Machine Learning Research}
+  \field{title}{Fast Bayesian Optimization of Machine Learning Hyperparameters
+  on Large Datasets}
+  \verb{url}
+  \verb http://proceedings.mlr.press/v54/klein17a.html
+  \endverb
+  \field{volume}{54}
+  \field{month}{04}
+  \field{year}{2017}
+\endentry
+
+\entry{Kohavi1995}{inproceedings}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Kohavi}{K.}%
+     {Ron}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Morgan Kaufmann Publishers Inc.}%
+  }
+  \strng{namehash}{KR1}
+  \strng{fullhash}{KR1}
+  \field{sortinit}{K}
+  \field{booktitle}{Proceedings of the 14th International Joint Conference on
+  Artificial Intelligence - Volume 2}
+  \field{isbn}{1-55860-363-8}
+  \field{pages}{1137\bibrangedash 1143}
+  \field{series}{IJCAI'95}
+  \field{title}{A Study of Cross-validation and Bootstrap for Accuracy
+  Estimation and Model Selection}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=1643031.1643047
+  \endverb
+  \list{location}{1}{%
+    {Montreal, Quebec, Canada}%
+  }
+  \field{year}{1995}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{KouzesR2009_ChangingParadigm}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Kouzes}{K.}%
+     {Richard~T.}{R.~T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Anderson}{A.}%
+     {Gordon~A.}{G.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Elbert}{E.}%
+     {Stephen~T.}{S.~T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gorton}{G.}%
+     {Ian}{I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gracio}{G.}%
+     {Deborah~K.}{D.~K.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE Computer Society Press}%
+  }
+  \keyw{computer applications, computer systems organization, data-intensive
+  computing, data-intensive computing, networking and information technology,
+  computer systems organization, information technology and systems, computer
+  applications, information technology and systems, networking and information
+  technology}
+  \strng{namehash}{KRT+1}
+  \strng{fullhash}{KRTAGAESTGIGDK1}
+  \field{sortinit}{K}
+  \verb{doi}
+  \verb 10.1109/MC.2009.26
+  \endverb
+  \field{issn}{0018-9162}
+  \field{number}{1}
+  \field{pages}{26\bibrangedash 34}
+  \field{title}{The Changing Paradigm of Data-Intensive Computing}
+  \verb{url}
+  \verb https://doi.org/10.1109/MC.2009.26
+  \endverb
+  \field{volume}{42}
+  \list{location}{1}{%
+    {Los Alamitos, CA, USA}%
+  }
+  \field{journaltitle}{Computer}
+  \field{month}{01}
+  \field{year}{2009}
+\endentry
+
+\entry{Kundu2010}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Kundu}{K.}%
+     {S.}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rangaswami}{R.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dutta}{D.}%
+     {K.}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zhao}{Z.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{Application virtualization;Artificial neural
+  networks;Availability;Capacity planning;Hardware;Predictive models;Resource
+  management;Resource virtualization;Virtual machining;Virtual prototyping}
+  \strng{namehash}{KS+1}
+  \strng{fullhash}{KSRRDKZM1}
+  \field{sortinit}{K}
+  \field{booktitle}{2010 The Sixteenth International Symposium on
+  High-Performance Computer Architecture (HPCA-16)}
+  \verb{doi}
+  \verb 10.1109/HPCA.2010.5463058
+  \endverb
+  \field{issn}{1530-0897}
+  \field{pages}{1\bibrangedash 10}
+  \field{title}{Application performance modeling in a virtualized environment}
+  \field{year}{2010}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Lakshman2010}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Lakshman}{L.}%
+     {Avinash}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Malik}{M.}%
+     {Prashant}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \strng{namehash}{LAMP1}
+  \strng{fullhash}{LAMP1}
+  \field{sortinit}{L}
+  \verb{doi}
+  \verb 10.1145/1773912.1773922
+  \endverb
+  \field{issn}{0163-5980}
+  \field{number}{2}
+  \field{pages}{35\bibrangedash 40}
+  \field{title}{Cassandra: A Decentralized Structured Storage System}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/1773912.1773922
+  \endverb
+  \field{volume}{44}
+  \list{location}{1}{%
+    {New York, NY, USA}%
+  }
+  \field{journaltitle}{ACM SIGOPS Operating Systems Review}
+  \field{month}{04}
+  \field{year}{2010}
+\endentry
+
+\entry{li2008mcrank}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Li}{L.}%
+     {Ping}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Burges}{B.}%
+     {Christopher J.~C.}{C.~J.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wu}{W.}%
+     {Qiang}{Q.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Curran Associates Inc.}%
+  }
+  \strng{namehash}{LP+1}
+  \strng{fullhash}{LPBCJCWQ1}
+  \field{sortinit}{L}
+  \field{booktitle}{Proceedings of the 20th International Conference on Neural
+  Information Processing Systems}
+  \field{isbn}{978-1-60560-352-0}
+  \field{pages}{897\bibrangedash 904}
+  \field{series}{NIPS'07}
+  \field{title}{McRank: Learning to Rank Using Multiple Classification and
+  Gradient Boosting}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=2981562.2981675
+  \endverb
+  \list{location}{1}{%
+    {Vancouver, British Columbia, Canada}%
+  }
+  \field{year}{2007}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Lim2010}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Lim}{L.}%
+     {Harold~C.}{H.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Babu}{B.}%
+     {Shivnath}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chase}{C.}%
+     {Jeffrey~S.}{J.~S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{automated control, cloud computing, elastic storage}
+  \strng{namehash}{LHC+1}
+  \strng{fullhash}{LHCBSCJS1}
+  \field{sortinit}{L}
+  \field{booktitle}{Proceedings of the 7th International Conference on
+  Autonomic Computing}
+  \verb{doi}
+  \verb 10.1145/1809049.1809051
+  \endverb
+  \field{isbn}{978-1-4503-0074-2}
+  \field{pages}{1\bibrangedash 10}
+  \field{series}{ICAC '10}
+  \field{title}{Automated Control for Elastic Storage}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/1809049.1809051
+  \endverb
+  \list{location}{1}{%
+    {Washington, DC, USA}%
+  }
+  \field{year}{2010}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Malewicz2010}{inproceedings}{}
+  \name{author}{7}{}{%
+    {{}%
+     {Malewicz}{M.}%
+     {Grzegorz}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Austern}{A.}%
+     {Matthew~H.}{M.~H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bik}{B.}%
+     {Aart~J.C}{A.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dehnert}{D.}%
+     {James~C.}{J.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Horn}{H.}%
+     {Ilan}{I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Leiser}{L.}%
+     {Naty}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Czajkowski}{C.}%
+     {Grzegorz}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{distributed computing, graph algorigthms}
+  \strng{namehash}{MG+1}
+  \strng{fullhash}{MGAMHBAJDJCHILNCG1}
+  \field{sortinit}{M}
+  \field{booktitle}{Proceedings of the 2010 ACM SIGMOD International Conference
+  on Management of Data}
+  \verb{doi}
+  \verb 10.1145/1807167.1807184
+  \endverb
+  \field{isbn}{978-1-4503-0032-2}
+  \field{pages}{135\bibrangedash 146}
+  \field{series}{SIGMOD '10}
+  \field{title}{Pregel: A System for Large-scale Graph Processing}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/1807167.1807184
+  \endverb
+  \list{location}{1}{%
+    {Indianapolis, Indiana, USA}%
+  }
+  \field{year}{2010}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{MaltzahnC2010_Ceph}{article}{}
+  \name{author}{7}{}{%
+    {{}%
+     {Maltzahn}{M.}%
+     {Carlos}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Molina-Estolano}{M.-E.}%
+     {Esteban}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Khurana}{K.}%
+     {Amandeep}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {J.}{J.}%
+     {Alex}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Nelson}{N.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Brandt}{B.}%
+     {Scott~A.}{S.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Weil}{W.}%
+     {Sage}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MC+1}
+  \strng{fullhash}{MCMEEKAJANBSAWS1}
+  \field{sortinit}{M}
+  \field{howpublished}{http://static.usenix.org/publications/login/2010-08/openpdfs/maltzahn.pdf}
+  \field{number}{4}
+  \field{pages}{38\bibrangedash 49}
+  \field{title}{{Ceph as a scalable alternative to the Hadoop Distributed File
+  System}}
+  \field{volume}{35}
+  \field{journaltitle}{;login:}
+  \field{month}{08}
+  \field{year}{2010}
+\endentry
+
+\entry{Melnik2010}{article}{}
+  \name{author}{7}{}{%
+    {{}%
+     {Melnik}{M.}%
+     {Sergey}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gubarev}{G.}%
+     {Andrey}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Long}{L.}%
+     {Jing~Jing}{J.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Romer}{R.}%
+     {Geoffrey}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shivakumar}{S.}%
+     {Shiva}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tolton}{T.}%
+     {Matt}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vassilakis}{V.}%
+     {Theo}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {VLDB Endowment}%
+  }
+  \strng{namehash}{MS+1}
+  \strng{fullhash}{MSGALJJRGSSTMVT1}
+  \field{sortinit}{M}
+  \verb{doi}
+  \verb 10.14778/1920841.1920886
+  \endverb
+  \field{issn}{2150-8097}
+  \field{number}{1-2}
+  \field{pages}{330\bibrangedash 339}
+  \field{title}{Dremel: Interactive Analysis of Web-scale Datasets}
+  \verb{url}
+  \verb http://dx.doi.org/10.14778/1920841.1920886
+  \endverb
+  \field{volume}{3}
+  \field{journaltitle}{Proceedings of the VLDB Endowment}
+  \field{month}{09}
+  \field{year}{2010}
+\endentry
+
+\entry{Mesnier2007}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Mesnier}{M.}%
+     {Michael~P.}{M.~P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wachs}{W.}%
+     {Matthew}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sambasivan}{S.}%
+     {Raja~R.}{R.~R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zheng}{Z.}%
+     {Alice~X.}{A.~X.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ganger}{G.}%
+     {Gregory~R.}{G.~R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{CART, black-box, modeling, storage}
+  \strng{namehash}{MMP+1}
+  \strng{fullhash}{MMPWMSRRZAXGGR1}
+  \field{sortinit}{M}
+  \field{booktitle}{Proceedings of the 2007 ACM SIGMETRICS International
+  Conference on Measurement and Modeling of Computer Systems}
+  \verb{doi}
+  \verb 10.1145/1254882.1254887
+  \endverb
+  \field{isbn}{978-1-59593-639-4}
+  \field{pages}{37\bibrangedash 48}
+  \field{series}{SIGMETRICS '07}
+  \field{title}{Modeling the Relative Fitness of Storage}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/1254882.1254887
+  \endverb
+  \list{location}{1}{%
+    {San Diego, California, USA}%
+  }
+  \field{year}{2007}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{middleton2011hpcc}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Middleton}{M.}%
+     {Anthony}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chala}{C.}%
+     {Arjuna}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MACA1}
+  \strng{fullhash}{MACA1}
+  \field{sortinit}{M}
+  \field{title}{HPCC systems: Introduction to HPCC (High-Performance Computing
+  Cluster)}
+  \field{journaltitle}{White paper, LexisNexis Risk Solutions}
+  \field{year}{2011}
+\endentry
+
+\entry{MihailescuM2012_MixApart}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Mihailescu}{M.}%
+     {Madalin}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Soundararajan}{S.}%
+     {Gokul}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Amza}{A.}%
+     {Cristiana}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {USENIX Association}%
+  }
+  \strng{namehash}{MM+1}
+  \strng{fullhash}{MMSGAC1}
+  \field{sortinit}{M}
+  \field{booktitle}{Proceedings of the 4th USENIX Conference on Hot Topics in
+  Storage and File Systems}
+  \field{pages}{2\bibrangedash 2}
+  \field{series}{HotStorage'12}
+  \field{title}{MixApart: Decoupled Analytics for Shared Storage Systems}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=2342806.2342808
+  \endverb
+  \list{location}{1}{%
+    {Boston, MA}%
+  }
+  \field{year}{2012}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{MolerC1986_Embarassing}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Moler}{M.}%
+     {Cleve}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MC1}
+  \strng{fullhash}{MC1}
+  \field{sortinit}{M}
+  \field{number}{181-195}
+  \field{pages}{31}
+  \field{title}{Matrix computation on distributed memory multiprocessors}
+  \field{volume}{86}
+  \field{journaltitle}{Hypercube Multiprocessors}
+  \field{year}{1986}
+\endentry
+
+\entry{nair2017}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Nair}{N.}%
+     {Vivek}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Menzies}{M.}%
+     {Tim}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Siegmund}{S.}%
+     {Norbert}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Apel}{A.}%
+     {Sven}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{Performance Prediction, Rank-based method, SBSE, Sampling}
+  \strng{namehash}{NV+1}
+  \strng{fullhash}{NVMTSNAS1}
+  \field{sortinit}{N}
+  \field{booktitle}{Proceedings of the 2017 11th Joint Meeting on Foundations
+  of Software Engineering}
+  \verb{doi}
+  \verb 10.1145/3106237.3106238
+  \endverb
+  \field{isbn}{978-1-4503-5105-8}
+  \field{pages}{257\bibrangedash 267}
+  \field{series}{ESEC/FSE 2017}
+  \field{title}{Using Bad Learners to Find Good Configurations}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/3106237.3106238
+  \endverb
+  \list{location}{1}{%
+    {Paderborn, Germany}%
+  }
+  \field{year}{2017}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Newman2005}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Newman}{N.}%
+     {MEJ}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Taylor & Francis}%
+  }
+  \strng{namehash}{NM1}
+  \strng{fullhash}{NM1}
+  \field{sortinit}{N}
+  \verb{doi}
+  \verb 10.1080/00107510500052444
+  \endverb
+  \field{number}{5}
+  \field{pages}{323\bibrangedash 351}
+  \field{title}{Power laws, Pareto distributions and Zipf's law}
+  \field{volume}{46}
+  \field{journaltitle}{Contemporary Physics}
+  \field{year}{2005}
+\endentry
+
+\entry{niculescu2005predicting}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Niculescu-Mizil}{N.-M.}%
+     {Alexandru}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Caruana}{C.}%
+     {Rich}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \strng{namehash}{NMACR1}
+  \strng{fullhash}{NMACR1}
+  \field{sortinit}{N}
+  \field{booktitle}{Proceedings of the 22nd International Conference on Machine
+  Learning}
+  \verb{doi}
+  \verb 10.1145/1102351.1102430
+  \endverb
+  \field{isbn}{1-59593-180-5}
+  \field{pages}{625\bibrangedash 632}
+  \field{series}{ICML '05}
+  \field{title}{Predicting Good Probabilities with Supervised Learning}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/1102351.1102430
+  \endverb
+  \list{location}{1}{%
+    {Bonn, Germany}%
+  }
+  \field{year}{2005}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Noorshams2013}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Noorshams}{N.}%
+     {Qais}{Q.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bruhn}{B.}%
+     {Dominik}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kounev}{K.}%
+     {Samuel}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Reussner}{R.}%
+     {Ralf}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{i/o, performance, prediction, storage, virtualization}
+  \strng{namehash}{NQ+1}
+  \strng{fullhash}{NQBDKSRR1}
+  \field{sortinit}{N}
+  \field{booktitle}{Proceedings of the 4th ACM/SPEC International Conference on
+  Performance Engineering}
+  \verb{doi}
+  \verb 10.1145/2479871.2479910
+  \endverb
+  \field{isbn}{978-1-4503-1636-1}
+  \field{pages}{283\bibrangedash 294}
+  \field{series}{ICPE '13}
+  \field{title}{Predictive Performance Modeling of Virtualized Storage Systems
+  Using Optimized Statistical Regression Techniques}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/2479871.2479910
+  \endverb
+  \list{location}{1}{%
+    {Prague, Czech Republic}%
+  }
+  \field{year}{2013}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Novakovic2013}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Novakovi\'{c}}{N.}%
+     {Dejan}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vasi\'{c}}{V.}%
+     {Nedeljko}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Novakovi\'{c}}{N.}%
+     {Stanko}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kosti\'{c}}{K.}%
+     {Dejan}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bianchini}{B.}%
+     {Ricardo}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {USENIX Association}%
+  }
+  \strng{namehash}{ND+1}
+  \strng{fullhash}{NDVNNSKDBR1}
+  \field{sortinit}{N}
+  \field{booktitle}{Proceedings of the 2013 USENIX Conference on Annual
+  Technical Conference}
+  \field{pages}{219\bibrangedash 230}
+  \field{series}{USENIX ATC'13}
+  \field{title}{DeepDive: Transparently Identifying and Managing Performance
+  Interference in Virtualized Environments}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=2535461.2535489
+  \endverb
+  \list{location}{1}{%
+    {San Jose, CA}%
+  }
+  \field{year}{2013}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{oh2017finding}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Oh}{O.}%
+     {Jeho}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Batory}{B.}%
+     {Don}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Myers}{M.}%
+     {Margaret}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Siegmund}{S.}%
+     {Norbert}{N.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{finding optimal configurations, searching configuration spaces,
+  software product lines}
+  \strng{namehash}{OJ+1}
+  \strng{fullhash}{OJBDMMSN1}
+  \field{sortinit}{O}
+  \field{booktitle}{Proceedings of the 2017 11th Joint Meeting on Foundations
+  of Software Engineering}
+  \verb{doi}
+  \verb 10.1145/3106237.3106273
+  \endverb
+  \field{isbn}{978-1-4503-5105-8}
+  \field{pages}{61\bibrangedash 71}
+  \field{series}{ESEC/FSE 2017}
+  \field{title}{Finding Near-optimal Configurations in Product Lines by Random
+  Sampling}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/3106237.3106273
+  \endverb
+  \list{location}{1}{%
+    {Paderborn, Germany}%
+  }
+  \field{year}{2017}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{scoutdataset}{manual}{}
+  \field{sortinit}{O}
+  \field{note}{https://github.com/oxhead/scout}
+  \field{title}{Open Performance Dataset}
+\endentry
+
+\entry{openstack}{manual}{}
+  \field{sortinit}{O}
+  \field{note}{url{http://www.openstack.org}}
+  \field{title}{{OpenStack}}
+\endentry
+
+\entry{Ousterhout2017}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Ousterhout}{O.}%
+     {Kay}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Canel}{C.}%
+     {Christopher}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ratnasamy}{R.}%
+     {Sylvia}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shenker}{S.}%
+     {Scott}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \strng{namehash}{OK+1}
+  \strng{fullhash}{OKCCRSSS1}
+  \field{sortinit}{O}
+  \field{booktitle}{Proceedings of the 26th Symposium on Operating Systems
+  Principles}
+  \verb{doi}
+  \verb 10.1145/3132747.3132766
+  \endverb
+  \field{isbn}{978-1-4503-5085-3}
+  \field{pages}{184\bibrangedash 200}
+  \field{series}{SOSP '17}
+  \field{title}{Monotasks: Architecting for Performance Clarity in Data
+  Analytics Frameworks}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/3132747.3132766
+  \endverb
+  \list{location}{1}{%
+    {Shanghai, China}%
+  }
+  \field{year}{2017}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{pan2010survey}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Pan}{P.}%
+     {S.~J.}{S.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yang}{Y.}%
+     {Q.}{Q.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{knowledge engineering;learning by example;optimisation;unsupervised
+  learning;data mining;inductive transfer learning;knowledge transfer;machine
+  learning;transductive transfer learning;unsupervised transfer learning;Data
+  mining;Knowledge engineering;Knowledge transfer;Labeling;Learning
+  systems;Machine learning;Machine learning algorithms;Space
+  technology;Testing;Training data;Transfer learning;data mining.;machine
+  learning;survey}
+  \strng{namehash}{PSJYQ1}
+  \strng{fullhash}{PSJYQ1}
+  \field{sortinit}{P}
+  \verb{doi}
+  \verb 10.1109/TKDE.2009.191
+  \endverb
+  \field{issn}{1041-4347}
+  \field{number}{10}
+  \field{pages}{1345\bibrangedash 1359}
+  \field{title}{A Survey on Transfer Learning}
+  \field{volume}{22}
+  \field{journaltitle}{IEEE Transactions on Knowledge and Data Engineering}
+  \field{year}{2010}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{panteleenko2003web}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Panteleenko}{P.}%
+     {Vsevolod~V}{V.~V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Freeh}{F.}%
+     {Vincent~W}{V.~W.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{organization}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{PVVFVW1}
+  \strng{fullhash}{PVVFVW1}
+  \field{sortinit}{P}
+  \field{booktitle}{The 12th International Conference on Computer
+  Communications and Networks (ICCCN 2003)}
+  \field{pages}{364\bibrangedash 369}
+  \field{title}{Web server performance in a WAN environment}
+  \field{year}{2003}
+\endentry
+
+\entry{Pavlo2012}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Pavlo}{P.}%
+     {Andrew}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Curino}{C.}%
+     {Carlo}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zdonik}{Z.}%
+     {Stanley}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{h-store, kb, oltp, parallel, shared-nothing}
+  \strng{namehash}{PA+1}
+  \strng{fullhash}{PACCZS1}
+  \field{sortinit}{P}
+  \field{booktitle}{Proceedings of the 2012 ACM SIGMOD International Conference
+  on Management of Data}
+  \verb{doi}
+  \verb 10.1145/2213836.2213844
+  \endverb
+  \field{isbn}{978-1-4503-1247-9}
+  \field{pages}{61\bibrangedash 72}
+  \field{series}{SIGMOD '12}
+  \field{title}{Skew-aware Automatic Database Partitioning in Shared-nothing,
+  Parallel OLTP Systems}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/2213836.2213844
+  \endverb
+  \list{location}{1}{%
+    {Scottsdale, Arizona, USA}%
+  }
+  \field{year}{2012}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{peters2015lace2}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Peters}{P.}%
+     {Fayola}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Menzies}{M.}%
+     {Tim}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Layman}{L.}%
+     {Lucas}{L.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE Press}%
+  }
+  \strng{namehash}{PF+1}
+  \strng{fullhash}{PFMTLL1}
+  \field{sortinit}{P}
+  \field{booktitle}{Proceedings of the 37th International Conference on
+  Software Engineering - Volume 1}
+  \field{isbn}{978-1-4799-1934-5}
+  \field{pages}{801\bibrangedash 811}
+  \field{series}{ICSE '15}
+  \field{title}{LACE2: Better Privacy-preserving Data Sharing for Cross Project
+  Defect Prediction}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=2818754.2818851
+  \endverb
+  \list{location}{1}{%
+    {Florence, Italy}%
+  }
+  \field{year}{2015}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{PorterG2010_SuperDataNodes}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Porter}{P.}%
+     {George}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \strng{namehash}{PG1}
+  \strng{fullhash}{PG1}
+  \field{sortinit}{P}
+  \verb{doi}
+  \verb 10.1145/1773912.1773923
+  \endverb
+  \field{issn}{0163-5980}
+  \field{number}{2}
+  \field{pages}{41\bibrangedash 46}
+  \field{title}{Decoupling Storage and Computation in Hadoop with
+  SuperDataNodes}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/1773912.1773923
+  \endverb
+  \field{volume}{44}
+  \list{location}{1}{%
+    {New York, NY, USA}%
+  }
+  \field{journaltitle}{ACM SIGOPS Operating Systems Review}
+  \field{month}{04}
+  \field{year}{2010}
+\endentry
+
+\entry{rasmussen2004gaussian}{inbook}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Rasmussen}{R.}%
+     {Carl~Edward}{C.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \name{editor}{3}{}{%
+    {{}%
+     {Bousquet}{B.}%
+     {Olivier}{O.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Luxburg}{L.}%
+     {Ulrike}{U.}%
+     {von}{v.}%
+     {}{}}%
+    {{}%
+     {R{\"a}tsch}{R.}%
+     {Gunnar}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer Berlin Heidelberg}%
+  }
+  \strng{namehash}{RCE1}
+  \strng{fullhash}{RCE1}
+  \field{sortinit}{R}
+  \field{abstract}{%
+  We give a basic introduction to Gaussian Process regression models. We focus
+  on understanding the role of the stochastic process and how it is used to
+  define a distribution over functions. We present the simple equations for
+  incorporating training data and examine how to learn the hyperparameters
+  using the marginal likelihood. We explain the practical advantages of
+  Gaussian Process and end with conclusions and a look at the current trends in
+  GP work.%
+  }
+  \field{booktitle}{Advanced Lectures on Machine Learning: ML Summer Schools
+  2003, Canberra, Australia, February 2 - 14, 2003, T{\"u}bingen, Germany,
+  August 4 - 16, 2003, Revised Lectures}
+  \verb{doi}
+  \verb 10.1007/978-3-540-28650-9_4
+  \endverb
+  \field{isbn}{978-3-540-28650-9}
+  \field{pages}{63\bibrangedash 71}
+  \field{title}{Gaussian Processes in Machine Learning}
+  \verb{url}
+  \verb https://doi.org/10.1007/978-3-540-28650-9_4
+  \endverb
+  \list{location}{1}{%
+    {Berlin, Heidelberg}%
+  }
+  \field{year}{2004}
+\endentry
+
+\entry{robbins1985some}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Robbins}{R.}%
+     {Herbert}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{RH1}
+  \strng{fullhash}{RH1}
+  \field{sortinit}{R}
+  \field{pages}{527\bibrangedash 535}
+  \field{title}{Some Aspects of the Sequential Design of Experiments}
+  \field{journaltitle}{Bulletin of the American Mathematical Society}
+  \field{year}{1985}
+\endentry
+
+\entry{Rodrigues2013}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Rodrigues}{R.}%
+     {Jo{\~{a}}o~Paiva}{J.~P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ruivo}{R.}%
+     {Pedro}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Romano}{R.}%
+     {Paolo}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lu{\'{i}}s}{L.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RJP+1}
+  \strng{fullhash}{RJPRPRPL1}
+  \field{sortinit}{R}
+  \field{booktitle}{Proceedings of the 10th International Conference on
+  Autonomic Computing (ICAC 2007)}
+  \verb{doi}
+  \verb 10.1145/2641573
+  \endverb
+  \field{isbn}{978-1-931971-02-7}
+  \field{issn}{15564703 15564665}
+  \field{pages}{119\bibrangedash 131}
+  \field{title}{{AUTOPLACER: Scalable Self-Tuning Data Placement in Distributed
+  Key-value Stores}}
+  \list{location}{1}{%
+    {San Jose, CA, USA}%
+  }
+  \field{year}{2013}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Majors2010}{inproceedings}{}
+  \name{author}{8}{}{%
+    {{}%
+     {Ruan}{R.}%
+     {Xiaojun}{X.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Xie}{X.}%
+     {Jiong}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ding}{D.}%
+     {Zhiyang}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Majors}{M.}%
+     {J.}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Qin}{Q.}%
+     {Xiao}{X.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tian}{T.}%
+     {Yun}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Manzanares}{M.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yin}{Y.}%
+     {Shu}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RX+1}
+  \strng{fullhash}{RXXJDZMJQXTYMAYS1}
+  \field{sortinit}{R}
+  \field{booktitle}{2010 IEEE International Symposium on Parallel and
+  Distributed Processing, Workshops and Phd Forum (IPDPSW)}
+  \verb{doi}
+  \verb 10.1109/IPDPSW.2010.5470880
+  \endverb
+  \field{pages}{1\bibrangedash 9}
+  \field{title}{Improving MapReduce performance through data placement in
+  heterogeneous Hadoop clusters}
+  \verb{url}
+  \verb doi.ieeecomputersociety.org/10.1109/IPDPSW.2010.5470880
+  \endverb
+  \field{volume}{00}
+  \field{month}{04}
+  \field{year}{2010}
+\endentry
+
+\entry{Ruemmler1994}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Ruemmler}{R.}%
+     {Chris}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wilkes}{W.}%
+     {John}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE Computer Society Press}%
+  }
+  \strng{namehash}{RCWJ1}
+  \strng{fullhash}{RCWJ1}
+  \field{sortinit}{R}
+  \verb{doi}
+  \verb 10.1109/2.268881
+  \endverb
+  \field{issn}{0018-9162}
+  \field{number}{3}
+  \field{pages}{17\bibrangedash 28}
+  \field{title}{An Introduction to Disk Drive Modeling}
+  \verb{url}
+  \verb https://doi.org/10.1109/2.268881
+  \endverb
+  \field{volume}{27}
+  \list{location}{1}{%
+    {Los Alamitos, CA, USA}%
+  }
+  \field{journaltitle}{Computer}
+  \field{month}{03}
+  \field{year}{1994}
+\endentry
+
+\entry{Saeys12007}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Saeys1}{S.}%
+     {Yvan}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Inza2}{I.}%
+     {I{\~n}aki}{I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Larra{\~n}aga2}{L.}%
+     {Pedro}{P.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SY+1}
+  \strng{fullhash}{SYIILP1}
+  \field{sortinit}{S}
+  \field{issue}{19}
+  \field{pages}{2507\bibrangedash 2517}
+  \field{title}{A review of feature selection techniques in bioinformatics}
+  \field{volume}{23}
+  \field{journaltitle}{Bioinformatics}
+  \field{year}{2007}
+\endentry
+
+\entry{scikit-learn}{misc}{}
+  \field{sortinit}{S}
+  \field{note}{\url{http://scikit-learn.org}}
+  \field{title}{{scikit-learn}}
+\endentry
+
+\entry{ShaferJ2010_PhD}{thesis}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Shafer}{S.}%
+     {Jeffrey}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \keyw{HDFS}
+  \strng{namehash}{SJ1}
+  \strng{fullhash}{SJ1}
+  \field{sortinit}{S}
+  \field{title}{{A Storage Architecture for Data-Intensive Computing}}
+  \verb{url}
+  \verb http://www.cs.rice.edu/CS/Architecture/docs/phdthesis-shafer.pdf
+  \endverb
+  \list{institution}{1}{%
+    {Rice University}%
+  }
+  \field{type}{phdthesis}
+  \field{year}{2010}
+\endentry
+
+\entry{shahriari2016taking}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Shahriari}{S.}%
+     {Bobak}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Swersky}{S.}%
+     {Kevin}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wang}{W.}%
+     {Ziyu}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Adams}{A.}%
+     {Ryan~P}{R.~P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {De~Freitas}{D.~F.}%
+     {Nando}{N.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE}%
+  }
+  \strng{namehash}{SB+1}
+  \strng{fullhash}{SBSKWZARPDFN1}
+  \field{sortinit}{S}
+  \field{number}{1}
+  \field{pages}{148\bibrangedash 175}
+  \field{title}{{Taking the Human Out of the Loop: A Review of Bayesian
+  Optimization}}
+  \field{volume}{104}
+  \field{journaltitle}{Proceedings of the IEEE}
+  \field{year}{2016}
+\endentry
+
+\entry{Shlens2003}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Shlens}{S.}%
+     {Jon}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SJ2}
+  \strng{fullhash}{SJ2}
+  \field{sortinit}{S}
+  \field{pages}{1\bibrangedash 16}
+  \field{title}{A tutorial on principal component analysis: derivation,
+  discussion and singular value decomposition}
+  \field{year}{2003}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{Shriver1998}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Shriver}{S.}%
+     {Elizabeth}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Merchant}{M.}%
+     {Arif}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wilkes}{W.}%
+     {John}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \strng{namehash}{SE+1}
+  \strng{fullhash}{SEMAWJ1}
+  \field{sortinit}{S}
+  \field{booktitle}{Proceedings of the 1998 ACM SIGMETRICS Joint International
+  Conference on Measurement and Modeling of Computer Systems}
+  \verb{doi}
+  \verb 10.1145/277851.277906
+  \endverb
+  \field{isbn}{0-89791-982-3}
+  \field{pages}{182\bibrangedash 191}
+  \field{series}{SIGMETRICS '98/PERFORMANCE '98}
+  \field{title}{An Analytic Behavior Model for Disk Drives with Readahead
+  Caches and Request Reordering}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/277851.277906
+  \endverb
+  \list{location}{1}{%
+    {Madison, Wisconsin, USA}%
+  }
+  \field{year}{1998}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Snoek2012}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Snoek}{S.}%
+     {Jasper}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Larochelle}{L.}%
+     {Hugo}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Adams}{A.}%
+     {Ryan~P.}{R.~P.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Curran Associates Inc.}%
+  }
+  \strng{namehash}{SJ+1}
+  \strng{fullhash}{SJLHARP1}
+  \field{sortinit}{S}
+  \field{booktitle}{Proceedings of the 25th International Conference on Neural
+  Information Processing Systems - Volume 2}
+  \field{pages}{2951\bibrangedash 2959}
+  \field{series}{NIPS'12}
+  \field{title}{Practical Bayesian Optimization of Machine Learning Algorithms}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=2999325.2999464
+  \endverb
+  \list{location}{1}{%
+    {Lake Tahoe, Nevada}%
+  }
+  \field{year}{2012}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Sobol1998}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Sobol}{S.}%
+     {Ilya~M}{I.~M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{SIM1}
+  \strng{fullhash}{SIM1}
+  \field{sortinit}{S}
+  \field{number}{2}
+  \field{pages}{103\bibrangedash 112}
+  \field{title}{{On quasi-Monte Carlo integrations}}
+  \field{volume}{47}
+  \field{journaltitle}{Mathematics and Computers in Simulation}
+  \field{year}{1998}
+\endentry
+
+\entry{sds_att}{misc}{}
+  \field{sortinit}{S}
+  \field{note}{\url{http://www.research.att.com/articles/featured_stories/2015_09/software-defined-storage.html}}
+  \field{title}{{Software-Defined Storage}}
+\endentry
+
+\entry{sparkperf}{manual}{}
+  \field{sortinit}{S}
+  \field{note}{\url{https://github.com/databricks/spark-perf}}
+  \field{title}{spark-perf}
+\endentry
+
+\entry{sripanidkulchai2004analysis}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Sripanidkulchai}{S.}%
+     {Kunwadee}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Maggs}{M.}%
+     {Bruce}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zhang}{Z.}%
+     {Hui}{H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{content delivery networks, live streaming}
+  \strng{namehash}{SK+1}
+  \strng{fullhash}{SKMBZH1}
+  \field{sortinit}{S}
+  \field{booktitle}{Proceedings of the 4th ACM SIGCOMM Conference on Internet
+  Measurement}
+  \verb{doi}
+  \verb 10.1145/1028788.1028795
+  \endverb
+  \field{isbn}{1-58113-821-0}
+  \field{pages}{41\bibrangedash 54}
+  \field{series}{IMC '04}
+  \field{title}{An Analysis of Live Streaming Workloads on the Internet}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/1028788.1028795
+  \endverb
+  \list{location}{1}{%
+    {Taormina, Sicily, Italy}%
+  }
+  \field{year}{2004}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{sripanidkulchai2010clouds}{article}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Sripanidkulchai}{S.}%
+     {Kunwadee}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sahu}{S.}%
+     {Sambit}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ruan}{R.}%
+     {Yaoping}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shaikh}{S.}%
+     {Anees}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dorai}{D.}%
+     {Chitra}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \strng{namehash}{SK+1}
+  \strng{fullhash}{SKSSRYSADC1}
+  \field{sortinit}{S}
+  \field{number}{2}
+  \field{pages}{18\bibrangedash 23}
+  \field{title}{Are clouds ready for large distributed applications?}
+  \field{volume}{44}
+  \field{journaltitle}{ACM SIGOPS Operating Systems Review}
+  \field{year}{2010}
+\endentry
+
+\entry{sysstat}{manual}{}
+  \field{sortinit}{S}
+  \field{note}{\url{http://sebastien.godard.pagesperso-orange.fr}}
+  \field{title}{sysstat}
+\endentry
+
+\entry{tang2011impact}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Tang}{T.}%
+     {Lingjia}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mars}{M.}%
+     {Jason}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vachharajani}{V.}%
+     {Neil}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hundt}{H.}%
+     {Robert}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Soffa}{S.}%
+     {Mary~Lou}{M.~L.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{contention, datacenter, multicore, thread scheduling, thread-to-core
+  mapping, workload characterization}
+  \strng{namehash}{TL+1}
+  \strng{fullhash}{TLMJVNHRSML1}
+  \field{sortinit}{T}
+  \field{booktitle}{Proceedings of the 38th Annual International Symposium on
+  Computer Architecture}
+  \verb{doi}
+  \verb 10.1145/2000064.2000099
+  \endverb
+  \field{isbn}{978-1-4503-0472-6}
+  \field{pages}{283\bibrangedash 294}
+  \field{series}{ISCA '11}
+  \field{title}{The Impact of Memory Subsystem Resource Sharing on Datacenter
+  Applications}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/2000064.2000099
+  \endverb
+  \list{location}{1}{%
+    {San Jose, California, USA}%
+  }
+  \field{year}{2011}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{TantisirirojWittawat2011Duality}{inproceedings}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Tantisiriroj}{T.}%
+     {Wittawat}{W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Son}{S.}%
+     {Seung~Woo}{S.~W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Patil}{P.}%
+     {Swapnil}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lang}{L.}%
+     {Samuel~J.}{S.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gibson}{G.}%
+     {Garth}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ross}{R.}%
+     {Robert~B.}{R.~B.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{HDFS, Hadoop, PVFS, cloud computing, file systems}
+  \strng{namehash}{TW+1}
+  \strng{fullhash}{TWSSWPSLSJGGRRB1}
+  \field{sortinit}{T}
+  \field{booktitle}{Proceedings of 2011 International Conference for High
+  Performance Computing, Networking, Storage and Analysis}
+  \verb{doi}
+  \verb 10.1145/2063384.2063474
+  \endverb
+  \field{isbn}{978-1-4503-0771-0}
+  \field{pages}{67:1\bibrangedash 67:12}
+  \field{series}{SC '11}
+  \field{title}{On the Duality of Data-intensive File System Design:
+  Reconciling HDFS and PVFS}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/2063384.2063474
+  \endverb
+  \list{location}{1}{%
+    {Seattle, Washington}%
+  }
+  \field{year}{2011}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Thereska2013}{inproceedings}{}
+  \name{author}{8}{}{%
+    {{}%
+     {Thereska}{T.}%
+     {Eno}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ballani}{B.}%
+     {Hitesh}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {O'Shea}{O.}%
+     {Greg}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Karagiannis}{K.}%
+     {Thomas}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Rowstron}{R.}%
+     {Antony}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Talpey}{T.}%
+     {Tom}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Black}{B.}%
+     {Richard}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zhu}{Z.}%
+     {Timothy}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \strng{namehash}{TE+1}
+  \strng{fullhash}{TEBHOGKTRATTBRZT1}
+  \field{sortinit}{T}
+  \field{booktitle}{Proceedings of the Twenty-Fourth ACM Symposium on Operating
+  Systems Principles}
+  \verb{doi}
+  \verb 10.1145/2517349.2522723
+  \endverb
+  \field{isbn}{978-1-4503-2388-8}
+  \field{pages}{182\bibrangedash 196}
+  \field{series}{SOSP '13}
+  \field{title}{IOFlow: A Software-defined Storage Architecture}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/2517349.2522723
+  \endverb
+  \list{location}{1}{%
+    {Farminton, Pennsylvania}%
+  }
+  \field{year}{2013}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Trushkowsky2011}{article}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Trushkowsky}{T.}%
+     {Beth}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bod\'{\i}k}{B.}%
+     {Peter}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fox}{F.}%
+     {Armando}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Franklin}{F.}%
+     {Michael~J.}{M.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jordan}{J.}%
+     {Michael~I.}{M.~I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Patterson}{P.}%
+     {David~A.}{D.~A.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {USENIX Association}%
+  }
+  \strng{namehash}{TB+1}
+  \strng{fullhash}{TBBPFAFMJJMIPDA1}
+  \field{sortinit}{T}
+  \field{booktitle}{Proceedings of the 9th USENIX Conference on File and
+  Stroage Technologies}
+  \field{isbn}{978-1-931971-82-9}
+  \field{pages}{12\bibrangedash 12}
+  \field{series}{FAST'11}
+  \field{title}{The SCADS Director: Scaling a Distributed Storage System Under
+  Stringent Performance Requirements}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=1960475.1960487
+  \endverb
+  \list{location}{1}{%
+    {San Jose, California}%
+  }
+  \field{year}{2011}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{urdaneta2009wikipedia}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Urdaneta}{U.}%
+     {Guido}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pierre}{P.}%
+     {Guillaume}{G.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Van~Steen}{V.~S.}%
+     {Maarten}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier}%
+  }
+  \strng{namehash}{UG+1}
+  \strng{fullhash}{UGPGVSM1}
+  \field{sortinit}{U}
+  \field{number}{11}
+  \field{pages}{1830\bibrangedash 1845}
+  \field{title}{Wikipedia workload analysis for decentralized hosting}
+  \field{volume}{53}
+  \field{journaltitle}{Computer Networks}
+  \field{year}{2009}
+\endentry
+
+\entry{Venkataraman2016}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Venkataraman}{V.}%
+     {Shivaram}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yang}{Y.}%
+     {Zongheng}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Franklin}{F.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Recht}{R.}%
+     {Benjamin}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stoica}{S.}%
+     {Ion}{I.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {USENIX Association}%
+  }
+  \strng{namehash}{VS+1}
+  \strng{fullhash}{VSYZFMRBSI1}
+  \field{sortinit}{V}
+  \field{booktitle}{Proceedings of the 13th Usenix Conference on Networked
+  Systems Design and Implementation}
+  \field{isbn}{978-1-931971-29-4}
+  \field{pages}{363\bibrangedash 378}
+  \field{series}{NSDI'16}
+  \field{title}{Ernest: Efficient Performance Prediction for Large-scale
+  Advanced Analytics}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=2930611.2930635
+  \endverb
+  \list{location}{1}{%
+    {Santa Clara, CA}%
+  }
+  \field{year}{2016}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Wang2004}{inproceedings}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Wang}{W.}%
+     {Mengzhi}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Au}{A.}%
+     {Kinman}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ailamaki}{A.}%
+     {Anastassia}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Brockwell}{B.}%
+     {Anthony}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Faloutsos}{F.}%
+     {Christos}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ganger}{G.}%
+     {Gregory~R.}{G.~R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{performance prediction, storage device modeling}
+  \strng{namehash}{WM+1}
+  \strng{fullhash}{WMAKAABAFCGGR1}
+  \field{sortinit}{W}
+  \field{booktitle}{Proceedings of the Joint International Conference on
+  Measurement and Modeling of Computer Systems}
+  \verb{doi}
+  \verb 10.1145/1005686.1005743
+  \endverb
+  \field{isbn}{1-58113-873-3}
+  \field{pages}{412\bibrangedash 413}
+  \field{series}{SIGMETRICS '04/Performance '04}
+  \field{title}{Storage Device Performance Prediction with CART Models}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/1005686.1005743
+  \endverb
+  \list{location}{1}{%
+    {New York, NY, USA}%
+  }
+  \field{year}{2004}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{pmlr-v70-wang17e}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Wang}{W.}%
+     {Zi}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jegelka}{J.}%
+     {Stefanie}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \name{editor}{2}{}{%
+    {{}%
+     {Precup}{P.}%
+     {Doina}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Teh}{T.}%
+     {Yee~Whye}{Y.~W.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {PMLR}%
+  }
+  \strng{namehash}{WZJS1}
+  \strng{fullhash}{WZJS1}
+  \field{sortinit}{W}
+  \field{booktitle}{Proceedings of the 34th International Conference on Machine
+  Learning}
+  \field{pages}{3627\bibrangedash 3635}
+  \field{series}{Proceedings of Machine Learning Research}
+  \field{title}{Max-value Entropy Search for Efficient {B}ayesian Optimization}
+  \field{volume}{70}
+  \list{location}{1}{%
+    {International Convention Centre, Sydney, Australia}%
+  }
+  \field{year}{2017}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{wauthier2013efficient}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Wauthier}{W.}%
+     {Fabian~L.}{F.~L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jordan}{J.}%
+     {Michael~I.}{M.~I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Jojic}{J.}%
+     {Nebojsa}{N.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {JMLR.org}%
+  }
+  \strng{namehash}{WFL+1}
+  \strng{fullhash}{WFLJMIJN1}
+  \field{sortinit}{W}
+  \field{booktitle}{Proceedings of the 30th International Conference on
+  International Conference on Machine Learning - Volume 28}
+  \field{pages}{III\bibrangedash 109\bibrangedash III\bibrangedash 117}
+  \field{series}{ICML'13}
+  \field{title}{Efficient Ranking from Pairwise Comparisons}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=3042817.3042949
+  \endverb
+  \list{location}{1}{%
+    {Atlanta, GA, USA}%
+  }
+  \field{year}{2013}
+\endentry
+
+\entry{weber1992gittins}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Weber}{W.}%
+     {Richard}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {JSTOR}%
+  }
+  \strng{namehash}{WR1}
+  \strng{fullhash}{WR1}
+  \field{sortinit}{W}
+  \field{pages}{1024\bibrangedash 1033}
+  \field{title}{On the Gittins index for multiarmed bandits}
+  \field{journaltitle}{The Annals of Applied Probability}
+  \field{year}{1992}
+\endentry
+
+\entry{SageWeil2006Ceph}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Weil}{W.}%
+     {Sage~A.}{S.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Brandt}{B.}%
+     {Scott~A.}{S.~A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Miller}{M.}%
+     {Ethan~L.}{E.~L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Long}{L.}%
+     {Darrell D.~E.}{D.~D.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Maltzahn}{M.}%
+     {Carlos}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {USENIX Association}%
+  }
+  \strng{namehash}{WSA+1}
+  \strng{fullhash}{WSABSAMELLDDEMC1}
+  \field{sortinit}{W}
+  \field{booktitle}{Proceedings of the 7th Symposium on Operating Systems
+  Design and Implementation}
+  \field{isbn}{1-931971-47-1}
+  \field{pages}{307\bibrangedash 320}
+  \field{series}{OSDI '06}
+  \field{title}{Ceph: A Scalable, High-performance Distributed File System}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=1298455.1298485
+  \endverb
+  \list{location}{1}{%
+    {Seattle, Washington}%
+  }
+  \field{year}{2006}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{wettschereck1997review}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Wettschereck}{W.}%
+     {Dietrich}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Aha}{A.}%
+     {David~W}{D.~W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Mohri}{M.}%
+     {Takao}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer}%
+  }
+  \strng{namehash}{WD+1}
+  \strng{fullhash}{WDADWMT1}
+  \field{sortinit}{W}
+  \field{number}{1-5}
+  \field{pages}{273\bibrangedash 314}
+  \field{title}{{A Review and Empirical Evaluation of Feature Weighting Methods
+  for a Class of Lazy Learning Algorithms}}
+  \field{volume}{11}
+  \field{journaltitle}{Artificial Intelligence Review}
+  \field{year}{1997}
+\endentry
+
+\entry{dstat}{manual}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Wieërs}{W.}%
+     {Dag}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{WD1}
+  \strng{fullhash}{WD1}
+  \field{sortinit}{W}
+  \field{note}{\url{http://dag.wiee.rs/home-made/dstat/}}
+  \field{title}{Dstat: Versatile resource statistics tool}
+\endentry
+
+\entry{Wilkes2001}{inproceedings}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Wilkes}{W.}%
+     {John}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Springer-Verlag}%
+  }
+  \strng{namehash}{WJ1}
+  \strng{fullhash}{WJ1}
+  \field{sortinit}{W}
+  \field{booktitle}{Proceedings of the 9th International Workshop on Quality of
+  Service}
+  \field{isbn}{3-540-42217-X}
+  \field{pages}{75\bibrangedash 91}
+  \field{series}{IWQoS '01}
+  \field{title}{Traveling to Rome: QoS Specifications for Automated Storage
+  System Management}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=646374.689203
+  \endverb
+  \list{location}{1}{%
+    {Berlin, Heidelberg}%
+  }
+  \field{year}{2001}
+\endentry
+
+\entry{WindowsAzure}{manual}{}
+  \field{sortinit}{W}
+  \field{note}{\url{http://www.windowsazure.com/}}
+  \field{title}{{Windows Azure}}
+  \warn{\item Invalid format of field 'urldate'}
+\endentry
+
+\entry{Yadwadkar2017}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Yadwadkar}{Y.}%
+     {Neeraja~J.}{N.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hariharan}{H.}%
+     {Bharath}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Gonzalez}{G.}%
+     {Joseph~E.}{J.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Smith}{S.}%
+     {Burton}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Katz}{K.}%
+     {Randy~H.}{R.~H.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{cloud computing, data-driven modeling, performance prediction, resource
+  allocation}
+  \strng{namehash}{YNJ+1}
+  \strng{fullhash}{YNJHBGJESBKRH1}
+  \field{sortinit}{Y}
+  \field{booktitle}{Proceedings of the 2017 Symposium on Cloud Computing}
+  \verb{doi}
+  \verb 10.1145/3127479.3131614
+  \endverb
+  \field{isbn}{978-1-4503-5028-0}
+  \field{pages}{452\bibrangedash 465}
+  \field{series}{SoCC '17}
+  \field{title}{Selecting the Best VM Across Multiple Public Clouds: A
+  Data-driven Performance Modeling Approach}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/3127479.3131614
+  \endverb
+  \list{location}{1}{%
+    {Santa Clara, California}%
+  }
+  \field{year}{2017}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Yao2017}{inproceedings}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Yao}{Y.}%
+     {Yuanshun}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Xiao}{X.}%
+     {Zhujun}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wang}{W.}%
+     {Bolun}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Viswanath}{V.}%
+     {Bimal}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zheng}{Z.}%
+     {Haitao}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Zhao}{Z.}%
+     {Ben~Y.}{B.~Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{cloud computing, machine learning}
+  \strng{namehash}{YY+1}
+  \strng{fullhash}{YYXZWBVBZHZBY1}
+  \field{sortinit}{Y}
+  \field{booktitle}{Proceedings of the 2017 Internet Measurement Conference}
+  \verb{doi}
+  \verb 10.1145/3131365.3131372
+  \endverb
+  \field{isbn}{978-1-4503-5118-8}
+  \field{pages}{384\bibrangedash 397}
+  \field{series}{IMC '17}
+  \field{title}{Complexity vs. Performance: Empirical Analysis of Machine
+  Learning As a Service}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/3131365.3131372
+  \endverb
+  \list{location}{1}{%
+    {London, United Kingdom}%
+  }
+  \field{year}{2017}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Yin2006}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Yin}{Y.}%
+     {Li}{L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Uttamchandani}{U.}%
+     {Sandeep}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Katz}{K.}%
+     {Randy}{R.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {IEEE Computer Society}%
+  }
+  \strng{namehash}{YL+1}
+  \strng{fullhash}{YLUSKR1}
+  \field{sortinit}{Y}
+  \field{booktitle}{Proceedings of the 14th IEEE International Symposium on
+  Modeling, Analysis, and Simulation}
+  \verb{doi}
+  \verb 10.1109/MASCOTS.2006.12
+  \endverb
+  \field{isbn}{0-7695-2573-3}
+  \field{pages}{433\bibrangedash 440}
+  \field{series}{MASCOTS '06}
+  \field{title}{An Empirical Exploration of Black-Box Performance Models for
+  Storage Systems}
+  \verb{url}
+  \verb https://doi.org/10.1109/MASCOTS.2006.12
+  \endverb
+  \list{location}{1}{%
+    {Washington, DC, USA}%
+  }
+  \field{year}{2006}
+\endentry
+
+\entry{zadrozny2001obtaining}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Zadrozny}{Z.}%
+     {Bianca}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Elkan}{E.}%
+     {Charles}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Morgan Kaufmann Publishers Inc.}%
+  }
+  \strng{namehash}{ZBEC1}
+  \strng{fullhash}{ZBEC1}
+  \field{sortinit}{Z}
+  \field{booktitle}{Proceedings of the Eighteenth International Conference on
+  Machine Learning}
+  \field{isbn}{1-55860-778-1}
+  \field{pages}{609\bibrangedash 616}
+  \field{series}{ICML '01}
+  \field{title}{Obtaining Calibrated Probability Estimates from Decision Trees
+  and Naive Bayesian Classifiers}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=645530.655658
+  \endverb
+  \list{location}{1}{%
+    {San Francisco, CA, USA}%
+  }
+  \field{year}{2001}
+\endentry
+
+\entry{zadrozny2002transforming}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Zadrozny}{Z.}%
+     {Bianca}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Elkan}{E.}%
+     {Charles}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \strng{namehash}{ZBEC1}
+  \strng{fullhash}{ZBEC1}
+  \field{sortinit}{Z}
+  \field{booktitle}{Proceedings of the Eighth ACM SIGKDD International
+  Conference on Knowledge Discovery and Data Mining}
+  \verb{doi}
+  \verb 10.1145/775047.775151
+  \endverb
+  \field{isbn}{1-58113-567-X}
+  \field{pages}{694\bibrangedash 699}
+  \field{series}{KDD '02}
+  \field{title}{Transforming Classifier Scores into Accurate Multiclass
+  Probability Estimates}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/775047.775151
+  \endverb
+  \list{location}{1}{%
+    {Edmonton, Alberta, Canada}%
+  }
+  \field{year}{2002}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{zaharia2010spark}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Zaharia}{Z.}%
+     {Matei}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chowdhury}{C.}%
+     {Mosharaf}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Franklin}{F.}%
+     {Michael~J.}{M.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shenker}{S.}%
+     {Scott}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stoica}{S.}%
+     {Ion}{I.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {USENIX Association}%
+  }
+  \strng{namehash}{ZM+1}
+  \strng{fullhash}{ZMCMFMJSSSI1}
+  \field{sortinit}{Z}
+  \field{booktitle}{Proceedings of the 2Nd USENIX Conference on Hot Topics in
+  Cloud Computing}
+  \field{pages}{10\bibrangedash 10}
+  \field{series}{HotCloud'10}
+  \field{title}{Spark: Cluster Computing with Working Sets}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=1863103.1863113
+  \endverb
+  \list{location}{1}{%
+    {Boston, MA}%
+  }
+  \field{year}{2010}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{Zaharia2012}{inproceedings}{}
+  \name{author}{9}{}{%
+    {{}%
+     {Zaharia}{Z.}%
+     {Matei}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chowdhury}{C.}%
+     {Mosharaf}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Das}{D.}%
+     {Tathagata}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Dave}{D.}%
+     {Ankur}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ma}{M.}%
+     {Justin}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {McCauley}{M.}%
+     {Murphy}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Franklin}{F.}%
+     {Michael~J.}{M.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shenker}{S.}%
+     {Scott}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Stoica}{S.}%
+     {Ion}{I.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {USENIX Association}%
+  }
+  \strng{namehash}{ZM+1}
+  \strng{fullhash}{ZMCMDTDAMJMMFMJSSSI1}
+  \field{sortinit}{Z}
+  \field{booktitle}{Proceedings of the 9th USENIX Conference on Networked
+  Systems Design and Implementation}
+  \field{pages}{2\bibrangedash 2}
+  \field{series}{NSDI'12}
+  \field{title}{Resilient Distributed Datasets: A Fault-tolerant Abstraction
+  for In-memory Cluster Computing}
+  \verb{url}
+  \verb http://dl.acm.org/citation.cfm?id=2228298.2228301
+  \endverb
+  \list{location}{1}{%
+    {San Jose, CA}%
+  }
+  \field{year}{2012}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{zhu2017bestconfig}{inproceedings}{}
+  \name{author}{8}{}{%
+    {{}%
+     {Zhu}{Z.}%
+     {Yuqing}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Liu}{L.}%
+     {Jianxun}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Guo}{G.}%
+     {Mengying}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bao}{B.}%
+     {Yungang}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Ma}{M.}%
+     {Wenlong}{W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Liu}{L.}%
+     {Zhuoyue}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Song}{S.}%
+     {Kunpeng}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yang}{Y.}%
+     {Yingchun}{Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {ACM}%
+  }
+  \keyw{ACT, automatic configuration tuning, performance optimization}
+  \strng{namehash}{ZY+1}
+  \strng{fullhash}{ZYLJGMBYMWLZSKYY1}
+  \field{sortinit}{Z}
+  \field{booktitle}{Proceedings of the 2017 Symposium on Cloud Computing}
+  \verb{doi}
+  \verb 10.1145/3127479.3128605
+  \endverb
+  \field{isbn}{978-1-4503-5028-0}
+  \field{pages}{338\bibrangedash 350}
+  \field{series}{SoCC '17}
+  \field{title}{BestConfig: Tapping the Performance Potential of Systems via
+  Automatic Configuration Tuning}
+  \verb{url}
+  \verb http://doi.acm.org/10.1145/3127479.3128605
+  \endverb
+  \list{location}{1}{%
+    {Santa Clara, California}%
+  }
+  \field{year}{2017}
+  \warn{\item Can't use 'location' + 'address'}
+\endentry
+
+\entry{zuluaga2016varepsilon}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Zuluaga}{Z.}%
+     {Marcela}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Krause}{K.}%
+     {Andreas}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {P{\"u}schel}{P.}%
+     {Markus}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{ZM+2}
+  \strng{fullhash}{ZMKAPM1}
+  \field{sortinit}{Z}
+  \field{number}{1}
+  \field{pages}{3619\bibrangedash 3650}
+  \field{title}{{$\varepsilon$-PAL: An Active Learning Approach to the
+  Multi-Objective Optimization Problem}}
+  \field{volume}{17}
+  \field{journaltitle}{The Journal of Machine Learning Research}
+  \field{year}{2016}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

@@ -1,0 +1,54 @@
+\section{Introduction}
+\label{sec:cat::introduction}
+
+\iffalse
+Cloud computing is a cost-effective
+alternative to on-premise computing.
+Cloud computing (specifically, Infrastructure as a Service) provides a large variety of architectural configurations,
+such as the number of cores, amount of memory, and the number of nodes.
+Cloud service providers
+(such as Amazon, Google, and Azure) offer over 100 virtual machines (VM) types~\cite{Yadwadkar2017}.
+The ready flexibility in cloud offerings has created a paradigm shift.
+Whereas before a workload was tuned for the cluster that was available, in the cloud
+the \emph{architectural configuration can be tuned for the workload}.
+This flexibility imposes a burden on users who must choose the \emph{right} architectural configurations.
+The wrong choice can increase elapsed time by 20 times and 
+cost 10 times compared to the optimal~\cite{Hsu2018Arrow,Hsu2018Scout}.
+Users need an effective way to find the right architectural configurations
+for their cloud applications.
+Therefore,
+choosing the right VM type for a workload is essential to provide quality service while being cost effective~\cite{Frey2013, Yao2017}.
+\fi
+
+
+Cloud computing is a cost-effective alternative to on-premise computing.
+Choosing the right VM type for a workload is essential to provide quality service
+while being cost effective~\cite{Frey2013, Yao2017}.
+In this chapter, we describe the \emph{cloud architecture tuning (CAT)} problem
+~\cite{Venkataraman2016,Alipourfard2017,Yadwadkar2017,Hsu2018Arrow}.
+Given a workload and a service objective, we focus on delivering
+the best architecture configurations, such as
+virtual machine (VM) types and the number of VMs.
+CAT is similar to hyper-parameter tuning in many aspects
+~\cite{herodotou2011starfish,zhu2017bestconfig,Dewancker2015,shahriari2016taking,Klein2017,golovin2017google}.
+However, the search space of CAT can be more irregular,
+which makes existing approach to CAT more fragile~\cite{Hsu2018Arrow}.
+This is because the same workload can perform very differently
+on two similar configurations.
+For example, memory bottleneck can exist in one configuration but not another.
+
+A good solution for CAT should have 
+low search cost and find (near) optimal configurations.
+Additionally, the solution should be reliable, scalable, and work for wide range of applications and workloads.
+\emph{Ernest} is an effective method to extrapolate workload performance
+on different configurations, but it is not scalable because
+it requires separate prediction models
+for distinct workloads and VM types~\cite{Venkataraman2016}.
+\emph{CherryPick} adopts Bayesian Optimization to support
+any kinds of workloads~\cite{Alipourfard2017}.
+However, it relies on an appropriate kernel function to model the search space,
+which makes it fragile~\cite{Hsu2018Arrow}.
+\emph{PARIS} uses extensive training data
+to build prediction model~\cite{Yadwadkar2017}.
+However, it may suffer from a high variance of prediction error.
+Thus, no prior work fulfills all the requirements of a good solution.

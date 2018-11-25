@@ -1,0 +1,47 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {3.1}{\ignorespaces Important features selected by different algorithms are not deterministic\relax }}{18}{table.caption.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {3.2}{\ignorespaces Common scenarios that storage behavior can change in a software-define storage environment\relax }}{24}{table.caption.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {3.3}{\ignorespaces Ceph and COSBench settings for data collection.\relax }}{25}{table.caption.16}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {4.1}{\ignorespaces The evaluated applications. In total, there are 30 applications and 107 workloads measured on Hadoop 2.7, Spark 1.5 and Spark 2.1.\relax }}{36}{table.caption.23}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {4.2}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf {Dataset description.} The benchmark programs are taken from \emph {HiBench}\nobreakspace {}\parencite {hibench} and \emph {spark-perf}\nobreakspace {}\parencite {sparkperf}. }\relax }}{37}{table.caption.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {4.3}{\ignorespaces The execution time and resource cost of applications running with different numbers of CPUs and memory per CPU. The text in bold refer to the configurations on the convex hull in Figure\nobreakspace {}\ref {fig:application_performance}.\relax }}{44}{table.caption.29}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.1}{\ignorespaces \textbf {Normalized performance on a selected group of VM types and workloads.} The number $1.0$ represents the optimal choice across the 18 VM types for the particular workload.\relax }}{94}{table.caption.59}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.2}{\ignorespaces \textbf {The most cost-effective VM types for 107 workloads recommended by \textit {Micky}\xspace } The number above each column label represents normalized performance (to the optimal). CherryPick finds good ($< 1.2$) VM types in 86\% of workloads.\relax }}{100}{table.caption.61}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.3}{\ignorespaces \textbf {The knee point when \textit {Micky}\xspace should not be used.} The knee point (the number of recurrence of workloads) represents a trade-off between search performance and measurement cost. \relax }}{101}{table.caption.63}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.1}{\ignorespaces Load-imbalance of workloads.\relax }}{115}{table.caption.72}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.2}{\ignorespaces Steady-State Throughput Comparison (instance storage)\relax }}{121}{table.caption.76}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.3}{\ignorespaces Steady-State Throughput Comparison (NFS)\relax }}{123}{table.caption.78}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.4}{\ignorespaces Normalized System Statistics of Roxie Servers\relax }}{125}{table.caption.79}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {9.1}{\ignorespaces \textbf {A practical guide to choosing the right optimization method.} \emph {CheeryPick} works for any workloads without historical and low-level performance data\nobreakspace {}\parencite {Alipourfard2017}. \emph {Arrow} uses low-level metrics to augment Bayesian Optimization (used in \emph {CherryPick})\nobreakspace {}\parencite {Hsu2018Arrow}. \emph {PARIS} requires low-level and historical data for predicting execution time and running cost of workloads on different VM types\nobreakspace {}\parencite {Yadwadkar2017}. {\sc Scout}\xspace leverages a learning model and sequential model-based optimization (SMBO) to deliver efficient, effective and reliable recommendation\nobreakspace {}\parencite {Hsu2018Scout}. \emph {Micky}, different from others, applies collective optimization to largely reduce measurement cost. \relax }}{128}{table.caption.80}
