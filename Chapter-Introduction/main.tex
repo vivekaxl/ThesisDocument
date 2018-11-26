@@ -30,8 +30,8 @@ performance measurements (seconds)}
     \label{fig:chap1_random_sample}
 \end{figure}
 
-\subsection{Motivating Example}
-To motivate our work, we use the same example from our previous work citeGuoXXX, a configurable
+\section{Motivating Example}
+To motivate our work, we use the same example from a previous work~\cite{guo2013variability}, a configurable
 command-line tool x264 for encoding video streams into the H.264/MPEG-4 AVC format.
 In this example, we consider 16 encoder features of x264, such as encoding with multiple
 reference frames and parallel encoding on multiple CPUs. The user can select
@@ -45,50 +45,142 @@ In practice, often only a limited set of configurations can be measured, either 
 or by monitoring in the field. For example, Figure~\ref{fig:chap1_random_sample} lists a sample of 16 randomly selected
 configurations and their actual performance measurements. How can we determine
 the performance of other configurations based on a small random sample of measured configurations?
-To formulate the above issue, we represent a feature as a binary decision variable x.
+To formulate the above issue, we represent a feature as a binary decision variable x (please note that decision variable could be decimal as well).
 If a feature is selected in a configuration, then the corresponding variable is set to 1, and
-0 otherwise. Assume that there are N features in total, all features of a program are
-represented as a set X = {x1, x2, ..., xN }. A configuration is an N-tuple c, assigning 1 or 0
+0 otherwise. Assume that there are $N$ features in total, all features of a program are
+represented as a set $X = {x_1, x_2, ..., x_N}$. A configuration is an N-tuple c, assigning 1 or 0
 to each variable. For example, each configuration of x264 is represented by 16-tuple, e.g.
-c1 = (x1 = 1, x2 = 1, x3 = 0, x4 = 0, ..., x16 = 1). All valid configurations of a program are
-denoted by C.
-Each configuration c of a program has an actual measured performance value y. Performance values are taken from publicly available dataset deployed with SPLConqueror
-tool[17]. Detailed description of the dataset is given in Section 6.1.
-All performance values of all configurations C form set Y . Suppose that we acquire a
-random sample of configurations CS ? C and their actual measured performance values
-YS ? Y , together forming sample S. The problem of variability-aware performance prediction
-is to predict the performance of other configurations in C\CS based on the measured
+$c_1$ = ($x_1$ = 1, $x_2$ = 1, $x_3$ = 0, $x_4$ = 0, ..., $x_{16}$ = 1). All valid configurations of a program are
+denoted by $C$.
+Each configuration $c$ of a program has an actual measured performance value y. Performance values are taken from publicly available dataset deployed with SPLConqueror
+tool.
+All performance values of all configurations $C$ form set $Y$ . Suppose that we acquire a
+random sample of configurations $C_S \in C$ and their actual measured performance values
+$Y_S \in Y$ , together forming sample $S$. The problem of variability-aware performance prediction
+is to predict the performance of other configurations in $C \ CS$ based on the measured
 sample S.
-We regard all variables in X as predictors and a configuration?s actual performance
+We regard all variables in X as predictors and a configuration\textquotesingle s actual performance
 value y as the response. In other words, we predict a quantitative response y based on a
-set of categorical predictors X, which is a typical regression problem[9]. Due to feature
-interactions[18], the above issue is reduced to a non-linear regression problem, where the
-response depends non-linearly on one or more predictors[8].
+set of categorical predictors X, which is a typical regression problem. \textit{Due to feature
+interactions, the above issue is reduced to a non-linear regression problem, where the
+response depends non-linearly on one or more predictors.}
 
 
 
 
+\section{Dual Axis: Quality and Cost}
+\noindent\textbf{Quality}: Quality of an approach refers to the distance between the solutions returned by the techniques proposed and the ground truth. Quality can be calculated as the rank difference which is the distance between best solution (also referred to as configuration) found by (proposed) techniques to the actual best solution.
+
+\noindent\textbf{Cost}: Cost of an approach refers to the effort required by an approach to find a good configurations. In this thesis, we use number of measurements (or benchmark runs) as an proxy to the search effort.
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Chapter-Introduction/Figures/sampling_process.png}
+    \caption{ General process of performance prediction by sampling}
+    \label{fig:chap1_sampling_process}
+\end{figure}
+
+\section{Prior Work}
+Figure~\ref{fig:chap1_sampling_process} illustrates the general process of performance prediction by sampling. It starts with
+an initial sample of measured configurations, which are used to build the prediction model. A
+good initial sample significantly reduces the iterations of the entire prediction process. State-of-the-art
+approaches fix the size of the initial sample to the number of features or potential feature
+interactions of a system~\cite{siegmund2012predicting, guo2013variability}. However, such a strategy might not be the optimal one, as the
+number of features (and their interactions) can be high and, at the same time, an acceptable prediction
+accuracy might be achieved using a substantially smaller set of measured configurations.
+
+\noindent\textbf{Observation}: Even though, the strategies proposed by earlier work in this domain exploited random sampling and CART decision trees (which are both scalable), there is repeated work. In our two axis' of evaluation, these strategies work well in the quality aspect however, does not fare well in the cost aspect. Most of the method use over 50\% of the configurations (from the configuration space), to build a reliable model. 
+
+\section{Contributions}
+
+\subsection{Clustering}
+The prior work in this area~\cite{guo2013variability, sarkar2015cost} used a combination of random sampling and regression trees. However, random sampling completely disregards the presence of clusters in the configuration space. It has been shown in the literature~\cite{oh2017finding} that (1) most of the configuration options does not influence the performance i.e. only a few configurations options are useful, and (2) the performance curve is generally a step function. 
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Chapter-Introduction/Figures/stairs.png}
+    \caption{Performance curves. (From ~\cite{oh2017finding})}
+    \label{fig:chap1_stairs}
+\end{figure}
+
+To elaborate, if we sort the configurations from worst-performance to best and
+plot configurations along the X-axis and performance along the
+Y-axis. We expected a continuous graph
+such as Figure~\ref{fig:chap1_stairs}(a), where high-valued (\$) is bad (worst performance is at the far left) and low-valued (\$) is good (best performance is at the
+far right). Ω anchors the far-right point on X-axis of graphs. Interestingly, Marker et al.~\cite{marker2014understanding} discovered that performance curves often occurs (in real world) as stairs, as in Figure 3b. Stairs arise from discrete feature decisions;
+some features are highly-influential in performance while others
+have little or no impact. Consequently, a few critical features
+influences the performance while less important feature decisions alter the performance of nearby configurations only slightly (giving a stair its width and slope).
+
+\noindent\textbf{Intuition}: From the literature, it is evident that most of the configuration options in a (given) software system does not affect the performance of the configurations. Hence, the central insight of this work is that random sampling with no regards to this specific feature of this problem is ineffective and hence adds additional cost. 
+
+\noindent\textbf{Proposal}: This problem can be reformulated as a clustering problem, where we try to find an unsupervised method to cluster the configuration space into meaningful clusters. Once we have this cluster (top-down bi-cluster), we can only use random sampling from each of the clusters. This way, we can reduce redundant measurements (measurements which do not provide new information).  
+
+\subsection{Ranking}
+Prior work in this area (including~\cite{nair2017faster}), tried to build accurate performance predictors, which (once trained) can be used to predict the performance of a certain configuration. This work reflects on the prior work and asks: ``\textit{Our goal is to find a good configuration~\footnote{Good is defined as the distance from the optimal configuration} but, why does the prior work transform this problem into building an accurate model?}'' Another reason for this question is the very nature of the model building process (previously described in Figure~\ref{fig:chap1_sampling_process}). We ask the question ``How does a user define \textit{Good}''? There is no way for the user to know whether a model can be build with MMRE (Mean Magnitude of Relative Error) less that 10\%. 
+
+Considering the above mentioned questions, we drastically modify our approach to this problem. We hypothesize that to find the best performing configuration, we do not want a model which can return a predicted performance score which is as close to the actual performance score. Instead, we can build a model which preserves the relative ordering of the configurations. 
+
+\noindent\textbf{Intuition}: The central insight of this work is that exact performance
+values (e.g., the response time of a software system) are not
+required to rank configurations and to identify the optimal one. To elaborate more, let us assume that we have two humans (Adam---134cm, Billy---173cm) (analogous to configurations) and our objective is to identify the tallest person (Billy). To identify the tallest person, do we need a model which accurately predicts their height in a nano-meter scale? We can easily identify Billy even if the bad model predicted Adams height as 700cm and 890cm. 
+
+\noindent\textbf{Proposal}: 
+We show that, if we (slightly) relax the question
+we ask, we can build useful predictors using very small sample sets.
+Specifically, instead of asking ``How long will this configuration
+run?'', we ask instead ``Will this configuration run faster than that
+configuration?'' or ``Which is the fastest configuration?''.
+
+
+\subsection{Sequential-Model Based Sampling}
+Prior work in this area primarily used two strategies.
+Firstly, researchers used machine learning to model the configuration
+space. The model is built sequentially, where new
+configurations are sampled randomly, and the quality or
+accuracy of the model is measured using a holdout set. The
+size of the holdout set in some cases could be up to 20\% of
+the configuration space~\cite{nair2017using} and needs to be evaluated (i.e.,
+measured) before even the model is fully built. This strategy
+makes these methods not suitable in a practical setting since
+the generated holdout set can be (very) expensive. Secondly,
+the sequential model-based techniques used in prior work
+relied on Gaussian Process Models (GPM) to reflect on the
+configurations explored (or evaluated) so far~\cite{zuluaga2016varepsilon}. However,
+GPMs do not scale well for software systems with more than
+a dozen configuration options~\cite{wang2016bayesian}.
 
 
 
+\noindent\textbf{Intuition}: 
+To reduce the cost of sampling and eliminate the need for holdout set, we use sequential Model-based Optimization (SMBO). SMBO uses the Bayesian methodology to the iterative optimizer by incorporating a prior model (built using configuration which are already measured) on the space of possible target functions, $f$. By updating this model every time time a configuration is evaluated, a SMBO routine keeps a posterior model of the target function $f$. This posterior model is the surrogate $f*$ for the function f (ground truth). Figure~\ref{fig:chap1_smbo} encapsulates the process.
 
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Chapter-Introduction/Figures/bayesian_opt.png}
+    \caption{Sequential Model-based Optimization. (From ~\url{http://tiny.cc/3hy80y})}
+    \label{fig:chap1_smbo}
+\end{figure}
+
+\noindent\textbf{Proposal}:
+We use the intuition present above to develop a technique called FLASH.
+The key idea of FLASH is to build a performance model
+that is just accurate enough for differentiating better configurations
+from the rest of the configuration space. Tolerating
+the inaccuracy of the model is useful to reduce the cost
+(measured in terms of the number of configurations evaluated)
+and the time required to find the better configuration.
+To increase the scalability of methods using GPM (Gaussian Process Models)---used widely in the machine learning domain, FLASH
+replaces the GPMs with a fast and scalable decision tree learner.
 
 
 
 
 This dissertation is organized as follows.
 Chapter~\ref{chapter:background} presents the background and related work.
-Next, Chapter~\ref{chapter:inside-out} describes the design and implementation
-of \emph{Inside-Out}, an approach to leverage low-level performance information
-to achieve accurate and robust performance prediction.
-In Chapter~\ref{chapter:cat}, we define cloud architecture tuning (CAT) and
-describe its challenges.
-We also discuss the state-of-the-art approaches and their pros and cons.
-Chapter~\ref{chapter:arrow} proposes using low-level performance information
-to enhance \bo, an online learning method to optimize any black-box function.
-In Chapter~\ref{chapter:scout}, we design and implement \scout
-, an efficient, effective and reliable CAT solution.
-We also consider optimizing a group of workloads in Chapter~\ref{chapter:micky}.
-In Chapter~\ref{chapter:dp}, we consider data placement to further optimize system performance.
-Finally, Chapter~\ref{chapter:conclusion} concludes our discussion of cloud architecture tuning
-and describes its future directions.
+Next, Chapter~\ref{chapter:WHAT} describes the design and implementation
+of \emph{WHAT}, an approach to use lower dimensions to sample configurations to build performance models to achieve accurate and robust performance prediction.
+Chapter~\ref{chapter:rank} proposes using ranking models instead of regression models to save cost while finding good configurations.
+In Chapter~\ref{chapter:flash}, we design and implement FLASH
+, an efficient and  effective solution to software configuration problem.
+Finally, Chapter~\ref{chapter:conclusion} concludes our discussion of software configuration tuning and describes its future directions.

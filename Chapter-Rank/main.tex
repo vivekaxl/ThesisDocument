@@ -1,0 +1,24 @@
+\chapter{Using Bad Learners to find Good Configurations}
+\label{chapter:rank}
+
+To solve the CAT problem,
+one-shot prediction (such as \paris~\cite{Yadwadkar2017}) suffers from
+high variance of prediction error
+while \bo (such as \cherrypick~\cite{Alipourfard2017} and \arrow~\cite{Hsu2018Arrow},
+described in Chapter~\ref{chapter:arrow}) must
+tolerate the \emph{cold-start} issue.
+In this chapter, we design and implement an
+effective, efficient and reliable system that recommends
+the best architectural configurations 
+that satisfies performance and cost objectives
+to run a given workload.
+
+
+\input{Chapter-Rank/introduction}
+%\input{Chapter-Scout/motivation}
+\input{Chapter-Rank/design}
+\input{Chapter-Rank/approach}
+\input{Chapter-Rank/system}
+\input{Chapter-Rank/evaluation}
+\input{Chapter-Rank/discussion}
+\input{Chapter-Rank/conclusion}
