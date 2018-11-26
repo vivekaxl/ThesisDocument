@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  25 NOV 2018 00:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  26 NOV 2018 13:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1074,6 +1074,67 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \titlewidthlast=\dimen207
 \titlewidthfirst=\dimen208
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count330
+\lst@gtempboxa=\box60
+\lst@token=\toks37
+\lst@length=\count331
+\lst@currlwidth=\dimen209
+\lst@column=\count332
+\lst@pos=\count333
+\lst@lostspace=\dimen210
+\lst@width=\dimen211
+\lst@newlines=\count334
+\lst@lineno=\count335
+\lst@maxwidth=\dimen212
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+\c@lstnumber=\count336
+\lst@skipnumbers=\count337
+\lst@framebox=\box61
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2014/09/06 1.5e listings configuration
+))
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/commath/commath.sty)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2015/05/11 v1.16 mathematical typesetting tools
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count338
+\l_MT_multwidth_dim=\dimen213
+\origjot=\skip146
+\l_MT_shortvdotswithinadjustabove_dim=\dimen214
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen215
+\l_MT_above_intertext_sep=\dimen216
+\l_MT_below_intertext_sep=\dimen217
+\l_MT_above_shortintertext_sep=\dimen218
+\l_MT_below_shortintertext_sep=\dimen219
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks38
+\SOUL@lasttoken=\toks39
+\SOUL@cmds=\toks40
+\SOUL@buffer=\toks41
+\SOUL@token=\toks42
+\SOUL@spaceskip=\skip147
+\SOUL@ttwidth=\dimen220
+\SOUL@uldp=\dimen221
+\SOUL@ulht=\dimen222
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
@@ -1120,14 +1181,14 @@ Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen209
-\Hy@linkcounter=\count330
-\Hy@pagecounter=\count331
+\@linkdim=\dimen223
+\Hy@linkcounter=\count339
+\Hy@pagecounter=\count340
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count332
+\Hy@SavedSpaceFactor=\count341
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -1140,12 +1201,12 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count333
+\c@Hy@tempcnt=\count342
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen210
-\Fld@menulength=\count334
-\Field@Width=\dimen211
-\Fld@charsize=\dimen212
+\XeTeXLinkMargin=\dimen224
+\Fld@menulength=\count343
+\Field@Width=\dimen225
+\Fld@charsize=\dimen226
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -1155,63 +1216,119 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count335
-\c@Item=\count336
-\c@Hfootnote=\count337
+\Hy@abspage=\count344
+\c@Item=\count345
+\c@Hfootnote=\count346
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count338
-\c@bookmark@seq@number=\count339
+\Fld@listcount=\count347
+\c@bookmark@seq@number=\count348
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip146
+\Hy@SectionHShift=\skip148
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
-\MT@toks=\toks37
-\MT@count=\count340
+\MT@toks=\toks43
+\MT@count=\count349
 LaTeX Info: Redefining \textls on input line 766.
-\MT@outer@kern=\dimen213
+\MT@outer@kern=\dimen227
 LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
-\MT@listname@count=\count341
+\MT@listname@count=\count350
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 915.
 LaTeX Info: Redefining \lslig on input line 915.
-\MT@outer@space=\skip147
+\MT@outer@space=\skip149
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 )))
-\chaptercapitalheight=\skip148
-\chapterfootskip=\skip149
-\graphht=\skip150
+(/usr/local/texlive/2015/texmf-dist/tex/latex/mdframed/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/zref-abspage.sty
+Package: zref-abspage 2012/04/04 v2.24 Module abspage for zref (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/zref-base.sty
+Package: zref-base 2012/04/04 v2.24 Module base for zref (HO)
+Package zref Info: New property list: main on input line 759.
+Package zref Info: New property: default on input line 760.
+Package zref Info: New property: page on input line 761.
+)
+\c@abspage=\count351
+Package zref Info: New property: abspage on input line 62.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip150
+\c@mdf@globalstyle@cnt=\count352
+\mdf@skipabove@length=\skip151
+\mdf@skipbelow@length=\skip152
+\mdf@leftmargin@length=\skip153
+\mdf@rightmargin@length=\skip154
+\mdf@innerleftmargin@length=\skip155
+\mdf@innerrightmargin@length=\skip156
+\mdf@innertopmargin@length=\skip157
+\mdf@innerbottommargin@length=\skip158
+\mdf@splittopskip@length=\skip159
+\mdf@splitbottomskip@length=\skip160
+\mdf@outermargin@length=\skip161
+\mdf@innermargin@length=\skip162
+\mdf@linewidth@length=\skip163
+\mdf@innerlinewidth@length=\skip164
+\mdf@middlelinewidth@length=\skip165
+\mdf@outerlinewidth@length=\skip166
+\mdf@roundcorner@length=\skip167
+\mdf@footenotedistance@length=\skip168
+\mdf@userdefinedwidth@length=\skip169
+\mdf@needspace@length=\skip170
+\mdf@frametitleaboveskip@length=\skip171
+\mdf@frametitlebelowskip@length=\skip172
+\mdf@frametitlerulewidth@length=\skip173
+\mdf@frametitleleftmargin@length=\skip174
+\mdf@frametitlerightmargin@length=\skip175
+\mdf@shadowsize@length=\skip176
+\mdf@extratopheight@length=\skip177
+\mdf@subtitleabovelinewidth@length=\skip178
+\mdf@subtitlebelowlinewidth@length=\skip179
+\mdf@subtitleaboveskip@length=\skip180
+\mdf@subtitlebelowskip@length=\skip181
+\mdf@subtitleinneraboveskip@length=\skip182
+\mdf@subtitleinnerbelowskip@length=\skip183
+\mdf@subsubtitleabovelinewidth@length=\skip184
+\mdf@subsubtitlebelowlinewidth@length=\skip185
+\mdf@subsubtitleaboveskip@length=\skip186
+\mdf@subsubtitlebelowskip@length=\skip187
+\mdf@subsubtitleinneraboveskip@length=\skip188
+\mdf@subsubtitleinnerbelowskip@length=\skip189
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
-\pgfutil@everybye=\toks38
-\pgfutil@tempdima=\dimen214
-\pgfutil@tempdimb=\dimen215
+\pgfutil@everybye=\toks44
+\pgfutil@tempdima=\dimen228
+\pgfutil@tempdimb=\dimen229
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
 sts.tex))
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box60
+\pgfutil@abb=\box62
 (/usr/local/texlive/2015/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -1224,30 +1341,30 @@ Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks39
-\pgfkeys@temptoks=\toks40
+\pgfkeys@pathtoks=\toks45
+\pgfkeys@temptoks=\toks46
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
 ode.tex
-\pgfkeys@tmptoks=\toks41
+\pgfkeys@tmptoks=\toks47
 ))
-\pgf@x=\dimen216
-\pgf@y=\dimen217
-\pgf@xa=\dimen218
-\pgf@ya=\dimen219
-\pgf@xb=\dimen220
-\pgf@yb=\dimen221
-\pgf@xc=\dimen222
-\pgf@yc=\dimen223
+\pgf@x=\dimen230
+\pgf@y=\dimen231
+\pgf@xa=\dimen232
+\pgf@ya=\dimen233
+\pgf@xb=\dimen256
+\pgf@yb=\dimen257
+\pgf@xc=\dimen258
+\pgf@yc=\dimen259
 \w@pgf@writea=\write4
 \r@pgf@reada=\read3
-\c@pgf@counta=\count342
-\c@pgf@countb=\count343
-\c@pgf@countc=\count344
-\c@pgf@countd=\count345
-\t@pgf@toka=\toks42
-\t@pgf@tokb=\toks43
-\t@pgf@tokc=\toks44
+\c@pgf@counta=\count353
+\c@pgf@countb=\count354
+\c@pgf@countc=\count355
+\c@pgf@countd=\count356
+\t@pgf@toka=\toks48
+\t@pgf@tokb=\toks49
+\t@pgf@tokc=\toks50
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
@@ -1265,8 +1382,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count346
-\pgfsyssoftpath@bigbuffer@items=\count347
+\pgfsyssoftpath@smallbuffer@items=\count357
+\pgfsyssoftpath@bigbuffer@items=\count358
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -1278,12 +1395,12 @@ Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen224
-\pgfmath@count=\count348
-\pgfmath@box=\box61
-\pgfmath@toks=\toks45
-\pgfmath@stack@operand=\toks46
-\pgfmath@stack@operation=\toks47
+\pgfmath@dimen=\dimen260
+\pgfmath@count=\count359
+\pgfmath@box=\box63
+\pgfmath@toks=\toks51
+\pgfmath@stack@operand=\toks52
+\pgfmath@stack@operation=\toks53
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
 tex
@@ -1304,57 +1421,57 @@ code.tex)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count349
+\c@pgfmathroundto@lastzeros=\count360
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen225
-\pgf@picmaxx=\dimen226
-\pgf@picminy=\dimen227
-\pgf@picmaxy=\dimen228
-\pgf@pathminx=\dimen229
-\pgf@pathmaxx=\dimen230
-\pgf@pathminy=\dimen231
-\pgf@pathmaxy=\dimen232
-\pgf@xx=\dimen233
-\pgf@xy=\dimen256
-\pgf@yx=\dimen257
-\pgf@yy=\dimen258
-\pgf@zx=\dimen259
-\pgf@zy=\dimen260
+\pgf@picminx=\dimen261
+\pgf@picmaxx=\dimen262
+\pgf@picminy=\dimen263
+\pgf@picmaxy=\dimen264
+\pgf@pathminx=\dimen265
+\pgf@pathmaxx=\dimen266
+\pgf@pathminy=\dimen267
+\pgf@pathmaxy=\dimen268
+\pgf@xx=\dimen269
+\pgf@xy=\dimen270
+\pgf@yx=\dimen271
+\pgf@yy=\dimen272
+\pgf@zx=\dimen273
+\pgf@zy=\dimen274
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
 ruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen261
-\pgf@path@lasty=\dimen262
+\pgf@path@lastx=\dimen275
+\pgf@path@lasty=\dimen276
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
 .code.tex
 File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
-\pgf@shorten@end@additional=\dimen263
-\pgf@shorten@start@additional=\dimen264
+\pgf@shorten@end@additional=\dimen277
+\pgf@shorten@start@additional=\dimen278
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
 de.tex
 File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
-\pgfpic=\box62
-\pgf@hbox=\box63
-\pgf@layerbox@main=\box64
-\pgf@picture@serial@count=\count350
+\pgfpic=\box64
+\pgf@hbox=\box65
+\pgf@layerbox@main=\box66
+\pgf@picture@serial@count=\count361
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
 File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
-\pgflinewidth=\dimen265
+\pgflinewidth=\dimen279
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
 ations.code.tex
 File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
-\pgf@pt@x=\dimen266
-\pgf@pt@y=\dimen267
-\pgf@pt@temp=\dimen268
+\pgf@pt@x=\dimen280
+\pgf@pt@y=\dimen281
+\pgf@pt@temp=\dimen282
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
 e.tex
@@ -1371,13 +1488,13 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
 de.tex
 File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
-\pgfarrowsep=\dimen269
+\pgfarrowsep=\dimen283
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
 e.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen270
-\pgf@sys@shading@range@num=\count351
+\pgf@max=\dimen284
+\pgf@sys@shading@range@num=\count362
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -1386,7 +1503,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
 code.tex
 File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
-\pgfexternal@startupbox=\box65
+\pgfexternal@startupbox=\box67
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
 de.tex
@@ -1403,7 +1520,7 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
 e.tex
 File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
-\pgfnodeparttextbox=\box66
+\pgfnodeparttextbox=\box68
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
 tex
@@ -1412,8 +1529,8 @@ File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen271
-\pgf@nodesepend=\dimen272
+\pgf@nodesepstart=\dimen285
+\pgf@nodesepend=\dimen286
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
@@ -1428,10 +1545,10 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen273
-\pgffor@skip=\dimen274
-\pgffor@stack=\toks48
-\pgffor@toks=\toks49
+\pgffor@iter=\dimen287
+\pgffor@skip=\dimen288
+\pgffor@stack=\toks54
+\pgffor@toks=\toks55
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
@@ -1440,153 +1557,163 @@ Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
-\pgf@plot@mark@count=\count352
-\pgfplotmarksize=\dimen275
+\pgf@plot@mark@count=\count363
+\pgfplotmarksize=\dimen289
 )
-\tikz@lastx=\dimen276
-\tikz@lasty=\dimen277
-\tikz@lastxsaved=\dimen278
-\tikz@lastysaved=\dimen279
-\tikzleveldistance=\dimen280
-\tikzsiblingdistance=\dimen281
-\tikz@figbox=\box67
-\tikz@figbox@bg=\box68
-\tikz@tempbox=\box69
-\tikz@tempbox@bg=\box70
-\tikztreelevel=\count353
-\tikznumberofchildren=\count354
-\tikznumberofcurrentchild=\count355
-\tikz@fig@count=\count356
+\tikz@lastx=\dimen290
+\tikz@lasty=\dimen291
+\tikz@lastxsaved=\dimen292
+\tikz@lastysaved=\dimen293
+\tikzleveldistance=\dimen294
+\tikzsiblingdistance=\dimen295
+\tikz@figbox=\box69
+\tikz@figbox@bg=\box70
+\tikz@tempbox=\box71
+\tikz@tempbox@bg=\box72
+\tikztreelevel=\count364
+\tikznumberofchildren=\count365
+\tikznumberofcurrentchild=\count366
+\tikz@fig@count=\count367
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count357
-\pgfmatrixcurrentcolumn=\count358
-\pgf@matrix@numberofcolumns=\count359
+\pgfmatrixcurrentrow=\count368
+\pgfmatrixcurrentcolumn=\count369
+\pgf@matrix@numberofcolumns=\count370
 )
-\tikz@expandcount=\count360
+\tikz@expandcount=\count371
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
 )))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/mdframed/md-frame-1.mdf
+File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
+)
+\mdf@frametitlebox=\box73
+\mdf@footnotebox=\box74
+\mdf@splitbox@one=\box75
+\mdf@splitbox@two=\box76
+\mdf@splitbox@save=\box77
+\mdfsplitboxwidth=\skip190
+\mdfsplitboxtotalwidth=\skip191
+\mdfsplitboxheight=\skip192
+\mdfsplitboxdepth=\skip193
+\mdfsplitboxtotalheight=\skip194
+\mdfframetitleboxwidth=\skip195
+\mdfframetitleboxtotalwidth=\skip196
+\mdfframetitleboxheight=\skip197
+\mdfframetitleboxdepth=\skip198
+\mdfframetitleboxtotalheight=\skip199
+\mdffootnoteboxwidth=\skip200
+\mdffootnoteboxtotalwidth=\skip201
+\mdffootnoteboxheight=\skip202
+\mdffootnoteboxdepth=\skip203
+\mdffootnoteboxtotalheight=\skip204
+\mdftotallinewidth=\skip205
+\mdfboundingboxwidth=\skip206
+\mdfboundingboxtotalwidth=\skip207
+\mdfboundingboxheight=\skip208
+\mdfboundingboxdepth=\skip209
+\mdfboundingboxtotalheight=\skip210
+\mdf@freevspace@length=\skip211
+\mdf@horizontalwidthofbox@length=\skip212
+\mdf@verticalmarginwhole@length=\skip213
+\mdf@horizontalspaceofbox=\skip214
+\mdfsubtitleheight=\skip215
+\mdfsubsubtitleheight=\skip216
+\c@mdfcountframes=\count372
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newmdtheoremenv with sig. 'O{} m o m o ' on line 601.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \mdtheorem with sig. ' O{} m o m o ' on line 701.
+.................................................
+\mdf@envdepth=\count373
+\c@mdf@env@i=\count374
+\c@mdf@env@ii=\count375
+\c@mdf@zref@counter=\count376
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2008/01/13 v3.0.0 (rcs-revision 1.3)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2009/11/15 v3.0.0 (rcs-revision 1.2)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings
+.code.tex
+File: pgflibraryfadings.code.tex 2008/02/07 v3.0.0 (rcs-revision 1.3)
+)))
+\chaptercapitalheight=\skip217
+\chapterfootskip=\skip218
+\graphht=\skip219
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 )
-\@quotelevel=\count361
-\@quotereset=\count362
+\@quotelevel=\count377
+\@quotereset=\count378
 
 (./thesis.aux (./front.aux) (./Chapter-Introduction/main.aux)
-(./Chapter-Background/main.aux) (./Chapter-InsideOut/main.aux)
-(./Chapter-CAT/main.aux) (./Chapter-Arrow/main.aux
+(./Chapter-Background/main.aux) (./Chapter-WHAT/main.aux)
+(./Chapter-Rank/main.aux
 
-LaTeX Warning: Label `sec:bo' multiply defined.
+LaTeX Warning: Label `eq:err' multiply defined.
 
-
-LaTeX Warning: Label `sec:evaluation' multiply defined.
-
-
-LaTeX Warning: Label `sec:conclusion' multiply defined.
-
-) (./Chapter-Scout/main.aux
-
-LaTeX Warning: Label `sec:introduction' multiply defined.
-
-
-LaTeX Warning: Label `sec:approach' multiply defined.
-
-
-LaTeX Warning: Label `sec:evaluation' multiply defined.
-
-
-LaTeX Warning: Label `fig:single_cost_tuning_tolerance_performance' multiply de
-fined.
-
-
-LaTeX Warning: Label `sub@fig:single_cost_tuning_tolerance_performance' multipl
-y defined.
-
-
-LaTeX Warning: Label `sec:conclusion' multiply defined.
-
-) (./Chapter-Micky/main.aux
-
-LaTeX Warning: Label `fig:single_time_performance' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:single_time_performance' multiply defined.
-
-
-LaTeX Warning: Label `sec:evaluation' multiply defined.
-
-
-LaTeX Warning: Label `sec:setup' multiply defined.
-
-
-LaTeX Warning: Label `fig:system_design' multiply defined.
-
-
-LaTeX Warning: Label `sec:system' multiply defined.
-
-
-LaTeX Warning: Label `sec:conclusion' multiply defined.
-
-) (./Chapter-DataPlacement/main.aux
-
-LaTeX Warning: Label `sec:introduction' multiply defined.
-
-
-LaTeX Warning: Label `sec:approach' multiply defined.
-
-
-LaTeX Warning: Label `sec:evaluation' multiply defined.
-
-
-LaTeX Warning: Label `sec:conclusion' multiply defined.
-
-) (./Chapter-Conclusion/main.aux))
+) (./Chapter-Flash/main.aux) (./Chapter-Conclusion/main.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 429.
-LaTeX Font Info:    ... okay on input line 429.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 429.
-LaTeX Font Info:    ... okay on input line 429.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 429.
-LaTeX Font Info:    ... okay on input line 429.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 429.
-LaTeX Font Info:    ... okay on input line 429.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 429.
-LaTeX Font Info:    ... okay on input line 429.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 429.
-LaTeX Font Info:    ... okay on input line 429.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 429.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 429.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 497.
+LaTeX Font Info:    ... okay on input line 497.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 497.
+LaTeX Font Info:    ... okay on input line 497.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 497.
+LaTeX Font Info:    ... okay on input line 497.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 497.
+LaTeX Font Info:    ... okay on input line 497.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 497.
+LaTeX Font Info:    ... okay on input line 497.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 497.
+LaTeX Font Info:    ... okay on input line 497.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 497.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 497.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 429.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 429.
-LaTeX Font Info:    ... okay on input line 429.
+LaTeX Font Info:    ... okay on input line 497.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 497.
+LaTeX Font Info:    ... okay on input line 497.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count363
-\scratchdimen=\dimen282
-\scratchbox=\box71
-\nofMPsegments=\count364
-\nofMParguments=\count365
-\everyMPshowfont=\toks50
-\MPscratchCnt=\count366
-\MPscratchDim=\dimen283
-\MPnumerator=\count367
-\makeMPintoPDFobject=\count368
-\everyMPtoPDFconversion=\toks51
+\scratchcounter=\count379
+\scratchdimen=\dimen296
+\scratchbox=\box78
+\nofMPsegments=\count380
+\nofMParguments=\count381
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count382
+\MPscratchDim=\dimen297
+\MPnumerator=\count383
+\makeMPintoPDFobject=\count384
+\everyMPtoPDFconversion=\toks57
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1638,8 +1765,9 @@ e
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@ncsu@appendixtocdepth=\count369
+\c@ncsu@appendixtocdepth=\count385
 Package biblatex Info: No input encoding detected.
 (biblatex)             Assuming 'ascii'.
 Package biblatex Info: Automatic encoding selection.
@@ -1651,123 +1779,8 @@ Package biblatex Info: ... file 'thesis.bbl' found.
 (./thesis.bbl
 
 Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Adya2016':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Alipourfard2017':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Ananthanarayanan2011':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'AnanthanarayananR2009_CloudAnalytics':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Ardagna2014':
+(biblatex)                with '7194626':
 (biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Barford1998':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'bilal2017towards':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Bodik2009':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Bodik2010':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'cao2007learning':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'CapacityScheduler':
-(biblatex)                - Invalid format of field 'urldate'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Chapelle2002':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Cortez2017':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Cruz2013':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Dalibard2017':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'dambreville2017load':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'DeanJ2004_MapReduce':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'FairScheduler':
-(biblatex)                - Invalid format of field 'urldate'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Frey2013':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'golovin2017google':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'TolleKris2011FourthParadigm':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Hsu2016':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'IsardM2007_Dyrad':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Jalaparti2012':
-(biblatex)                - Can't use 'location' + 'address'.
 
 
 Package biblatex Warning: BibTeX reported the following issues
@@ -1776,224 +1789,35 @@ Package biblatex Warning: BibTeX reported the following issues
 
 
 Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'jiang2017pytheas':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'khajeh2010cloud':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Kim2010':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Kohavi1995':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Kundu2010':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'li2008mcrank':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Lim2010':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Malewicz2010':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Mesnier2007':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'MihailescuM2012_MixApart':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'nair2017':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'niculescu2005predicting':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Noorshams2013':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Novakovic2013':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'oh2017finding':
 (biblatex)                - Can't use 'location' + 'address'.
 
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Ousterhout2017':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'pan2010survey':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Pavlo2012':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'peters2015lace2':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Rodrigues2013':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Shlens2003':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Shriver1998':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Snoek2012':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'sripanidkulchai2004analysis':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'tang2011impact':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'TantisirirojWittawat2011Duality':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Thereska2013':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Trushkowsky2011':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Venkataraman2016':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Wang2004':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'pmlr-v70-wang17e':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'SageWeil2006Ceph':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'WindowsAzure':
-(biblatex)                - Invalid format of field 'urldate'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Yadwadkar2017':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Yao2017':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'zadrozny2002transforming':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'zaharia2010spark':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'Zaharia2012':
-(biblatex)                - Can't use 'location' + 'address'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'zhu2017bestconfig':
-(biblatex)                - Can't use 'location' + 'address'.
-
 )
-Package biblatex Info: Reference section=0 on input line 429.
-Package biblatex Info: Reference segment=0 on input line 429.
+Package biblatex Info: Reference section=0 on input line 497.
+Package biblatex Info: Reference segment=0 on input line 497.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 429.
-\AtBeginShipoutBox=\box72
-Package hyperref Info: Link coloring ON on input line 429.
+(lastpage)             ! on input line 497.
+\c@lstlisting=\count386
+\AtBeginShipoutBox=\box79
+Package hyperref Info: Link coloring ON on input line 497.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count370
+\c@section@level=\count387
 )
-LaTeX Info: Redefining \ref on input line 429.
-LaTeX Info: Redefining \pageref on input line 429.
-LaTeX Info: Redefining \nameref on input line 429.
+LaTeX Info: Redefining \ref on input line 497.
+LaTeX Info: Redefining \pageref on input line 497.
+LaTeX Info: Redefining \nameref on input line 497.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write5
 \openout5 = `thesis.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 429.
+LaTeX Info: Redefining \microtypecontext on input line 497.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2060,38 +1884,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
 ]) [5] (./thesis.toc [6
 
-] [7])
+])
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
- [8] (./thesis.lot
-Overfull \hbox (5.27217pt too wide) in paragraph at lines 31--31
- [][] [][][]\OT1/cmr/bx/n/10.95 The most cost-effective VM types for 107 work-l
-oads rec-om-mended 
- []
-
-)
+ [7] (./thesis.lot)
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
- [9
+ [8
 
-] (./thesis.lof [10
+] (./thesis.lof [9
 
-] [11] [12]
-Overfull \hbox (3.13664pt too wide) in paragraph at lines 189--189
- [][] [][][]\OT1/cmr/bx/n/10 Search per-for-mance of op-ti-miza-tion meth-ods i
-n search for cost-effective 
- []
+]
+<./Chapter-Rank/Figures/upsidedown.png, id=474, 13.04875pt x 13.04875pt>
+File: ./Chapter-Rank/Figures/upsidedown.png Graphic file (type png)
 
-[13])
+<use ./Chapter-Rank/Figures/upsidedown.png>
+Package pdftex.def Info: ./Chapter-Rank/Figures/upsidedown.png used on input li
+ne 43.
+(pdftex.def)             Requested size: 6.52435pt x 6.52435pt.
+
+<./Chapter-Rank/Figures/dot.png, id=476, 13.04875pt x 11.04124pt>
+File: ./Chapter-Rank/Figures/dot.png Graphic file (type png)
+
+<use ./Chapter-Rank/Figures/dot.png>
+Package pdftex.def Info: ./Chapter-Rank/Figures/dot.png used on input line 43.
+(pdftex.def)             Requested size: 6.52435pt x 5.5206pt.
+
+<./Chapter-Rank/Figures/cross.png, id=477, 22.0825pt x 22.0825pt>
+File: ./Chapter-Rank/Figures/cross.png Graphic file (type png)
+
+<use ./Chapter-Rank/Figures/cross.png>
+Package pdftex.def Info: ./Chapter-Rank/Figures/cross.png used on input line 43
+.
+(pdftex.def)             Requested size: 8.83282pt x 8.83282pt.
+)
 \tf@lof=\write8
 \openout8 = `thesis.lof'.
 
- [14])
+ [10 <./Chapter-Rank/Figures/upsidedown.png> <./Chapter-Rank/Figures/dot.png> <
+./Chapter-Rank/Figures/cross.png>])
 \openout2 = `Chapter-Introduction/main.aux'.
 
- (./Chapter-Introduction/main.tex
+
+(./Chapter-Introduction/main.tex
 Chapter 1.
 [1
 
@@ -2100,1809 +1937,575 @@ Chapter 1.
 
 
 ]
-<./Chapter-Introduction/Figures/table.png, id=967, 672.5125pt x 360.34625pt>
+<./Chapter-Introduction/Figures/table.png, id=531, 672.5125pt x 360.34625pt>
 File: ./Chapter-Introduction/Figures/table.png Graphic file (type png)
 
 <use ./Chapter-Introduction/Figures/table.png>
 Package pdftex.def Info: ./Chapter-Introduction/Figures/table.png used on input
  line 27.
 (pdftex.def)             Requested size: 361.35138pt x 193.62184pt.
+ [2 <./Chapter-Introduction/Figures/table.png>]
+<Chapter-Introduction/Figures/sampling_process.png, id=541, 854.19125pt x 208.7
+8pt>
+File: Chapter-Introduction/Figures/sampling_process.png Graphic file (type png)
 
+ <use Chapter-Introduction/Figures/sampling_process.png>
+Package pdftex.def Info: Chapter-Introduction/Figures/sampling_process.png used
+ on input line 78.
+(pdftex.def)             Requested size: 361.35138pt x 88.32094pt.
+ [3]
+<Chapter-Introduction/Figures/stairs.png, id=554, 684.5575pt x 289.08pt>
+File: Chapter-Introduction/Figures/stairs.png Graphic file (type png)
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 33.
-
-[2 <./Chapter-Introduction/Figures/table.png>]) [3]
+<use Chapter-Introduction/Figures/stairs.png>
+Package pdftex.def Info: Chapter-Introduction/Figures/stairs.png used on input 
+line 101.
+(pdftex.def)             Requested size: 361.35138pt x 152.59853pt.
+Missing character: There is no Î in font cmr10!
+Missing character: There is no © in font cmr10!
+ [4 <./Chapter-Introduction/Figures/sampling_process.png>] [5 <./Chapter-Introd
+uction/Figures/stairs.png>]
+<Chapter-Introduction/Figures/bayesian_opt.png, id=583, 326.21875pt x 156.585pt
+>
+File: Chapter-Introduction/Figures/bayesian_opt.png Graphic file (type png)
+ <use Chapter-Introduction/Figures/bayesian_opt.png>
+Package pdftex.def Info: Chapter-Introduction/Figures/bayesian_opt.png used on 
+input line 160.
+(pdftex.def)             Requested size: 361.35138pt x 173.46255pt.
+ [6]) [7 <./Chapter-Introduction/Figures/bayesian_opt.png>]
 \openout2 = `Chapter-Background/main.aux'.
 
-
-(./Chapter-Background/main.tex
+ (./Chapter-Background/main.tex
 Chapter 2.
-(./Chapter-Background/overview.tex [4
+) [8
 
 
 
 ]
-<./Chapter-Background/figures/mapreduce.png, id=1021, 674.0382pt x 471.6822pt>
-File: ./Chapter-Background/figures/mapreduce.png Graphic file (type png)
+\openout2 = `Chapter-WHAT/main.aux'.
 
-<use ./Chapter-Background/figures/mapreduce.png>
-Package pdftex.def Info: ./Chapter-Background/figures/mapreduce.png used on inp
-ut line 52.
-(pdftex.def)             Requested size: 361.35138pt x 252.86928pt.
- [5 <./Chapter-Background/figures/mapreduce.png>] [6]) (./Chapter-Background/st
-orage.tex
-<./Chapter-Background/figures/hadoop_model.png, id=1054, 1086.0575pt x 768.8725
-pt>
-File: ./Chapter-Background/figures/hadoop_model.png Graphic file (type png)
- <use ./Chapter-Background/figures/hadoop_model.png>
-Package pdftex.def Info: ./Chapter-Background/figures/hadoop_model.png used on 
-input line 6.
-(pdftex.def)             Requested size: 361.35138pt x 255.817pt.
- [7 <./Chapter-Background/figures/hadoop_model.png>] [8]) (./Chapter-Background
-/performance.tex
-[9] (./Chapter-Background/algorithms/smbo.tex) [10] [11])) [12] [13]
-\openout2 = `Chapter-InsideOut/main.aux'.
-
-
-(./Chapter-InsideOut/main.tex
+ (./Chapter-WHAT/main.tex
 Chapter 3.
-(./Chapter-InsideOut/introduction.tex [14
+[9
 
 
 
-] [15])
-(./Chapter-InsideOut/challenge.tex
-<./Chapter-InsideOut/figures/features.pdf, id=1242, 890.32625pt x 213.79875pt>
-File: ./Chapter-InsideOut/figures/features.pdf Graphic file (type pdf)
+] [10] [11] [12] [13] [14]
+Overfull \hbox (0.74251pt too wide) in paragraph at lines 243--245
+\OT1/cmr/m/n/10.95 (-20) When the above clus-ter-ing method ter-mi-nates, our s
+am-pling pol-icy (which we will call $\OML/cmm/m/it/10.95 S[]$\OT1/cmr/m/n/10.9
+5 (-20) :Random)
+ []
 
-<use ./Chapter-InsideOut/figures/features.pdf>
-Package pdftex.def Info: ./Chapter-InsideOut/figures/features.pdf used on input
- line 46.
-(pdftex.def)             Requested size: 406.516pt x 97.61786pt.
- [16] [17 <./Chapter-InsideOut/figures/features.pdf>] (./Chapter-InsideOut/tabl
-e/feature_selection2.tex)
-Package epstopdf Info: Source file: <./Chapter-InsideOut/figures/challenge_gene
-ralization_combined_horizental.eps>
-(epstopdf)                    date: 2017-02-19 23:08:06
-(epstopdf)                    size: 44047 bytes
-(epstopdf)             Output file: <./Chapter-InsideOut/figures/challenge_gene
-ralization_combined_horizental-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-02-19 23:08:10
-(epstopdf)                    size: 21615 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Chapter-InsideOut/figure
-s/challenge_generalization_combined_horizental-eps-converted-to.pdf ./Chapter-I
-nsideOut/figures/challenge_generalization_combined_horizental.eps>
-(epstopdf)             \includegraphics on input line 116.
+[15] [16] [17] [18]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 426.
+
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 426.
+ [19] [20]
+Package epstopdf Info: Source file: <./Chapter-WHAT/Figures/SamplingAccuracy.ep
+s>
+(epstopdf)                    date: 2016-08-22 18:07:33
+(epstopdf)                    size: 93852 bytes
+(epstopdf)             Output file: <./Chapter-WHAT/Figures/SamplingAccuracy-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2018-11-25 23:02:29
+(epstopdf)                    size: 56637 bytes
+(epstopdf)             Command: <repstopdf --outfile=./Chapter-WHAT/Figures/Sam
+plingAccuracy-eps-converted-to.pdf ./Chapter-WHAT/Figures/SamplingAccuracy.eps>
+
+(epstopdf)             \includegraphics on input line 497.
 Package epstopdf Info: Output file is already uptodate.
 
-<./Chapter-InsideOut/figures/challenge_generalization_combined_horizental-eps-c
-onverted-to.pdf, id=1279, 2089.8075pt x 573.14125pt>
-File: ./Chapter-InsideOut/figures/challenge_generalization_combined_horizental-
-eps-converted-to.pdf Graphic file (type pdf)
+<./Chapter-WHAT/Figures/SamplingAccuracy-eps-converted-to.pdf, id=764, 607.2687
+5pt x 424.58624pt>
+File: ./Chapter-WHAT/Figures/SamplingAccuracy-eps-converted-to.pdf Graphic file
+ (type pdf)
 
-<use ./Chapter-InsideOut/figures/challenge_generalization_combined_horizental-e
-ps-converted-to.pdf>
-Package pdftex.def Info: ./Chapter-InsideOut/figures/challenge_generalization_c
-ombined_horizental-eps-converted-to.pdf used on input line 116.
-(pdftex.def)             Requested size: 451.68752pt x 123.87886pt.
-) (./Chapter-InsideOut/methodology.tex [18] [19 <./Chapter-InsideOut/figures/ch
-allenge_generalization_combined_horizental-eps-converted-to.pdf>] [20] [21] (./
-Chapter-InsideOut/algorithm/two-level.tex
-Overfull \hbox (17.0pt too wide) detected at line 25
+<use ./Chapter-WHAT/Figures/SamplingAccuracy-eps-converted-to.pdf>
+Package pdftex.def Info: ./Chapter-WHAT/Figures/SamplingAccuracy-eps-converted-
+to.pdf used on input line 497.
+(pdftex.def)             Requested size: 451.68752pt x 315.81503pt.
+
+
+LaTeX Warning: Reference `sampling_accuracy' on page 21 undefined on input line
+ 512.
+
+[21 <./Chapter-WHAT/Figures/SamplingAccuracy-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `sampling_accuracy' on page 22 undefined on input line
+ 520.
+
+Package epstopdf Info: Source file: <./Chapter-WHAT/Figures/evaluation_graph.ep
+s>
+(epstopdf)                    date: 2016-03-02 13:43:53
+(epstopdf)                    size: 52813 bytes
+(epstopdf)             Output file: <./Chapter-WHAT/Figures/evaluation_graph-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2016-03-02 13:44:22
+(epstopdf)                    size: 40336 bytes
+(epstopdf)             Command: <repstopdf --outfile=./Chapter-WHAT/Figures/eva
+luation_graph-eps-converted-to.pdf ./Chapter-WHAT/Figures/evaluation_graph.eps>
+
+(epstopdf)             \includegraphics on input line 550.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Chapter-WHAT/Figures/evaluation_graph-eps-converted-to.pdf, id=849, 512.9162
+4pt x 410.53375pt>
+File: ./Chapter-WHAT/Figures/evaluation_graph-eps-converted-to.pdf Graphic file
+ (type pdf)
+
+<use ./Chapter-WHAT/Figures/evaluation_graph-eps-converted-to.pdf>
+Package pdftex.def Info: ./Chapter-WHAT/Figures/evaluation_graph-eps-converted-
+to.pdf used on input line 550.
+(pdftex.def)             Requested size: 338.76563pt x 271.1473pt.
+Package mdframed Info: Not enough space on this page on input line 577.
+ [22]
+Package mdframed Info: Not enough space on this page on input line 577.
+Package epstopdf Info: Source file: <./Chapter-WHAT/Figures/Variance.eps>
+(epstopdf)                    date: 2016-08-22 18:25:46
+(epstopdf)                    size: 94190 bytes
+(epstopdf)             Output file: <./Chapter-WHAT/Figures/Variance-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2018-11-25 23:06:04
+(epstopdf)                    size: 53951 bytes
+(epstopdf)             Command: <repstopdf --outfile=./Chapter-WHAT/Figures/Var
+iance-eps-converted-to.pdf ./Chapter-WHAT/Figures/Variance.eps>
+(epstopdf)             \includegraphics on input line 605.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Chapter-WHAT/Figures/Variance-eps-converted-to.pdf, id=861, 607.26875pt x 42
+4.58624pt>
+File: ./Chapter-WHAT/Figures/Variance-eps-converted-to.pdf Graphic file (type p
+df)
+ <use ./Chapter-WHAT/Figures/Variance-eps-converted-to.pdf>
+Package pdftex.def Info: ./Chapter-WHAT/Figures/Variance-eps-converted-to.pdf u
+sed on input line 605.
+(pdftex.def)             Requested size: 451.68752pt x 315.81503pt.
+ [23 <./Chapter-WHAT/Figures/evaluation_graph-eps-converted-to.pdf>] [24 <./Cha
+pter-WHAT/Figures/Variance-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./Chapter-WHAT/Figures/optimizer_result.ep
+s>
+(epstopdf)                    date: 2016-08-22 19:53:42
+(epstopdf)                    size: 99597 bytes
+(epstopdf)             Output file: <./Chapter-WHAT/Figures/optimizer_result-ep
+s-converted-to.pdf>
+(epstopdf)                    date: 2018-11-25 23:06:05
+(epstopdf)                    size: 36172 bytes
+(epstopdf)             Command: <repstopdf --outfile=./Chapter-WHAT/Figures/opt
+imizer_result-eps-converted-to.pdf ./Chapter-WHAT/Figures/optimizer_result.eps>
+
+(epstopdf)             \includegraphics on input line 647.
+Package epstopdf Info: Output file is already uptodate.
+
+<./Chapter-WHAT/Figures/optimizer_result-eps-converted-to.pdf, id=1021, 650.43p
+t x 433.62pt>
+File: ./Chapter-WHAT/Figures/optimizer_result-eps-converted-to.pdf Graphic file
+ (type pdf)
+
+<use ./Chapter-WHAT/Figures/optimizer_result-eps-converted-to.pdf>
+Package pdftex.def Info: ./Chapter-WHAT/Figures/optimizer_result-eps-converted-
+to.pdf used on input line 647.
+(pdftex.def)             Requested size: 451.68752pt x 301.13014pt.
+ [25 <./Chapter-WHAT/Figures/optimizer_result-eps-converted-to.pdf>]
+Overfull \hbox (101.87173pt too wide) in paragraph at lines 696--752
 [][] 
  []
 
-)) (./Chapter-InsideOut/evaluation.tex
-(./Chapter-InsideOut/table/prediction_scenario.tex
-Overfull \vbox (29.20068pt too high) detected at line 59
- []
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd)
-Overfull \vbox (35.9922pt too high) detected at line 59
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
+[26]
 
-Overfull \vbox (24.23254pt too high) detected at line 59
- []
+LaTeX Warning: Reference `fig:Comparison' on page 27 undefined on input line 81
+8.
 
+[27] [28]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 978.
 
-Overfull \vbox (29.20068pt too high) detected at line 59
- []
-
-
-Overfull \vbox (35.9922pt too high) detected at line 59
- []
-
-
-Overfull \vbox (24.23254pt too high) detected at line 59
- []
-
-
-Overfull \vbox (29.20068pt too high) detected at line 59
- []
-
-
-Overfull \vbox (35.9922pt too high) detected at line 59
- []
-
-
-Underfull \hbox (badness 2351) in paragraph at lines 59--59
-\OT1/cmr/m/n/8 up-graded to a pow-er-ful one.
- []
-
-
-Underfull \hbox (badness 1242) in paragraph at lines 59--59
-\OT1/cmr/m/n/8 A m1.small in-stance has one
- []
-
-
-Underfull \hbox (badness 3312) in paragraph at lines 59--59
-\OT1/cmr/m/n/8 core and 2GB mem-ory and
- []
-
-
-Overfull \vbox (24.23254pt too high) detected at line 59
- []
-
-[22]) (./Chapter-InsideOut/table/dataset.tex
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 11.
-) [23] [24]
-Package epstopdf Info: Source file: <Chapter-InsideOut/figures/unseen_workload_
-all_new.eps>
-(epstopdf)                    date: 2017-02-21 03:58:04
-(epstopdf)                    size: 341566 bytes
-(epstopdf)             Output file: <Chapter-InsideOut/figures/unseen_workload_
-all_new-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-02-21 04:00:16
-(epstopdf)                    size: 57678 bytes
-(epstopdf)             Command: <repstopdf --outfile=Chapter-InsideOut/figures/
-unseen_workload_all_new-eps-converted-to.pdf Chapter-InsideOut/figures/unseen_w
-orkload_all_new.eps>
-(epstopdf)             \includegraphics on input line 114.
-Package epstopdf Info: Output file is already uptodate.
-
-<Chapter-InsideOut/figures/unseen_workload_all_new-eps-converted-to.pdf, id=140
-4, 1485.55pt x 1748.5325pt>
-File: Chapter-InsideOut/figures/unseen_workload_all_new-eps-converted-to.pdf Gr
-aphic file (type pdf)
-
-<use Chapter-InsideOut/figures/unseen_workload_all_new-eps-converted-to.pdf>
-Package pdftex.def Info: Chapter-InsideOut/figures/unseen_workload_all_new-eps-
-converted-to.pdf used on input line 114.
-(pdftex.def)             Requested size: 406.516pt x 478.46002pt.
-
-[25] [26 <./Chapter-InsideOut/figures/unseen_workload_all_new-eps-converted-to.
-pdf>]
-Package epstopdf Info: Source file: <Chapter-InsideOut/figures/unseen_configura
-tion_all_new.eps>
-(epstopdf)                    date: 2017-02-21 03:58:28
-(epstopdf)                    size: 237707 bytes
-(epstopdf)             Output file: <Chapter-InsideOut/figures/unseen_configura
-tion_all_new-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-02-21 04:00:16
-(epstopdf)                    size: 53380 bytes
-(epstopdf)             Command: <repstopdf --outfile=Chapter-InsideOut/figures/
-unseen_configuration_all_new-eps-converted-to.pdf Chapter-InsideOut/figures/uns
-een_configuration_all_new.eps>
-(epstopdf)             \includegraphics on input line 167.
-Package epstopdf Info: Output file is already uptodate.
-
-<Chapter-InsideOut/figures/unseen_configuration_all_new-eps-converted-to.pdf, i
-d=1485, 1485.55pt x 1132.23pt>
-File: Chapter-InsideOut/figures/unseen_configuration_all_new-eps-converted-to.p
-df Graphic file (type pdf)
-
-<use Chapter-InsideOut/figures/unseen_configuration_all_new-eps-converted-to.pd
-f>
-Package pdftex.def Info: Chapter-InsideOut/figures/unseen_configuration_all_new
--eps-converted-to.pdf used on input line 167.
-(pdftex.def)             Requested size: 406.516pt x 309.81796pt.
- [27] [28 <./Chapter-InsideOut/figures/unseen_configuration_all_new-eps-convert
-ed-to.pdf>]
-Package epstopdf Info: Source file: <Chapter-InsideOut/figures/unseen_scale_all
-_new.eps>
-(epstopdf)                    date: 2017-02-21 03:58:52
-(epstopdf)                    size: 342883 bytes
-(epstopdf)             Output file: <Chapter-InsideOut/figures/unseen_scale_all
-_new-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-02-21 04:00:18
-(epstopdf)                    size: 57549 bytes
-(epstopdf)             Command: <repstopdf --outfile=Chapter-InsideOut/figures/
-unseen_scale_all_new-eps-converted-to.pdf Chapter-InsideOut/figures/unseen_scal
-e_all_new.eps>
-(epstopdf)             \includegraphics on input line 216.
-Package epstopdf Info: Output file is already uptodate.
-
-<Chapter-InsideOut/figures/unseen_scale_all_new-eps-converted-to.pdf, id=1569, 
-1485.55pt x 1748.5325pt>
-File: Chapter-InsideOut/figures/unseen_scale_all_new-eps-converted-to.pdf Graph
-ic file (type pdf)
-
-<use Chapter-InsideOut/figures/unseen_scale_all_new-eps-converted-to.pdf>
-Package pdftex.def Info: Chapter-InsideOut/figures/unseen_scale_all_new-eps-con
-verted-to.pdf used on input line 216.
-(pdftex.def)             Requested size: 406.516pt x 478.46002pt.
-Package epstopdf Info: Source file: <Chapter-InsideOut/figures/multi_tenancy_al
-l_new.eps>
-(epstopdf)                    date: 2017-02-21 03:59:06
-(epstopdf)                    size: 229581 bytes
-(epstopdf)             Output file: <Chapter-InsideOut/figures/multi_tenancy_al
-l_new-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-02-21 04:00:18
-(epstopdf)                    size: 46845 bytes
-(epstopdf)             Command: <repstopdf --outfile=Chapter-InsideOut/figures/
-multi_tenancy_all_new-eps-converted-to.pdf Chapter-InsideOut/figures/multi_tena
-ncy_all_new.eps>
-(epstopdf)             \includegraphics on input line 251.
-Package epstopdf Info: Output file is already uptodate.
-
-<Chapter-InsideOut/figures/multi_tenancy_all_new-eps-converted-to.pdf, id=1571,
- 1485.55pt x 1132.23pt>
-File: Chapter-InsideOut/figures/multi_tenancy_all_new-eps-converted-to.pdf Grap
-hic file (type pdf)
-
-<use Chapter-InsideOut/figures/multi_tenancy_all_new-eps-converted-to.pdf>
-Package pdftex.def Info: Chapter-InsideOut/figures/multi_tenancy_all_new-eps-co
-nverted-to.pdf used on input line 251.
-(pdftex.def)             Requested size: 406.516pt x 309.81796pt.
-
-<Chapter-InsideOut/figures/real-world_tp_read.pdf, id=1572, 2371.18048pt x 659.
-37125pt>
-File: Chapter-InsideOut/figures/real-world_tp_read.pdf Graphic file (type pdf)
- <use Chapter-InsideOut/figures/real-world_tp_read.pdf>
-Package pdftex.def Info: Chapter-InsideOut/figures/real-world_tp_read.pdf used 
-on input line 259.
-(pdftex.def)             Requested size: 406.516pt x 113.03737pt.
- [29] [30 <./Chapter-InsideOut/figures/unseen_scale_all_new-eps-converted-to.pd
-f>] [31 <./Chapter-InsideOut/figures/multi_tenancy_all_new-eps-converted-to.pdf
-> <./Chapter-InsideOut/figures/real-world_tp_read.pdf>]
-Package epstopdf Info: Source file: <Chapter-InsideOut/figures/aggregate_median
-.eps>
-(epstopdf)                    date: 2017-02-21 03:59:56
-(epstopdf)                    size: 44272 bytes
-(epstopdf)             Output file: <Chapter-InsideOut/figures/aggregate_median
--eps-converted-to.pdf>
-(epstopdf)                    date: 2017-02-21 04:00:18
-(epstopdf)                    size: 25414 bytes
-(epstopdf)             Command: <repstopdf --outfile=Chapter-InsideOut/figures/
-aggregate_median-eps-converted-to.pdf Chapter-InsideOut/figures/aggregate_media
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 978.
+Package epstopdf Info: Source file: <./Chapter-WHAT/Figures/underlying_dimensio
 n.eps>
-(epstopdf)             \includegraphics on input line 342.
+(epstopdf)                    date: 2016-08-30 18:06:00
+(epstopdf)                    size: 28515 bytes
+(epstopdf)             Output file: <./Chapter-WHAT/Figures/underlying_dimensio
+n-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-11-25 23:06:55
+(epstopdf)                    size: 20097 bytes
+(epstopdf)             Command: <repstopdf --outfile=./Chapter-WHAT/Figures/und
+erlying_dimension-eps-converted-to.pdf ./Chapter-WHAT/Figures/underlying_dimens
+ion.eps>
+(epstopdf)             \includegraphics on input line 988.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-InsideOut/figures/aggregate_median-eps-converted-to.pdf, id=1758, 1521
-.685pt x 699.61375pt>
-File: Chapter-InsideOut/figures/aggregate_median-eps-converted-to.pdf Graphic f
-ile (type pdf)
+<./Chapter-WHAT/Figures/underlying_dimension-eps-converted-to.pdf, id=1124, 578
+.16pt x 433.62pt>
+File: ./Chapter-WHAT/Figures/underlying_dimension-eps-converted-to.pdf Graphic 
+file (type pdf)
 
-<use Chapter-InsideOut/figures/aggregate_median-eps-converted-to.pdf>
-Package pdftex.def Info: Chapter-InsideOut/figures/aggregate_median-eps-convert
-ed-to.pdf used on input line 342.
-(pdftex.def)             Requested size: 406.516pt x 186.90196pt.
-)
-(./Chapter-InsideOut/conclusion.tex [32])) [33 <./Chapter-InsideOut/figures/agg
-regate_median-eps-converted-to.pdf>]
-\openout2 = `Chapter-CAT/main.aux'.
+<use ./Chapter-WHAT/Figures/underlying_dimension-eps-converted-to.pdf>
+Package pdftex.def Info: ./Chapter-WHAT/Figures/underlying_dimension-eps-conver
+ted-to.pdf used on input line 988.
+(pdftex.def)             Requested size: 406.516pt x 304.8817pt.
+ [29]
+[30] [31]) [32] [33] [34 <./Chapter-WHAT/Figures/underlying_dimension-eps-conve
+rted-to.pdf>]
+\openout2 = `Chapter-Rank/main.aux'.
 
- (./Chapter-CAT/main.tex
+ (./Chapter-Rank/main.tex
 Chapter 4.
-(./Chapter-CAT/introduction.tex) (./Chapter-CAT/dataset.tex [34
+[35
 
 
 
 ]
-(./Chapter-CAT/tables/dataset.tex) (./Chapter-CAT/tables/dataset_overview.tex))
-(./Chapter-CAT/challenge.tex [35] [36]
-<./Chapter-Arrow/figures/motivation_bad_choice_time.pdf, id=1865, 392.15414pt x
- 287.02388pt>
-File: ./Chapter-Arrow/figures/motivation_bad_choice_time.pdf Graphic file (type
- pdf)
- <use ./Chapter-Arrow/figures/motivation_bad_choice_time.pdf>
-Package pdftex.def Info: ./Chapter-Arrow/figures/motivation_bad_choice_time.pdf
- used on input line 33.
-(pdftex.def)             Requested size: 203.258pt x 148.77151pt.
 
-<./Chapter-Arrow/figures/motivation_bad_choice_cost.pdf, id=1866, 390.487pt x 2
-89.37015pt>
-File: ./Chapter-Arrow/figures/motivation_bad_choice_cost.pdf Graphic file (type
- pdf)
- <use ./Chapter-Arrow/figures/motivation_bad_choice_cost.pdf>
-Package pdftex.def Info: ./Chapter-Arrow/figures/motivation_bad_choice_cost.pdf
- used on input line 39.
-(pdftex.def)             Requested size: 203.258pt x 150.62346pt.
-Package hyperref Info: bookmark level for unknown subfigure defaults to 0 on in
-put line 43.
+LaTeX Warning: Citation 'chen2016sampling' on page 36 undefined on input line 3
+3.
 
-[37 <./Chapter-Arrow/figures/motivation_bad_choice_time.pdf> <./Chapter-Arrow/f
-igures/motivation_bad_choice_cost.pdf
 
-pdfTeX warning: pdflatex (file ./Chapter-Arrow/figures/motivation_bad_choice_co
-st.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+LaTeX Warning: Citation 'sayyad2013scalable' on page 36 undefined on input line
+ 33.
 
->]
-<./Chapter-Arrow/figures/motivation_variance_time.pdf, id=1956, 412.13976pt x 2
-59.95557pt>
-File: ./Chapter-Arrow/figures/motivation_variance_time.pdf Graphic file (type p
-df)
- <use ./Chapter-Arrow/figures/motivation_variance_time.pdf>
-Package pdftex.def Info: ./Chapter-Arrow/figures/motivation_variance_time.pdf u
-sed on input line 69.
-(pdftex.def)             Requested size: 203.258pt x 128.20834pt.
 
-<./Chapter-Arrow/figures/motivation_variance_cost.pdf, id=1957, 412.13976pt x 2
-68.1973pt>
-File: ./Chapter-Arrow/figures/motivation_variance_cost.pdf Graphic file (type p
-df)
- <use ./Chapter-Arrow/figures/motivation_variance_cost.pdf>
-Package pdftex.def Info: ./Chapter-Arrow/figures/motivation_variance_cost.pdf u
-sed on input line 75.
-(pdftex.def)             Requested size: 203.258pt x 132.27312pt.
- [38 <./Chapter-Arrow/figures/motivation_variance_time.pdf> <./Chapter-Arrow/fi
-gures/motivation_variance_cost.pdf
+LaTeX Warning: Citation 'henard2015combining' on page 36 undefined on input lin
+e 33.
 
-pdfTeX warning: pdflatex (file ./Chapter-Arrow/figures/motivation_variance_cost
-.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<./Chapter-Arrow/figures/motivation_datasize_time.pdf, id=2038, 395.58417pt x 2
-94.91742pt>
-File: ./Chapter-Arrow/figures/motivation_datasize_time.pdf Graphic file (type p
-df)
- <use ./Chapter-Arrow/figures/motivation_datasize_time.pdf>
-Package pdftex.def Info: ./Chapter-Arrow/figures/motivation_datasize_time.pdf u
-sed on input line 108.
-(pdftex.def)             Requested size: 203.258pt x 151.5354pt.
-
-<./Chapter-Arrow/figures/motivation_datasize_cost.pdf, id=2039, 395.58417pt x 3
-03.15915pt>
-File: ./Chapter-Arrow/figures/motivation_datasize_cost.pdf Graphic file (type p
-df)
- <use ./Chapter-Arrow/figures/motivation_datasize_cost.pdf>
-Package pdftex.def Info: ./Chapter-Arrow/figures/motivation_datasize_cost.pdf u
-sed on input line 114.
-(pdftex.def)             Requested size: 203.258pt x 155.7702pt.
-
-<./Chapter-Arrow/figures/level_playing_field.pdf, id=2044, 663.91948pt x 384.79
-385pt>
-File: ./Chapter-Arrow/figures/level_playing_field.pdf Graphic file (type pdf)
- <use ./Chapter-Arrow/figures/level_playing_field.pdf>
-Package pdftex.def Info: ./Chapter-Arrow/figures/level_playing_field.pdf used o
-n input line 145.
-(pdftex.def)             Requested size: 361.35138pt x 209.4296pt.
- [39 <./Chapter-Arrow/figures/motivation_datasize_time.pdf> <./Chapter-Arrow/fi
-gures/motivation_datasize_cost.pdf
-
-pdfTeX warning: pdflatex (file ./Chapter-Arrow/figures/motivation_datasize_cost
-.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]) (./Chapter-CAT/relatedwork.tex [40 <./Chapter-Arrow/figures/level_playing_f
-ield.pdf>]) (./Chapter-CAT/problem.tex [41] [42]) (./Chapter-CAT/cdp.tex
-(./Chapter-CAT/tables/raw_data.tex) [43] [44]
-Package epstopdf Info: Source file: <Chapter-CAT/figures/pagerank_elapsed_cost_
-all_frontier.eps>
-(epstopdf)                    date: 2017-04-20 16:31:06
-(epstopdf)                    size: 21620 bytes
-(epstopdf)             Output file: <Chapter-CAT/figures/pagerank_elapsed_cost_
-all_frontier-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-10 22:18:58
-(epstopdf)                    size: 16010 bytes
-(epstopdf)             Command: <repstopdf --outfile=Chapter-CAT/figures/pagera
-nk_elapsed_cost_all_frontier-eps-converted-to.pdf Chapter-CAT/figures/pagerank_
-elapsed_cost_all_frontier.eps>
-(epstopdf)             \includegraphics on input line 101.
+[36]
+Package epstopdf Info: Source file: <./Chapter-Rank/Figures/figure1.eps>
+(epstopdf)                    date: 2017-07-13 13:53:34
+(epstopdf)                    size: 149800 bytes
+(epstopdf)             Output file: <./Chapter-Rank/Figures/figure1-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2018-11-26 00:05:40
+(epstopdf)                    size: 22350 bytes
+(epstopdf)             Command: <repstopdf --outfile=./Chapter-Rank/Figures/fig
+ure1-eps-converted-to.pdf ./Chapter-Rank/Figures/figure1.eps>
+(epstopdf)             \includegraphics on input line 81.
 Package epstopdf Info: Output file is already uptodate.
 
-<Chapter-CAT/figures/pagerank_elapsed_cost_all_frontier-eps-converted-to.pdf, i
-d=2230, 722.7pt x 498.86375pt>
-File: Chapter-CAT/figures/pagerank_elapsed_cost_all_frontier-eps-converted-to.p
-df Graphic file (type pdf)
-
-<use Chapter-CAT/figures/pagerank_elapsed_cost_all_frontier-eps-converted-to.pd
-f>
-Package pdftex.def Info: Chapter-CAT/figures/pagerank_elapsed_cost_all_frontier
--eps-converted-to.pdf used on input line 101.
-(pdftex.def)             Requested size: 135.50763pt x 93.53671pt.
-Package epstopdf Info: Source file: <Chapter-CAT/figures/webloganalysis_elapsed
-_cost_all_frontier.eps>
-(epstopdf)                    date: 2017-04-20 16:31:06
-(epstopdf)                    size: 21811 bytes
-(epstopdf)             Output file: <Chapter-CAT/figures/webloganalysis_elapsed
-_cost_all_frontier-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-10 22:18:58
-(epstopdf)                    size: 16014 bytes
-(epstopdf)             Command: <repstopdf --outfile=Chapter-CAT/figures/weblog
-analysis_elapsed_cost_all_frontier-eps-converted-to.pdf Chapter-CAT/figures/web
-loganalysis_elapsed_cost_all_frontier.eps>
-(epstopdf)             \includegraphics on input line 106.
-Package epstopdf Info: Output file is already uptodate.
-
-<Chapter-CAT/figures/webloganalysis_elapsed_cost_all_frontier-eps-converted-to.
-pdf, id=2231, 722.7pt x 498.86375pt>
-File: Chapter-CAT/figures/webloganalysis_elapsed_cost_all_frontier-eps-converte
-d-to.pdf Graphic file (type pdf)
-
-<use Chapter-CAT/figures/webloganalysis_elapsed_cost_all_frontier-eps-converted
--to.pdf>
-Package pdftex.def Info: Chapter-CAT/figures/webloganalysis_elapsed_cost_all_fr
-ontier-eps-converted-to.pdf used on input line 106.
-(pdftex.def)             Requested size: 135.50763pt x 93.53671pt.
-Package epstopdf Info: Source file: <Chapter-CAT/figures/regression_elapsed_cos
-t_all_frontier.eps>
-(epstopdf)                    date: 2017-04-20 16:31:06
-(epstopdf)                    size: 21605 bytes
-(epstopdf)             Output file: <Chapter-CAT/figures/regression_elapsed_cos
-t_all_frontier-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-10 22:18:58
-(epstopdf)                    size: 16135 bytes
-(epstopdf)             Command: <repstopdf --outfile=Chapter-CAT/figures/regres
-sion_elapsed_cost_all_frontier-eps-converted-to.pdf Chapter-CAT/figures/regress
-ion_elapsed_cost_all_frontier.eps>
-(epstopdf)             \includegraphics on input line 111.
-Package epstopdf Info: Output file is already uptodate.
-
-<Chapter-CAT/figures/regression_elapsed_cost_all_frontier-eps-converted-to.pdf,
- id=2232, 722.7pt x 498.86375pt>
-File: Chapter-CAT/figures/regression_elapsed_cost_all_frontier-eps-converted-to
-.pdf Graphic file (type pdf)
-
-<use Chapter-CAT/figures/regression_elapsed_cost_all_frontier-eps-converted-to.
-pdf>
-Package pdftex.def Info: Chapter-CAT/figures/regression_elapsed_cost_all_fronti
-er-eps-converted-to.pdf used on input line 111.
-(pdftex.def)             Requested size: 135.50763pt x 93.53671pt.
-Package epstopdf Info: Source file: <Chapter-CAT/figures/pagerank_cpu_elapsed_1
-2_1.eps>
-(epstopdf)                    date: 2017-04-20 17:12:10
-(epstopdf)                    size: 13511 bytes
-(epstopdf)             Output file: <Chapter-CAT/figures/pagerank_cpu_elapsed_1
-2_1-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-10 22:18:58
-(epstopdf)                    size: 8355 bytes
-(epstopdf)             Command: <repstopdf --outfile=Chapter-CAT/figures/pagera
-nk_cpu_elapsed_12_1-eps-converted-to.pdf Chapter-CAT/figures/pagerank_cpu_elaps
-ed_12_1.eps>
-(epstopdf)             \includegraphics on input line 124.
-Package epstopdf Info: Output file is already uptodate.
-
-<Chapter-CAT/figures/pagerank_cpu_elapsed_12_1-eps-converted-to.pdf, id=2233, 7
-22.7pt x 498.86375pt>
-File: Chapter-CAT/figures/pagerank_cpu_elapsed_12_1-eps-converted-to.pdf Graphi
-c file (type pdf)
-
-<use Chapter-CAT/figures/pagerank_cpu_elapsed_12_1-eps-converted-to.pdf>
-Package pdftex.def Info: Chapter-CAT/figures/pagerank_cpu_elapsed_12_1-eps-conv
-erted-to.pdf used on input line 124.
-(pdftex.def)             Requested size: 135.50763pt x 93.53671pt.
-Package epstopdf Info: Source file: <Chapter-CAT/figures/webloganalysis_cpu_ela
-psed_12_1.eps>
-(epstopdf)                    date: 2017-04-20 17:12:10
-(epstopdf)                    size: 13520 bytes
-(epstopdf)             Output file: <Chapter-CAT/figures/webloganalysis_cpu_ela
-psed_12_1-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-10 22:19:00
-(epstopdf)                    size: 8368 bytes
-(epstopdf)             Command: <repstopdf --outfile=Chapter-CAT/figures/weblog
-analysis_cpu_elapsed_12_1-eps-converted-to.pdf Chapter-CAT/figures/webloganalys
-is_cpu_elapsed_12_1.eps>
-(epstopdf)             \includegraphics on input line 129.
-Package epstopdf Info: Output file is already uptodate.
-
-<Chapter-CAT/figures/webloganalysis_cpu_elapsed_12_1-eps-converted-to.pdf, id=2
-234, 722.7pt x 498.86375pt>
-File: Chapter-CAT/figures/webloganalysis_cpu_elapsed_12_1-eps-converted-to.pdf 
-Graphic file (type pdf)
-
-<use Chapter-CAT/figures/webloganalysis_cpu_elapsed_12_1-eps-converted-to.pdf>
-Package pdftex.def Info: Chapter-CAT/figures/webloganalysis_cpu_elapsed_12_1-ep
-s-converted-to.pdf used on input line 129.
-(pdftex.def)             Requested size: 135.50763pt x 93.53671pt.
-Package epstopdf Info: Source file: <Chapter-CAT/figures/regression_cpu_elapsed
-_12_1.eps>
-(epstopdf)                    date: 2017-04-20 17:12:10
-(epstopdf)                    size: 13510 bytes
-(epstopdf)             Output file: <Chapter-CAT/figures/regression_cpu_elapsed
-_12_1-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-10 22:19:00
-(epstopdf)                    size: 8359 bytes
-(epstopdf)             Command: <repstopdf --outfile=Chapter-CAT/figures/regres
-sion_cpu_elapsed_12_1-eps-converted-to.pdf Chapter-CAT/figures/regression_cpu_e
-lapsed_12_1.eps>
-(epstopdf)             \includegraphics on input line 134.
-Package epstopdf Info: Output file is already uptodate.
-
-<Chapter-CAT/figures/regression_cpu_elapsed_12_1-eps-converted-to.pdf, id=2235,
- 722.7pt x 498.86375pt>
-File: Chapter-CAT/figures/regression_cpu_elapsed_12_1-eps-converted-to.pdf Grap
-hic file (type pdf)
-
-<use Chapter-CAT/figures/regression_cpu_elapsed_12_1-eps-converted-to.pdf>
-Package pdftex.def Info: Chapter-CAT/figures/regression_cpu_elapsed_12_1-eps-co
-nverted-to.pdf used on input line 134.
-(pdftex.def)             Requested size: 135.50763pt x 93.53671pt.
-Package epstopdf Info: Source file: <Chapter-CAT/figures/pagerank_cpu_cost_12_1
-.eps>
-(epstopdf)                    date: 2017-04-20 17:12:10
-(epstopdf)                    size: 13619 bytes
-(epstopdf)             Output file: <Chapter-CAT/figures/pagerank_cpu_cost_12_1
--eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-10 22:19:00
-(epstopdf)                    size: 8285 bytes
-(epstopdf)             Command: <repstopdf --outfile=Chapter-CAT/figures/pagera
-nk_cpu_cost_12_1-eps-converted-to.pdf Chapter-CAT/figures/pagerank_cpu_cost_12_
-1.eps>
-(epstopdf)             \includegraphics on input line 140.
-Package epstopdf Info: Output file is already uptodate.
-
-<Chapter-CAT/figures/pagerank_cpu_cost_12_1-eps-converted-to.pdf, id=2236, 722.
-7pt x 498.86375pt>
-File: Chapter-CAT/figures/pagerank_cpu_cost_12_1-eps-converted-to.pdf Graphic f
-ile (type pdf)
-
-<use Chapter-CAT/figures/pagerank_cpu_cost_12_1-eps-converted-to.pdf>
-Package pdftex.def Info: Chapter-CAT/figures/pagerank_cpu_cost_12_1-eps-convert
-ed-to.pdf used on input line 140.
-(pdftex.def)             Requested size: 135.50763pt x 93.53671pt.
-Package epstopdf Info: Source file: <Chapter-CAT/figures/webloganalysis_cpu_cos
-t_12_1.eps>
-(epstopdf)                    date: 2017-04-20 17:12:10
-(epstopdf)                    size: 13609 bytes
-(epstopdf)             Output file: <Chapter-CAT/figures/webloganalysis_cpu_cos
-t_12_1-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-10 22:19:00
-(epstopdf)                    size: 8295 bytes
-(epstopdf)             Command: <repstopdf --outfile=Chapter-CAT/figures/weblog
-analysis_cpu_cost_12_1-eps-converted-to.pdf Chapter-CAT/figures/webloganalysis_
-cpu_cost_12_1.eps>
-(epstopdf)             \includegraphics on input line 145.
-Package epstopdf Info: Output file is already uptodate.
-
-<Chapter-CAT/figures/webloganalysis_cpu_cost_12_1-eps-converted-to.pdf, id=2237
-, 722.7pt x 498.86375pt>
-File: Chapter-CAT/figures/webloganalysis_cpu_cost_12_1-eps-converted-to.pdf Gra
-phic file (type pdf)
-
-<use Chapter-CAT/figures/webloganalysis_cpu_cost_12_1-eps-converted-to.pdf>
-Package pdftex.def Info: Chapter-CAT/figures/webloganalysis_cpu_cost_12_1-eps-c
-onverted-to.pdf used on input line 145.
-(pdftex.def)             Requested size: 135.50763pt x 93.53671pt.
-Package epstopdf Info: Source file: <Chapter-CAT/figures/regression_cpu_cost_12
-_1.eps>
-(epstopdf)                    date: 2017-04-20 17:12:10
-(epstopdf)                    size: 13616 bytes
-(epstopdf)             Output file: <Chapter-CAT/figures/regression_cpu_cost_12
-_1-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-10 22:19:00
-(epstopdf)                    size: 8289 bytes
-(epstopdf)             Command: <repstopdf --outfile=Chapter-CAT/figures/regres
-sion_cpu_cost_12_1-eps-converted-to.pdf Chapter-CAT/figures/regression_cpu_cost
-_12_1.eps>
-(epstopdf)             \includegraphics on input line 150.
-Package epstopdf Info: Output file is already uptodate.
-
-<Chapter-CAT/figures/regression_cpu_cost_12_1-eps-converted-to.pdf, id=2238, 72
-2.7pt x 498.86375pt>
-File: Chapter-CAT/figures/regression_cpu_cost_12_1-eps-converted-to.pdf Graphic
- file (type pdf)
-
-<use Chapter-CAT/figures/regression_cpu_cost_12_1-eps-converted-to.pdf>
-Package pdftex.def Info: Chapter-CAT/figures/regression_cpu_cost_12_1-eps-conve
-rted-to.pdf used on input line 150.
-(pdftex.def)             Requested size: 135.50763pt x 93.53671pt.
-)
-(./Chapter-CAT/conclusion.tex) [45 <./Chapter-CAT/figures/pagerank_elapsed_cost
-_all_frontier-eps-converted-to.pdf> <./Chapter-CAT/figures/webloganalysis_elaps
-ed_cost_all_frontier-eps-converted-to.pdf> <./Chapter-CAT/figures/regression_el
-apsed_cost_all_frontier-eps-converted-to.pdf>]) [46 <./Chapter-CAT/figures/page
-rank_cpu_elapsed_12_1-eps-converted-to.pdf> <./Chapter-CAT/figures/webloganalys
-is_cpu_elapsed_12_1-eps-converted-to.pdf> <./Chapter-CAT/figures/regression_cpu
-_elapsed_12_1-eps-converted-to.pdf> <./Chapter-CAT/figures/pagerank_cpu_cost_12
-_1-eps-converted-to.pdf> <./Chapter-CAT/figures/webloganalysis_cpu_cost_12_1-ep
-s-converted-to.pdf> <./Chapter-CAT/figures/regression_cpu_cost_12_1-eps-convert
-ed-to.pdf>]
-\openout2 = `Chapter-Arrow/main.aux'.
-
- (./Chapter-Arrow/main.tex
-Chapter 5.
-(./Chapter-Arrow/introduction.tex
-<./Chapter-Arrow/figures/motivation_fragile_cost.pdf, id=2402, 646.29897pt x 30
-7.42416pt>
-File: ./Chapter-Arrow/figures/motivation_fragile_cost.pdf Graphic file (type pd
+<./Chapter-Rank/Figures/figure1-eps-converted-to.pdf, id=1249, 510.90875pt x 43
+8.63875pt>
+File: ./Chapter-Rank/Figures/figure1-eps-converted-to.pdf Graphic file (type pd
 f)
- <use ./Chapter-Arrow/figures/motivation_fragile_cost.pdf>
-Package pdftex.def Info: ./Chapter-Arrow/figures/motivation_fragile_cost.pdf us
-ed on input line 23.
-(pdftex.def)             Requested size: 361.35138pt x 171.88428pt.
-
-Overfull \hbox (3.29651pt too wide) in paragraph at lines 30--47
-[]\OT1/cmr/m/n/10.95 (-20) However, we have come across work-loads where a Baye
-sian Op-ti-miza-tion method is ineffective---
- []
-
-[47
-
-
-
-] [48 <./Chapter-Arrow/figures/motivation_fragile_cost.pdf>]
-<./Chapter-Arrow/figures/cherrypick_issue_spark_als_large_new.pdf, id=2465, 635
-.1244pt x 311.54675pt>
-File: ./Chapter-Arrow/figures/cherrypick_issue_spark_als_large_new.pdf Graphic 
-file (type pdf)
-
-<use ./Chapter-Arrow/figures/cherrypick_issue_spark_als_large_new.pdf>
-Package pdftex.def Info: ./Chapter-Arrow/figures/cherrypick_issue_spark_als_lar
-ge_new.pdf used on input line 80.
-(pdftex.def)             Requested size: 361.35138pt x 177.26022pt.
- [49 <./Chapter-Arrow/figures/cherrypick_issue_spark_als_large_new.pdf>])
-(./Chapter-Arrow/bo.tex
-<./Chapter-Arrow/figures/kernel_time_spark.als.large_new.pdf, id=2517, 635.1244
-pt x 311.54675pt>
-File: ./Chapter-Arrow/figures/kernel_time_spark.als.large_new.pdf Graphic file 
-(type pdf)
-
-<use ./Chapter-Arrow/figures/kernel_time_spark.als.large_new.pdf>
-Package pdftex.def Info: ./Chapter-Arrow/figures/kernel_time_spark.als.large_ne
-w.pdf used on input line 11.
-(pdftex.def)             Requested size: 203.258pt x 99.70175pt.
-
-<./Chapter-Arrow/figures/kernel_cost_spark.bayes.medium_new.pdf, id=2518, 635.1
-244pt x 321.84303pt>
-File: ./Chapter-Arrow/figures/kernel_cost_spark.bayes.medium_new.pdf Graphic fi
-le (type pdf)
-
-<use ./Chapter-Arrow/figures/kernel_cost_spark.bayes.medium_new.pdf>
-Package pdftex.def Info: ./Chapter-Arrow/figures/kernel_cost_spark.bayes.medium
-_new.pdf used on input line 17.
-(pdftex.def)             Requested size: 203.258pt x 102.99678pt.
- [50 <./Chapter-Arrow/figures/kernel_time_spark.als.large_new.pdf> <./Chapter-A
-rrow/figures/kernel_cost_spark.bayes.medium_new.pdf
-
-pdfTeX warning: pdflatex (file ./Chapter-Arrow/figures/kernel_cost_spark.bayes.
-medium_new.pdf): PDF inclusion: multiple pdfs with page group included in a sin
-gle page
->]) (./Chapter-Arrow/approach.tex [51]
-<./Chapter-Arrow/figures/bottleneck_spark.als.large.pdf, id=2648, 733.51543pt x
- 394.51767pt>
-File: ./Chapter-Arrow/figures/bottleneck_spark.als.large.pdf Graphic file (type
- pdf)
- <use ./Chapter-Arrow/figures/bottleneck_spark.als.large.pdf>
-Package pdftex.def Info: ./Chapter-Arrow/figures/bottleneck_spark.als.large.pdf
- used on input line 24.
-(pdftex.def)             Requested size: 361.35138pt x 194.35075pt.
-
-[52] (./Chapter-Arrow/algorithm/arrow.tex) [53 <./Chapter-Arrow/figures/bottlen
-eck_spark.als.large.pdf>] [54]) (./Chapter-Arrow/evaluation.tex
-<./Chapter-Arrow/figures/overall_time_new.pdf, id=2740, 646.29897pt x 307.42416
-pt>
-File: ./Chapter-Arrow/figures/overall_time_new.pdf Graphic file (type pdf)
- <use ./Chapter-Arrow/figures/overall_time_new.pdf>
-Package pdftex.def Info: ./Chapter-Arrow/figures/overall_time_new.pdf used on i
-nput line 49.
-(pdftex.def)             Requested size: 361.35138pt x 171.88428pt.
-
-<./Chapter-Arrow/figures/overall_cost_new.pdf, id=2741, 646.29897pt x 307.42416
-pt>
-File: ./Chapter-Arrow/figures/overall_cost_new.pdf Graphic file (type pdf)
- <use ./Chapter-Arrow/figures/overall_cost_new.pdf>
-Package pdftex.def Info: ./Chapter-Arrow/figures/overall_cost_new.pdf used on i
-nput line 55.
-(pdftex.def)             Requested size: 361.35138pt x 171.88428pt.
- [55] [56 <./Chapter-Arrow/figures/overall_time_new.pdf> <./Chapter-Arrow/figur
-es/overall_cost_new.pdf
-
-pdfTeX warning: pdflatex (file ./Chapter-Arrow/figures/overall_cost_new.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
->] [57]
-<./Chapter-Arrow/figures/time_hadoop.pagerank.large.pdf, id=2867, 635.1244pt x 
-346.27963pt>
-File: ./Chapter-Arrow/figures/time_hadoop.pagerank.large.pdf Graphic file (type
- pdf)
- <use ./Chapter-Arrow/figures/time_hadoop.pagerank.large.pdf>
-Package pdftex.def Info: ./Chapter-Arrow/figures/time_hadoop.pagerank.large.pdf
- used on input line 127.
-(pdftex.def)             Requested size: 271.01526pt x 147.7666pt.
-
-<./Chapter-Arrow/figures/time_spark.als.large.pdf, id=2868, 635.1244pt x 346.27
-963pt>
-File: ./Chapter-Arrow/figures/time_spark.als.large.pdf Graphic file (type pdf)
- <use ./Chapter-Arrow/figures/time_spark.als.large.pdf>
-Package pdftex.def Info: ./Chapter-Arrow/figures/time_spark.als.large.pdf used 
-on input line 132.
-(pdftex.def)             Requested size: 271.01526pt x 147.7666pt.
-
-<./Chapter-Arrow/figures/cost_spark.lr.small.pdf, id=2869, 635.1244pt x 349.847
-64pt>
-File: ./Chapter-Arrow/figures/cost_spark.lr.small.pdf Graphic file (type pdf)
- <use ./Chapter-Arrow/figures/cost_spark.lr.small.pdf>
-Package pdftex.def Info: ./Chapter-Arrow/figures/cost_spark.lr.small.pdf used o
-n input line 137.
-(pdftex.def)             Requested size: 271.01526pt x 149.28917pt.
-
-
-LaTeX Warning: Float too large for page by 1.22566pt on input line 144.
-
-[58] [59 <./Chapter-Arrow/figures/time_hadoop.pagerank.large.pdf> <./Chapter-Ar
-row/figures/time_spark.als.large.pdf
-
-pdfTeX warning: pdflatex (file ./Chapter-Arrow/figures/time_spark.als.large.pdf
-): PDF inclusion: multiple pdfs with page group included in a single page
-> <./Chapter-Arrow/figures/cost_spark.lr.small.pdf
-
-pdfTeX warning: pdflatex (file ./Chapter-Arrow/figures/cost_spark.lr.small.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
->]
-<./Chapter-Arrow/figures/stopping_criteria_comparison_cost_good.pdf, id=3007, 6
-30.3958pt x 402.2889pt>
-File: ./Chapter-Arrow/figures/stopping_criteria_comparison_cost_good.pdf Graphi
-c file (type pdf)
-
-<use ./Chapter-Arrow/figures/stopping_criteria_comparison_cost_good.pdf>
-Package pdftex.def Info: ./Chapter-Arrow/figures/stopping_criteria_comparison_c
-ost_good.pdf used on input line 186.
-(pdftex.def)             Requested size: 225.84375pt x 144.11797pt.
-
-<./Chapter-Arrow/figures/stopping_criteria_comparison_cost_bad.pdf, id=3008, 63
-0.3958pt x 402.2889pt>
-File: ./Chapter-Arrow/figures/stopping_criteria_comparison_cost_bad.pdf Graphic
- file (type pdf)
-
-<use ./Chapter-Arrow/figures/stopping_criteria_comparison_cost_bad.pdf>
-Package pdftex.def Info: ./Chapter-Arrow/figures/stopping_criteria_comparison_c
-ost_bad.pdf used on input line 191.
-(pdftex.def)             Requested size: 225.84375pt x 144.11797pt.
-
-<./Chapter-Arrow/figures/stopping_criteria_comparison_cost_problematic.pdf, id=
-3009, 630.3958pt x 402.2889pt>
-File: ./Chapter-Arrow/figures/stopping_criteria_comparison_cost_problematic.pdf
- Graphic file (type pdf)
-
-<use ./Chapter-Arrow/figures/stopping_criteria_comparison_cost_problematic.pdf>
-Package pdftex.def Info: ./Chapter-Arrow/figures/stopping_criteria_comparison_c
-ost_problematic.pdf used on input line 196.
-(pdftex.def)             Requested size: 225.84375pt x 144.11797pt.
-[60] [61 <./Chapter-Arrow/figures/stopping_criteria_comparison_cost_good.pdf> <
-./Chapter-Arrow/figures/stopping_criteria_comparison_cost_bad.pdf
-
-pdfTeX warning: pdflatex (file ./Chapter-Arrow/figures/stopping_criteria_compar
-ison_cost_bad.pdf): PDF inclusion: multiple pdfs with page group included in a 
-single page
-> <./Chapter-Arrow/figures/stopping_criteria_comparison_cost_problematic.pdf
-
-pdfTeX warning: pdflatex (file ./Chapter-Arrow/figures/stopping_criteria_compar
-ison_cost_problematic.pdf): PDF inclusion: multiple pdfs with page group includ
-ed in a single page
->]
-<./Chapter-Arrow/figures/comparison_cost.pdf, id=3166, 648.64366pt x 310.2704pt
->
-File: ./Chapter-Arrow/figures/comparison_cost.pdf Graphic file (type pdf)
- <use ./Chapter-Arrow/figures/comparison_cost.pdf>
-Package pdftex.def Info: ./Chapter-Arrow/figures/comparison_cost.pdf used on in
-put line 229.
-(pdftex.def)             Requested size: 361.35138pt x 172.8507pt.
-
-<./Chapter-Arrow/figures/comparison_cdp_1.05.pdf, id=3167, 633.95598pt x 310.27
-04pt>
-File: ./Chapter-Arrow/figures/comparison_cdp_1.05.pdf Graphic file (type pdf)
- <use ./Chapter-Arrow/figures/comparison_cdp_1.05.pdf>
-Package pdftex.def Info: ./Chapter-Arrow/figures/comparison_cdp_1.05.pdf used o
-n input line 236.
-(pdftex.def)             Requested size: 361.35138pt x 176.85596pt.
-)
-(./Chapter-Arrow/hybrid.tex [62 <./Chapter-Arrow/figures/comparison_cost.pdf>]
-(./Chapter-Arrow/algorithm/hybrid.tex)) (./Chapter-Arrow/conclusion.tex
-[63 <./Chapter-Arrow/figures/comparison_cdp_1.05.pdf>])) [64]
-\openout2 = `Chapter-Scout/main.aux'.
-
-
-(./Chapter-Scout/main.tex
-Chapter 6.
-(./Chapter-Scout/introduction.tex [65
-
-
-
-]) (./Chapter-Scout/design.tex [66]
-[67]) (./Chapter-Scout/approach.tex [68] [69]
-<./Chapter-Scout/figures/multiple_prediction_accuracy.pdf, id=3371, 642.26828pt
- x 281.37779pt>
-File: ./Chapter-Scout/figures/multiple_prediction_accuracy.pdf Graphic file (ty
-pe pdf)
- <use ./Chapter-Scout/figures/multiple_prediction_accuracy.pdf>
-Package pdftex.def Info: ./Chapter-Scout/figures/multiple_prediction_accuracy.p
-df used on input line 182.
-(pdftex.def)             Requested size: 361.35138pt x 158.30896pt.
-
-[70]
-Overfull \hbox (15.18755pt too wide) in paragraph at lines 206--220
-[]\OT1/cmr/m/n/10.95 (-20) We use an ex-am-ple to il-lus-trate this pro-cess. C
-on-sider a con-fig-u-ra-tion space ($\OML/cmm/m/it/10.95 S \OT1/cmr/m/n/10.95 (
--20) = \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 S[]; S[]; S[]; S[]\OMS/cmsy/m/n
-/10.95 g$\OT1/cmr/m/n/10.95 (-20) ).
- []
-
-[71 <./Chapter-Scout/figures/multiple_prediction_accuracy.pdf>])
-(./Chapter-Scout/system.tex [72]
-<./Chapter-Scout/figures/system_design_blind.pdf, id=3438, 974.64125pt x 427.59
-75pt>
-File: ./Chapter-Scout/figures/system_design_blind.pdf Graphic file (type pdf)
- <use ./Chapter-Scout/figures/system_design_blind.pdf>
-Package pdftex.def Info: ./Chapter-Scout/figures/system_design_blind.pdf used o
-n input line 12.
-(pdftex.def)             Requested size: 361.35138pt x 158.53482pt.
- [73 <./Chapter-Scout/figures/system_design_blind.pdf>]) (./Chapter-Scout/evalu
-ation.tex
-<./Chapter-Scout/figures/single_time_overall_performance.pdf, id=3566, 612.8160
-2pt x 522.09428pt>
-File: ./Chapter-Scout/figures/single_time_overall_performance.pdf Graphic file 
-(type pdf)
-
-<use ./Chapter-Scout/figures/single_time_overall_performance.pdf>
-Package pdftex.def Info: ./Chapter-Scout/figures/single_time_overall_performanc
-e.pdf used on input line 22.
-(pdftex.def)             Requested size: 180.67224pt x 153.92087pt.
-
-<./Chapter-Scout/figures/single_time_overall_steps.pdf, id=3567, 602.09628pt x 
-522.09428pt>
-File: ./Chapter-Scout/figures/single_time_overall_steps.pdf Graphic file (type 
-pdf)
- <use ./Chapter-Scout/figures/single_time_overall_steps.pdf>
-Package pdftex.def Info: ./Chapter-Scout/figures/single_time_overall_steps.pdf 
-used on input line 27.
-(pdftex.def)             Requested size: 180.67224pt x 156.66135pt.
-
-[74] [75 <./Chapter-Scout/figures/single_time_overall_performance.pdf> <./Chapt
-er-Scout/figures/single_time_overall_steps.pdf
-
-pdfTeX warning: pdflatex (file ./Chapter-Scout/figures/single_time_overall_step
-s.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<./Chapter-Scout/figures/single_cost_overall_performance.pdf, id=3672, 612.8160
-2pt x 522.09428pt>
-File: ./Chapter-Scout/figures/single_cost_overall_performance.pdf Graphic file 
-(type pdf)
-
-<use ./Chapter-Scout/figures/single_cost_overall_performance.pdf>
-Package pdftex.def Info: ./Chapter-Scout/figures/single_cost_overall_performanc
-e.pdf used on input line 89.
-(pdftex.def)             Requested size: 180.67224pt x 153.92087pt.
-
-<./Chapter-Scout/figures/single_cost_overall_steps.pdf, id=3673, 602.09628pt x 
-522.09428pt>
-File: ./Chapter-Scout/figures/single_cost_overall_steps.pdf Graphic file (type 
-pdf)
- <use ./Chapter-Scout/figures/single_cost_overall_steps.pdf>
-Package pdftex.def Info: ./Chapter-Scout/figures/single_cost_overall_steps.pdf 
-used on input line 94.
-(pdftex.def)             Requested size: 180.67224pt x 156.66135pt.
-
-[76 <./Chapter-Scout/figures/single_cost_overall_performance.pdf> <./Chapter-Sc
-out/figures/single_cost_overall_steps.pdf
-
-pdfTeX warning: pdflatex (file ./Chapter-Scout/figures/single_cost_overall_step
-s.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<./Chapter-Scout/figures/single_fragility.pdf, id=3771, 767.50961pt x 417.83919
-pt>
-File: ./Chapter-Scout/figures/single_fragility.pdf Graphic file (type pdf)
- <use ./Chapter-Scout/figures/single_fragility.pdf>
-Package pdftex.def Info: ./Chapter-Scout/figures/single_fragility.pdf used on i
-nput line 141.
-(pdftex.def)             Requested size: 271.01526pt x 147.54016pt.
-
-<./Chapter-Scout/figures/single_stopping_awareness.pdf, id=3772, 752.422pt x 41
-7.83919pt>
-File: ./Chapter-Scout/figures/single_stopping_awareness.pdf Graphic file (type 
-pdf)
- <use ./Chapter-Scout/figures/single_stopping_awareness.pdf>
-Package pdftex.def Info: ./Chapter-Scout/figures/single_stopping_awareness.pdf 
-used on input line 151.
-(pdftex.def)             Requested size: 271.01526pt x 150.49849pt.
-
-<./Chapter-Scout/figures/single_convergence.pdf, id=3773, 785.781pt x 417.83919
-pt>
-File: ./Chapter-Scout/figures/single_convergence.pdf Graphic file (type pdf)
- <use ./Chapter-Scout/figures/single_convergence.pdf>
-Package pdftex.def Info: ./Chapter-Scout/figures/single_convergence.pdf used on
- input line 162.
-(pdftex.def)             Requested size: 271.01526pt x 144.11641pt.
- [77 <./Chapter-Scout/figures/single_fragility.pdf>] [78 <./Chapter-Scout/figur
-es/single_stopping_awareness.pdf> <./Chapter-Scout/figures/single_convergence.p
-df
-
-pdfTeX warning: pdflatex (file ./Chapter-Scout/figures/single_convergence.pdf):
- PDF inclusion: multiple pdfs with page group included in a single page
->] [79]
-<./Chapter-Scout/figures/multiple_bo_time_hadoop.pagerank.bigdata_12_cores.pdf,
- id=3902, 558.6841pt x 525.96812pt>
-File: ./Chapter-Scout/figures/multiple_bo_time_hadoop.pagerank.bigdata_12_cores
-.pdf Graphic file (type pdf)
-
-<use ./Chapter-Scout/figures/multiple_bo_time_hadoop.pagerank.bigdata_12_cores.
-pdf>
-Package pdftex.def Info: ./Chapter-Scout/figures/multiple_bo_time_hadoop.pagera
-nk.bigdata_12_cores.pdf used on input line 221.
-(pdftex.def)             Requested size: 180.67224pt x 170.09491pt.
-
-<./Chapter-Scout/figures/multiple_scout_time_hadoop.pagerank.bigdata_24_m4.larg
-e_cores.pdf, id=3903, 558.6841pt x 525.96812pt>
-File: ./Chapter-Scout/figures/multiple_scout_time_hadoop.pagerank.bigdata_24_m4
-.large_cores.pdf Graphic file (type pdf)
-
-<use ./Chapter-Scout/figures/multiple_scout_time_hadoop.pagerank.bigdata_24_m4.
-large_cores.pdf>
-Package pdftex.def Info: ./Chapter-Scout/figures/multiple_scout_time_hadoop.pag
-erank.bigdata_24_m4.large_cores.pdf used on input line 226.
-(pdftex.def)             Requested size: 180.67224pt x 170.09491pt.
- [80 <./Chapter-Scout/figures/multiple_bo_time_hadoop.pagerank.bigdata_12_cores
-.pdf> <./Chapter-Scout/figures/multiple_scout_time_hadoop.pagerank.bigdata_24_m
-4.large_cores.pdf
-
-pdfTeX warning: pdflatex (file ./Chapter-Scout/figures/multiple_scout_time_hado
-op.pagerank.bigdata_24_m4.large_cores.pdf): PDF inclusion: multiple pdfs with p
-age group included in a single page
->]
-<./Chapter-Scout/figures/multiple_bo_cost_spark1.5.naive-bayes.huge_12_cores.pd
-f, id=3983, 558.6841pt x 525.96812pt>
-File: ./Chapter-Scout/figures/multiple_bo_cost_spark1.5.naive-bayes.huge_12_cor
-es.pdf Graphic file (type pdf)
-
-<use ./Chapter-Scout/figures/multiple_bo_cost_spark1.5.naive-bayes.huge_12_core
-s.pdf>
-Package pdftex.def Info: ./Chapter-Scout/figures/multiple_bo_cost_spark1.5.naiv
-e-bayes.huge_12_cores.pdf used on input line 274.
-(pdftex.def)             Requested size: 180.67224pt x 170.09491pt.
-
-<./Chapter-Scout/figures/multiple_scout_cost_spark1.5.naive-bayes.huge_24_m4.la
-rge_cores.pdf, id=3984, 558.6841pt x 525.96812pt>
-File: ./Chapter-Scout/figures/multiple_scout_cost_spark1.5.naive-bayes.huge_24_
-m4.large_cores.pdf Graphic file (type pdf)
-
-<use ./Chapter-Scout/figures/multiple_scout_cost_spark1.5.naive-bayes.huge_24_m
-4.large_cores.pdf>
-Package pdftex.def Info: ./Chapter-Scout/figures/multiple_scout_cost_spark1.5.n
-aive-bayes.huge_24_m4.large_cores.pdf used on input line 279.
-(pdftex.def)             Requested size: 180.67224pt x 170.09491pt.
- [81]
-<./Chapter-Scout/figures/multiple_bo_time_spark1.5.regression.huge_12_cores.pdf
-, id=3994, 558.6841pt x 525.96812pt>
-File: ./Chapter-Scout/figures/multiple_bo_time_spark1.5.regression.huge_12_core
-s.pdf Graphic file (type pdf)
-
-<use ./Chapter-Scout/figures/multiple_bo_time_spark1.5.regression.huge_12_cores
-.pdf>
-Package pdftex.def Info: ./Chapter-Scout/figures/multiple_bo_time_spark1.5.regr
-ession.huge_12_cores.pdf used on input line 304.
-(pdftex.def)             Requested size: 180.67224pt x 170.09491pt.
-
-<./Chapter-Scout/figures/multiple_scout_time_spark1.5.regression.huge_24_m4.lar
-ge_cores.pdf, id=3995, 558.6841pt x 525.96812pt>
-File: ./Chapter-Scout/figures/multiple_scout_time_spark1.5.regression.huge_24_m
-4.large_cores.pdf Graphic file (type pdf)
-
-<use ./Chapter-Scout/figures/multiple_scout_time_spark1.5.regression.huge_24_m4
-.large_cores.pdf>
-Package pdftex.def Info: ./Chapter-Scout/figures/multiple_scout_time_spark1.5.r
-egression.huge_24_m4.large_cores.pdf used on input line 309.
-(pdftex.def)             Requested size: 180.67224pt x 170.09491pt.
- [82 <./Chapter-Scout/figures/multiple_bo_cost_spark1.5.naive-bayes.huge_12_cor
-es.pdf> <./Chapter-Scout/figures/multiple_scout_cost_spark1.5.naive-bayes.huge_
-24_m4.large_cores.pdf
-
-pdfTeX warning: pdflatex (file ./Chapter-Scout/figures/multiple_scout_cost_spar
-k1.5.naive-bayes.huge_24_m4.large_cores.pdf): PDF inclusion: multiple pdfs with
- page group included in a single page
->]
-<./Chapter-Scout/figures/multiple_bo_cost_hadoop.terasort.bigdata_12_cores.pdf,
- id=4083, 558.6841pt x 535.8157pt>
-File: ./Chapter-Scout/figures/multiple_bo_cost_hadoop.terasort.bigdata_12_cores
-.pdf Graphic file (type pdf)
-
-<use ./Chapter-Scout/figures/multiple_bo_cost_hadoop.terasort.bigdata_12_cores.
-pdf>
-Package pdftex.def Info: ./Chapter-Scout/figures/multiple_bo_cost_hadoop.teraso
-rt.bigdata_12_cores.pdf used on input line 342.
-(pdftex.def)             Requested size: 180.67224pt x 173.27957pt.
-
-<./Chapter-Scout/figures/multiple_scout_cost_hadoop.terasort.bigdata_24_m4.larg
-e_cores.pdf, id=4084, 558.6841pt x 525.96812pt>
-File: ./Chapter-Scout/figures/multiple_scout_cost_hadoop.terasort.bigdata_24_m4
-.large_cores.pdf Graphic file (type pdf)
-
-<use ./Chapter-Scout/figures/multiple_scout_cost_hadoop.terasort.bigdata_24_m4.
-large_cores.pdf>
-Package pdftex.def Info: ./Chapter-Scout/figures/multiple_scout_cost_hadoop.ter
-asort.bigdata_24_m4.large_cores.pdf used on input line 347.
-(pdftex.def)             Requested size: 180.67224pt x 170.09491pt.
- [83 <./Chapter-Scout/figures/multiple_bo_time_spark1.5.regression.huge_12_core
-s.pdf> <./Chapter-Scout/figures/multiple_scout_time_spark1.5.regression.huge_24
-_m4.large_cores.pdf
-
-pdfTeX warning: pdflatex (file ./Chapter-Scout/figures/multiple_scout_time_spar
-k1.5.regression.huge_24_m4.large_cores.pdf): PDF inclusion: multiple pdfs with 
-page group included in a single page
->]) (./Chapter-Scout/discussion.tex [84 <./Chapter-Scout/figures/multiple_bo_co
-st_hadoop.terasort.bigdata_12_cores.pdf> <./Chapter-Scout/figures/multiple_scou
-t_cost_hadoop.terasort.bigdata_24_m4.large_cores.pdf
-
-pdfTeX warning: pdflatex (file ./Chapter-Scout/figures/multiple_scout_cost_hado
-op.terasort.bigdata_24_m4.large_cores.pdf): PDF inclusion: multiple pdfs with p
-age group included in a single page
->]
-<./Chapter-Scout/figures/single_cost_tuning_probability_performance.pdf, id=423
-6, 533.98244pt x 522.09428pt>
-File: ./Chapter-Scout/figures/single_cost_tuning_probability_performance.pdf Gr
-aphic file (type pdf)
-
-<use ./Chapter-Scout/figures/single_cost_tuning_probability_performance.pdf>
-Package pdftex.def Info: ./Chapter-Scout/figures/single_cost_tuning_probability
-_performance.pdf used on input line 37.
-(pdftex.def)             Requested size: 180.67224pt x 176.64932pt.
-
-<./Chapter-Scout/figures/single_cost_tuning_probability_steps.pdf, id=4237, 540
-.00494pt x 522.09428pt>
-File: ./Chapter-Scout/figures/single_cost_tuning_probability_steps.pdf Graphic 
-file (type pdf)
-
-<use ./Chapter-Scout/figures/single_cost_tuning_probability_steps.pdf>
-Package pdftex.def Info: ./Chapter-Scout/figures/single_cost_tuning_probability
-_steps.pdf used on input line 42.
-(pdftex.def)             Requested size: 180.67224pt x 174.67363pt.
-
-<./Chapter-Scout/figures/single_cost_tuning_tolerance_performance.pdf, id=4238,
- 511.57059pt x 522.09428pt>
-File: ./Chapter-Scout/figures/single_cost_tuning_tolerance_performance.pdf Grap
-hic file (type pdf)
-
-<use ./Chapter-Scout/figures/single_cost_tuning_tolerance_performance.pdf>
-Package pdftex.def Info: ./Chapter-Scout/figures/single_cost_tuning_tolerance_p
-erformance.pdf used on input line 53.
-(pdftex.def)             Requested size: 180.67224pt x 184.3848pt.
-File: ./Chapter-Scout/figures/single_cost_tuning_tolerance_performance.pdf Grap
-hic file (type pdf)
-
-<use ./Chapter-Scout/figures/single_cost_tuning_tolerance_performance.pdf>
-Package pdftex.def Info: ./Chapter-Scout/figures/single_cost_tuning_tolerance_p
-erformance.pdf used on input line 58.
-(pdftex.def)             Requested size: 180.67224pt x 184.3848pt.
-
-[85 <./Chapter-Scout/figures/single_cost_tuning_probability_performance.pdf> <.
-/Chapter-Scout/figures/single_cost_tuning_probability_steps.pdf
-
-pdfTeX warning: pdflatex (file ./Chapter-Scout/figures/single_cost_tuning_proba
-bility_steps.pdf): PDF inclusion: multiple pdfs with page group included in a s
-ingle page
->]
-<./Chapter-Scout/figures/multiple_size_of_dataset.pdf, id=4319, 723.06232pt x 2
-94.16777pt>
-File: ./Chapter-Scout/figures/multiple_size_of_dataset.pdf Graphic file (type p
-df)
- <use ./Chapter-Scout/figures/multiple_size_of_dataset.pdf>
-Package pdftex.def Info: ./Chapter-Scout/figures/multiple_size_of_dataset.pdf u
-sed on input line 89.
-(pdftex.def)             Requested size: 361.35138pt x 147.01617pt.
- [86 <./Chapter-Scout/figures/single_cost_tuning_tolerance_performance.pdf>])
-(./Chapter-Scout/conclusion.tex)) [87 <./Chapter-Scout/figures/multiple_size_of
-_dataset.pdf>]
-\openout2 = `Chapter-Micky/main.aux'.
-
- (./Chapter-Micky/main.tex
-Chapter 7.
-(./Chapter-Micky/introduction.tex [88
-
-
-
-]) (./Chapter-Micky/motivation.tex
-[89] [90]) (./Chapter-Micky/mab.tex
-<./Chapter-Micky/Figures/motivation_cost_hadoop_percentage.pdf, id=4451, 622.71
-085pt x 395.4477pt>
-File: ./Chapter-Micky/Figures/motivation_cost_hadoop_percentage.pdf Graphic fil
-e (type pdf)
-
-<use ./Chapter-Micky/Figures/motivation_cost_hadoop_percentage.pdf>
-Package pdftex.def Info: ./Chapter-Micky/Figures/motivation_cost_hadoop_percent
-age.pdf used on input line 4.
-(pdftex.def)             Requested size: 225.84375pt x 143.417pt.
-
-<./Chapter-Micky/Figures/motivation_cost_spark_percentage.pdf, id=4452, 622.710
-85pt x 395.4477pt>
-File: ./Chapter-Micky/Figures/motivation_cost_spark_percentage.pdf Graphic file
- (type pdf)
-
-<use ./Chapter-Micky/Figures/motivation_cost_spark_percentage.pdf>
-Package pdftex.def Info: ./Chapter-Micky/Figures/motivation_cost_spark_percenta
-ge.pdf used on input line 9.
-(pdftex.def)             Requested size: 225.84375pt x 143.417pt.
-
-<./Chapter-Micky/Figures/motivation_cost_spark1.5_percentage.pdf, id=4453, 622.
-71085pt x 395.4477pt>
-File: ./Chapter-Micky/Figures/motivation_cost_spark1.5_percentage.pdf Graphic f
-ile (type pdf)
-
-<use ./Chapter-Micky/Figures/motivation_cost_spark1.5_percentage.pdf>
-Package pdftex.def Info: ./Chapter-Micky/Figures/motivation_cost_spark1.5_perce
-ntage.pdf used on input line 14.
-(pdftex.def)             Requested size: 225.84375pt x 143.417pt.
- [91]
-[92 <./Chapter-Micky/Figures/motivation_cost_hadoop_percentage.pdf> <./Chapter-
-Micky/Figures/motivation_cost_spark_percentage.pdf
-
-pdfTeX warning: pdflatex (file ./Chapter-Micky/Figures/motivation_cost_spark_pe
-rcentage.pdf): PDF inclusion: multiple pdfs with page group included in a singl
-e page
-> <./Chapter-Micky/Figures/motivation_cost_spark1.5_percentage.pdf
-
-pdfTeX warning: pdflatex (file ./Chapter-Micky/Figures/motivation_cost_spark1.5
-_percentage.pdf): PDF inclusion: multiple pdfs with page group included in a si
-ngle page
->] (./Chapter-Micky/tables/landscape.tex) [93] [94] [95]
-<./Chapter-Micky/Figures/s2_single_hadoop_cost_performance.pdf, id=4590, 624.11
-606pt x 301.06854pt>
-File: ./Chapter-Micky/Figures/s2_single_hadoop_cost_performance.pdf Graphic fil
-e (type pdf)
-
-<use ./Chapter-Micky/Figures/s2_single_hadoop_cost_performance.pdf>
-Package pdftex.def Info: ./Chapter-Micky/Figures/s2_single_hadoop_cost_performa
-nce.pdf used on input line 192.
-(pdftex.def)             Requested size: 271.01526pt x 130.73865pt.
-
-<./Chapter-Micky/Figures/s2_single_spark_cost_performance.pdf, id=4591, 624.116
-06pt x 301.06854pt>
-File: ./Chapter-Micky/Figures/s2_single_spark_cost_performance.pdf Graphic file
- (type pdf)
-
-<use ./Chapter-Micky/Figures/s2_single_spark_cost_performance.pdf>
-Package pdftex.def Info: ./Chapter-Micky/Figures/s2_single_spark_cost_performan
-ce.pdf used on input line 197.
-(pdftex.def)             Requested size: 271.01526pt x 130.73865pt.
-
-<./Chapter-Micky/Figures/s2_single_spark15_cost_performance.pdf, id=4592, 624.1
-1606pt x 301.06854pt>
-File: ./Chapter-Micky/Figures/s2_single_spark15_cost_performance.pdf Graphic fi
-le (type pdf)
-
-<use ./Chapter-Micky/Figures/s2_single_spark15_cost_performance.pdf>
-Package pdftex.def Info: ./Chapter-Micky/Figures/s2_single_spark15_cost_perform
-ance.pdf used on input line 202.
-(pdftex.def)             Requested size: 271.01526pt x 130.73865pt.
-)
-(./Chapter-Micky/evaluation.tex [96] [97 <./Chapter-Micky/Figures/s2_single_had
-oop_cost_performance.pdf> <./Chapter-Micky/Figures/s2_single_spark_cost_perform
-ance.pdf
-
-pdfTeX warning: pdflatex (file ./Chapter-Micky/Figures/s2_single_spark_cost_per
-formance.pdf): PDF inclusion: multiple pdfs with page group included in a singl
-e page
-> <./Chapter-Micky/Figures/s2_single_spark15_cost_performance.pdf
-
-pdfTeX warning: pdflatex (file ./Chapter-Micky/Figures/s2_single_spark15_cost_p
-erformance.pdf): PDF inclusion: multiple pdfs with page group included in a sin
-gle page
->] [98] (./Chapter-Micky/tables/top3.tex) [99]
-<./Chapter-Micky/Figures/s0_single_time_steps_comparison.pdf, id=4748, 770.1020
-7pt x 320.9177pt>
-File: ./Chapter-Micky/Figures/s0_single_time_steps_comparison.pdf Graphic file 
-(type pdf)
-
-<use ./Chapter-Micky/Figures/s0_single_time_steps_comparison.pdf>
-Package pdftex.def Info: ./Chapter-Micky/Figures/s0_single_time_steps_compariso
-n.pdf used on input line 106.
-(pdftex.def)             Requested size: 361.35138pt x 150.58159pt.
- [100 <./Chapter-Micky/Figures/s0_single_time_steps_comparison.pdf>]
-(./Chapter-Micky/tables/breakeven_cost.tex)
-<./Chapter-Micky/Figures/s0_single_algorithm_selection.pdf, id=4798, 946.97539p
-t x 525.10553pt>
-File: ./Chapter-Micky/Figures/s0_single_algorithm_selection.pdf Graphic file (t
-ype pdf)
-
-<use ./Chapter-Micky/Figures/s0_single_algorithm_selection.pdf>
-Package pdftex.def Info: ./Chapter-Micky/Figures/s0_single_algorithm_selection.
-pdf used on input line 136.
-(pdftex.def)             Requested size: 361.35138pt x 200.36745pt.
- [101]
-<./Chapter-Micky/Figures/system_integration.pdf, id=4806, 1060.96375pt x 228.85
-5pt>
-File: ./Chapter-Micky/Figures/system_integration.pdf Graphic file (type pdf)
- <use ./Chapter-Micky/Figures/system_integration.pdf>
-Package pdftex.def Info: ./Chapter-Micky/Figures/system_integration.pdf used on
- input line 167.
-(pdftex.def)             Requested size: 361.35138pt x 77.94585pt.
-
-<./Chapter-Micky/Figures/s4_misprediction_correction.pdf, id=4809, 649.16907pt 
-x 301.06854pt>
-File: ./Chapter-Micky/Figures/s4_misprediction_correction.pdf Graphic file (typ
-e pdf)
- <use ./Chapter-Micky/Figures/s4_misprediction_correction.pdf>
-Package pdftex.def Info: ./Chapter-Micky/Figures/s4_misprediction_correction.pd
-f used on input line 175.
-(pdftex.def)             Requested size: 361.35138pt x 167.58656pt.
-)
-(./Chapter-Micky/system.tex [102 <./Chapter-Micky/Figures/s0_single_algorithm_s
-election.pdf> <./Chapter-Micky/Figures/system_integration.pdf>])
-(./Chapter-Micky/conclusion.tex)) [103 <./Chapter-Micky/Figures/s4_mispredictio
-n_correction.pdf>] [104]
-\openout2 = `Chapter-DataPlacement/main.aux'.
-
- (./Chapter-DataPlacement/main.tex
-Chapter 8.
-(./Chapter-DataPlacement/introduction.tex [105
-
-
-
-]
-Package epstopdf Info: Source file: <./Chapter-DataPlacement/figures/E34_unifor
-m_suboptimal_tp_stacked_scdm2017.eps>
-(epstopdf)                    date: 2018-07-11 14:48:22
-(epstopdf)                    size: 25320 bytes
-(epstopdf)             Output file: <./Chapter-DataPlacement/figures/E34_unifor
-m_suboptimal_tp_stacked_scdm2017-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-11 14:48:38
-(epstopdf)                    size: 18634 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Chapter-DataPlacement/fi
-gures/E34_uniform_suboptimal_tp_stacked_scdm2017-eps-converted-to.pdf ./Chapter
--DataPlacement/figures/E34_uniform_suboptimal_tp_stacked_scdm2017.eps>
-(epstopdf)             \includegraphics on input line 63.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Chapter-DataPlacement/figures/E34_uniform_suboptimal_tp_stacked_scdm2017-eps
--converted-to.pdf, id=5020, 571.13374pt x 284.06125pt>
-File: ./Chapter-DataPlacement/figures/E34_uniform_suboptimal_tp_stacked_scdm201
-7-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./Chapter-DataPlacement/figures/E34_uniform_suboptimal_tp_stacked_scdm2017
--eps-converted-to.pdf>
-Package pdftex.def Info: ./Chapter-DataPlacement/figures/E34_uniform_suboptimal
-_tp_stacked_scdm2017-eps-converted-to.pdf used on input line 63.
-(pdftex.def)             Requested size: 361.35138pt x 179.72237pt.
- [106 <./Chapter-DataPlacement/figures/E34_uniform_suboptimal_tp_stacked_scdm20
-17-eps-converted-to.pdf>])
-(./Chapter-DataPlacement/model.tex [107] [108]
-<./Chapter-DataPlacement/figures/dp_final_before_coarse.pdf, id=5113, 464.73625
-pt x 202.7575pt>
-File: ./Chapter-DataPlacement/figures/dp_final_before_coarse.pdf Graphic file (
-type pdf)
-
-<use ./Chapter-DataPlacement/figures/dp_final_before_coarse.pdf>
-Package pdftex.def Info: ./Chapter-DataPlacement/figures/dp_final_before_coarse
-.pdf used on input line 144.
-(pdftex.def)             Requested size: 338.76563pt x 147.80136pt.
-
-<./Chapter-DataPlacement/figures/dp_final_before_fine.pdf, id=5114, 471.7625pt 
-x 212.795pt>
-File: ./Chapter-DataPlacement/figures/dp_final_before_fine.pdf Graphic file (ty
-pe pdf)
- <use ./Chapter-DataPlacement/figures/dp_final_before_fine.pdf>
-Package pdftex.def Info: ./Chapter-DataPlacement/figures/dp_final_before_fine.p
-df used on input line 149.
-(pdftex.def)             Requested size: 338.76563pt x 152.8064pt.
-
-<./Chapter-DataPlacement/figures/dp_final_before_fine_R1.pdf, id=5115, 471.7625
-pt x 212.795pt>
-File: ./Chapter-DataPlacement/figures/dp_final_before_fine_R1.pdf Graphic file 
-(type pdf)
-
-<use ./Chapter-DataPlacement/figures/dp_final_before_fine_R1.pdf>
-Package pdftex.def Info: ./Chapter-DataPlacement/figures/dp_final_before_fine_R
-1.pdf used on input line 154.
-(pdftex.def)             Requested size: 338.76563pt x 152.8064pt.
-
-<./Chapter-DataPlacement/figures/dp_final_uniform.pdf, id=5116, 875.27pt x 134.
-5025pt>
-File: ./Chapter-DataPlacement/figures/dp_final_uniform.pdf Graphic file (type p
-df)
- <use ./Chapter-DataPlacement/figures/dp_final_uniform.pdf>
-Package pdftex.def Info: ./Chapter-DataPlacement/figures/dp_final_uniform.pdf u
-sed on input line 166.
-(pdftex.def)             Requested size: 406.516pt x 62.46912pt.
-
-<./Chapter-DataPlacement/figures/dp_final_coarse.pdf, id=5117, 875.27pt x 134.5
-025pt>
-File: ./Chapter-DataPlacement/figures/dp_final_coarse.pdf Graphic file (type pd
-f)
- <use ./Chapter-DataPlacement/figures/dp_final_coarse.pdf>
-Package pdftex.def Info: ./Chapter-DataPlacement/figures/dp_final_coarse.pdf us
-ed on input line 172.
-(pdftex.def)             Requested size: 406.516pt x 62.46912pt.
-
-<./Chapter-DataPlacement/figures/dp_final_fine_monochromatic.pdf, id=5118, 894.
-34125pt x 90.3375pt>
-File: ./Chapter-DataPlacement/figures/dp_final_fine_monochromatic.pdf Graphic f
-ile (type pdf)
-
-<use ./Chapter-DataPlacement/figures/dp_final_fine_monochromatic.pdf>
-Package pdftex.def Info: ./Chapter-DataPlacement/figures/dp_final_fine_monochro
-matic.pdf used on input line 178.
-(pdftex.def)             Requested size: 406.516pt x 41.06226pt.
-
-<./Chapter-DataPlacement/figures/dp_final_fine_rainbow.pdf, id=5119, 893.3375pt
- x 90.3375pt>
-File: ./Chapter-DataPlacement/figures/dp_final_fine_rainbow.pdf Graphic file (t
-ype pdf)
- <use ./Chapter-DataPlacement/figures/dp_final_fine_rainbow.pdf>
-Package pdftex.def Info: ./Chapter-DataPlacement/figures/dp_final_fine_rainbow.
-pdf used on input line 184.
-(pdftex.def)             Requested size: 406.516pt x 41.10913pt.
-)
-(./Chapter-DataPlacement/approach.tex [109] [110 <./Chapter-DataPlacement/figur
-es/dp_final_before_coarse.pdf> <./Chapter-DataPlacement/figures/dp_final_before
-_fine.pdf> <./Chapter-DataPlacement/figures/dp_final_before_fine_R1.pdf>]
-[111 <./Chapter-DataPlacement/figures/dp_final_uniform.pdf> <./Chapter-DataPlac
-ement/figures/dp_final_coarse.pdf> <./Chapter-DataPlacement/figures/dp_final_fi
-ne_monochromatic.pdf> <./Chapter-DataPlacement/figures/dp_final_fine_rainbow.pd
-f>] [112]
-Package epstopdf Info: Source file: <./Chapter-DataPlacement/figures/E45_simula
-tion_imbalance_coarse_std_uniform.eps>
-(epstopdf)                    date: 2018-07-11 15:14:58
-(epstopdf)                    size: 38305 bytes
-(epstopdf)             Output file: <./Chapter-DataPlacement/figures/E45_simula
-tion_imbalance_coarse_std_uniform-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-11 15:15:26
-(epstopdf)                    size: 19838 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Chapter-DataPlacement/fi
-gures/E45_simulation_imbalance_coarse_std_uniform-eps-converted-to.pdf ./Chapte
-r-DataPlacement/figures/E45_simulation_imbalance_coarse_std_uniform.eps>
-(epstopdf)             \includegraphics on input line 93.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Chapter-DataPlacement/figures/E45_simulation_imbalance_coarse_std_uniform-ep
-s-converted-to.pdf, id=6635, 426.59375pt x 280.04625pt>
-File: ./Chapter-DataPlacement/figures/E45_simulation_imbalance_coarse_std_unifo
-rm-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./Chapter-DataPlacement/figures/E45_simulation_imbalance_coarse_std_unifor
-m-eps-converted-to.pdf>
-Package pdftex.def Info: ./Chapter-DataPlacement/figures/E45_simulation_imbalan
-ce_coarse_std_uniform-eps-converted-to.pdf used on input line 93.
-(pdftex.def)             Requested size: 203.258pt x 133.43356pt.
-Package epstopdf Info: Source file: <./Chapter-DataPlacement/figures/E45_simula
-tion_imbalance_coarse_std_beta.eps>
-(epstopdf)                    date: 2018-07-11 15:14:58
-(epstopdf)                    size: 43416 bytes
-(epstopdf)             Output file: <./Chapter-DataPlacement/figures/E45_simula
-tion_imbalance_coarse_std_beta-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-11 15:15:26
-(epstopdf)                    size: 21433 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Chapter-DataPlacement/fi
-gures/E45_simulation_imbalance_coarse_std_beta-eps-converted-to.pdf ./Chapter-D
-ataPlacement/figures/E45_simulation_imbalance_coarse_std_beta.eps>
-(epstopdf)             \includegraphics on input line 97.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Chapter-DataPlacement/figures/E45_simulation_imbalance_coarse_std_beta-eps-c
-onverted-to.pdf, id=6636, 426.59375pt x 280.04625pt>
-File: ./Chapter-DataPlacement/figures/E45_simulation_imbalance_coarse_std_beta-
-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./Chapter-DataPlacement/figures/E45_simulation_imbalance_coarse_std_beta-e
-ps-converted-to.pdf>
-Package pdftex.def Info: ./Chapter-DataPlacement/figures/E45_simulation_imbalan
-ce_coarse_std_beta-eps-converted-to.pdf used on input line 97.
-(pdftex.def)             Requested size: 203.258pt x 133.43356pt.
-Package epstopdf Info: Source file: <./Chapter-DataPlacement/figures/E45_simula
-tion_imbalance_coarse_std_powerlaw.eps>
-(epstopdf)                    date: 2018-07-11 15:14:58
-(epstopdf)                    size: 48789 bytes
-(epstopdf)             Output file: <./Chapter-DataPlacement/figures/E45_simula
-tion_imbalance_coarse_std_powerlaw-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-11 15:15:28
-(epstopdf)                    size: 23782 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Chapter-DataPlacement/fi
-gures/E45_simulation_imbalance_coarse_std_powerlaw-eps-converted-to.pdf ./Chapt
-er-DataPlacement/figures/E45_simulation_imbalance_coarse_std_powerlaw.eps>
-(epstopdf)             \includegraphics on input line 101.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Chapter-DataPlacement/figures/E45_simulation_imbalance_coarse_std_powerlaw-e
-ps-converted-to.pdf, id=6637, 426.59375pt x 280.04625pt>
-File: ./Chapter-DataPlacement/figures/E45_simulation_imbalance_coarse_std_power
-law-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./Chapter-DataPlacement/figures/E45_simulation_imbalance_coarse_std_powerl
-aw-eps-converted-to.pdf>
-Package pdftex.def Info: ./Chapter-DataPlacement/figures/E45_simulation_imbalan
-ce_coarse_std_powerlaw-eps-converted-to.pdf used on input line 101.
-(pdftex.def)             Requested size: 203.258pt x 133.43356pt.
-Package epstopdf Info: Source file: <./Chapter-DataPlacement/figures/E45_simula
-tion_imbalance_coarse_std_normal.eps>
-(epstopdf)                    date: 2018-07-11 15:14:58
-(epstopdf)                    size: 56707 bytes
-(epstopdf)             Output file: <./Chapter-DataPlacement/figures/E45_simula
-tion_imbalance_coarse_std_normal-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-11 15:15:28
-(epstopdf)                    size: 24574 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Chapter-DataPlacement/fi
-gures/E45_simulation_imbalance_coarse_std_normal-eps-converted-to.pdf ./Chapter
--DataPlacement/figures/E45_simulation_imbalance_coarse_std_normal.eps>
-(epstopdf)             \includegraphics on input line 105.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Chapter-DataPlacement/figures/E45_simulation_imbalance_coarse_std_normal-eps
--converted-to.pdf, id=6638, 426.59375pt x 286.06876pt>
-File: ./Chapter-DataPlacement/figures/E45_simulation_imbalance_coarse_std_norma
-l-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./Chapter-DataPlacement/figures/E45_simulation_imbalance_coarse_std_normal
--eps-converted-to.pdf>
-Package pdftex.def Info: ./Chapter-DataPlacement/figures/E45_simulation_imbalan
-ce_coarse_std_normal-eps-converted-to.pdf used on input line 105.
-(pdftex.def)             Requested size: 203.258pt x 136.30312pt.
-Package epstopdf Info: Source file: <./Chapter-DataPlacement/figures/E45_simula
-tion_imbalance_coarse_std_gamma.eps>
-(epstopdf)                    date: 2018-07-11 15:14:58
-(epstopdf)                    size: 55456 bytes
-(epstopdf)             Output file: <./Chapter-DataPlacement/figures/E45_simula
-tion_imbalance_coarse_std_gamma-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-11 15:15:28
-(epstopdf)                    size: 24980 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Chapter-DataPlacement/fi
-gures/E45_simulation_imbalance_coarse_std_gamma-eps-converted-to.pdf ./Chapter-
-DataPlacement/figures/E45_simulation_imbalance_coarse_std_gamma.eps>
-(epstopdf)             \includegraphics on input line 109.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Chapter-DataPlacement/figures/E45_simulation_imbalance_coarse_std_gamma-eps-
-converted-to.pdf, id=6639, 426.59375pt x 286.06876pt>
-File: ./Chapter-DataPlacement/figures/E45_simulation_imbalance_coarse_std_gamma
--eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./Chapter-DataPlacement/figures/E45_simulation_imbalance_coarse_std_gamma-
-eps-converted-to.pdf>
-Package pdftex.def Info: ./Chapter-DataPlacement/figures/E45_simulation_imbalan
-ce_coarse_std_gamma-eps-converted-to.pdf used on input line 109.
-(pdftex.def)             Requested size: 203.258pt x 136.30312pt.
-Package epstopdf Info: Source file: <./Chapter-DataPlacement/figures/E45_simula
-tion_imbalance_fine_std_uniform.eps>
-(epstopdf)                    date: 2018-07-11 15:15:14
-(epstopdf)                    size: 34690 bytes
-(epstopdf)             Output file: <./Chapter-DataPlacement/figures/E45_simula
-tion_imbalance_fine_std_uniform-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-11 15:15:28
-(epstopdf)                    size: 19476 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Chapter-DataPlacement/fi
-gures/E45_simulation_imbalance_fine_std_uniform-eps-converted-to.pdf ./Chapter-
-DataPlacement/figures/E45_simulation_imbalance_fine_std_uniform.eps>
-(epstopdf)             \includegraphics on input line 120.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Chapter-DataPlacement/figures/E45_simulation_imbalance_fine_std_uniform-eps-
-converted-to.pdf, id=6640, 426.59375pt x 280.04625pt>
-File: ./Chapter-DataPlacement/figures/E45_simulation_imbalance_fine_std_uniform
--eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./Chapter-DataPlacement/figures/E45_simulation_imbalance_fine_std_uniform-
-eps-converted-to.pdf>
-Package pdftex.def Info: ./Chapter-DataPlacement/figures/E45_simulation_imbalan
-ce_fine_std_uniform-eps-converted-to.pdf used on input line 120.
-(pdftex.def)             Requested size: 203.258pt x 133.43356pt.
-Package epstopdf Info: Source file: <./Chapter-DataPlacement/figures/E45_simula
-tion_imbalance_fine_std_beta.eps>
-(epstopdf)                    date: 2018-07-11 15:15:14
-(epstopdf)                    size: 34931 bytes
-(epstopdf)             Output file: <./Chapter-DataPlacement/figures/E45_simula
-tion_imbalance_fine_std_beta-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-11 15:15:30
-(epstopdf)                    size: 19944 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Chapter-DataPlacement/fi
-gures/E45_simulation_imbalance_fine_std_beta-eps-converted-to.pdf ./Chapter-Dat
-aPlacement/figures/E45_simulation_imbalance_fine_std_beta.eps>
-(epstopdf)             \includegraphics on input line 124.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Chapter-DataPlacement/figures/E45_simulation_imbalance_fine_std_beta-eps-con
-verted-to.pdf, id=6641, 426.59375pt x 280.04625pt>
-File: ./Chapter-DataPlacement/figures/E45_simulation_imbalance_fine_std_beta-ep
-s-converted-to.pdf Graphic file (type pdf)
-
-<use ./Chapter-DataPlacement/figures/E45_simulation_imbalance_fine_std_beta-eps
--converted-to.pdf>
-Package pdftex.def Info: ./Chapter-DataPlacement/figures/E45_simulation_imbalan
-ce_fine_std_beta-eps-converted-to.pdf used on input line 124.
-(pdftex.def)             Requested size: 203.258pt x 133.43356pt.
-Package epstopdf Info: Source file: <./Chapter-DataPlacement/figures/E45_simula
-tion_imbalance_fine_std_powerlaw.eps>
-(epstopdf)                    date: 2018-07-11 15:15:14
-(epstopdf)                    size: 35482 bytes
-(epstopdf)             Output file: <./Chapter-DataPlacement/figures/E45_simula
-tion_imbalance_fine_std_powerlaw-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-11 15:15:30
-(epstopdf)                    size: 20026 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Chapter-DataPlacement/fi
-gures/E45_simulation_imbalance_fine_std_powerlaw-eps-converted-to.pdf ./Chapter
--DataPlacement/figures/E45_simulation_imbalance_fine_std_powerlaw.eps>
-(epstopdf)             \includegraphics on input line 128.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Chapter-DataPlacement/figures/E45_simulation_imbalance_fine_std_powerlaw-eps
--converted-to.pdf, id=6642, 426.59375pt x 280.04625pt>
-File: ./Chapter-DataPlacement/figures/E45_simulation_imbalance_fine_std_powerla
-w-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./Chapter-DataPlacement/figures/E45_simulation_imbalance_fine_std_powerlaw
--eps-converted-to.pdf>
-Package pdftex.def Info: ./Chapter-DataPlacement/figures/E45_simulation_imbalan
-ce_fine_std_powerlaw-eps-converted-to.pdf used on input line 128.
-(pdftex.def)             Requested size: 203.258pt x 133.43356pt.
-Package epstopdf Info: Source file: <./Chapter-DataPlacement/figures/E45_simula
-tion_imbalance_fine_std_normal.eps>
-(epstopdf)                    date: 2018-07-11 15:15:14
-(epstopdf)                    size: 35433 bytes
-(epstopdf)             Output file: <./Chapter-DataPlacement/figures/E45_simula
-tion_imbalance_fine_std_normal-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-11 15:15:30
-(epstopdf)                    size: 20458 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Chapter-DataPlacement/fi
-gures/E45_simulation_imbalance_fine_std_normal-eps-converted-to.pdf ./Chapter-D
-ataPlacement/figures/E45_simulation_imbalance_fine_std_normal.eps>
-(epstopdf)             \includegraphics on input line 132.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Chapter-DataPlacement/figures/E45_simulation_imbalance_fine_std_normal-eps-c
-onverted-to.pdf, id=6643, 426.59375pt x 280.04625pt>
-File: ./Chapter-DataPlacement/figures/E45_simulation_imbalance_fine_std_normal-
-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./Chapter-DataPlacement/figures/E45_simulation_imbalance_fine_std_normal-e
-ps-converted-to.pdf>
-Package pdftex.def Info: ./Chapter-DataPlacement/figures/E45_simulation_imbalan
-ce_fine_std_normal-eps-converted-to.pdf used on input line 132.
-(pdftex.def)             Requested size: 203.258pt x 133.43356pt.
-Package epstopdf Info: Source file: <./Chapter-DataPlacement/figures/E45_simula
-tion_imbalance_fine_std_gamma.eps>
-(epstopdf)                    date: 2018-07-11 15:15:14
-(epstopdf)                    size: 33723 bytes
-(epstopdf)             Output file: <./Chapter-DataPlacement/figures/E45_simula
-tion_imbalance_fine_std_gamma-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-11 15:15:30
-(epstopdf)                    size: 19323 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Chapter-DataPlacement/fi
-gures/E45_simulation_imbalance_fine_std_gamma-eps-converted-to.pdf ./Chapter-Da
-taPlacement/figures/E45_simulation_imbalance_fine_std_gamma.eps>
-(epstopdf)             \includegraphics on input line 136.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Chapter-DataPlacement/figures/E45_simulation_imbalance_fine_std_gamma-eps-co
-nverted-to.pdf, id=6644, 426.59375pt x 280.04625pt>
-File: ./Chapter-DataPlacement/figures/E45_simulation_imbalance_fine_std_gamma-e
-ps-converted-to.pdf Graphic file (type pdf)
-
-<use ./Chapter-DataPlacement/figures/E45_simulation_imbalance_fine_std_gamma-ep
-s-converted-to.pdf>
-Package pdftex.def Info: ./Chapter-DataPlacement/figures/E45_simulation_imbalan
-ce_fine_std_gamma-eps-converted-to.pdf used on input line 136.
-(pdftex.def)             Requested size: 203.258pt x 133.43356pt.
- (./Chapter-DataPlacement/tables/load-imbalance.tex)
-[113 <./Chapter-DataPlacement/figures/E45_simulation_imbalance_coarse_std_unifo
-rm-eps-converted-to.pdf> <./Chapter-DataPlacement/figures/E45_simulation_imbala
-nce_coarse_std_beta-eps-converted-to.pdf> <./Chapter-DataPlacement/figures/E45_
-simulation_imbalance_coarse_std_powerlaw-eps-converted-to.pdf> <./Chapter-DataP
-lacement/figures/E45_simulation_imbalance_coarse_std_normal-eps-converted-to.pd
-f> <./Chapter-DataPlacement/figures/E45_simulation_imbalance_coarse_std_gamma-e
-ps-converted-to.pdf>] [114 <./Chapter-DataPlacement/figures/E45_simulation_imba
-lance_fine_std_uniform-eps-converted-to.pdf> <./Chapter-DataPlacement/figures/E
-45_simulation_imbalance_fine_std_beta-eps-converted-to.pdf> <./Chapter-DataPlac
-ement/figures/E45_simulation_imbalance_fine_std_powerlaw-eps-converted-to.pdf> 
-<./Chapter-DataPlacement/figures/E45_simulation_imbalance_fine_std_normal-eps-c
-onverted-to.pdf> <./Chapter-DataPlacement/figures/E45_simulation_imbalance_fine
-_std_gamma-eps-converted-to.pdf>] [115]
-(./Chapter-DataPlacement/algorithms/dp.tex) [116] [117]
-Package epstopdf Info: Source file: <./Chapter-DataPlacement/figures/E42_simula
-tion_colors_resized_powerlaw.eps>
-(epstopdf)                    date: 2018-07-11 15:16:10
-(epstopdf)                    size: 36151 bytes
-(epstopdf)             Output file: <./Chapter-DataPlacement/figures/E42_simula
-tion_colors_resized_powerlaw-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-11 15:17:18
-(epstopdf)                    size: 21717 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Chapter-DataPlacement/fi
-gures/E42_simulation_colors_resized_powerlaw-eps-converted-to.pdf ./Chapter-Dat
-aPlacement/figures/E42_simulation_colors_resized_powerlaw.eps>
-(epstopdf)             \includegraphics on input line 335.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Chapter-DataPlacement/figures/E42_simulation_colors_resized_powerlaw-eps-con
-verted-to.pdf, id=7069, 424.58624pt x 217.81375pt>
-File: ./Chapter-DataPlacement/figures/E42_simulation_colors_resized_powerlaw-ep
-s-converted-to.pdf Graphic file (type pdf)
-
-<use ./Chapter-DataPlacement/figures/E42_simulation_colors_resized_powerlaw-eps
--converted-to.pdf>
-Package pdftex.def Info: ./Chapter-DataPlacement/figures/E42_simulation_colors_
-resized_powerlaw-eps-converted-to.pdf used on input line 335.
-(pdftex.def)             Requested size: 361.35138pt x 185.38184pt.
-Package epstopdf Info: Source file: <./Chapter-DataPlacement/figures/E42_simula
-tion_colors_replication_resized_powerlaw.eps>
-(epstopdf)                    date: 2018-07-11 15:16:22
-(epstopdf)                    size: 40414 bytes
-(epstopdf)             Output file: <./Chapter-DataPlacement/figures/E42_simula
-tion_colors_replication_resized_powerlaw-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-11 15:17:18
-(epstopdf)                    size: 23549 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Chapter-DataPlacement/fi
-gures/E42_simulation_colors_replication_resized_powerlaw-eps-converted-to.pdf .
-/Chapter-DataPlacement/figures/E42_simulation_colors_replication_resized_powerl
-aw.eps>
-(epstopdf)             \includegraphics on input line 366.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Chapter-DataPlacement/figures/E42_simulation_colors_replication_resized_powe
-rlaw-eps-converted-to.pdf, id=7072, 424.58624pt x 217.81375pt>
-File: ./Chapter-DataPlacement/figures/E42_simulation_colors_replication_resized
-_powerlaw-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./Chapter-DataPlacement/figures/E42_simulation_colors_replication_resized_
-powerlaw-eps-converted-to.pdf>
-Package pdftex.def Info: ./Chapter-DataPlacement/figures/E42_simulation_colors_
-replication_resized_powerlaw-eps-converted-to.pdf used on input line 366.
-(pdftex.def)             Requested size: 361.35138pt x 185.38184pt.
- [118 <./Chapter-DataPlacement/figures/E42_simulation_colors_resized_powerlaw-e
-ps-converted-to.pdf>])
-(./Chapter-DataPlacement/evaluation.tex [119 <./Chapter-DataPlacement/figures/E
-42_simulation_colors_replication_resized_powerlaw-eps-converted-to.pdf>]
-[120] (./Chapter-DataPlacement/tables/throughput_local.tex) [121]
-Package epstopdf Info: Source file: <./Chapter-DataPlacement/figures/E38_robust
-ness_std_beta.eps>
-(epstopdf)                    date: 2018-07-11 15:47:42
-(epstopdf)                    size: 19727 bytes
-(epstopdf)             Output file: <./Chapter-DataPlacement/figures/E38_robust
-ness_std_beta-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-11 15:48:42
-(epstopdf)                    size: 14644 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Chapter-DataPlacement/fi
-gures/E38_robustness_std_beta-eps-converted-to.pdf ./Chapter-DataPlacement/figu
-res/E38_robustness_std_beta.eps>
-(epstopdf)             \includegraphics on input line 161.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Chapter-DataPlacement/figures/E38_robustness_std_beta-eps-converted-to.pdf, 
-id=7176, 426.59375pt x 209.78375pt>
-File: ./Chapter-DataPlacement/figures/E38_robustness_std_beta-eps-converted-to.
-pdf Graphic file (type pdf)
-
-<use ./Chapter-DataPlacement/figures/E38_robustness_std_beta-eps-converted-to.p
-df>
-Package pdftex.def Info: ./Chapter-DataPlacement/figures/E38_robustness_std_bet
-a-eps-converted-to.pdf used on input line 161.
-(pdftex.def)             Requested size: 271.01526pt x 133.2848pt.
-Package epstopdf Info: Source file: <./Chapter-DataPlacement/figures/E38_robust
-ness_std_powerlaw.eps>
-(epstopdf)                    date: 2018-07-11 15:47:42
-(epstopdf)                    size: 19731 bytes
-(epstopdf)             Output file: <./Chapter-DataPlacement/figures/E38_robust
-ness_std_powerlaw-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-11 15:48:44
-(epstopdf)                    size: 14655 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Chapter-DataPlacement/fi
-gures/E38_robustness_std_powerlaw-eps-converted-to.pdf ./Chapter-DataPlacement/
-figures/E38_robustness_std_powerlaw.eps>
-(epstopdf)             \includegraphics on input line 166.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Chapter-DataPlacement/figures/E38_robustness_std_powerlaw-eps-converted-to.p
-df, id=7177, 426.59375pt x 209.78375pt>
-File: ./Chapter-DataPlacement/figures/E38_robustness_std_powerlaw-eps-converted
--to.pdf Graphic file (type pdf)
-
-<use ./Chapter-DataPlacement/figures/E38_robustness_std_powerlaw-eps-converted-
-to.pdf>
-Package pdftex.def Info: ./Chapter-DataPlacement/figures/E38_robustness_std_pow
-erlaw-eps-converted-to.pdf used on input line 166.
-(pdftex.def)             Requested size: 271.01526pt x 133.2848pt.
-Package epstopdf Info: Source file: <./Chapter-DataPlacement/figures/E38_robust
-ness_std_gamma.eps>
-(epstopdf)                    date: 2018-07-11 15:47:42
-(epstopdf)                    size: 19730 bytes
-(epstopdf)             Output file: <./Chapter-DataPlacement/figures/E38_robust
-ness_std_gamma-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-07-11 15:48:44
-(epstopdf)                    size: 14651 bytes
-(epstopdf)             Command: <repstopdf --outfile=./Chapter-DataPlacement/fi
-gures/E38_robustness_std_gamma-eps-converted-to.pdf ./Chapter-DataPlacement/fig
-ures/E38_robustness_std_gamma.eps>
-(epstopdf)             \includegraphics on input line 171.
-Package epstopdf Info: Output file is already uptodate.
-
-<./Chapter-DataPlacement/figures/E38_robustness_std_gamma-eps-converted-to.pdf,
- id=7178, 426.59375pt x 209.78375pt>
-File: ./Chapter-DataPlacement/figures/E38_robustness_std_gamma-eps-converted-to
-.pdf Graphic file (type pdf)
-
-<use ./Chapter-DataPlacement/figures/E38_robustness_std_gamma-eps-converted-to.
-pdf>
-Package pdftex.def Info: ./Chapter-DataPlacement/figures/E38_robustness_std_gam
-ma-eps-converted-to.pdf used on input line 171.
-(pdftex.def)             Requested size: 271.01526pt x 133.2848pt.
- [122 <./Chapter-DataPlacement/figures/E38_robustness_std_beta-eps-converted-to
-.pdf> <./Chapter-DataPlacement/figures/E38_robustness_std_powerlaw-eps-converte
-d-to.pdf> <./Chapter-DataPlacement/figures/E38_robustness_std_gamma-eps-convert
-ed-to.pdf>] (./Chapter-DataPlacement/tables/throughput_nfs.tex) [123]
-[124] (./Chapter-DataPlacement/tables/micro_nfs.tex) [125])
-(./Chapter-DataPlacement/conclusion.tex)) [126]
-\openout2 = `Chapter-Conclusion/main.aux'.
-
- (./Chapter-Conclusion/main.tex
-Chapter 9.
-[127
-
-
-
-] (./Chapter-Conclusion/tables/guide.tex) [128]) [129] [130]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\uppercase' on input line 489.
-
-[131
-
-
-
-]
+ <use ./Chapter-Rank/Figures/figure1-eps-converted-to.pdf>
+Package pdftex.def Info: ./Chapter-Rank/Figures/figure1-eps-converted-to.pdf us
+ed on input line 81.
+(pdftex.def)             Requested size: 178.82074pt x 153.52585pt.
+ [37]
+<./Chapter-Rank/Figures/figure3.png, id=1266, 694.595pt x 546.04pt>
+File: ./Chapter-Rank/Figures/figure3.png Graphic file (type png)
+
+<use ./Chapter-Rank/Figures/figure3.png>
+Package pdftex.def Info: ./Chapter-Rank/Figures/figure3.png used on input line 
+127.
+(pdftex.def)             Requested size: 159.75348pt x 125.58655pt.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [132] [133] [134] [135] [136] [137] [138] [139]
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no « in font cmr10!
- [140] [141]
+LaTeX Font Info: \kern \lst@width \kern \lst@width \kern \lst@width Calculating
+\kern \lst@width math\kern \lst@width sizes\kern \lst@width for\kern \lst@width
+ size\kern \lst@width <7.68222> on input line 136.
 
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.84111> not available
+(Font)              size <5> substituted on input line 136.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.84111> not available
+(Font)              size <5> substituted on input line 136.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.84111> not available
+(Font)              size <5> substituted on input line 136.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/it' in size <3.84111> not available
+(Font)              size <5> substituted on input line 136.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <3.84111> not available
+(Font)              size <5> substituted on input line 136.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <3.84111> not available
+(Font)              size <5> substituted on input line 136.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <3.84111> not available
+(Font)              size <5> substituted on input line 136.
+
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <7.68222> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 137.
+[38 <./Chapter-Rank/Figures/figure1-eps-converted-to.pdf>] [39 <./Chapter-Rank/
+Figures/figure3.png>]
+
+LaTeX Warning: Citation 'krall2015gale' on page 40 undefined on input line 189.
+
+
+[40] [41]
+
+LaTeX Warning: Citation 'myrtveit2012validity' on page 42 undefined on input li
+ne 242.
+
+
+LaTeX Warning: Citation 'myrtveit2005reliability' on page 42 undefined on input
+ line 242.
+
+
+LaTeX Warning: Citation 'foss2003simulation' on page 42 undefined on input line
+ 242.
+
+
+LaTeX Warning: Citation 'kloke2012rfit' on page 42 undefined on input line 252.
+
+
+
+LaTeX Warning: Citation 'rosset2005ranking' on page 42 undefined on input line 
+252.
+
+
+Overfull \hbox (10.06786pt too wide) in paragraph at lines 252--253
+[]\OT1/cmr/m/it/10.95 (-20) Ranking is ex-tremely ro-bust \OT1/cmr/m/n/10.95 (-
+20) since it is only mildly af-fected by er-rors or out-liers [[],
+ []
+
+[42] [43] [44] [45]
+
+LaTeX Warning: Citation 'lim2010generalizing' on page 46 undefined on input lin
+e 382.
+
+[46]
+<./Chapter-Rank/Figures/figure4_2_mod.png, id=1454, 913.011pt x 245.2362pt>
+File: ./Chapter-Rank/Figures/figure4_2_mod.png Graphic file (type png)
+
+<use ./Chapter-Rank/Figures/figure4_2_mod.png>
+Package pdftex.def Info: ./Chapter-Rank/Figures/figure4_2_mod.png used on input
+ line 408.
+(pdftex.def)             Requested size: 491.43042pt x 133.72778pt.
+
+Overfull \hbox (39.7429pt too wide) in paragraph at lines 408--414
+ [][] 
+ []
+
+File: ./Chapter-Rank/Figures/upsidedown.png Graphic file (type png)
+<use ./Chapter-Rank/Figures/upsidedown.png>
+Package pdftex.def Info: ./Chapter-Rank/Figures/upsidedown.png used on input li
+ne 414.
+(pdftex.def)             Requested size: 6.52435pt x 6.52435pt.
+File: ./Chapter-Rank/Figures/dot.png Graphic file (type png)
+
+<use ./Chapter-Rank/Figures/dot.png>
+Package pdftex.def Info: ./Chapter-Rank/Figures/dot.png used on input line 414.
+
+(pdftex.def)             Requested size: 6.52435pt x 5.5206pt.
+File: ./Chapter-Rank/Figures/cross.png Graphic file (type png)
+ <use ./Chapter-Rank/Figures/cross.png>
+Package pdftex.def Info: ./Chapter-Rank/Figures/cross.png used on input line 41
+4.
+(pdftex.def)             Requested size: 8.83282pt x 8.83282pt.
+File: ./Chapter-Rank/Figures/upsidedown.png Graphic file (type png)
+
+<use ./Chapter-Rank/Figures/upsidedown.png>
+Package pdftex.def Info: ./Chapter-Rank/Figures/upsidedown.png used on input li
+ne 414.
+(pdftex.def)             Requested size: 6.52435pt x 6.52435pt.
+File: ./Chapter-Rank/Figures/dot.png Graphic file (type png)
+
+<use ./Chapter-Rank/Figures/dot.png>
+Package pdftex.def Info: ./Chapter-Rank/Figures/dot.png used on input line 414.
+
+(pdftex.def)             Requested size: 6.52435pt x 5.5206pt.
+File: ./Chapter-Rank/Figures/cross.png Graphic file (type png)
+ <use ./Chapter-Rank/Figures/cross.png>
+Package pdftex.def Info: ./Chapter-Rank/Figures/cross.png used on input line 41
+4.
+(pdftex.def)             Requested size: 8.83282pt x 8.83282pt.
+
+[47] [48 <./Chapter-Rank/Figures/figure4_2_mod.png>]
+<./Chapter-Rank/Figures/figure6.png, id=1472, 919.7562pt x 364.7226pt>
+File: ./Chapter-Rank/Figures/figure6.png Graphic file (type png)
+
+<use ./Chapter-Rank/Figures/figure6.png>
+Package pdftex.def Info: ./Chapter-Rank/Figures/figure6.png used on input line 
+527.
+(pdftex.def)             Requested size: 429.99788pt x 153.64435pt.
+ [49]
+File: ./Chapter-Rank/Figures/upsidedown.png Graphic file (type png)
+
+<use ./Chapter-Rank/Figures/upsidedown.png>
+Package pdftex.def Info: ./Chapter-Rank/Figures/upsidedown.png used on input li
+ne 540.
+(pdftex.def)             Requested size: 6.52435pt x 6.52435pt.
+File: ./Chapter-Rank/Figures/dot.png Graphic file (type png)
+
+<use ./Chapter-Rank/Figures/dot.png>
+Package pdftex.def Info: ./Chapter-Rank/Figures/dot.png used on input line 540.
+
+(pdftex.def)             Requested size: 6.52435pt x 5.5206pt.
+File: ./Chapter-Rank/Figures/cross.png Graphic file (type png)
+ <use ./Chapter-Rank/Figures/cross.png>
+Package pdftex.def Info: ./Chapter-Rank/Figures/cross.png used on input line 54
+0.
+(pdftex.def)             Requested size: 8.83282pt x 8.83282pt.
+File: ./Chapter-Rank/Figures/cross.png Graphic file (type png)
+
+<use ./Chapter-Rank/Figures/cross.png>
+Package pdftex.def Info: ./Chapter-Rank/Figures/cross.png used on input line 54
+7.
+(pdftex.def)             Requested size: 8.83282pt x 8.83282pt.
+ [50 <./Chapter-Rank/Figures/figure6.png>]
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 549.
+
+Package mdframed Info: Not enough space on this page on input line 580.
+[51]
+Package mdframed Info: Not enough space on this page on input line 580.
+ <./Chapter-Rank/Figures/figure6c.png, id=1510, 794.97pt x 365.2044pt>
+File: ./Chapter-Rank/Figures/figure6c.png Graphic file (type png)
+
+<use ./Chapter-Rank/Figures/figure6c.png>
+Package pdftex.def Info: ./Chapter-Rank/Figures/figure6c.png used on input line
+ 585.
+(pdftex.def)             Requested size: 430.01735pt x 170.71547pt.
+ [52 <./Chapter-Rank/Figures/figure6c.png>] <./Chapter-Rank/Figures/figure7.png
+, id=1520, 953.5625pt x 730.73pt>
+File: ./Chapter-Rank/Figures/figure7.png Graphic file (type png)
+
+<use ./Chapter-Rank/Figures/figure7.png>
+Package pdftex.def Info: ./Chapter-Rank/Figures/figure7.png used on input line 
+612.
+(pdftex.def)             Requested size: 190.70912pt x 146.1434pt.
+ [53 <./Chapter-Rank/Figures/figure7.png>] <./Chapter-Rank/Figures/figure8.png,
+ id=1530, 704.6325pt x 548.0475pt>
+File: ./Chapter-Rank/Figures/figure8.png Graphic file (type png)
+
+<use ./Chapter-Rank/Figures/figure8.png>
+Package pdftex.def Info: ./Chapter-Rank/Figures/figure8.png used on input line 
+642.
+(pdftex.def)             Requested size: 190.25331pt x 147.9748pt.
+ [54] [55 <./Chapter-Rank/Figures/figure8.png>]) [56] [57]
+\openout2 = `Chapter-Flash/main.aux'.
+
+ (./Chapter-Flash/main.tex
+Chapter 5.
+) [58
+
+
+
+]
+\openout2 = `Chapter-Conclusion/main.aux'.
+
+ (./Chapter-Conclusion/main.tex
+Chapter 6.
+) [59
+
+
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\uppercase' on input line 557.
+
+[60
+
+
+
+]
+Overfull \hbox (16.7419pt too wide) in paragraph at lines 564--564
+[]\OT1/cmr/m/n/10.95 (-20) Nair, V. et al. ``Us-ing bad learn-ers to find good 
+con-fig-u-ra-tions''. \OT1/cmr/m/sl/10.95 (-20) arXiv preprint arXiv:1702.05701
+
+ []
+
+[61] [62] [63] 
 AED: lastpage setting LastPage
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 518.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 518.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 586.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 586.
 (./thesis.aux (./front.aux) (./Chapter-Introduction/main.aux)
-(./Chapter-Background/main.aux) (./Chapter-InsideOut/main.aux)
-(./Chapter-CAT/main.aux) (./Chapter-Arrow/main.aux) (./Chapter-Scout/main.aux)
-(./Chapter-Micky/main.aux) (./Chapter-DataPlacement/main.aux)
+(./Chapter-Background/main.aux) (./Chapter-WHAT/main.aux)
+(./Chapter-Rank/main.aux) (./Chapter-Flash/main.aux)
 (./Chapter-Conclusion/main.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 518.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 518.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 586.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 586.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 697395DE8A41B54375A81286416C0C3B;7709.
+(rerunfilecheck)             Checksum: 8F72190E1F6707EE0F2C84EE59006EF8;4190.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.15889pt have occurred.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 518.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 586.
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                thesis
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37201 strings out of 493089
- 697467 string characters out of 6134842
- 1308808 words of memory out of 5000000
- 38808 multiletter control sequences out of 15000+600000
- 43539 words of font info for 309 fonts, out of 8000000 for 9000
+ 38987 strings out of 493089
+ 705451 string characters out of 6134842
+ 1496530 words of memory out of 5000000
+ 41085 multiletter control sequences out of 15000+600000
+ 38876 words of font info for 243 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,17n,77p,10402b,1293s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,20n,80p,10402b,1404s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl9.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2015/texmf-dist/f
-onts/type1/urw/zapfding/uzdr.pfb>
-Output written on thesis.pdf (158 pages, 2735975 bytes).
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2015/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2015/texmf-dist/fonts
+/type1/public/amsfonts/latxfont/lcircle1.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on thesis.pdf (76 pages, 1425316 bytes).
 PDF statistics:
- 7624 PDF objects out of 8907 (max. 8388607)
- 3931 compressed objects within 40 object streams
- 578 named destinations out of 1000 (max. 500000)
- 45909 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 1772 PDF objects out of 2073 (max. 8388607)
+ 1332 compressed objects within 14 object streams
+ 351 named destinations out of 1000 (max. 500000)
+ 38572 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -20,6 +20,8 @@
 %%--------------------------- Personal Packages ------------------------------%%
 %%----------------------------------------------------------------------------%%
 
+
+
 %\usepackage{comment}
 %\usepackage{algorithm,algorithmic}
 \usepackage{algorithmic}
@@ -38,6 +40,12 @@
 \usepackage{pifont}% http://ctan.org/pkg/pifont
 \newcommand{\cmark}{\ding{51}}%
 \newcommand{\xmark}{\ding{55}}%
+\newcommand{\what}{{\bf WHAT }}
+% for upside down traingle
+\newcommand{\custriangle}{\includegraphics[scale=0.5]{Figures/upsidedown.png}}
+\newcommand{\cuscross}{\includegraphics[scale=0.4]{Figures/cross.png}}
+\newcommand{\cusdot}{\includegraphics[scale=0.5]{Figures/dot.png}}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%% Old bibliography commands
@@ -201,6 +209,71 @@
 \titlespacing*{\paragraph}
 {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
+\usepackage{listings}
+\definecolor{MyDarkBlue}{rgb}{0,0.08,0.45} 
+\lstset{
+    language=Python,
+    basicstyle=\ttfamily\fontsize{2.7mm}{0.8em}\selectfont,
+    breaklines=true,
+    prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    frame=l,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    keywordstyle=\bfseries,
+    emph={furthest,gale,better,improved,where,fastmap,split,project,mutate,mutate1}, emphstyle=\bfseries\color{blue},
+    stringstyle=\color{green!50!black},
+    commentstyle=\color{gray}\itshape,
+    numbers=left,
+    captionpos=t,
+    escapeinside={\%*}{*)}
+}
+\usepackage{commath}
+\usepackage{mathtools}
+\newcommand{\bi}{\begin{itemize}}%[leftmargin=0.4cm]}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\tion}[1]{\S\ref{sect:#1}}
+\newcommand{\fig}[1]{Figure~\ref{fig:#1}}
+
+\newcommand{\tab}[1]{Table ~\ref{tab:#1}}
+\newcommand{\eq}[1]{Equation~\ref{eq:#1}}
+
+\usepackage{xcolor}
+\definecolor{whatcolor}{HTML}{d9d9d9}
+\definecolor{guocolor}{HTML}{999999}
+
+\usepackage{xcolor,soul}
+\definecolor{LightGray}{gray}{0.975}
+\definecolor{Mygreen}{HTML}{228B22}
+\definecolor{Myred}{HTML}{800000}
+\DeclareRobustCommand{\hlgreen}[1]{{\sethlcolor{Mygreen}\textcolor{white}{\hl{#1}}}}
+\DeclareRobustCommand{\hlyellow}[1]{{\sethlcolor{yellow}\hl{#1}}}
+\DeclareRobustCommand{\hlred}[1]{{\sethlcolor{Myred}\textbf{\textcolor{white}{\hl{#1}}}}}
+
+
+%%% graph
+\newcommand{\crule}[3][darkgray]{\textcolor{#1}{\rule{#2}{#3}}}
+%\newcommand{\rone}{\crule{1mm}{1.95mm}}
+%\newcommand{\rtwo}{\crule{1mm}{1.95mm}\hspace{0.3pt}\crule{1mm}{1.95mm}}
+%\newcommand{\rthree}{\crule{1mm}{1.95mm}\hspace{0.3pt}\crule{1mm}{1.95mm}\hspace{0.3pt}\crule{1mm}{1.95mm}}
+%\newcommand{\rfour}{\crule{1mm}{1.95mm}\hspace{0.3pt}\crule{1mm}{1.95mm}\hspace{0.3pt}\crule{1mm}{1.95mm}\hspace{0.3pt}\crule{1mm}{1.95mm}} 
+%\newcommand{\rfive}{\crule{1mm}{1.95mm}\hspace{0.3pt}\crule{1mm}{1.95mm}\hspace{0.3pt}\crule{1mm}{1.95mm}\hspace{0.3pt}\crule{1mm}{1.95mm}}
+\newcommand{\quart}[3]{\begin{picture}(100,6)%1
+{\color{black}\put(#3,3){\circle*{4}}\put(#1,3){\line(1,0){#2}}}\end{picture}}
+\newcommand{\quartex}[3]{
+\begin{picture}(25,6)%1
+    {
+        \color{black}
+        \put(#3,3)
+        {\circle*{4}}
+        \put(#1,3)
+        {\line(1,0){#2}}
+    }
+\end{picture}
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Hack for containing figures within sections
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -312,7 +385,7 @@
 \newcommand{\eref}[1]{Eq.~\ref{#1}}
 \newcommand{\fref}[1]{Fig.~\ref{#1}}
 \newcommand{\tref}[1]{Table~\ref{#1}}
-\newcommand{\del}{\nabla}
+%\newcommand{\del}{\nabla}
 \renewcommand{\exp}[1]{e^{#1}}
 \newcommand{\Conv}{\mathop{\scalebox{1.5}{\raisebox{-0.2ex}{$\ast$}}}}%
 
@@ -332,20 +405,21 @@
 \newcommand{\mum}{\ensuremath{{\mu}\text{m}}}
 
 
-% customized words
-% systems
-\newcommand{\cat}{CAT\xspace}
-\newcommand{\scout}{{\sc Scout}\xspace}
-\newcommand{\insideout}{\textit{Inside-Out}\xspace}
-\newcommand{\arrow}{\textit{Arrow}\xspace}
-\newcommand{\micky}{\textit{Micky}\xspace}
-\newcommand{\ernest}{\textit{Ernest}\xspace}
-\newcommand{\cherrypick}{\textit{CherryPick}\xspace}
-\newcommand{\paris}{\textit{PARIS}\xspace}
-\newcommand{\bo}{Bayesian Optimization\xspace}
+\setlength{\fboxsep}{0pt}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage{lipsum}
+\usetikzlibrary{shadows}
+\newmdenv[
+tikzsetting= {fill=white!20},
+linewidth=2pt,
+roundcorner=5pt, 
+shadow=true
+]{myshadowbox}
+
+
 
 % words
-\newcommand{\fig}[1]{Fig. #1}
+%\newcommand{\fig}[1]{Fig. #1}
 \newcommand{\myfigure}[1]{Figure~#1}
 \newcommand{\mytable}[1]{Table~#1}
 \newcommand{\naive}{na\"ive\xspace}

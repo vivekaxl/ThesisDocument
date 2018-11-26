@@ -1,109 +1,96 @@
 \relax 
 \providecommand\hyper@newdestlabel[2]{}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {chapter}{\numberline {7}A Collective CAT Optimizer for Multiple Workloads}{88}{chapter.7}}
+\providecommand\zref@newlabel[2]{}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {chapter}{\numberline {3}Faster Discovery of Faster System Configurations with Spectral Learning}{9}{chapter.3}}
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\defcounter {refsection}{0}\relax }\@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{chapter:micky}{{7}{88}{A Collective CAT Optimizer for Multiple Workloads}{chapter.7}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {7.1}Introduction}{88}{section.7.1}}
-\newlabel{sec:micky:introduction}{{7.1}{88}{Introduction}{section.7.1}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {7.2}Why Collective Optimization}{90}{section.7.2}}
-\newlabel{sec:motivation}{{7.2}{90}{Why Collective Optimization}{section.7.2}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {7.3}Finding the Exemplar Cloud Configuration}{91}{section.7.3}}
-\newlabel{sec:mab}{{7.3}{91}{Finding the Exemplar Cloud Configuration}{section.7.3}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.1}Empirical Study}{91}{subsection.7.3.1}}
-\newlabel{sec:empirical}{{7.3.1}{91}{Empirical Study}{subsection.7.3.1}{}}
-\newlabel{fig:motivation_percentage_1}{{7.1a}{92}{Hadoop 2.7\relax }{figure.caption.58}{}}
-\newlabel{sub@fig:motivation_percentage_1}{{a}{92}{Hadoop 2.7\relax }{figure.caption.58}{}}
-\newlabel{fig:motivation_percentage_2}{{7.1b}{92}{Spark 2.1\relax }{figure.caption.58}{}}
-\newlabel{sub@fig:motivation_percentage_2}{{b}{92}{Spark 2.1\relax }{figure.caption.58}{}}
-\newlabel{fig:motivation_percentage_3}{{7.1c}{92}{Spark 1.5\relax }{figure.caption.58}{}}
-\newlabel{sub@fig:motivation_percentage_3}{{c}{92}{Spark 1.5\relax }{figure.caption.58}{}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces \textbf  {Opportunity to find the exemplar VM instances across workloads for reducing operational cost.} The \emph  {y-axis} represents the percentage of workloads (out of 107 in three systems) that are within 30\% difference with the optimal performance. The colored bars are VM types that considered the exemplar configurations for the majority of workloads ($>= 50\%$). The \leavevmode {\color  {red}red} bar represents that the VM type is more likely to be the optimal choice.\relax }}{92}{figure.caption.58}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {a}{\ignorespaces Hadoop 2.7\relax }}{92}{figure.caption.58}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {b}{\ignorespaces Spark 2.1\relax }}{92}{figure.caption.58}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {c}{\ignorespaces Spark 1.5\relax }}{92}{figure.caption.58}}
-\newlabel{fig:motivation_percentage}{{7.1}{92}{\textbf {Opportunity to find the exemplar VM instances across workloads for reducing operational cost.} The \emph {y-axis} represents the percentage of workloads (out of 107 in three systems) that are within 30\% difference with the optimal performance. The colored bars are VM types that considered the exemplar configurations for the majority of workloads ($>= 50\%$). The \textcolor {red}{red} bar represents that the VM type is more likely to be the optimal choice.\relax }{figure.caption.58}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.2}The Exemplar Configurations}{93}{subsection.7.3.2}}
-\newlabel{sec:exemplar}{{7.3.2}{93}{The Exemplar Configurations}{subsection.7.3.2}{}}
-\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {7.1}{\ignorespaces \textbf  {Normalized performance on a selected group of VM types and workloads.} The number $1.0$ represents the optimal choice across the 18 VM types for the particular workload.\relax }}{94}{table.caption.59}}
-\newlabel{table:dataset}{{7.1}{94}{\textbf {Normalized performance on a selected group of VM types and workloads.} The number $1.0$ represents the optimal choice across the 18 VM types for the particular workload.\relax }{table.caption.59}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.3}Problem Formulation}{95}{subsection.7.3.3}}
-\newlabel{sec:formulation}{{7.3.3}{95}{Problem Formulation}{subsection.7.3.3}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.4}The Multi-Armed Bandit Problem}{95}{subsection.7.3.4}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.5}Heuristics}{96}{subsection.7.3.5}}
-\newlabel{sec:methods}{{7.3.5}{96}{Heuristics}{subsection.7.3.5}{}}
-\newlabel{fig:single_time_steps}{{7.2a}{97}{Hadoop 2.7\relax }{figure.caption.60}{}}
-\newlabel{sub@fig:single_time_steps}{{a}{97}{Hadoop 2.7\relax }{figure.caption.60}{}}
-\newlabel{fig:single_time_performance}{{7.2b}{97}{Spark 2.1\relax }{figure.caption.60}{}}
-\newlabel{sub@fig:single_time_performance}{{b}{97}{Spark 2.1\relax }{figure.caption.60}{}}
-\newlabel{fig:single_time_performance}{{7.2c}{97}{Spark 1.5\relax }{figure.caption.60}{}}
-\newlabel{sub@fig:single_time_performance}{{c}{97}{Spark 1.5\relax }{figure.caption.60}{}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces \relax \fontsize  {10}{12}\selectfont  \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textbf  {Search performance of optimization methods in search for cost-effective cloud configurations.} Three software systems are evaluated. \emph  {CherryPick} finds good solutions in the three systems while \textit  {Micky}\xspace  is comparable in Hadoop 2.7 but shows higher variance (sub-optimal choices). We propose a integrated system (in Figure\nobreakspace  {}\ref  {fig:system_design}) to detect those sub-optimal cases for improving \textit  {Micky}\xspace  .}\relax }}{97}{figure.caption.60}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {a}{\ignorespaces Hadoop 2.7\relax }}{97}{figure.caption.60}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {b}{\ignorespaces Spark 2.1\relax }}{97}{figure.caption.60}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {subfigure}{\numberline {c}{\ignorespaces Spark 1.5\relax }}{97}{figure.caption.60}}
-\newlabel{fig:s2_cost_performance}{{7.2}{97}{\small {\textbf {Search performance of optimization methods in search for cost-effective cloud configurations.} Three software systems are evaluated. \emph {CherryPick} finds good solutions in the three systems while \micky is comparable in Hadoop 2.7 but shows higher variance (sub-optimal choices). We propose a integrated system (in \myfigure {\ref {fig:system_design}}) to detect those sub-optimal cases for improving \micky .}\relax }{figure.caption.60}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {7.4}Evaluation}{98}{section.7.4}}
-\newlabel{sec:evaluation}{{7.4}{98}{Evaluation}{section.7.4}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.1}Comparison Method}{98}{subsection.7.4.1}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.2}Experiment Setup}{98}{subsection.7.4.2}}
-\newlabel{sec:setup}{{7.4.2}{98}{Experiment Setup}{subsection.7.4.2}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.3}Can \emph  {Micky} identify the exemplar cloud configurations?}{99}{subsection.7.4.3}}
-\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {7.2}{\ignorespaces \textbf  {The most cost-effective VM types for 107 workloads recommended by \textit  {Micky}\xspace  } The number above each column label represents normalized performance (to the optimal). CherryPick finds good ($< 1.2$) VM types in 86\% of workloads.\relax }}{100}{table.caption.61}}
-\newlabel{table:top3}{{7.2}{100}{\textbf {The most cost-effective VM types for 107 workloads recommended by \micky } The number above each column label represents normalized performance (to the optimal). CherryPick finds good ($< 1.2$) VM types in 86\% of workloads.\relax }{table.caption.61}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.4}When not to use \textit  {Micky}\xspace  ?}{100}{subsection.7.4.4}}
-\newlabel{sec:kneepoint}{{7.4.4}{100}{When not to use \micky ?}{subsection.7.4.4}{}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {7.3}{\ignorespaces \textbf  {Low measurement cost in collective optimization.} \emph  {CherryPick} optimizes each workload separately while \textit  {Micky}\xspace  finds the exemplar cloud configuration suitable for a group of workloads.\relax }}{100}{figure.caption.62}}
-\newlabel{fig:cost_saving}{{7.3}{100}{\textbf {Low measurement cost in collective optimization.} \emph {CherryPick} optimizes each workload separately while \micky finds the exemplar cloud configuration suitable for a group of workloads.\relax }{figure.caption.62}{}}
-\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {7.3}{\ignorespaces \textbf  {The knee point when \textit  {Micky}\xspace  should not be used.} The knee point (the number of recurrence of workloads) represents a trade-off between search performance and measurement cost. \relax }}{101}{table.caption.63}}
-\newlabel{table:break_even_cost}{{7.3}{101}{\textbf {The knee point when \micky should not be used.} The knee point (the number of recurrence of workloads) represents a trade-off between search performance and measurement cost. \relax }{table.caption.63}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.5}Why UCB is the preferred choice?}{101}{subsection.7.4.5}}
-\newlabel{sec:tuning_mab}{{7.4.5}{101}{Why UCB is the preferred choice?}{subsection.7.4.5}{}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {7.4}{\ignorespaces \textbf  {Selection of multi-armed bandit algorithms.} The parameter (in the parenthesis) controls the measurement budget ($S0 < S1 < S2$).\relax }}{102}{figure.caption.64}}
-\newlabel{fig:algorithm_selection}{{7.4}{102}{\textbf {Selection of multi-armed bandit algorithms.} The parameter (in the parenthesis) controls the measurement budget ($S0 < S1 < S2$).\relax }{figure.caption.64}{}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {7.5}{\ignorespaces \textbf  {A system integration to alleviate sub-optimal choices in some workloads.} {\sc  Scout}\xspace  answers ``is there a better configuration than the current choice?''\nobreakspace  {}\parencite {Hsu2018Scout}. An integration of \textit  {Micky}\xspace  and {\sc  Scout}\xspace  delivers a more efficient and reliable recommendation system of cloud configurations.\relax }}{102}{figure.caption.65}}
-\newlabel{fig:system_design}{{7.5}{102}{\textbf {A system integration to alleviate sub-optimal choices in some workloads.} \scout answers ``is there a better configuration than the current choice?''~\cite {Hsu2018Scout}. An integration of \micky and \scout delivers a more efficient and reliable recommendation system of cloud configurations.\relax }{figure.caption.65}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {7.5}To Eliminate Sub-Optimal Choices}{102}{section.7.5}}
-\newlabel{sec:system}{{7.5}{102}{To Eliminate Sub-Optimal Choices}{section.7.5}{}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {7.6}{\ignorespaces \textbf  {Detection of mis-predictions using {\sc  Scout}\xspace  .} The percentage represents the truth positive ratio, the probability the unsettled configurations can be identified. The two optimization objectives are to find the fast configuration and the most cost-effective VM type respectively.\relax }}{103}{figure.caption.66}}
-\newlabel{fig:detection_misprediction}{{7.6}{103}{\textbf {Detection of mis-predictions using \scout .} The percentage represents the truth positive ratio, the probability the unsettled configurations can be identified. The two optimization objectives are to find the fast configuration and the most cost-effective VM type respectively.\relax }{figure.caption.66}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {7.6}Conclusion}{103}{section.7.6}}
-\newlabel{sec:conclusion}{{7.6}{103}{Conclusion}{section.7.6}{}}
-\@setckpt{Chapter-Micky/main}{
-\setcounter{page}{105}
-\setcounter{equation}{0}
-\setcounter{enumi}{4}
+\newlabel{chapter:WHAT}{{3}{9}{Faster Discovery of Faster System Configurations with Spectral Learning}{chapter.3}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {3.1}Abstract}{9}{section.3.1}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {3.2}Introduction}{10}{section.3.2}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {3.3}Background \& Related Work}{11}{section.3.3}}
+\newlabel{sect:addit}{{3.3}{11}{Background \& Related Work}{section.3.3}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {3.4}Approach}{13}{section.3.4}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Spectral Learning}{13}{subsection.3.4.1}}
+\newlabel{sect:spect}{{3.4.1}{13}{Spectral Learning}{subsection.3.4.1}{}}
+\newlabel{eq:dist}{{3.2}{15}{Spectral Learning}{equation.3.4.2}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Spectral Sampling}{15}{subsection.3.4.2}}
+\newlabel{sect:sample}{{3.4.2}{15}{Spectral Sampling}{subsection.3.4.2}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}Regression-Tree Learning}{16}{subsection.3.4.3}}
+\newlabel{rtlearning}{{3.4.3}{16}{Regression-Tree Learning}{subsection.3.4.3}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {3.5}Experiments}{16}{section.3.5}}
+\newlabel{sec:experiments}{{3.5}{16}{Experiments}{section.3.5}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}Research Questions}{17}{subsection.3.5.1}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Subject systems used in the experiments.\relax }}{18}{figure.caption.11}}
+\newlabel{fig:systems}{{3.1}{18}{Subject systems used in the experiments.\relax }{figure.caption.11}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}Subject Systems}{18}{subsection.3.5.2}}
+\newlabel{sec:subject_systems}{{3.5.2}{18}{Subject Systems}{subsection.3.5.2}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.3}Experimental Rig}{19}{subsection.3.5.3}}
+\newlabel{eq:err}{{3.3}{20}{Experimental Rig}{equation.3.5.3}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Errors of the predictions made by {\bf  WHAT }with four different sampling policies. Note that, on the y-axis, {\slswitch  lower} errors are {\slswitch  better}. \relax }}{21}{figure.caption.12}}
+\newlabel{fig:sampling_accuracy}{{3.2}{21}{Errors of the predictions made by \what with four different sampling policies. Note that, on the y-axis, {\em lower} errors are {\em better}. \relax }{figure.caption.12}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {3.6}Results}{21}{section.3.6}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.1}RQ1}{21}{subsection.3.6.1}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Comparing evaluations of different sampling policies. We see that the number of configurations evaluated for $S_2$ is twice as high as $S_1$, as it selects 2 points from each cluster, where as $S_1$ selects only 1 point. \relax }}{23}{figure.caption.13}}
+\newlabel{fig:Evaluations}{{3.3}{23}{Comparing evaluations of different sampling policies. We see that the number of configurations evaluated for $S_2$ is twice as high as $S_1$, as it selects 2 points from each cluster, where as $S_1$ selects only 1 point. \relax }{figure.caption.13}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.2}RQ2}{23}{subsection.3.6.2}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Standard deviations seen at various points of Figure\nobreakspace  {}\ref  {fig:sampling_accuracy}.\relax }}{24}{figure.caption.14}}
+\newlabel{fig:Variance}{{3.4}{24}{Standard deviations seen at various points of \fig {sampling_accuracy}.\relax }{figure.caption.14}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.3}RQ3}{24}{subsection.3.6.3}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Solutions found by GALE, NSGA-II and DE (shown as points) laid against the ground truth (all known configuration performance scores). It can be observed that all the optimizers can find the configuration with lower performance scores.\relax }}{25}{figure.caption.15}}
+\newlabel{fig:performance_graph}{{3.5}{25}{Solutions found by GALE, NSGA-II and DE (shown as points) laid against the ground truth (all known configuration performance scores). It can be observed that all the optimizers can find the configuration with lower performance scores.\relax }{figure.caption.15}{}}
+\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces The table shows how the minimum performance scores as found by the learners GALE, NSGA-II, and DE, vary over 20 repeated runs. Mean values are denoted $\mu $ and IQR denotes the 25th--75th percentile. A low IQR suggests that the surrogate model build by {\bf  WHAT }is stable and can be utilized by off the shelf optimizers to find performance-optimal configurations. \relax }}{26}{table.caption.16}}
+\newlabel{fig:external_validity}{{3.1}{26}{The table shows how the minimum performance scores as found by the learners GALE, NSGA-II, and DE, vary over 20 repeated runs. Mean values are denoted $\mu $ and IQR denotes the 25th--75th percentile. A low IQR suggests that the surrogate model build by \what is stable and can be utilized by off the shelf optimizers to find performance-optimal configurations. \relax }{table.caption.16}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.4}RQ4}{26}{subsection.3.6.4}}
+\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Comparison of the number of the samples required with the state of the art. The grey colored cells indicate the approach which has the lowest number of samples. We notice that WHAT and Guo (2N) uses less data compared to other approaches. The high fault rate of Guo (2N) accompanied with high variability in the predictions makes WHAT our preferred method.\relax }}{28}{table.caption.18}}
+\newlabel{tab:measurements}{{3.2}{28}{Comparison of the number of the samples required with the state of the art. The grey colored cells indicate the approach which has the lowest number of samples. We notice that WHAT and Guo (2N) uses less data compared to other approaches. The high fault rate of Guo (2N) accompanied with high variability in the predictions makes WHAT our preferred method.\relax }{table.caption.18}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {3.7}Why does it work?}{28}{section.3.7}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.1}History}{28}{subsection.3.7.1}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.2}Testing Technique}{29}{subsection.3.7.2}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.3}Evaluation}{29}{subsection.3.7.3}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {3.8}Reliability and Validity}{30}{section.3.8}}
+\newlabel{sect:construct}{{3.8}{30}{Reliability and Validity}{section.3.8}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {3.9}Related Work}{31}{section.3.9}}
+\newlabel{sect:related}{{3.9}{31}{Related Work}{section.3.9}{}}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {3.10}Conclusions}{32}{section.3.10}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Mean MRE seen in 20 repeats. Mean MRE is the prediction error as described in Equation\nobreakspace  {}\ref  {eq:err} and STDev is the standard deviation of the MREs found during multiple repeats. Lines with a a dot in the middle (e.g. \quartex {3}{13}{13}) show the mean as a round dot withing the IQR (and if the IQR is very small, only a round dot will be visible). All the results are sorted by the mean values: lower mean value of MRE is better than large mean value. The left-hand side columns \textbf  {Rank} the various techniques, smaller the value of \textbf  {Rank} better the technique e.g. in Apache, all the techniques have the same rank since their mean values are not statistically different. \textbf  {Rank} is computer using Scott-Knott, bootstrap 95\% confidence, and the A12 test. \relax }}{33}{figure.caption.17}}
+\newlabel{fig:stats}{{3.6}{33}{Mean MRE seen in 20 repeats. Mean MRE is the prediction error as described in Equation~\ref {eq:err} and STDev is the standard deviation of the MREs found during multiple repeats. Lines with a a dot in the middle (e.g. \protect \quartex {3}{13}{13}) show the mean as a round dot withing the IQR (and if the IQR is very small, only a round dot will be visible). All the results are sorted by the mean values: lower mean value of MRE is better than large mean value. The left-hand side columns \textbf {Rank} the various techniques, smaller the value of \textbf {Rank} better the technique e.g. in Apache, all the techniques have the same rank since their mean values are not statistically different. \textbf {Rank} is computer using Scott-Knott, bootstrap 95\% confidence, and the A12 test. \relax }{figure.caption.17}{}}
+\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Intrinsic dimensionality of the subjects systems are shown on the y-axis. The number on the side is the actual dimension of the system. The intrinsic dimensionality of the systems are much lower than the actual dimensionality (number of columns in the dataset).\relax }}{34}{figure.caption.19}}
+\newlabel{fig:underlying_d}{{3.7}{34}{Intrinsic dimensionality of the subjects systems are shown on the y-axis. The number on the side is the actual dimension of the system. The intrinsic dimensionality of the systems are much lower than the actual dimensionality (number of columns in the dataset).\relax }{figure.caption.19}{}}
+\@setckpt{Chapter-WHAT/main}{
+\setcounter{page}{35}
+\setcounter{equation}{4}
+\setcounter{enumi}{3}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
 \setcounter{enumiv}{0}
-\setcounter{footnote}{1}
+\setcounter{footnote}{8}
 \setcounter{mpfootnote}{0}
 \setcounter{part}{0}
-\setcounter{chapter}{7}
-\setcounter{section}{6}
+\setcounter{chapter}{3}
+\setcounter{section}{10}
 \setcounter{subsection}{0}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{6}
-\setcounter{table}{3}
+\setcounter{figure}{7}
+\setcounter{table}{2}
 \setcounter{lofdepth}{1}
 \setcounter{lotdepth}{1}
 \setcounter{r@tfl@t}{0}
 \setcounter{cp@cntr}{0}
 \setcounter{ContinuedFloat}{0}
-\setcounter{chapter@totc}{9}
+\setcounter{chapter@totc}{6}
 \setcounter{parentequation}{0}
 \setcounter{lips@count}{0}
-\setcounter{ALC@unique}{13}
-\setcounter{ALC@line}{13}
+\setcounter{ALC@unique}{0}
+\setcounter{ALC@line}{0}
 \setcounter{ALC@rem}{0}
 \setcounter{ALC@depth}{0}
-\setcounter{AlgoLine}{8}
-\setcounter{algocfline}{4}
-\setcounter{algocfproc}{4}
-\setcounter{algocf}{4}
+\setcounter{AlgoLine}{0}
+\setcounter{algocfline}{0}
+\setcounter{algocfproc}{0}
+\setcounter{algocf}{0}
 \setcounter{subfigure}{0}
 \setcounter{subtable}{0}
 \setcounter{tabx@nest}{0}
@@ -115,7 +102,7 @@
 \setcounter{citetotal}{0}
 \setcounter{multicitecount}{0}
 \setcounter{multicitetotal}{0}
-\setcounter{instcount}{345}
+\setcounter{instcount}{93}
 \setcounter{maxnames}{2}
 \setcounter{minnames}{1}
 \setcounter{maxitems}{3}
@@ -212,7 +199,7 @@
 \setcounter{bbx:relatedcount}{0}
 \setcounter{bbx:relatedtotal}{0}
 \setcounter{cbx@tempcnta}{0}
-\setcounter{cbx@tempcntb}{61}
+\setcounter{cbx@tempcntb}{33}
 \setcounter{tm@util}{0}
 \setcounter{List1}{0}
 \setcounter{List2}{0}
@@ -224,9 +211,16 @@
 \setcounter{List8}{0}
 \setcounter{List9}{0}
 \setcounter{List10}{0}
-\setcounter{Item}{9}
-\setcounter{Hfootnote}{4}
-\setcounter{bookmark@seq@number}{88}
+\setcounter{lstnumber}{1}
+\setcounter{Item}{6}
+\setcounter{Hfootnote}{9}
+\setcounter{bookmark@seq@number}{35}
+\setcounter{mdf@globalstyle@cnt}{1}
+\setcounter{mdfcountframes}{0}
+\setcounter{mdf@env@i}{0}
+\setcounter{mdf@env@ii}{0}
+\setcounter{mdf@zref@counter}{0}
 \setcounter{ncsu@appendixtocdepth}{2}
+\setcounter{lstlisting}{0}
 \setcounter{section@level}{0}
 }

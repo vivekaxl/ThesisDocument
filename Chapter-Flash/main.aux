@@ -1,110 +1,45 @@
 \relax 
 \providecommand\hyper@newdestlabel[2]{}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {chapter}{\numberline {3}End-to-End Performance Prediction for Cloud Storage}{14}{chapter.3}}
+\providecommand\zref@newlabel[2]{}
+\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {chapter}{\numberline {5}Finding faster configurations using flash}{58}{chapter.5}}
 \@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\defcounter {refsection}{0}\relax }\@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{chapter:inside-out}{{3}{14}{End-to-End Performance Prediction for Cloud Storage}{chapter.3}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {3.1}Introduction}{14}{section.3.1}}
-\newlabel{ch4:sec:introduction}{{3.1}{14}{Introduction}{section.3.1}{}}
-\newlabel{ft:overfitting}{{1}{15}{}{Hfootnote.1}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {3.2}Mapping from Low to High}{16}{section.3.2}}
-\newlabel{sec:challenges}{{3.2}{16}{Mapping from Low to High}{section.3.2}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Important Considerations}{16}{subsection.3.2.1}}
-\newlabel{sec:feaatures_for_distributed_system}{{3.2.1}{16}{Important Considerations}{subsection.3.2.1}{}}
-\newlabel{ft:vm}{{2}{16}{}{Hfootnote.2}{}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Four statistical features used in Inside-Out to capture load and internal status of a distributed storage system. The numbers and metrics represent low-level performance data collected from storage nodes.\relax }}{17}{figure.caption.11}}
-\newlabel{fig:feature_types}{{3.1}{17}{Four statistical features used in Inside-Out to capture load and internal status of a distributed storage system. The numbers and metrics represent low-level performance data collected from storage nodes.\relax }{figure.caption.11}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Feature Selection}{17}{subsection.3.2.2}}
-\newlabel{sec:non-deterministic}{{3.2.2}{17}{Feature Selection}{subsection.3.2.2}{}}
-\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Important features selected by different algorithms are not deterministic\relax }}{18}{table.caption.12}}
-\newlabel{tab:challenge_feature_selection}{{3.1}{18}{Important features selected by different algorithms are not deterministic\relax }{table.caption.12}{}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Prediction accuracy is inconsistent due to the large feature space. Learning methods fail to select the right features in some cases. Dimension reduction (PCA with 10 components) does not help in this case. In the trial-and-error case, we select a subset of metrics, e.g. \emph  {mean(disk.read)}, \emph  {sum(network.recv)} and \emph  {std(cpu.usr)}.\relax }}{19}{figure.caption.13}}
-\newlabel{fig:challenge_generalization}{{3.2}{19}{Prediction accuracy is inconsistent due to the large feature space. Learning methods fail to select the right features in some cases. Dimension reduction (PCA with 10 components) does not help in this case. In the trial-and-error case, we select a subset of metrics, e.g. \emph {mean(disk.read)}, \emph {sum(network.recv)} and \emph {std(cpu.usr)}.\relax }{figure.caption.13}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}A Two-Level Approach}{19}{subsection.3.2.3}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {3.3}The Inside-Out Design}{19}{section.3.3}}
-\newlabel{sec:methodology}{{3.3}{19}{The Inside-Out Design}{section.3.3}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Collecting and Pre-Processing Low-Level Metrics}{19}{subsection.3.3.1}}
-\newlabel{sec:data_preprocessing}{{3.3.1}{19}{Collecting and Pre-Processing Low-Level Metrics}{subsection.3.3.1}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.1}Monitoring storage components}{20}{subsubsection.3.3.1.1}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.2}Data smoothing}{20}{subsubsection.3.3.1.2}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.3}Timestamp alignment}{20}{subsubsection.3.3.1.3}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1.4}Feature transformation for a distributed storage system}{20}{subsubsection.3.3.1.4}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Exploring Learning Methods}{21}{subsection.3.3.2}}
-\newlabel{sec:algorithm_selection}{{3.3.2}{21}{Exploring Learning Methods}{subsection.3.3.2}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Two-level Training}{22}{subsection.3.3.3}}
-\newlabel{sec:auto_feature_selection}{{3.3.3}{22}{Two-level Training}{subsection.3.3.3}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {3.4}Evaluation}{22}{section.3.4}}
-\newlabel{sec:evaluation}{{3.4}{22}{Evaluation}{section.3.4}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Setup}{22}{subsection.3.4.1}}
-\newlabel{sec:dataset}{{3.4.1}{22}{Setup}{subsection.3.4.1}{}}
-\@writefile{loa}{\defcounter {refsection}{0}\relax }\@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces Inside-Out Model Building\relax }}{23}{algocf.2}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}The Comparison Method}{23}{subsection.3.4.2}}
-\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Common scenarios that storage behavior can change in a software-define storage environment\relax }}{24}{table.caption.15}}
-\newlabel{tab:prediction_scenario}{{3.2}{24}{Common scenarios that storage behavior can change in a software-define storage environment\relax }{table.caption.15}{}}
-\newlabel{eq:prediction_accuracy}{{3.1}{24}{The Comparison Method}{equation.3.4.1}{}}
-\@writefile{lot}{\defcounter {refsection}{0}\relax }\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces Ceph and COSBench settings for data collection.\relax }}{25}{table.caption.16}}
-\newlabel{tab:cosbench_configurations}{{3.3}{25}{Ceph and COSBench settings for data collection.\relax }{table.caption.16}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}Baseline: Prediction Performance on Static Deployment}{25}{subsection.3.4.3}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.3.1}Can Inside-Out handle diverse workloads?}{25}{subsubsection.3.4.3.1}}
-\newlabel{sec:changing_workload}{{3.4.3.1}{25}{Can Inside-Out handle diverse workloads?}{subsubsection.3.4.3.1}{}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Analysis of performance models with diverse workloads. Each bar is the average prediction accuracy. The top row is the probability density function of prediction accuracy for each performance model.\relax }}{26}{figure.caption.17}}
-\newlabel{fig:changing_workload}{{3.3}{26}{Analysis of performance models with diverse workloads. Each bar is the average prediction accuracy. The top row is the probability density function of prediction accuracy for each performance model.\relax }{figure.caption.17}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.3.2}Can Inside-Out handle different system configurations?}{27}{subsubsection.3.4.3.2}}
-\newlabel{sec:unseen_configuration}{{3.4.3.2}{27}{Can Inside-Out handle different system configurations?}{subsubsection.3.4.3.2}{}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Comparison of performance models when the storage service is reconfigured: Ceph, VMs and network SLOs\relax }}{28}{figure.caption.18}}
-\newlabel{fig:reconfiguring_storage}{{3.4}{28}{Comparison of performance models when the storage service is reconfigured: Ceph, VMs and network SLOs\relax }{figure.caption.18}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.4}Prediction Performance in a Multi-tenant Cloud}{29}{subsection.3.4.4}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.4.1}Elastic Storage (On-demand Scaling)}{29}{subsubsection.3.4.4.1}}
-\newlabel{sec:scaleout_prediction}{{3.4.4.1}{29}{Elastic Storage (On-demand Scaling)}{subsubsection.3.4.4.1}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.4.2}Multi-Tenancy}{29}{subsubsection.3.4.4.2}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Comparison of model performance in the on-demand scaling scenario. In the scale-out scenario, a performance model trained with 10 Ceph nodes is used to predict the performance of Ceph cluster with 20, 30 and 40 nodes.\relax }}{30}{figure.caption.19}}
-\newlabel{fig:elasticity}{{3.5}{30}{Comparison of model performance in the on-demand scaling scenario. In the scale-out scenario, a performance model trained with 10 Ceph nodes is used to predict the performance of Ceph cluster with 20, 30 and 40 nodes.\relax }{figure.caption.19}{}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Prediction accuracy in a multi-tenancy scenario. Tenant A-1 is co-located with Tenant B-2. Tenant A-1 is throttled at 250Mbps. Tenant B-1 and B-2 are co-located without any traffic throttling.\relax }}{31}{figure.caption.20}}
-\newlabel{fig:multi_tenancy}{{3.6}{31}{Prediction accuracy in a multi-tenancy scenario. Tenant A-1 is co-located with Tenant B-2. Tenant A-1 is throttled at 250Mbps. Tenant B-1 and B-2 are co-located without any traffic throttling.\relax }{figure.caption.20}{}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Application of Inside-Out to real time prediction of read throughput on a 10-node Ceph cluster. Inside-Out starts from a simple prediction model trained by our collected benchmarking data. Inside-Out keeps learning the storage behavior while improving prediction accuracy over time.\relax }}{31}{figure.caption.21}}
-\newlabel{fig:real_workload}{{3.7}{31}{Application of Inside-Out to real time prediction of read throughput on a 10-node Ceph cluster. Inside-Out starts from a simple prediction model trained by our collected benchmarking data. Inside-Out keeps learning the storage behavior while improving prediction accuracy over time.\relax }{figure.caption.21}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.5}Online Self-Learning}{32}{subsection.3.4.5}}
-\newlabel{sec:online_learning}{{3.4.5}{32}{Online Self-Learning}{subsection.3.4.5}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.6}Discussion}{32}{subsection.3.4.6}}
-\@writefile{lof}{\defcounter {refsection}{0}\relax }\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Kernel density function of prediction accuracy from Figure\nobreakspace  {}\ref  {fig:changing_workload} to Figure\nobreakspace  {}\ref  {fig:multi_tenancy}. Each colored line represents the density function of a modeling approach. Inside-Out is more consistent and accurate across almost every prediction case.\relax }}{33}{figure.caption.22}}
-\newlabel{fig:aggregate}{{3.8}{33}{Kernel density function of prediction accuracy from \myfigure {\ref {fig:changing_workload}} to \myfigure {\ref {fig:multi_tenancy}}. Each colored line represents the density function of a modeling approach. Inside-Out is more consistent and accurate across almost every prediction case.\relax }{figure.caption.22}{}}
-\@writefile{toc}{\defcounter {refsection}{0}\relax }\@writefile{toc}{\contentsline {section}{\numberline {3.5}Conclusion}{33}{section.3.5}}
-\newlabel{sec:conclusion}{{3.5}{33}{Conclusion}{section.3.5}{}}
-\@setckpt{Chapter-InsideOut/main}{
-\setcounter{page}{34}
-\setcounter{equation}{1}
-\setcounter{enumi}{0}
+\newlabel{chapter:flash}{{5}{58}{Finding faster configurations using flash}{chapter.5}{}}
+\@setckpt{Chapter-Flash/main}{
+\setcounter{page}{59}
+\setcounter{equation}{0}
+\setcounter{enumi}{21}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
 \setcounter{enumiv}{0}
-\setcounter{footnote}{2}
+\setcounter{footnote}{0}
 \setcounter{mpfootnote}{0}
 \setcounter{part}{0}
-\setcounter{chapter}{3}
-\setcounter{section}{5}
+\setcounter{chapter}{5}
+\setcounter{section}{0}
 \setcounter{subsection}{0}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{8}
-\setcounter{table}{3}
+\setcounter{figure}{0}
+\setcounter{table}{0}
 \setcounter{lofdepth}{1}
 \setcounter{lotdepth}{1}
 \setcounter{r@tfl@t}{0}
 \setcounter{cp@cntr}{0}
 \setcounter{ContinuedFloat}{0}
-\setcounter{chapter@totc}{9}
+\setcounter{chapter@totc}{6}
 \setcounter{parentequation}{0}
 \setcounter{lips@count}{0}
-\setcounter{ALC@unique}{13}
-\setcounter{ALC@line}{13}
+\setcounter{ALC@unique}{0}
+\setcounter{ALC@line}{0}
 \setcounter{ALC@rem}{0}
 \setcounter{ALC@depth}{0}
 \setcounter{AlgoLine}{0}
-\setcounter{algocfline}{2}
-\setcounter{algocfproc}{2}
-\setcounter{algocf}{2}
+\setcounter{algocfline}{0}
+\setcounter{algocfproc}{0}
+\setcounter{algocf}{0}
 \setcounter{subfigure}{0}
 \setcounter{subtable}{0}
 \setcounter{tabx@nest}{0}
@@ -116,7 +51,7 @@
 \setcounter{citetotal}{0}
 \setcounter{multicitecount}{0}
 \setcounter{multicitetotal}{0}
-\setcounter{instcount}{135}
+\setcounter{instcount}{121}
 \setcounter{maxnames}{2}
 \setcounter{minnames}{1}
 \setcounter{maxitems}{3}
@@ -213,7 +148,7 @@
 \setcounter{bbx:relatedcount}{0}
 \setcounter{bbx:relatedtotal}{0}
 \setcounter{cbx@tempcnta}{0}
-\setcounter{cbx@tempcntb}{89}
+\setcounter{cbx@tempcntb}{26}
 \setcounter{tm@util}{0}
 \setcounter{List1}{0}
 \setcounter{List2}{0}
@@ -225,9 +160,16 @@
 \setcounter{List8}{0}
 \setcounter{List9}{0}
 \setcounter{List10}{0}
-\setcounter{Item}{0}
-\setcounter{Hfootnote}{2}
-\setcounter{bookmark@seq@number}{32}
+\setcounter{lstnumber}{31}
+\setcounter{Item}{29}
+\setcounter{Hfootnote}{22}
+\setcounter{bookmark@seq@number}{58}
+\setcounter{mdf@globalstyle@cnt}{1}
+\setcounter{mdfcountframes}{0}
+\setcounter{mdf@env@i}{0}
+\setcounter{mdf@env@ii}{0}
+\setcounter{mdf@zref@counter}{0}
 \setcounter{ncsu@appendixtocdepth}{2}
+\setcounter{lstlisting}{0}
 \setcounter{section@level}{0}
 }
