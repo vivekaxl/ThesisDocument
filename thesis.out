@@ -56,5 +56,30 @@
 \BOOKMARK [1][-]{section.4.10}{Reliability and Validity}{chapter.4}% 56
 \BOOKMARK [1][-]{section.4.11}{Conclusion}{chapter.4}% 57
 \BOOKMARK [0][-]{chapter.5}{Finding faster configurations using flash}{}% 58
-\BOOKMARK [0][-]{chapter.6}{Conclusions and Future Work}{}% 59
-\BOOKMARK [0][-]{section*.31}{Bibliography}{}% 60
+\BOOKMARK [1][-]{section.5.1}{Abstract}{chapter.5}% 59
+\BOOKMARK [1][-]{section.5.2}{Introduction}{chapter.5}% 60
+\BOOKMARK [1][-]{section.5.3}{Performance configuration optimization for Software}{chapter.5}% 61
+\BOOKMARK [1][-]{section.5.4}{Theory}{chapter.5}% 62
+\BOOKMARK [2][-]{subsection.5.4.1}{What are Configurable Software Systems?}{section.5.4}% 63
+\BOOKMARK [2][-]{subsection.5.4.2}{Sequential Model-based Optimization}{section.5.4}% 64
+\BOOKMARK [1][-]{section.5.5}{performance optimization of Configurable Software Systems}{chapter.5}% 65
+\BOOKMARK [2][-]{subsection.5.5.1}{Residual-based: ``Build an Accurate Model''}{section.5.5}% 66
+\BOOKMARK [2][-]{subsection.5.5.2}{Rank-based: ``Build a Rank-preserving Model''}{section.5.5}% 67
+\BOOKMARK [2][-]{subsection.5.5.3}{ePAL: ``Traditional Bayesian Optimization''}{section.5.5}% 68
+\BOOKMARK [1][-]{section.5.6}{FLASH: A Fast Sequential Model-based Method}{chapter.5}% 69
+\BOOKMARK [1][-]{section.5.7}{Evaluation}{chapter.5}% 70
+\BOOKMARK [2][-]{subsection.5.7.1}{Research Questions}{section.5.7}% 71
+\BOOKMARK [2][-]{subsection.5.7.2}{Case Studies}{section.5.7}% 72
+\BOOKMARK [2][-]{subsection.5.7.3}{Experimental Rig}{section.5.7}% 73
+\BOOKMARK [1][-]{section.5.8}{Results}{chapter.5}% 74
+\BOOKMARK [2][-]{subsection.5.8.1}{Single-objective Problems}{section.5.8}% 75
+\BOOKMARK [2][-]{subsection.5.8.2}{Multi-objective Optimization}{section.5.8}% 76
+\BOOKMARK [1][-]{section.5.9}{Discussion}{chapter.5}% 77
+\BOOKMARK [2][-]{subsection.5.9.1}{Can ideas from different communities be combined?}{section.5.9}% 78
+\BOOKMARK [2][-]{subsection.5.9.2}{What is the trade-off between the starting size and budget of Flash?}{section.5.9}% 79
+\BOOKMARK [2][-]{subsection.5.9.3}{Can rules learned by CART guide the search?}{section.5.9}% 80
+\BOOKMARK [2][-]{subsection.5.9.4}{Why CART is used as the surrogate model?}{section.5.9}% 81
+\BOOKMARK [1][-]{section.5.10}{Threats to Validity}{chapter.5}% 82
+\BOOKMARK [1][-]{section.5.11}{Conclusion}{chapter.5}% 83
+\BOOKMARK [0][-]{chapter.6}{Conclusions and Future Work}{}% 84
+\BOOKMARK [0][-]{section*.44}{Bibliography}{}% 85
