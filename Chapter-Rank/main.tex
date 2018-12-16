@@ -7,8 +7,8 @@ Vivek Nair, Tim Menzies, Norbert Siegmund, and Sven Apel. 2017. Using bad learne
 
 \section{Abstract}
 
- Finding the optimally performing configuration of a software system for a given setting is often challenging. Recent approaches address this challenge by learning performance models based on a sample set of configurations.
- However, building an accurate performance model can be very expensive (and is often infeasible in practice). 
+%  Finding the optimally performing configuration of a software system for a given setting is often challenging. Recent approaches address this challenge by learning performance models based on a sample set of configurations.
+%  However, building an accurate performance model can be very expensive (and is often infeasible in practice). 
 The central  insight of this paper is that   
 exact performance values (e.g., the response time of a software system) are not required to rank  configurations and to identify the optimal one. 
 As shown by our experiments, performance models that are cheap to learn but inaccurate (with respect to the difference between actual and predicted performance) can still be used rank configurations and hence find the optimal configuration. This novel \emph{rank-based approach} allows us to significantly reduce the cost (in terms of number of measurements of sample configuration) as well as the time required to build performance models. We evaluate our approach with 21 scenarios based on 9 software systems and demonstrate that our approach is beneficial in 16 scenarios; for the remaining 5 scenarios, an accurate model can be built by using very few samples anyway, without the need for a rank-based approach.
@@ -78,8 +78,9 @@ In this paper, we explore two research questions about  constructing ranking mod
 
 \begin{figure}[t]
 \centering
-\includegraphics[scale=0.35]{Figures/figure1}
-\caption{{\small Errors of the predictions made by using CART, a machine learning technique (refer to Section~\ref{sec:systems}), to model different
+\includegraphics[scale=0.35]{Chapter-Rank/figures/figure1}
+\caption[Errors of the predictions made by using CART, to model different
+software systems.]{{\small Errors of the predictions made by using CART, a machine learning technique (refer to Section~\ref{sec:systems}), to model different
 software systems. Due to the results of \fig{learning_curve}, we use  30\%/70\% of the  valid configurations (chosen randomly) to train/test the model. }
 }
 \label{fig:model_efficiency}
@@ -124,8 +125,8 @@ on GitHub.\footnote{
 
 \begin{figure}[t]
 \centering
-\includegraphics[scale=0.23]{Figures/figure3}
-\caption{{\small The relationship between the accuracy (in terms of MMRE) and the number of samples used to train the performance model of the Apache Web Server. Note that the accuracy does not improve substantially after 20 sample configurations.}
+\includegraphics[scale=0.23]{Chapter-Rank/figures/figure3}
+\caption[The relationship between the accuracy and the number of samples used to train the performance model of the Apache Web Server.]{{\small The relationship between the accuracy (in terms of MMRE) and the number of samples used to train the performance model of the Apache Web Server. Note that the accuracy does not improve substantially after 20 sample configurations.}
 }
 \label{fig:learning_curve}
 \end{figure}
@@ -240,7 +241,7 @@ Figure~\ref{fig:projective_sampling} provides a generic algorithm for projective
 
 
 Typically, performance models are evaluated based on the accuracy or error. The error can be computed using\footnote{Aside: There has been a lot of criticism regarding MMRE, which shows that MMRE along with other accuracy statistics such as MMRE, MBRE has been shown to cause conclusion instability~\cite{myrtveit2012validity, myrtveit2005reliability, foss2003simulation}.}:
-\begin{equation}\label{eq:err}
+\begin{equation}\label{eq:err_rank}
 \mathit{MMRE}=\frac{\mid\mathit{predicted} - \mathit{actual}\mid}{\mathit{actual}} \cdot 100
 \end{equation}
 
@@ -293,7 +294,7 @@ The key idea in this paper is to use ranking as an approach for building regress
 }
 \label{fig:rank-based}  
 \end{figure}
-It is important to note that we aim at building a performance model similar to the accurate performance model building process used by prior work as described in Section~\ref{sec:residual}. But instead of using residual measures of errors, as described in Equation~\ref{eq:err}, which depend on residuals ($r = y - f(x)$), \footnote{Refer to Section~\ref{sec:problem_formal} for definitions.} we use a rank-based measure. While training the performance model ($f(x)$), the configuration space is iteratively sampled (from the training pool) to train the performance model. Once the model is trained, the accuracy of the model is measured  by sorting the values of $y=f(x)$ from `small' to `large', that is:
+It is important to note that we aim at building a performance model similar to the accurate performance model building process used by prior work as described in Section~\ref{sec:residual}. But instead of using residual measures of errors, as described in Equation~\ref{eq:err_rank}, which depend on residuals ($r = y - f(x)$), \footnote{Refer to Section~\ref{sec:problem_formal} for definitions.} we use a rank-based measure. While training the performance model ($f(x)$), the configuration space is iteratively sampled (from the training pool) to train the performance model. Once the model is trained, the accuracy of the model is measured  by sorting the values of $y=f(x)$ from `small' to `large', that is:
 \begin{equation}
     f(x_1) \le f(x_2) \le f(x_3) \le ... \le f(x_n).
 \end{equation}
@@ -394,7 +395,7 @@ The above considerations lead to  two research questions:
  
 \textbf{RQ1}\textit{: Can  inaccurate    models accurately rank
 configurations?}
-Here, the optimal configurations found using an inaccurate model are compared to the more accurate models generated using residual-based approaches. The accuracy of the models is calculated using MMRE (from Equation~\ref{eq:err}). 
+Here, the optimal configurations found using an inaccurate model are compared to the more accurate models generated using residual-based approaches. The accuracy of the models is calculated using MMRE (from Equation~\ref{eq:err_rank}). 
 
 % \textit{RQ2: Does rank-based approach really result in inaccurate models?}
 % Since, our hypothesis is `inaccurate models can be used to guide the configuration optimization', it is of particular concern to compare the accuracy as well as variance of MMRE based techniques and Rank based techniques of surrogate model building. 
@@ -405,8 +406,8 @@ It is expensive to build accurate models, and our goal is to minimize the number
 
 \begin{figure*}[tbh]
 \centering
-\includegraphics[width=0.8\paperwidth, height=4.7cm]{Figures/figure4_2_mod}
-\caption{
+\includegraphics[width=0.8\paperwidth, height=4.7cm]{Chapter-Rank/figures/figure4_2_mod.png}
+\caption[The rank difference of the prediction made by the model built using residual-based and rank-based approaches.]{
     \small{The rank difference of the prediction made by the model built using residual-based and rank-based approaches. Note that the y-axis of this chart rises to some very large values; e.g., SS3 has over three million
     possible configurations. Hence, the above charts could be summarised as follows: ``the rank-based approach is surprisingly accurate since the rank difference is usually close to 0\% of the total number of possible configurations''. In this figure, \protect\custriangle{}, \protect\cusdot{}, and \protect\cuscross{} represent the subject systems (using the technique mentioned at the top of the figure), in which we could build a prediction model, where accuracy is  $< 5\%$, $5\%<MMRE<10\%$, and $>10\%$ respectively. This is based on Figure~\ref{fig:model_efficiency}.
     %Since we are measuring rank difference, lower rank difference is better.
@@ -428,7 +429,7 @@ To answer the research questions, we split the datasets into training pool (40\%
         \item Select one configuration (by sampling with replacement) and add it to the training set
         \item Determine the performance scores associated with the configuration. This corresponds to  a table look-up, but would entail compiling or configuring and executing a system configuration in a practical setting.
         \item Using the training set and the accuracy, build a performance model using CART.
-        \item Using the data from the testing pool, assess the accuracy either using MMRE (as described in Equation~\ref{eq:err}) or the rank difference (as described in Equation~\ref{eq:rank_performance}).         
+        \item Using the data from the testing pool, assess the accuracy either using MMRE (as described in Equation~\ref{eq:err_rank}) or the rank difference (as described in Equation~\ref{eq:rank_performance}).         
     \end{itemize}
     \item \textbf{While} the accuracy is greater or equal to the threshold determined by the practitioner (rank difference in the case of our rank-based approach and MMRE in the case of the residual-based approaches).
 \end{itemize}
@@ -506,7 +507,7 @@ RQ1 relates the results found by the inaccurate performance models (rank-based) 
             \hline  \end{tabular}}
     }
     
-    \caption{
+    \caption[Median rank difference between progressive, projective and rank-based methods.]{
         {\small 
             Median rank difference of 20 repeats. Median ranks is the rank difference  as described in Equation~\ref{eq:rankdiff}, and IQR the difference between 75th percentile and 25th percentile found during multiple repeats. 
             Lines with a dot in the middle 
@@ -524,9 +525,9 @@ RQ1 relates the results found by the inaccurate performance models (rank-based) 
 
 \begin{figure*}[t]
         \centering
-        \includegraphics[width=0.7\paperwidth, height=5.4cm]{Figures/figure6}
+        \includegraphics[width=0.7\paperwidth, height=5.4cm]{Chapter-Rank/figures/figure6}
 
-        \caption{
+        \caption{[Number of measurements required to train models  by rank-based methods and other approaches.]
         \small{
         Number of measurements required to train models  by different approaches. The software systems are ordered based on the accuracy scores of Figure~\ref{fig:model_efficiency}. }
         }\label{fig:evals}
@@ -582,8 +583,8 @@ In Figure~\ref{fig:stat-test}, the table shows the Scott-Knott ranks for the thr
 \subsection{RQ2: {\em How expensive is a rank-based approach?}}
 \begin{figure*}[t]
         \centering
-        \includegraphics[width=0.7\paperwidth, height=6cm]{Figures/figure6c}
-        \caption{
+        \includegraphics[width=0.7\paperwidth, height=6cm]{Chapter-Rank/figures/figure6c}
+        \caption[The percentage of measurement used for training models with respect to the number of measurements used by projective sampling (dashed line).]{
         \small{The percentage of measurement used for training models with respect to the number of measurements used by projective sampling (dashed line). The rank-based approach uses almost 10 times less measurements than the residual-based approaches. The subject systems are ordered based on the accuracy scores of Figure~\ref{fig:model_efficiency}.}
         }\label{fig:evals_ratio}
 \end{figure*}
@@ -609,10 +610,10 @@ To summarize, the number of samples required by the rank-based approach is much 
 
 \begin{figure}[t]
 \centering
-\includegraphics[scale=0.2]{Figures/figure7}
-\caption{\small The correlation between actual and predicted performance values (not ranks) increases as the training set increases. This is evidence that the model does learn as training progresses. 
+\includegraphics[scale=0.2]{Chapter-Rank/figures/figure7}
+\caption[The correlation between actual and predicted performance values (not ranks) increases as the training set increases.]{{\small The correlation between actual and predicted performance values (not ranks) increases as the training set increases. This is evidence that the model does learn as training progresses. 
 % Our rank-based approach used rank difference (RD) to decide whether the learner has learnt enough to make predictions such that the actual and the predicted values are correlated. 
-}\label{fig:correl}
+}}\label{fig:correl}
 \end{figure}
 
 % Vivek: I really think this section should be there? In our FSE reviews, we were asked to explain why WHAT worked and I believe this section would answer the question about why ranking based techniques would work.
@@ -639,7 +640,7 @@ From our results, we observe that a rank-based approach is not as effective as t
 
 \begin{figure}[t]
 \centering
-\includegraphics[scale=0.27]{Figures/figure8}
+\includegraphics[scale=0.27]{Chapter-Rank/figures/figure8}
 \caption{\small The trade-off between the number of measurements or size of the training set and the number of \textit{lives}.
 % We choose the value of \textit{lives}=3 since, our goal is to minimize the number of measurements required to find (near) optimal configurations.
 }\label{fig:paramT}

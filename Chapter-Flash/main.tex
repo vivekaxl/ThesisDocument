@@ -1,6 +1,9 @@
-\chapter{Finding faster configurations using flash}
+\chapter{Finding faster configurations using FLASH}
 \label{chapter:flash}
 
+
+\noindent\textit{This chapter originally appeared as 
+Vivek Nair, Zhe Yu, Tim Menzies, Norbert Siegmund, and Sven Apel. Finding faster configurations using FLASH. In IEEE Transactions on Software Engineering 2018.}
 
 \section{Abstract}
 Finding good configurations for a software system is often challenging since the number of configuration options can be very large.
@@ -44,7 +47,7 @@ The key idea of \flash is to build a performance model that is just accurate eno
 
  \begin{table*}
 \centering
-%\footnotesize
+\footnotesize
     % \setlength{\tabcolsep}{4.5pt} % Default value: 6pt
     \renewcommand{\arraystretch}{1} % Default value: 1
 % \resizebox{1\linewidth}{!}{\begin{tabular}{|p{1.4cm}|p{1.35cm}|p{0.85cm}|p{6.85cm}|p{6.85cm}|c|c|c|}
@@ -52,31 +55,32 @@ The key idea of \flash is to build a performance model that is just accurate eno
     \begin{tabular}{p{1.2cm}p{1.4cm}p{1.65cm}rp{4.85cm}p{6.85cm}crp{0.85cm}}
 \toprule
 \textbf{Family} & \textbf{Software Systems} & \textbf{Objectives} & \textbf{\begin{tabular}[c]{@{}r@{}}\#Config\\ Options\end{tabular}} & \textbf{Configuration Options} & \textbf{Description} & \textbf{Abbr} & \textbf{\begin{tabular}[c]{@{}r@{}}\# Configu-\\ rations\end{tabular}} & \textbf{Prev Used} \\ \midrule
-\multirow{18}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Stream\\ Processing \\ Systems\end{tabular}}} & \multirow{2}{*}{wc-c1-3d} & Throughput & \multirow{2}{*}{3} & \multirow{2}{*}{max spout, spliters, counters} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Word Count is executed by varying 3 configurations of\\ Apache Storm on cluster C1\end{tabular}} & SS-A1 & \multirow{2}{*}{1343} & \multirow{18}{*}{\cite{jamshidi2016uncertainty}} \\ \cmidrule(lr){3-3} \cmidrule(lr){7-7}
+\multirow{18}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Stream\\ Processing \\ Systems\end{tabular}}} & \multirow{2}{*}{wc-c1-3d} & Throughput & \multirow{2}{*}{3} & \multirow{2}{*}{max spout, spliters, counters} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Word Count is executed by varying 3 config\\-urations of Apache Storm on cluster C1\end{tabular}} & SS-A1 & \multirow{2}{*}{1343} & \multirow{18}{*}{\cite{jamshidi2016uncertainty}} \\ \cmidrule(lr){3-3} \cmidrule(lr){7-7}
  &  & Latency &  &  &  & SS-A2 &  &  \\ \cmidrule(lr){2-8}
- & \multirow{2}{*}{wc-c3-3d} & Throughput & \multirow{2}{*}{3} & \multirow{2}{*}{max spout, spliters, counters} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Word Count is executed by varying 3 configurations of\\ Apache Storm on cluster C3\end{tabular}} & SS-C1 & \multirow{2}{*}{1512} &  \\ \cmidrule(lr){3-3} \cmidrule(lr){7-7}
+ & \multirow{2}{*}{wc-c3-3d} & Throughput & \multirow{2}{*}{3} & \multirow{2}{*}{max spout, spliters, counters} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Word Count is executed by varying 3 configu\\-rations of Apache Storm on cluster C3\end{tabular}} & SS-C1 & \multirow{2}{*}{1512} &  \\ \cmidrule(lr){3-3} \cmidrule(lr){7-7}
  &  & Latency &  &  &  & SS-C2 &  &  \\ \cmidrule(lr){2-8}
- & \multirow{2}{*}{wc+wc-c4-3d} & Throughput & \multirow{2}{*}{3} & \multirow{2}{*}{max spout, spliters, counters} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Word Count is executed, collocated with Word Count\\ task, by varying 3 configurations of Apache Storm on\\ cluster C3\end{tabular}} & SS-D1 & \multirow{2}{*}{195} &  \\ \cmidrule(lr){3-3} \cmidrule(lr){7-7}
+ & \multirow{2}{*}{wc+wc-c4-3d} & Throughput & \multirow{2}{*}{3} & \multirow{2}{*}{max spout, spliters, counters} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Word Count is executed, collocated with\\Word Counttask, by varying 3 configurations of\\Apache Storm on cluster C3\end{tabular}} & SS-D1 & \multirow{2}{*}{195} &  \\ \cmidrule(lr){3-3} \cmidrule(lr){7-7}
  &  & Latency &  &  &  & SS-D2 &  &  \\ \cmidrule(lr){2-8}
- & \multirow{2}{*}{wc-c4-3d} & Throughput & \multirow{2}{*}{3} & \multirow{2}{*}{max spout, spliters, counters} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Word Count is executed by varying 3 configurations of\\ Apache Storm on cluster C4\end{tabular}} & SS-E1 & \multirow{2}{*}{756} &  \\ \cmidrule(lr){3-3} \cmidrule(lr){7-7}
+ & \multirow{2}{*}{wc-c4-3d} & Throughput & \multirow{2}{*}{3} & \multirow{2}{*}{max spout, spliters, counters} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Word Count is executed by varying 3 config\\-urations of Apache Storm on cluster C4\end{tabular}} & SS-E1 & \multirow{2}{*}{756} &  \\ \cmidrule(lr){3-3} \cmidrule(lr){7-7}
  &  & Latency &  &  &  & SS-E2 &  &  \\ \cmidrule(lr){2-8}
- & \multirow{2}{*}{wc+rs-c4-3d} & Throughput & \multirow{2}{*}{3} & \multirow{2}{*}{max spout, spliters, counters} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Word Count is executed, collocated with Rolling Sort\\ task, by varying 3 configurations of Apache Storm on\\ cluster C4\end{tabular}} & SS-F1 & \multirow{2}{*}{196} &  \\ \cmidrule(lr){3-3} \cmidrule(lr){7-7}
+ & \multirow{2}{*}{wc+rs-c4-3d} & Throughput & \multirow{2}{*}{3} & \multirow{2}{*}{max spout, spliters, counters} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Word Count is executed, collocated with Rolling\\Sort task, by varying 3 configurations of\\Apache Storm on cluster C4\end{tabular}} & SS-F1 & \multirow{2}{*}{196} &  \\ \cmidrule(lr){3-3} \cmidrule(lr){7-7}
  &  & Latency &  &  &  & SS-F2 &  &  \\ \cmidrule(lr){2-8}
- & \multirow{2}{*}{wc+sol-c4-3d} & Throughput & \multirow{2}{*}{3} & \multirow{2}{*}{max spout, spliters, counters} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Word Count is executed, collocated with SOL task, by\\ varying 3 configurations of Apache Storm on cluster\\ C3\end{tabular}} & SS-G1 & \multirow{2}{*}{195} &  \\ \cmidrule(lr){3-3} \cmidrule(lr){7-7}
+ & \multirow{2}{*}{wc+sol-c4-3d} & Throughput & \multirow{2}{*}{3} & \multirow{2}{*}{max spout, spliters, counters} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Word Count is executed, collocated with SOL task,\\by varying 3 configurations of Apache Storm on\\cluster C3\end{tabular}} & SS-G1 & \multirow{2}{*}{195} &  \\ \cmidrule(lr){3-3} \cmidrule(lr){7-7}
  &  & Latency &  &  &  & SS-G2 &  &  \\ \cmidrule(lr){2-8}
- & \multirow{2}{*}{wc-5d-c5} & Throughput & \multirow{2}{*}{5} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}spouts, splitters, counters,buffer-size,\\ heap\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Word Count is executed by varying 5 configurations of\\ Apache Storm on cluster C3\end{tabular}} & SS-I1 & \multirow{2}{*}{1080} &  \\ \cmidrule(lr){3-3} \cmidrule(lr){7-7}
+ & \multirow{2}{*}{wc-5d-c5} & Throughput & \multirow{2}{*}{5} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}spouts, splitters, counters,buffer-size,\\ heap\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Word Count is executed by varying 5 config\\-urations of Apache Storm on cluster C3\end{tabular}} & SS-I1 & \multirow{2}{*}{1080} &  \\ \cmidrule(lr){3-3} \cmidrule(lr){7-7}
  &  & Latency &  &  &  & SS-I2 &  &  \\ \cmidrule(lr){2-8}
- & \multirow{2}{*}{rs-6d-c3} & Throughput & \multirow{2}{*}{6} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}spouts, max spout, sorters, emitfreq,\\ chunksize, message size\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Rolling Sort is executed by varying 6 configurations of\\ Apache Storm on cluster C3\end{tabular}} & SS-J1 & \multirow{2}{*}{3839} &  \\ \cmidrule(lr){3-3} \cmidrule(lr){7-7}
+ & \multirow{2}{*}{rs-6d-c3} & Throughput & \multirow{2}{*}{6} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}spouts, max spout, sorters, emitfreq,\\ chunksize, message size\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Rolling Sort is executed by varying 6 config\\-urations of Apache Storm on cluster C3\end{tabular}} & SS-J1 & \multirow{2}{*}{3839} &  \\ \cmidrule(lr){3-3} \cmidrule(lr){7-7}
  &  & Latency &  &  &  & SS-J2 &  &  \\ \cmidrule(lr){2-8}
  & \multirow{2}{*}{wc-6d-c1} & Throughput & \multirow{2}{*}{6} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}spouts, max spout, sorters,emitfreq,\\ chunksize,,message size\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Word Count is executed by varying 6 configurations of\\ Apache Storm on cluster C1\end{tabular}} & SS-K1 & \multirow{2}{*}{2880} &  \\ \cmidrule(lr){3-3} \cmidrule(lr){7-7}
  &  & Latency &  &  &  & SS-K2 &  &  \\ \midrule
-\multirow{4}{*}{\textbf{FPGA}} & \multirow{2}{*}{sort-256} & Area & \multirow{2}{*}{3} & \multirow{2}{*}{Not specified} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}The design space consists of 206 different hardware\\ implementations of a sorting network for 256 inputs\end{tabular}} & SS-B1 & \multirow{2}{*}{206} & \multirow{6}{*}{\cite{zuluaga2016varepsilon}} \\ \cmidrule(lr){3-3}
+\multirow{4}{*}{\textbf{FPGA}} & \multirow{2}{*}{sort-256} & Area & \multirow{2}{*}{3} & \multirow{2}{*}{Not specified} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}The design space consists of 206 different\\hardware implementations of a sorting network\\for 256 inputs\end{tabular}} & SS-B1 & \multirow{2}{*}{206} & \multirow{6}{*}{\cite{zuluaga2016varepsilon}} \\ \cmidrule(lr){3-3}
  &  & Throughput &  &  &  & SS-B2 &  &  \\ \cmidrule(lr){2-8}
- & \multirow{2}{*}{noc-CM-log} & Energy & \multirow{2}{*}{4} & \multirow{2}{*}{Not specified} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}The design space consists of 259 different implementations\\of a tree-based network-on-chip,targeting application specific\\circuits (ASICs) and,multi-processor system-on-chip designs\end{tabular}} & SS-H1 & \multirow{2}{*}{259} &  \\ \cmidrule(lr){3-3}
+ & \multirow{2}{*}{noc-CM-log} & Energy & \multirow{2}{*}{4} & \multirow{2}{*}{Not specified} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}The design space consists of 259 different\\implementations of a tree-based network-on-chip,\\targeting application specific circuits (ASICs)\\%and,multi-processor system-on-chip designs
+ \end{tabular}} & SS-H1 & \multirow{2}{*}{259} &  \\ \cmidrule(lr){3-3}
  &  & Runtime &  &  &  & SS-H2 &  &  \\ \cmidrule(r){1-8}
-\multirow{2}{*}{\textbf{Compiler}} & \multirow{2}{*}{llvm} & Performance & \multirow{2}{*}{11} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}time passes, gvn, instcombine,inline,\\ ... , ipsccp, iv users, licm\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}The design space consists of 1023 different compiler settings\\for the LLVM compiler framework. Each setting is specified by\\d = 11 binary flags.\end{tabular}} & SS-L1 & \multirow{2}{*}{1023} &  \\ \cmidrule(lr){3-3} \cmidrule(lr){7-7}
+\multirow{2}{*}{\textbf{Compiler}} & \multirow{2}{*}{llvm} & Performance & \multirow{2}{*}{11} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}time passes, gvn, instcombine,inline,\\ ... , ipsccp, iv users, licm\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}The design space consists of 1023 different\\compiler settingsfor the LLVM compiler framework.\\ Each setting is specified byd = 11 binary flags.\end{tabular}} & SS-L1 & \multirow{2}{*}{1023} &  \\ \cmidrule(lr){3-3} \cmidrule(lr){7-7}
  &  & Memory Footprint &  &  &  & SS-L2 &  &  \\ \midrule
-\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Mesh\\ Solver\end{tabular}}} & \multirow{2}{*}{Trimesh} & \# Iteration & \multirow{2}{*}{13} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}F, smoother, colorGS,relaxParameter, V, Jac-\\obi, line, zebraLine, cycle, alpha, beta,preSmo-\\othing, postSmoothing\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Configuration space of Trimesh, a library to\\ manipulate triangle meshes\end{tabular}} & SS-M1 & \multirow{2}{*}{239,260} & \multirow{6}{*}{\cite{siegmund2012predicting}} \\ \cmidrule(lr){3-3}
+\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Mesh\\ Solver\end{tabular}}} & \multirow{2}{*}{Trimesh} & \# Iteration & \multirow{2}{*}{13} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}F, smoother, colorGS,relaxParameter,\\V, Jacobi, line, zebraLine, cycle, alpha,\\beta,preSmoothing, postSmoothing\end{tabular}} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Configuration space of Trimesh, a library to\\ manipulate triangle meshes\end{tabular}} & SS-M1 & \multirow{2}{*}{239,260} & \multirow{6}{*}{\cite{siegmund2012predicting}} \\ \cmidrule(lr){3-3}
  &  & Time to Solutions &  &  &  & SS-M2 &  &  \\ \cmidrule(r){1-8}
 \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Video\\ Encoder\end{tabular}}} & \multirow{2}{*}{X264-DB} & PSNR & \multirow{2}{*}{17} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}no mbtree, no asm, no cabac, no\\ scenecut,..., keyint, crf, scenecut,\\ seek, ipratio\end{tabular}} & \multirow{2}{*}{Configuration space of X-264 a video encoder} & SS-N1 & \multirow{2}{*}{53,662} &  \\ \cmidrule(lr){3-3}
  &  & Energy &  &  &  & SS-N2 &  &  \\ \cmidrule(r){1-8}
@@ -84,7 +88,7 @@ The key idea of \flash is to build a performance model that is just accurate eno
  &  & Compile-Read &  &  &  & SS-O2 &  &  \\ \bottomrule
 \end{tabular}
 }
-\caption{
+\caption[Configuration problems used to test \flash.]{
 Configuration problems explored in this paper.   The abbreviations of the systems (Abbr) are sorted in the order of the number of configuration options of the system. The column \#Config Options represent the number of configuration options of the software system and \#Configurations represents the total number of configurations of the system. See \url{http://tiny.cc/flash_systems/} for more details.
 }
 \label{fig:software_systems}
@@ -177,17 +181,17 @@ The rest of this paper discusses how \flash addresses configuration problems (us
 the case studies of \fig{software_systems}). 
 % As to the other problems discussed in that section, we leave that those for future work.
 
-\begin{figure*}[!htb]
+\begin{figure*}[t]
     \minipage{0.32\textwidth}
-      \includegraphics[width=\linewidth, height=1in]{Figures/bayesian_1.png}
+      \includegraphics[width=\linewidth, height=1in]{Chapter-Flash/figures/bayesian_1.png}
     \endminipage\hfill
     \minipage{0.32\textwidth}
-      \includegraphics[width=\linewidth, height=1in]{Figures/bayesian_2.png}
+      \includegraphics[width=\linewidth, height=1in]{Chapter-Flash/figures/bayesian_2.png}
     \endminipage\hfill
     \minipage{0.32\textwidth}%
-      \includegraphics[width=\linewidth, height=1in]{Figures/bayesian_3.png}
+      \includegraphics[width=\linewidth, height=1in]{Chapter-Flash/figures/bayesian_3.png}
     \endminipage
-\caption{An example of Sequential Model-based method's working process from \cite{brochu2010tutorial}. The figures show a Gaussian process model (GPM) of an objective function over
+\caption[An example of Sequential Model-based method's working process from \cite{brochu2010tutorial}.]{An example of Sequential Model-based method's working process from \cite{brochu2010tutorial}. The figures show a Gaussian process model (GPM) of an objective function over
 four iterations of sampled values.
 Green shaded plots represent acquisition function. The value of the acquisition function is high where the GPM predicts larger objective and where the prediction uncertainty (confidence) is high such points (configurations in our case) is sampled first. Note that the area on the far left is never sampled even when it has high uncertainty (low confidence) associated.} 
 \label{fig:bayesian_optimazation}
@@ -196,7 +200,7 @@ Green shaded plots represent acquisition function. The value of the acquisition 
 \section{Theory}
 The following theoretical notes define the framework used in the remaining paper.
 
-\subsection{What are Configurable Software Systems?}\label{sec:problem_formal}
+\subsection{What are Configurable Software Systems?}\label{sec:problem_formal_flash}
 
  
 A configurable software system has a set $X$ of configurations $x \in X$. 
@@ -294,12 +298,12 @@ limited to models with around ten decisions ~\cite{wang2016bayesian}.
 \ei
 
 
-\section{performance optimization of Configurable Software Systems}
+\section{Performance optimization of Configurable Software Systems}
 In this section, we discuss the model-based methods used in the prior work to find the (near) optimal configurations of software systems. In this work, we do not discuss the work by Oh et al.~\cite{oh2017finding} which uses true random sampling to find the (near) optimal configurations. We do not compare \flash with Oh et al.\textquotesingle s method mainly for two reasons. Firstly, Oh et al. builds a BDD (Binary Decision Diagram) which requires access to the feature model, which describes, properties of configuration options and their interactions, and user-imposed configuration constraints,  of the software system. However, we argue that this is not always available in real-world setting~\cite{she2011reverse}.~\footnote{Please note that BDD is used to draw configuration randomly from a large configuration space when enumerating all the configurations is infeasible. However, the method can still be used without BDD at what point would be very close to random sampling.} Secondly, Oh et al.\textquotesingle s work only support boolean configuration options which limit its practical applicability. \flash or the prior work considered in this paper do not have these limitations, and hence, we do not include method proposed by Oh et al. in this work.
-\subsection{Residual-based: ``Build an Accurate Model''}\label{sec:residual}
+\subsection{Residual-based: ``Build an Accurate Model''}\label{sec:residual_flash}
 In this section, we discuss the residual-based method for building performance models for software systems, which, in SMBO terminology, is an optimizer with a \textit{flat acquisition function}, that is, all the points are equally likely to be selected (random sampling). 
 
-When the cost of collecting data (benchmarking time) is higher than the cost of building a performance model (surrogate model), it is imperative to minimize the number of measurements required for model building. A learning curve shows the relationship between the size of the training set and the accuracy of the model. In Figure~\ref{fig:learning_curve}, the horizontal axis represents the number of samples used to create the performance model, whereas the vertical axis represents the accuracy (measured in terms of MMRE---Mean Magnitude of Relative Error) of the model learned. 
+When the cost of collecting data (benchmarking time) is higher than the cost of building a performance model (surrogate model), it is imperative to minimize the number of measurements required for model building. A learning curve shows the relationship between the size of the training set and the accuracy of the model. In Figure~\ref{fig:learning_curve_flash}, the horizontal axis represents the number of samples used to create the performance model, whereas the vertical axis represents the accuracy (measured in terms of MMRE---Mean Magnitude of Relative Error) of the model learned. 
 Learning curves typically have a steep sloping portion early in the curve followed by a plateau late in the curve. The plateau occurs when adding data does not improve the accuracy of the model. As engineers, we would like to stop sampling as soon as the learning curve starts to flatten. 
 Two types of residual-based methods have been introduced in Sarkar et al. namely \textit{progressive} and \textit{projective sampling}. We use progressive sampling as a representative.\footnote{We choose progressive sampling as a representative because the projective sampling adds only a sample estimation technique to the progressive sampling and does not add anything to the sampling itself.}
 
@@ -307,28 +311,28 @@ Two types of residual-based methods have been introduced in Sarkar et al. namely
 The residual-based method discussed here considers only performance configuration optimization scenarios with a single objective. In the residual-based method, the correctness of the performance model built is measured using error measures such as MMRE:
 \begin{equation}
 \mathit{MMRE}=\frac{\mid\mathit{predicted} - \mathit{actual}\mid}{\mathit{actual}} \cdot 100
-\label{eq:err}
+\label{eq:err_flash}
 \end{equation}
 For further details, please refer to Sarkar et. al~\cite{sarkar2015cost}.
 
 \begin{figure}[t]
 \centering
-\includegraphics[scale=0.4]{Figures/figure1.eps}
-\caption{{\small The relationship between the accuracy and the number of samples used to train the performance model of the running Word Count application on Apache Storm. Note that the accuracy does not improve substantially after 20 sample configurations.}
+\includegraphics[scale=0.4]{Chapter-Flash/figures/figure1.eps}
+\caption[The relationship between the accuracy and the number of samples used to train the performance model of the running Word Count application on Apache Storm.]{{\small The relationship between the accuracy and the number of samples used to train the performance model of the running Word Count application on Apache Storm. Note that the accuracy does not improve substantially after 20 sample configurations.}
 }
-\label{fig:learning_curve}
+\label{fig:learning_curve_flash}
 \end{figure}
 
 
 
 
 
-Figure~\ref{fig:progressive_sampling} is a generic algorithm that defines the process of progressive sampling. \emph{Progressive} sampling starts by clearly defining the data used in the training set (called training pool) and used for testing the quality of the surrogate model (in terms of residual-based measures) called \textit{holdout set}. The training pool is the set from which the configurations would be selected (randomly, in this case) and then tested against the holdout set. At each iteration, a (set of) data instance(s) of the training pool is added to the training set (Line 9). Once the data instances are selected from the training pool, they are evaluated, which in our setting means measuring the performance of the selected configuration (Line 12). The configurations and the associated performance scores are used to build the performance model (Line 14). The model is validated using the testing set\footnote{The testing data consist of the configurations as well as the corresponding performance scores.}, then the accuracy is computed. In our setting, we assume that the measure is accuracy (higher is better). Once the accuracy score is calculated, it is compared with the accuracy score obtained before adding the new set of configurations to the training set. If the accuracy of the model (with more data) does not improve the accuracy when compared to the previous iteration (lesser data), then life is lost. This termination criterion is widely used in the field of Evolutionary Algorithms to determine the degree of convergence~\cite{krall2015gale}.
+Figure~\ref{fig:progressive_sampling_flash} is a generic algorithm that defines the process of progressive sampling. \emph{Progressive} sampling starts by clearly defining the data used in the training set (called training pool) and used for testing the quality of the surrogate model (in terms of residual-based measures) called \textit{holdout set}. The training pool is the set from which the configurations would be selected (randomly, in this case) and then tested against the holdout set. At each iteration, a (set of) data instance(s) of the training pool is added to the training set (Line 9). Once the data instances are selected from the training pool, they are evaluated, which in our setting means measuring the performance of the selected configuration (Line 12). The configurations and the associated performance scores are used to build the performance model (Line 14). The model is validated using the testing set\footnote{The testing data consist of the configurations as well as the corresponding performance scores.}, then the accuracy is computed. In our setting, we assume that the measure is accuracy (higher is better). Once the accuracy score is calculated, it is compared with the accuracy score obtained before adding the new set of configurations to the training set. If the accuracy of the model (with more data) does not improve the accuracy when compared to the previous iteration (lesser data), then life is lost. This termination criterion is widely used in the field of Evolutionary Algorithms to determine the degree of convergence~\cite{krall2015gale}.
 
 
 \begin{figure}[t]
 \small
-\hspace{0.4cm}\begin{lstlisting}[xleftmargin=5.0ex,mathescape,frame=none,numbers=left]
+\hspace{0.4cm}\begin{lstlisting}[xrightmargin=5.0ex,mathescape,frame=none,numbers=right]
   # Progressive Sampling
   def progressive(training, holdout, lives=3): 
     # For stopping criterion
@@ -355,7 +359,7 @@ Figure~\ref{fig:progressive_sampling} is a generic algorithm that defines the pr
     return model
 \end{lstlisting}
 \caption{\small{Python code of progressive sampling, a residual-based method.}}
-\label{fig:progressive_sampling}  
+\label{fig:progressive_sampling_flash}  
 \end{figure}
 
 
@@ -366,7 +370,7 @@ The rank-based method is similar to residual-based method in that it has a \text
 
 \begin{figure}[t]
 \small
-\hspace{0.4cm}\begin{lstlisting}[xleftmargin=5.0ex,mathescape,frame=none,numbers=left]
+\hspace{0.4cm}\begin{lstlisting}[xrightmargin=5.0ex,mathescape,frame=none,numbers=right]
 # rank-based method
 def rank_based(training, holdout, lives=3): 
   last_score = -1
@@ -400,22 +404,22 @@ def rank_based(training, holdout, lives=3):
 \end{lstlisting}
 \caption{\small{Python code of rank-based method.}
 }
-\label{fig:rank-based}  
+\label{fig:rank-based_flash}  
 \end{figure}
 
-In a nutshell, instead of using residual measures of errors, as described in Equation~\ref{eq:err}, which depend on residuals ($r = y - f(x)$)\footnote{Refer to Section~\ref{sec:problem_formal} for definitions.}, it uses a rank-based measure. While training the performance model ($f(x)$), the configuration space is iteratively sampled (from the training pool) to train the performance model. Once the model is trained, the accuracy of the model is measured  by sorting the values of $y=f(x)$ from `small' to `large', that is:
+In a nutshell, instead of using residual measures of errors, as described in Equation~\ref{eq:err_flash}, which depend on residuals ($r = y - f(x)$)\footnote{Refer to Section~\ref{sec:problem_formal_flash} for definitions.}, it uses a rank-based measure. While training the performance model ($f(x)$), the configuration space is iteratively sampled (from the training pool) to train the performance model. Once the model is trained, the accuracy of the model is measured  by sorting the values of $y=f(x)$ from `small' to `large', that is:
 \begin{equation}
     f(x_1) \le f(x_2) \le f(x_3) \le ... \le f(x_n).
 \end{equation}
 The predicted rank order is then compared to the actual rank order. The accuracy is calculated using the mean rank difference ($\mu RD$):
-\begin{equation} \label{eq:rank_performance}
+\begin{equation} \label{eq:rank_performance_flash}
     \mathit{\mu RD} = \frac{1}{n} \cdot \mathlarger{\mathlarger{\sum}}_{i=1}^{n}\abs{rank(y_i) - rank(f(x_i))}
 \end{equation}
 This measure simply counts how many of the pairs in the test data have been ordered incorrectly by the performance model $f(x)$ and measures the average of magnitude of the ranking difference. 
 
 
 
-In Figure~\ref{fig:rank-based}, we list a generic algorithm for the rank-based method. Sampling starts by selecting samples randomly from the training pool and by adding them to the training set (Line 8). Then, the collected sample configurations are evaluated (Line 11). The configurations and the associated performance measure are used to build a performance model (Line 13). The generated model (CART, in our case) is used to predict the performance measure of the configurations in the testing pool (Line 16). Since the performance value of the holdout set is already measured, hence known, the ranks of the actual performance measures, and predicted performance measure are calculated. (Lines 18--19). The actual and predicted performance measure is then used to calculate the rank difference using Equation~\ref{eq:rank_performance}. If the rank difference ($\mu RD$) of the model (with more data) does not decrease when compared to the previous generation (lesser data), then a life is lost (Lines 23--24). When all lives are expired, sampling terminates (Line 27).
+In Figure~\ref{fig:rank-based_flash}, we list a generic algorithm for the rank-based method. Sampling starts by selecting samples randomly from the training pool and by adding them to the training set (Line 8). Then, the collected sample configurations are evaluated (Line 11). The configurations and the associated performance measure are used to build a performance model (Line 13). The generated model (CART, in our case) is used to predict the performance measure of the configurations in the testing pool (Line 16). Since the performance value of the holdout set is already measured, hence known, the ranks of the actual performance measures, and predicted performance measure are calculated. (Lines 18--19). The actual and predicted performance measure is then used to calculate the rank difference using Equation~\ref{eq:rank_performance_flash}. If the rank difference ($\mu RD$) of the model (with more data) does not decrease when compared to the previous generation (lesser data), then a life is lost (Lines 23--24). When all lives are expired, sampling terminates (Line 27).
 \begin{figure}[!t]
 \hspace{0.4cm}\begin{lstlisting}[xrightmargin=5.0ex,mathescape,frame=none,numbers=right]
   # ePAL Multi-objective Bayesian  Optimizer
@@ -573,7 +577,7 @@ Firstly,
 \flash  runs very fast. 
 
 Secondly,  
-for single-objective optimization problems,   prior approaches built accurate (either residual-based or rank-based) models to find (near) optimal configurations. The quality of the (sequential) model built is computed using Equations~\ref{eq:err} and~\ref{eq:rank_performance} on a holdout set. The size of this holdout set can be significantly high based on the size of the configuration space of the software system. \textit{\flash removes the need for such holdout set and finds the (near) optimal configurations using fewer samples}. 
+for single-objective optimization problems,   prior approaches built accurate (either residual-based or rank-based) models to find (near) optimal configurations. The quality of the (sequential) model built is computed using Equations~\ref{eq:err_flash} and~\ref{eq:rank_performance_flash} on a holdout set. The size of this holdout set can be significantly high based on the size of the configuration space of the software system. \textit{\flash removes the need for such holdout set and finds the (near) optimal configurations using fewer samples}. 
 
 Thirdly, in multi-objective optimization problems,   prior approaches uses the traditional Bayesian optimization technique which is not scalable. 
 
@@ -609,7 +613,7 @@ Our research questions are geared towards assessing the performance of \flash ba
 
 \noindent The above considerations lead to two research questions:
 \noindent\textbf{RQ1}\textit{: Can  \flash find (near) optimal configuration?}\\
-Here, the (near) optimal configurations found using \flash are compared to the ones identified in prior work, using the residual-based and rank-based method. The effectiveness of the methods is compared using rank-difference (Equation~\ref{eq:rankdiff}). 
+Here, the (near) optimal configurations found using \flash are compared to the ones identified in prior work, using the residual-based and rank-based method. The effectiveness of the methods is compared using rank-difference (Equation~\ref{eq:rankdiff_flash}). 
 
 
 \noindent\textbf{RQ2}\textit{: How expensive is \flash (in terms of
@@ -658,7 +662,7 @@ The experiment to find (near) optimal configuration using the residual-based and
         \item Select one configuration (by sampling with replacement) and add it to the training set
         \item Determine the performance scores associated with the configuration. This corresponds to a table look up but would entail compiling or configuring and executing a system configuration in a practical setting.
         \item Using the training set and the accuracy, build a performance model using CART.
-        \item Using the data from the testing pool, assess the accuracy either using MMRE (as described in Equation~\ref{eq:err}) or rank difference (as described in Equation~\ref{eq:rank_performance}).         
+        \item Using the data from the testing pool, assess the accuracy either using MMRE (as described in Equation~\ref{eq:err_flash}) or rank difference (as described in Equation~\ref{eq:rank_performance_flash}).         
     \end{itemize}
     \item \textbf{While} the accuracy is greater or equal to the threshold determined by the practitioner (rank difference in the case of rank-based method and MMRE in the case of residual-based method).
 \end{itemize}
@@ -684,9 +688,9 @@ Once \flash has terminated, the configuration with the best performance is selec
 
 \textbf{RQ1} relates the results found by \flash to ones of residual-based and rank-based methods. We use the absolute difference between the ranks of the configurations predicted to be the optimal configuration and the actual optimal configuration. We call this measure rank difference.
 % (\textit{RD})
-\begin{equation}\label{eq:rankdiff}
+\begin{equation}\label{eq:rankdiff_flash}
     \begin{split}
-        RD &= \abs[Big]{\mathit{rank(actual_{optimal})} - \mathit{rank(predicted_{optimal})}}\\
+        RD &= \abs{\mathit{rank(actual_{optimal})} - \mathit{rank(predicted_{optimal})}}\\
         %   &= \abs{1 - \mathit{rank(predicted_{optimal})}}
     \end{split}
 \end{equation}
@@ -699,8 +703,8 @@ Once \flash has terminated, the configuration with the best performance is selec
 
 \begin{figure*}[t]
 \centering
-\includegraphics[width=0.85\paperwidth, height=5cm]{Figures/one_obj_rd.eps}
-\caption{
+\includegraphics[width=0.75\paperwidth, height=5cm]{Chapter-Flash/figures/one_obj_rd.eps}
+\caption[The rank difference of the prediction made by model built using the residual-based method, the rank-based methods, and \flash.]{
     \small{The rank difference of the prediction made by model built using the residual-based method, the rank-based methods, and \flash. Note that the y-axis of this chart rises to large values; e.g., SS-M has 239,260 possible configurations. Hence, the above charts could be summarized as follows: ``the \flash is surprisingly accurate since the rank difference is usually close to 0\% of the total number of possible configurations.'' 
     %Since we are measuring rank difference, lower rank difference is better.
     }
@@ -799,9 +803,9 @@ Other aspects of our experimental setting were designed in response to the speci
 
 }
     
-    \caption{
+    \caption[The median rank difference of 20 repeats to compare residual-based, rank-based and \flash.]{
         {\small 
-            The median rank difference of 20 repeats. Median ranks are the rank difference as described in Equation~\ref{eq:rankdiff}, and IQR the difference between 75th percentile and 25th percentile found during multiple repeats. 
+            The median rank difference of 20 repeats. Median ranks are the rank difference as described in Equation~\ref{eq:rankdiff_flash}, and IQR the difference between 75th percentile and 25th percentile found during multiple repeats. 
             Lines with a dot in the middle 
             (~\protect\quartex{-2}{13}{6}), 
             show the median as a round dot within the IQR.
@@ -809,17 +813,17 @@ Other aspects of our experimental setting were designed in response to the speci
             The left-hand column (\textit{Rank}) ranks the various methods for example when comparing three techniques. For SS-A2, a rank-based method has a different rank since their median rank difference is statistically different. Please note, this chart only shows software systems where \flash is significantly worse than methods from prior work.
         }
     }
-    \label{fig:stat-test}
+    \label{fig:stat-test_flash}
 \end{figure}
 
 \begin{figure*}[t]
         \centering
-        \includegraphics[width=0.7\paperwidth, height=6.6cm]{Figures/one_obj_evals.eps}
+        \includegraphics[width=0.7\paperwidth, height=6.6cm]{Chapter-Flash/figures/one_obj_evals.eps}
 
         \caption{
         \small{
         Number of measurements required to find (near) optimal configurations with the residual-based method as the baseline.\vspace{5mm}}
-        }\label{fig:evals}
+        }\label{fig:evals_flash}
 \end{figure*}
 
 \section{Results}
@@ -827,7 +831,7 @@ Other aspects of our experimental setting were designed in response to the speci
 \noindent\textbf{RQ1: Can  \flash find (near) optimal configuration?}\\
 Figure~\ref{fig:one_obj_rd} shows the \textit{Rank Difference} of the predictions using \flash, the rank-based method and the residual based method. 
 % For \flash, 80\% of the configuration space is used as input while for other methods 40\% of the configuration is used to train the model (which is tested against 20\% of configuration space) and tested against rest of the space.
-The horizontal axis shows subject systems. The vertical axis shows the rank difference (Equation~\ref{eq:rankdiff}).
+The horizontal axis shows subject systems. The vertical axis shows the rank difference (Equation~\ref{eq:rankdiff_flash}).
 \begin{itemize}[leftmargin=*]
     \item 
     % The ideal case -- when measurements corresponding to all possible configurations is known, is when optimal configuration can be found. 
@@ -853,14 +857,14 @@ by Mittas \& Angelis~\cite{mittas13}
 and by Hassan et al.~\cite{7194626}.
 
 
-In Figure~\ref{fig:stat-test}, we show the Scott-Knott ranks for the three methods. The quartile charts show the Scott-Knott results for the subject systems, where \flash did not do as well as the other two methods. For example, the statistic test for SS-C2 shows that the rank difference of configurations found by \flash is statistically larger from the other methods. This is reasonably close, since the median rank of the configurations found by \flash is 7 of 1512 configurations, where for the other methods found configurations have a median rank of 2. As engineers, we feel that this is close because we can find the 7th best configuration using 34 measurements compared to 339 and 346 measurements used by the residual-based and rank-based methods. Overall, our results indicate that:
+In Figure~\ref{fig:stat-test_flash}, we show the Scott-Knott ranks for the three methods. The quartile charts show the Scott-Knott results for the subject systems, where \flash did not do as well as the other two methods. For example, the statistic test for SS-C2 shows that the rank difference of configurations found by \flash is statistically larger from the other methods. This is reasonably close, since the median rank of the configurations found by \flash is 7 of 1512 configurations, where for the other methods found configurations have a median rank of 2. As engineers, we feel that this is close because we can find the 7th best configuration using 34 measurements compared to 339 and 346 measurements used by the residual-based and rank-based methods. Overall, our results indicate that:
 \vskip 1ex
  \begin{myshadowbox}
          \flash can find (near) optimal configurations, similar to the residual-based and the rank-based method, of a software system without using a holdout set. 
  \end{myshadowbox}
 
 \noindent\textbf{RQ2:  How expensive is \flash (in terms of how many configurations must be executed)?}\\
-To recommend \flash as a cheap method for performance optimization, it is important to demonstrate that it requires fewer measurements to find the (near) optimal configurations. In our setting, the cost of finding the (near) optimal configuration is quantified in terms of number of measurements required. Figure~\ref{fig:evals} demonstrates this. 
+To recommend \flash as a cheap method for performance optimization, it is important to demonstrate that it requires fewer measurements to find the (near) optimal configurations. In our setting, the cost of finding the (near) optimal configuration is quantified in terms of number of measurements required. Figure~\ref{fig:evals_flash} demonstrates this. 
 The vertical axis represents the ratio of the measurements of different methods
 are represented as the percentage of number of measurements required
 by residual-based method – since it uses the most measurements
@@ -899,9 +903,11 @@ It is also interesting that, for software systems where \flash was not statistic
          \flash is effective for multi-objective performance configuration optimization. It also works in software systems with more than 10 configuration options whereas ePAL does not terminate in  reasonable time.
  \end{myshadowbox}
 
-\begin{table*}[]
+\begin{table}[]
+\scriptsize
 \centering
-\caption{Statistical comparisons of \flash and ePAL regarding the Performance measures are GD
+\caption[Statistical comparisons of \flash and ePAL regarding the Performance measures are GD
+(Generational Distance), IGD (Inverted Generational Distance) and a number of measurements.]{Statistical comparisons of \flash and ePAL regarding the Performance measures are GD
 (Generational Distance), IGD (Inverted Generational Distance) and a number of measurements. For all measures, less is better; “X” denotes cases where methods did not terminate within a reasonable amount of time (10hrs). The numbers in bold represent statistically better runs than the rest. For example, for SS-G, GD of \flash is statistically better than of ePAL.}\label{table:multi-config}
 \begin{tabular}{@{}lrrrrrrrrr@{}}
 \toprule
@@ -924,8 +930,7 @@ It is also interesting that, for software systems where \flash was not statistic
 \textbf{SS-O} & X & X & \textbf{3.01E-07} & X & X & \textbf{3.20E-06} & X & X & \textbf{50} \\ \midrule
 \textbf{Win (\%)} & 73 & 67 & \textbf{93} & \textbf{67} & 33 & \textbf{67} & 0 & 33 & \textbf{80} \\ \bottomrule
 \end{tabular}
-
-\end{table*}
+\end{table}
 
 \newpage
 \noindent\textbf{RQ4: Can \flash be used to reduce the effort of multi-objective performance configuration optimization compared to ePAL?}\\
@@ -961,16 +966,43 @@ Overall our results indicate:
 
 \begin{figure*}[htp]
 \centering
-\includegraphics[width=0.85\paperwidth, height=7cm]{Figures/time_consolidated}
-\caption{The time required to find (near) optimal solutions using ePAL and Flash (sum of 20 repeats). Note that the axis\textquotesingle s of the first two figures (left, and center) are in log scale. The time required for \flash compared to (variants of) ePAL is much lower (with an exception on 2 of 15 software systems). The dashed line in the figure (left and middle) represents cases where ePAL did not terminate within a reasonable time (10 hours). In the right-hand figure, we show the performance gain (wrt. to time) achieved by using \flash. All the bars above the dashed line (y=1) performs worse than \flash.}
+\includegraphics[width=0.75\paperwidth, height=5.5cm]{Chapter-Flash/figures/time_consolidated}
+\caption[The time required to find (near) optimal solutions using ePAL and Flash (sum of 20 repeats).]{The time required to find (near) optimal solutions using ePAL and Flash (sum of 20 repeats). Note that the axis\textquotesingle s of the first two figures (left, and center) are in log scale. The time required for \flash compared to (variants of) ePAL is much lower (with an exception on 2 of 15 software systems). The dashed line in the figure (left and middle) represents cases where ePAL did not terminate within a reasonable time (10 hours). In the right-hand figure, we show the performance gain (wrt. to time) achieved by using \flash. All the bars above the dashed line (y=1) performs worse than \flash.}
 \label{fig:multiconfig_time}
 \end{figure*}
 
 \begin{figure}
 \centering
-\includegraphics[height=6cm,width=7cm]{Figures/tuning_1.eps}
-\caption{The trade-off between the number of starting samples (exploration) and number of steps to converge (exploitation). The ideal point in these trade-off curves is (0,0), which mean the algorithm has perfect convergence ($GD=0$) and perfect diversity ($IGD=0$). The trade-off curve for multi-objective performance configuration optimization is shown with budget of 50 evaluations.}\label{fig:param_tuning_multiconfig}
+\includegraphics[height=6cm,width=7cm]{Chapter-Flash/figures/tuning_1.eps}
+\caption[The trade-off between the number of starting samples (exploration) and number of steps to converge (exploitation).]{The trade-off between the number of starting samples (exploration) and number of steps to converge (exploitation). The ideal point in these trade-off curves is (0,0), which mean the algorithm has perfect convergence ($GD=0$) and perfect diversity ($IGD=0$). The trade-off curve for multi-objective performance configuration optimization is shown with budget of 50 evaluations.}\label{fig:param_tuning_multiconfig}
 \end{figure} 
+
+\section{Threats to Validity}
+{\em Reliability} refers to the consistency of the results obtained
+from the research.  For example,   how well can independent researchers reproduce the study? To increase external
+reliability, we took care to either  define our
+algorithms or use implementations from the public domain
+(SciKitLearn)~\cite{scikit-learn}. All code used in this work are available
+online~\footnote{\url{http://tiny.cc/flashrepo/}}.
+
+{\em Validity} refers to the extent to which a piece of research
+investigates what the researcher purports to investigate~\cite{SSA15}.
+{\em Internal validity} concerns with whether the differences found in
+the treatments can be ascribed to the treatments under study. 
+
+For the case-studies relating to configuration control, we cannot measure all possible configurations in a reasonable time. Hence, we sampled only few hundred configurations to compare the prediction to actual values. We are aware that this evaluation leaves room for outliers and that \textit{measurement bias} can cause false interpretations~\cite{me12d}. We also limit our attention to predicting PF for a given workload; we did not vary benchmarks.
+
+\textit{Internal bias} originates from the stochastic nature of multi-objective optimization algorithms. The evolutionary process required many
+random operations, same as the \flash was introduced in this paper.
+To mitigate these threats, we repeated our experiments for 20 runs
+and reported the median of the indicators. We also employed
+statistical tests to check the significance of the achieved results.
+
+It is challenging to find the representatives sample test cases to covers all kinds of domains. We just selected four most
+common types of decision space to discuss the \flash basing on
+them. In the future, we also need to explore more types of SBSE
+problems, especially the problem with other types of decisions. We aimed to increase {\em external validity} by choosing case-studies from different domains. 
+
 
 \section{Discussion}
 \subsection{Can ideas from different communities be combined?}
@@ -1028,41 +1060,14 @@ Currently \flash does not explicitly reflect on the decision tree to select the 
 Decision Trees is a very simple way to learn rules from a set of examples and can be viewed as a tool for the analysis of a large dataset. The reason why we chose CART is two-fold. Firstly, it is shown to be \textit{scalable} and there is a growing interest to find new ways to speed up the decision tree learning process~\cite{su2006fast}. 
 Secondly, a decision tree can \textit{describe} with the tree structure the dependence between the decisions and the objectives, which is useful for induction and comprehensibility.
 These are the primary reason for choosing decision-trees to replace Gaussian Process as the surrogate model for \flash.
- 
 
-\section{Threats to Validity}
-{\em Reliability} refers to the consistency of the results obtained
-from the research.  For example,   how well can independent researchers reproduce the study? To increase external
-reliability, we took care to either  define our
-algorithms or use implementations from the public domain
-(SciKitLearn)~\cite{scikit-learn}. All code used in this work are available
-online~\footnote{\url{http://tiny.cc/flashrepo/}}.
+% \section{Conclusion}
 
-{\em Validity} refers to the extent to which a piece of research
-investigates what the researcher purports to investigate~\cite{SSA15}.
-{\em Internal validity} concerns with whether the differences found in
-the treatments can be ascribed to the treatments under study. 
+% This paper proposes a sequential model-based method called \flash, an approach for finding (near) optimal configurations while minimizing the number of measurements. To the best of our knowledge, this is the first time a sequential model-based method is used to solve the problem of performance configuration optimization. \flash sequentially gains knowledge about the configuration space like traditional SMBO. \flash is different from the traditional Bayesian optimizers because of the choice of the surrogate model (CART) and the acquisition function (the stochastic Maximum-Mean {\em BarrySort} function). We have demonstrated the effectiveness of \flash on single-objective and multi-objective problems using 30 scenarios from 7 software systems.
 
-For the case-studies relating to configuration control, we cannot measure all possible configurations in a reasonable time. Hence, we sampled only few hundred configurations to compare the prediction to actual values. We are aware that this evaluation leaves room for outliers and that \textit{measurement bias} can cause false interpretations~\cite{me12d}. We also limit our attention to predicting PF for a given workload; we did not vary benchmarks.
+% For a single-objective setting, we experimentally demonstrate that \flash can locate the (near) optimal configuration of 30 different scenarios for seven software systems, accurately compared to the state of the art approaches while removing the need for a holdout dataset, hence saving measurement costs. In 57\% of the scenarios, \flash can find the (near) optimal configuration by using an order of magnitude fewer solutions than other state of the art approaches. For multi-objective setting - we show how \flash can overcome the shortcomings of traditional SMBO (ePAL) while being as effective as ePAL as well as being scalable to software systems with higher number (greater than 10) configuration options (where ePAL does not terminate in a reasonable timeframe).
 
-\textit{Internal bias} originates from the stochastic nature of multi-objective optimization algorithms. The evolutionary process required many
-random operations, same as the \flash was introduced in this paper.
-To mitigate these threats, we repeated our experiments for 20 runs
-and reported the median of the indicators. We also employed
-statistical tests to check the significance of the achieved results.
+% By reflecting on our experiences with \flash, we urge the SE community to embrace the benefits from learning from different communities which solve similar problems. We show that learning from domains like Software Analytics, Machine Learning, and EA; we built \flash -- a hybrid algorithm which is \textit{fast} in terms of evaluation, \textit{scalable} when compared to Bayesian optimization and as \textit{effective} as state of the art methods.  
 
-It is challenging to find the representatives sample test cases to covers all kinds of domains. We just selected four most
-common types of decision space to discuss the \flash basing on
-them. In the future, we also need to explore more types of SBSE
-problems, especially the problem with other types of decisions. We aimed to increase {\em external validity} by choosing case-studies from different domains. 
-
-\section{Conclusion}
-
-This paper proposes a sequential model-based method called \flash, an approach for finding (near) optimal configurations while minimizing the number of measurements. To the best of our knowledge, this is the first time a sequential model-based method is used to solve the problem of performance configuration optimization. \flash sequentially gains knowledge about the configuration space like traditional SMBO. \flash is different from the traditional Bayesian optimizers because of the choice of the surrogate model (CART) and the acquisition function (the stochastic Maximum-Mean {\em BarrySort} function). We have demonstrated the effectiveness of \flash on single-objective and multi-objective problems using 30 scenarios from 7 software systems.
-
-For a single-objective setting, we experimentally demonstrate that \flash can locate the (near) optimal configuration of 30 different scenarios for seven software systems, accurately compared to the state of the art approaches while removing the need for a holdout dataset, hence saving measurement costs. In 57\% of the scenarios, \flash can find the (near) optimal configuration by using an order of magnitude fewer solutions than other state of the art approaches. For multi-objective setting - we show how \flash can overcome the shortcomings of traditional SMBO (ePAL) while being as effective as ePAL as well as being scalable to software systems with higher number (greater than 10) configuration options (where ePAL does not terminate in a reasonable timeframe).
-
-By reflecting on our experiences with \flash, we urge the SE community to embrace the benefits from learning from different communities which solve similar problems. We show that learning from domains like Software Analytics, Machine Learning, and EA; we built \flash -- a hybrid algorithm which is \textit{fast} in terms of evaluation, \textit{scalable} when compared to Bayesian optimization and as \textit{effective} as state of the art methods.  
-
-Regarding future work, the two directions for this research are i) test on different case studies and ii) further improve the scalability of \flash. To conclude, we urge the SE community to learn from communities which tackle similar problems. This paper experiments with ideas from fields of machine learning, SBSE, and software analytics to create \flash, which is a fast, scalable and effective optimizer. We hope this paper inspires other researchers to look further afield than their home discipline.
+% Regarding future work, the two directions for this research are i) test on different case studies and ii) further improve the scalability of \flash. To conclude, we urge the SE community to learn from communities which tackle similar problems. This paper experiments with ideas from fields of machine learning, SBSE, and software analytics to create \flash, which is a fast, scalable and effective optimizer. We hope this paper inspires other researchers to look further afield than their home discipline.
 

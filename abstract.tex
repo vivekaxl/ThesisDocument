@@ -1,44 +1,36 @@
-Most software systems available today are configurable, which gives the users an option to customize the system to achieve differ-
-ent functional or non-functional (better performance) properties. As systems evolve, more configuration options are added to the
-software system. Studies report that developers find it difficult to
-understand the configuration spaces, which leaves considerable
+Most software systems available today are configurable, which gives the users an option to customize the system to achieve different functional or non-functional (better performance) properties. As systems evolve, more configuration options are added to the
+software system, which leaves considerable
 optimization potential untapped and induces major economic cost.
 To solve this problem of finding the (near) optimal configurations,
 engineers have proposed various techniques. Most popular among
-them are model-based techniques, where accurate models of the configuration space are created using as few configuration measurements as possible. We notice two major problems with the model-based techniques: 1) previous techniques are expensive to be practically viable, and 2) there are software systems whose configuration spaces cannot be accurately modeled. Consequently, there is
-a gap between proposed techniques and practical viability of these
-techniques.
-This dissertation will focus on proposing techniques which are
-easier to understand and is practically viable. 
+them are model-based techniques, where accurate models of the configuration space are created using as few configuration measurements as possible. Previously, Guo et al. and Sarkar et al. asserted that one way to find good configurations is build very accurate model of the configuration space. However, we notice two major problems with the model-based techniques: 1) previous techniques are expensive to be practically viable, and 2) there are software systems whose configuration spaces cannot be accurately modeled. 
+% Consequently, there is
+% a gap between proposed techniques and practical viability of these
+% techniques.
+This dissertation focuses on proposing techniques which are
+easier to understand and are practically viable. 
 
 First, we present \textbf{WHAT} that exploits
-some lower dimensional knowledge to build performance models. Prior work on
-predicting the performance of software configurations suffered from either (a) requiring
-far too many sample configurations or (b) large variances in their predictions.
-Both these problems can be avoided using the \textbf{WHAT} spectral learner. WHAT\textquotesingle s innovation
+some lower dimensional knowledge to build performance models. 
+% Prior work on predicting the performance of software configurations suffered from either (a) requiring far too many sample configurations or (b) large variances in their predictions.Both these problems can be avoided using the \textbf{WHAT} spectral learner. 
+WHAT\textquotesingle s innovation
 is the use of the spectrum (eigenvalues) of the distance matrix between the
 configurations of a configurable software system, to perform dimensionality reduction.
 Within that reduced configuration space, many closely associated configurations
 can be studied by executing only a few sample configurations. For the subject systems
-studied here, a few dozen samples yield accurate and stable predictors?less than
+studied here, a few dozen samples yield accurate and stable predictors less than
 10 \% prediction error, with a standard deviation of less than 2\%. When compared
 to the state of the art, WHAT (a) requires 2 to 10 times fewer samples to achieve
 similar prediction accuracies, and (b) its predictions are more stable (i.e., have lower
-standard deviation). Furthermore, we demonstrate that predictive models generated
-by WHAT can be used by optimizers to discover system configurations that closely
-approach the optimal performance.
+standard deviation). 
 
-
-The second contribution is a rank-based method
+While useful in the test domain, we found a significant drawback when exploring newer software systems. We found that the distance function used to generate the distance matrix changes with different software systems (since some configuration options have more influence on the performance than others). To overcome this,a rank-based method is proposed
 which shows how an accurate model is not required for performance optimization, but a rank-preserving model is sufficient. We evaluate rank-based method with 21 scenarios based on nine software systems and demonstrate that our approach is beneficial in 16 scenarios; for the remaining five scenarios, an accurate model
 can be built by using very few samples anyway, without the need
 for a rank-based approach. Additionally, in 8/21 of the scenarios,
 the number of measurements required by the rank-based method
 is an order of magnitude smaller than methods used in prior work.
-To further improve our second contribution, we also propose a
-Bayesian-based method called Flash: an alternative to model-based
-technique. Based on preliminary evidence, which can further reduce
-the cost of performance optimization. 
 
+To further reduce the cost we present \textbf{FLASH},  a sequential model-based method, which sequentially explores the configuration space by reflecting on the configurations evaluated so far to determine the next best configuration to explore. FLASH scales up to software systems that defeat the prior state of the art model-based methods in this area and can solve both single-objective and multi-objective optimization problems. We evaluate FLASH using 30 scenarios based on 7 software systems to demonstrate that FLASH saves effort in 100\% and 80\% of cases in single-objective and multi-objective problems respectively by up to several orders of magnitude compared to the state of the art techniques.
 
-Finally, we present \textbf{FLASH},  a sequential model-based method, which sequentially explores the configuration space by reflecting on the configurations evaluated so far to determine the next best configuration to explore. FLASH scales up to software systems that defeat the prior state of the art model-based methods in this area. FLASH runs much faster than existing methods and can solve both single-objective and multi-objective optimization problems. The central insight of this paper is to use the prior knowledge (gained from prior runs) to choose the next promising configuration. This strategy reduces the effort (ie, number of measurements) required to find the (near) optimal configuration. We evaluate FLASH using 30 scenarios based on 7 software systems to demonstrate that FLASH saves effort in 100\% and 80\% of cases in single-objective and multi-objective problems respectively by up to several orders of magnitude compared to the state of the art techniques.
+Based on the above findings, we found that the previously held belief: `` highly accurate model is required to optimize software system" is an overkill and expensive. To overcome the limitation of prior works, we have explored various alternate methods to shows how a near optimal solution can be found using much fewer resources and effort. Additionally, we observed that the prior work transformed the problem of finding an optimal solution to a modelling problem---which, in our opinion, was the main roadblock to build cheaper solutions. The central insight for all the frugal alternatives (as presented in this thesis) is to solve the optimization problem and not a modelling problem. Given the success of these frugal alternatives to find good configurations, we encourage practitioners to embrace and explore similar techniques prescribed in this thesis to (a) find better configurations and (b) not to be deterred with the cost of optimizing systems. Please note, this techniques presented in this thesis are very general in nature and could potentially be used in other domains (such as Cloud Computing, Software Engineering, etc.), where the cost of collecting samples is exorbitantly high. FLASH, for instance, has already been applied to domains like Cloud Architectural Tuning, Effort Estimation and software optimization problems. We recommend that future work explores options which consumes fewer resource, which is more suitable for real world scenario. In our opinion , some suggestions are: (a) explore cheaper models, and (b) use the models to guide explorations.

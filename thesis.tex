@@ -2,7 +2,9 @@
                phd,           % degree:    ms or phd
                onehalfspacing % spacing: onehalfspacing or doublespacing
                ]{ncsuthesis}
-
+\usepackage[T1]{fontenc}
+   \usepackage{textcomp}
+  \usepackage{mathpazo}
 %%----------------------------------------------------------------------------%%
 %%------------------------------ Import Packages -----------------------------%%
 %%----------------------------------------------------------------------------%%
@@ -40,9 +42,9 @@
 \newcommand{\xmark}{\ding{55}}%
 \newcommand{\what}{{\bf WHAT }}
 % for upside down traingle
-\newcommand{\custriangle}{\includegraphics[scale=0.5]{Figures/upsidedown.png}}
-\newcommand{\cuscross}{\includegraphics[scale=0.4]{Figures/cross.png}}
-\newcommand{\cusdot}{\includegraphics[scale=0.5]{Figures/dot.png}}
+\newcommand{\custriangle}{\includegraphics[scale=0.5]{Chapter-Rank/figures/upsidedown.png}}
+\newcommand{\cuscross}{\includegraphics[scale=0.4]{Chapter-Rank/figures/cross.png}}
+\newcommand{\cusdot}{\includegraphics[scale=0.5]{Chapter-Rank/figures/dot.png}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -182,7 +184,7 @@
 \usepackage{array,booktabs}
 \usepackage{colortbl}
 \newcolumntype{L}{@{}>{\kern\tabcolsep}l<{\kern\tabcolsep}}
-
+\usepackage{csquotes}
 
 
 %%%%%%%%%%
@@ -211,21 +213,44 @@
 \definecolor{MyDarkBlue}{rgb}{0,0.08,0.45} 
 \lstset{
     language=Python,
-    basicstyle=\ttfamily\fontsize{2.7mm}{0.8em}\selectfont,
+    basicstyle=\sffamily\fontsize{3mm}{0.8em}\selectfont,
     breaklines=true,
     prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
     frame=l,
     showtabs=false,
+    columns=fullflexible,
     showspaces=false,
     showstringspaces=false,
-    keywordstyle=\bfseries,
-    emph={furthest,gale,better,improved,where,fastmap,split,project,mutate,mutate1}, emphstyle=\bfseries\color{blue},
+    keywordstyle=\bfseries\sffamily,
+    emph={furthest,gale,better,improved,where,fastmap,split,project,mutate,mutate1, progressive, build_model, test_model, rank_based, projective, measure, progressive, build_model, rank_based, projective, measure, acquisition_function, stopping_criterion, recombine, selector, init_population, EA, SWAY, cluster, split, BayesianOpt, ePAL, GO, model_predict, discard, get_next_point, predict, non_dominated_sort, assign_cdom_scores, FLASH, acquisition_fn, BarrySort }, emphstyle=\bfseries\color{blue!50!black},
     stringstyle=\color{green!50!black},
-    commentstyle=\color{gray}\itshape,
+    commentstyle=\color{red!50!black}\it,
     numbers=left,
     captionpos=t,
     escapeinside={\%*}{*)}
 }
+
+\definecolor{MyDarkBlue}{rgb}{0,0.08,0.45} 
+\lstset{
+    language=Python,
+    basicstyle=\sffamily\fontsize{3mm}{0.8em}\selectfont,
+    breaklines=true,
+    prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    frame=l,
+    showtabs=false,
+    columns=fullflexible,
+    showspaces=false,
+    showstringspaces=false,
+    keywordstyle=\bfseries\sffamily,
+    emph={progressive, build_model, test_model, rank_based, projective, measure}, emphstyle=\bfseries\color{blue!50!black},
+    stringstyle=\color{green!50!black},
+    commentstyle=\color{red!50!black}\it,
+    numbers=left,
+    captionpos=t,
+    escapeinside={\%*}{*)}
+}
+
+
 \usepackage{commath}
 \usepackage{mathtools}
 \newcommand{\bi}{\begin{itemize}}%[leftmargin=0.4cm]}
@@ -277,7 +302,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %http://ctan.org/pkg/placeins
 \usepackage{placeins}
-%De?Ø¬ø?ìfines a \FloatBar?Ø¬ø?ìrier com?Ø¬ø?ìmand, be?Ø¬ø?ìyond which floats may not pass; use?Ø¬ø?ìful, for ex?Ø¬ø?ìam?Ø¬ø?ìple, to en?Ø¬ø?ìsure all floats for a sec?Ø¬ø?ìtion ap?Ø¬ø?ìpear be?Ø¬ø?ìfore the next \sec?Ø¬ø?ìtion com?Ø¬ø?ìmand.
+%De?Ø¬ï¿½?ï¿½fines a \FloatBar?Ø¬ï¿½?ï¿½rier com?Ø¬ï¿½?ï¿½mand, be?Ø¬ï¿½?ï¿½yond which floats may not pass; use?Ø¬ï¿½?ï¿½ful, for ex?Ø¬ï¿½?ï¿½am?Ø¬ï¿½?ï¿½ple, to en?Ø¬ï¿½?ï¿½sure all floats for a sec?Ø¬ï¿½?ï¿½tion ap?Ø¬ï¿½?ï¿½pear be?Ø¬ï¿½?ï¿½fore the next \sec?Ø¬ï¿½?ï¿½tion com?Ø¬ï¿½?ï¿½mand.
 
 %%%Hack for centering all figures
 %\makeatletter
