@@ -51,6 +51,9 @@ The key idea of \flash is to build a performance model that is just accurate eno
     % \setlength{\tabcolsep}{4.5pt} % Default value: 6pt
     \renewcommand{\arraystretch}{1} % Default value: 1
 % \resizebox{1\linewidth}{!}{\begin{tabular}{|p{1.4cm}|p{1.35cm}|p{0.85cm}|p{6.85cm}|p{6.85cm}|c|c|c|}
+\caption[Configuration problems used to test \flash.]{
+Configuration problems explored in this paper.   The abbreviations of the systems (Abbr) are sorted in the order of the number of configuration options of the system. The column \#Config Options represent the number of configuration options of the software system and \#Configurations represents the total number of configurations of the system. See \url{http://tiny.cc/flash_systems/} for more details.
+}
 \resizebox{\linewidth}{!}{
     \begin{tabular}{p{1.2cm}p{1.4cm}p{1.65cm}rp{4.85cm}p{6.85cm}crp{0.85cm}}
 \toprule
@@ -87,9 +90,6 @@ The key idea of \flash is to build a performance model that is just accurate eno
 \multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Seismic\\ Analysis\\ Code\\~~~\end{tabular}}} & \multirow{2}{*}{SaC} & Compile-Exit & \multirow{2}{*}{59} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}extrema, enabledOptimizations,\\ disabledOptimizations,ls, dcr, cf, lir, inl,\\ lur, wlur, ...maxae, initmheap, initwheap\end{tabular}} & \multirow{2}{*}{Configuration space of SaC} & SS-O1 & \multirow{2}{*}{65,424} &  \\ \cmidrule(lr){3-3}
  &  & Compile-Read &  &  &  & SS-O2 &  &  \\ \bottomrule
 \end{tabular}
-}
-\caption[Configuration problems used to test \flash.]{
-Configuration problems explored in this paper.   The abbreviations of the systems (Abbr) are sorted in the order of the number of configuration options of the system. The column \#Config Options represent the number of configuration options of the software system and \#Configurations represents the total number of configurations of the system. See \url{http://tiny.cc/flash_systems/} for more details.
 }
 \label{fig:software_systems}
 \end{table*}
@@ -264,7 +264,7 @@ This can also be explained in the following way: firstly, few points (or configu
 Much of the prior  research in configuration optimization of software systems can
 be characterized as an exploration of 
 different acquisition functions.
-These acquisition function (or sampling heuristics) were used to satisfy two requirements: (i) use `reasonable' number of configurations (along with corresponding measurements) and (ii) the selected configurations should incorporate the relevant interactions---how different configuration options influence the performance measure~\cite{Siegmund2015}.
+These acquisition function (or sampling heuristics) were used to satisfy two requirements: (i) use `reasonable' number of configurations (along with corresponding measurements) and (ii) the selected configurations should incorporate the relevant interactions---how different configuration options influence the performance measure~\cite{SGA+15}.
 In a nutshell, the intuition behind such functions is that it is not necessary to try all configuration options---for pragmatic reasons. Rather, it is only necessary to try a small representative configurations---which incorporates the influences of various configuration options.
 Randomized  functions
  select random items~\cite{guo2013variability, sarkar2015cost}. Other, more intricate,
